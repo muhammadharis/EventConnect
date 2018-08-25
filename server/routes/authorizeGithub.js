@@ -14,8 +14,9 @@ router.get('/', (req, res) => {
       },
           function (error, response, body) {
             if (!error && response.statusCode == 200) {
-                oAuthToken= JSON.parse(body).access_token;
-                console.log(oAuthToken);
+                var token= JSON.parse(body).access_token;
+                console.log(token);
+                res.redirect('http://localhost:4200/signup?type=github&token='+token);
                 res.end();
             }
         }
