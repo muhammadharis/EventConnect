@@ -14,7 +14,11 @@ export class LinkedinPageComponent implements OnInit {
   }
 
   github(){
-    window.open("https://github.com/login/oauth/authorize?client_id=519813e63570d699ea25&scope=user%20repo%20notifications");
+    window.open("https://github.com/login/oauth/authorize?client_id=519813e63570d699ea25&redirect_uri=http://localhost:9090/authorizeGithub&scope=user%20repo%20notifications");
+  }
+
+  instagram(){
+    window.open("https://api.instagram.com/oauth/authorize/?client_id=1ac142c4f0e24b649478aebc3193b23c&redirect_uri=http://localhost:9090/authorizeInstagram&response_type=code");
   }
 
   ngOnInit() {

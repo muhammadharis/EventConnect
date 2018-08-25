@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 
 // Get our API routes
 const authorizeLinkedin = require('./server/routes/authorizeLinkedin');
+const authorizeGithub = require('./server/routes/authorizeGithub');
+const authorizeInstagram = require('./server/routes/authorizeInstagram');
 
 const app = express();
 
@@ -18,6 +20,8 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // Set our api routes
 app.use('/authorizeLinkedin', authorizeLinkedin);
+app.use('/authorizeGithub', authorizeGithub);
+app.use('/authorizeInstagram', authorizeInstagram);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
