@@ -1,0 +1,14 @@
+button{
+    padding-left: 117px;
+    padding-right: 117px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    font-family: 'Alef', serif;
+    font-size: 15px;
+    background-color: #009cdb;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
