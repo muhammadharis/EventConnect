@@ -24,11 +24,15 @@ export class UserSelectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+
   }
 
-  userJoin(){
+  githubClick(){
+    alert('GitHub')
+  }
 
+  linkedinClick(){
+    alert('Linkedin')
   }
 
 }
