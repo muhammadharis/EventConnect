@@ -8,7 +8,11 @@ import { AppRoutingModule } from './/app-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 import { AgmCoreModule } from '@agm/core';
+
 import { LinkedinCardComponent } from './linkedin-card/linkedin-card.component';
+
+import { CareerProspectFormComponent } from './career-prospect-form/career-prospect-form.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { LinkedinCardComponent } from './linkedin-card/linkedin-card.component';
     LinkedinPageComponent,
     UserSelectionComponent,
     SignUpComponent,
+
     LinkedinCardComponent
+
+    CareerProspectFormComponent
+
   ],
   imports: [
     BrowserModule,
