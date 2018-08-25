@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LinkedinPageComponent } from './linkedin-page/linkedin-page.component';
+import { UserSelectionComponent } from './user-selection/user-selection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LinkedinPageComponent
+    LinkedinPageComponent,
+    UserSelectionComponent
   ],
   imports: [
     BrowserModule
