@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 var request = require('request');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://muhammad:helloworld123@ds131932.mlab.com:31932/eventconnect');
 
 /* GET api listing. */
 router.get('/', (req, res) => {
