@@ -16,6 +16,7 @@ router.get('/', (req, res) => {
             if (!error && response.statusCode == 200) {
                 oAuthToken= JSON.parse(body).access_token;
                 console.log(oAuthToken);
+                res.end();
             }
         }
       );
