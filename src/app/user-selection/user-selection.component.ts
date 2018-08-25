@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-user-selection',
@@ -10,8 +11,8 @@ export class UserSelectionComponent implements OnInit {
     'name': 'Anish',
     'img': 'randomurl',
     'title': 'Full Snack Developer'
-    },
-    {
+  },
+  {
     'name': 'Craig',
     'img': 'randomurl',
     'title': 'Full Stack Developer'
@@ -19,19 +20,32 @@ export class UserSelectionComponent implements OnInit {
   {
     'name': 'Navraj',
     'img': 'randomurl',
-    'title': 'Dev Ops btw'  }
-];
+    'title': 'Dev Ops btw'
+  }
+  ];
   constructor() { }
 
   ngOnInit() {
 
   }
 
-  githubClick(){
-    alert('GitHub')
+  githubClick() {
+    this.httpClient.get('/url', {
+      params: {
+        appid: 'id1234',
+        cnt: '5'
+      },
+      observe: 'response'
+    })
+      .toPromise()
+      .then(response => {
+        console.log(response);
+      })
+      .catch(console.log);
   }
 
-  linkedinClick(){
+
+  linkedinClick() {
     alert('Linkedin')
   }
 
