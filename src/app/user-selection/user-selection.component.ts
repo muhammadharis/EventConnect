@@ -30,18 +30,18 @@ export class UserSelectionComponent implements OnInit {
   }
 
   githubClick() {
-    this.httpClient.get('/url', {
-      params: {
-        appid: 'id1234',
-        cnt: '5'
-      },
-      observe: 'response'
-    })
-      .toPromise()
-      .then(response => {
-        console.log(response);
-      })
-      .catch(console.log);
+    // this.httpClient.get('/url', {
+    //   params: {
+    //     appid: 'id1234',
+    //     cnt: '5'
+    //   },
+    //   observe: 'response'
+    // })
+    //   .toPromise()
+    //   .then(response => {
+    //     console.log(response);
+    //   })
+    //   .catch(console.log);
   }
 
 
