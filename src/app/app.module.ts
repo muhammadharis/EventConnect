@@ -5,16 +5,23 @@ import { AppComponent } from './app.component';
 import { LinkedinPageComponent } from './linkedin-page/linkedin-page.component';
 import { UserSelectionComponent } from './user-selection/user-selection.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { SignUpComponent } from './sign-up/sign-up.component';
+
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
     AppComponent,
     LinkedinPageComponent,
-    UserSelectionComponent
+    UserSelectionComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCDIcRRXY6G6-5Mh-bWt66U3NzH_Vx5GIw'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
