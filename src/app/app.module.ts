@@ -20,9 +20,7 @@ import { CareerProspectFormComponent } from './career-prospect-form/career-prosp
     LinkedinPageComponent,
     UserSelectionComponent,
     SignUpComponent,
-
     LinkedinCardComponent,
-
     CareerProspectFormComponent
 
   ],
