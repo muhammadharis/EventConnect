@@ -5,7 +5,9 @@ const http = require('http');
 const bodyParser = require('body-parser');
 
 // Get our API routes
-const authorize = require('./server/routes/authorize');
+const authorizeLinkedin = require('./server/routes/authorizeLinkedin');
+const authorizeGithub = require('./server/routes/authorizeGithub');
+const authorizeInstagram = require('./server/routes/authorizeInstagram');
 
 const app = express();
 
@@ -17,7 +19,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Set our api routes
-app.use('/authorize', authorize);
+app.use('/authorizeLinkedin', authorizeLinkedin);
+app.use('/authorizeGithub', authorizeGithub);
+app.use('/authorizeInstagram', authorizeInstagram);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
