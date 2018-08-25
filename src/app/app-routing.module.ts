@@ -5,7 +5,7 @@ import {UserSelectionComponent} from './user-selection/user-selection.component'
 import {SignUpComponent} from './sign-up/sign-up.component';
 
 const routes:Routes = [
-  {path: 'authorizationPage', component: LinkedinPageComponent},
+  {path: '', component: LinkedinPageComponent},
   {path: 'selection', component: UserSelectionComponent},
   {path: 'messaging', component: UserSelectionComponent},
   {path: 'signup', component: SignUpComponent}
