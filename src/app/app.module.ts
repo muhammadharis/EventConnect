@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LinkedinPageComponent } from './linkedin-page/linkedin-page.component';
 import { UserSelectionComponent } from './user-selection/user-selection.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { UserSelectionComponent } from './user-selection/user-selection.componen
     UserSelectionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
