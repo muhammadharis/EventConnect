@@ -3,7 +3,9 @@
 
 <p>
 
-  <li class="list-group-item" *ngFor="let user of userList">
+  <li class="list-group-item" *ngFor="let user of userList" style="text-align:center">
+    <img src="https://avatars1.githubusercontent.com/u/22064715?v=4" alt="Avatar" style="border-radius: 50%; width : 50px; height : 50px;border-width: 2px;border-style: solid;
+ "/>
     {{user.name}}
     <button type="button" class="btn btn-default btn-circle" (click)="linkedinClick()"><i class="fab fa-linkedin-in"></i></button>
 
