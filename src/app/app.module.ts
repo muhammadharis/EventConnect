@@ -8,13 +8,15 @@ import { AppRoutingModule } from './/app-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { LinkedinCardComponent } from './linkedin-card/linkedin-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LinkedinPageComponent,
     UserSelectionComponent,
-    SignUpComponent
+    SignUpComponent,
+    LinkedinCardComponent
   ],
   imports: [
     BrowserModule,
