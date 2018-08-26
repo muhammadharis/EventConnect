@@ -16,7 +16,7 @@ export class LinkedinPageComponent implements OnInit {
   }
 
   github() {
-    window.open("https://github.com/login/oauth/authorize?client_id=519813e63570d699ea25&scope=user%20repo%20notifications");
+    window.location.replace("https://github.com/login/oauth/authorize?client_id=519813e63570d699ea25&scope=user%20repo%20notifications");
   }
   
   event(){

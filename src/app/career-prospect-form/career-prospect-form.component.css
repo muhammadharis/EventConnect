@@ -1,7 +1,7 @@
 #submit{
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 10px;
+    margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: none;
@@ -15,6 +15,7 @@
 
 #textField{
     margin-top: 8px;
+    margin-bottom: 10px;
     padding: 3px;
     padding-left: 8px;
     padding-right: 8px;
