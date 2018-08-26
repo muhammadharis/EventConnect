@@ -8,28 +8,29 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserSelectionComponent implements OnInit {
   hide = false;
-  userList = [{
-    'name': 'Anish',
-    'img': 'randomurl',
-    'title': 'Full Snack Developer',
-    'linkedinProfileUrl' : '',
-    'username' : ''
-  },
-  {
-    'name': 'Craig',
-    'img': 'randomurl',
-    'title': 'Full Stack Developer',
-    'linkedinProfileUrl' : '',
-    'username' : ''
-  },
-  {
-    'name': 'Navraj',
-    'img': 'randomurl',
-    'title': 'Dev Ops btw',
-    'linkedinProfileUrl' : '',
-    'username' : ''
-  }
-  ];
+  userList = [];
+  // [{
+  //   'name': 'Anish',
+  //   'img': 'randomurl',
+  //   'title': 'Full Snack Developer',
+  //   'linkedinProfileUrl' : '',
+  //   'username' : ''
+  // },
+  // {
+  //   'name': 'Craig',
+  //   'img': 'randomurl',
+  //   'title': 'Full Stack Developer',
+  //   'linkedinProfileUrl' : '',
+  //   'username' : ''
+  // },
+  // {
+  //   'name': 'Navraj',
+  //   'img': 'randomurl',
+  //   'title': 'Dev Ops btw',
+  //   'linkedinProfileUrl' : '',
+  //   'username' : ''
+  // }
+  // ];
 
   oauthToken = "";
   username = "";

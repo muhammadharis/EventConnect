@@ -14,8 +14,16 @@
     <h1>{{gitJson.name}}</h1>
     <p class="title">{{gitJson.email}}</p>
     <ul class="list-group">
-    <li class="list-group-item"><h6>Public Repos : {{gitJson.public_repos}}</h6></li>
+    <h4>Public Repos : {{gitJson.public_repos}}</h4>
+    <div *ngIf="gitJson.bio!=undefined">
     <li class="list-group-item"><h6>{{gitJson.bio}}</h6></li>
+  </div>
+    <div *ngFor="let repo of repos">
+      <li class="list-group-item">
+        <h5>{{repo.name}}</h5>
+      <p class="title">{{repo.description}}</p>
+      </li>
+    </div>
   </ul>
     <!-- <ul class="list-group" *ngFor="let position of positions;" style="text-align:center; ">
       <li class="list-group-item" style="text-align:center; ">
