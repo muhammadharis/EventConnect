@@ -11,24 +11,29 @@ export class UserSelectionComponent implements OnInit {
   userList = [{
     'name': 'Anish',
     'img': 'randomurl',
-    'title': 'Full Snack Developer'
+    'title': 'Full Snack Developer',
+    'linkedinProfileUrl' : '',
+    'username' : ''
   },
   {
     'name': 'Craig',
     'img': 'randomurl',
-    'title': 'Full Stack Developer'
+    'title': 'Full Stack Developer',
+    'linkedinProfileUrl' : '',
+    'username' : ''
   },
   {
     'name': 'Navraj',
     'img': 'randomurl',
-    'title': 'Dev Ops btw'
+    'title': 'Dev Ops btw',
+    'linkedinProfileUrl' : '',
+    'username' : ''
   }
   ];
 
   oauthToken = "";
   username = "";
   constructor() { }
-  listIndex = 10;
   ngOnInit() {
     debugger;
     var xhr = new XMLHttpRequest();
