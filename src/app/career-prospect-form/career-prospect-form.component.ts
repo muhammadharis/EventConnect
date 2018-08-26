@@ -7,12 +7,16 @@ import { ActivatedRoute, Params } from '@angular/router';
   styleUrls: ['./career-prospect-form.component.css']
 })
 export class CareerProspectFormComponent implements OnInit {
-  position: '';
+  payload =  {};
 
   constructor(private activatedRoute: ActivatedRoute) {
-    this.activatedRoute.queryParams.subscribe((params: Params) => {
+    var self = this;
+    self.activatedRoute.queryParams.subscribe((params: Params) => {
       console.log(params.type); //Linkedin or Github
       console.log(params.token);
+      console.log(self.payload);
+      self.payload['type'] = params.type;
+      self.payload['token'] = params.token;
     });
   
   }
@@ -21,12 +25,28 @@ export class CareerProspectFormComponent implements OnInit {
     event.preventDefault();
     alert('gettit')
   }
+  
+  onSubmit(e) {
+    var self = this;
+    var position = document.forms["position"]["fname"].value;
+    self.payload['position'] = position;
+    console.log(position);
+    console.log(self.payload);
 
-  onSubmit() {
-    alert('SUCCESS!! :-)')
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type'],true);
+    xhr.onreadystatechange = function(){
+      if(this.readyState==4 && this.status==200){
+        console.log(xhr.responseText);
+      }
+    }
+    xhr.send();
+
+    return false;
   }
   
   ngOnInit() {
+    console.log(this.payload);
   }
 
 }

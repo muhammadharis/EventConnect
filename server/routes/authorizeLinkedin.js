@@ -7,6 +7,7 @@ mongoose.connect('mongodb://muhammad:helloworld123@ds131932.mlab.com:31932/event
 
 /* GET api listing. */
 router.get('/', (req, res) => {
+    console.log(req);
     var code = req.query.code;
     console.log(req.query.code);  
     request.post({
