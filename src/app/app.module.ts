@@ -13,6 +13,7 @@ import { LinkedinCardComponent } from './linkedin-card/linkedin-card.component';
 
 import { CareerProspectFormComponent } from './career-prospect-form/career-prospect-form.component';
 import { GithubCardComponent } from './github-card/github-card.component';
+import { EventsPageComponent } from './events-page/events-page.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { GithubCardComponent } from './github-card/github-card.component';
     SignUpComponent,
     LinkedinCardComponent,
     CareerProspectFormComponent,
-    GithubCardComponent
+    GithubCardComponent,
+    EventsPageComponent
 
   ],
   imports: [

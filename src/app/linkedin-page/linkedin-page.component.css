@@ -11,4 +11,9 @@ button{
     color: white;
     border-radius: 25px;
     cursor: pointer;
+},
+body{
+  height: 100%;
+  background-image: url("background.gif");
+  background-color: #cccccc;;
 }

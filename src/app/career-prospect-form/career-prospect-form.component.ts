@@ -31,6 +31,7 @@ export class CareerProspectFormComponent implements OnInit {
   }
 
   onSubmit(e) {
+    debugger;
     var self = this;
     var position = document.forms["position"]["fname"].value;
     var linkedinProfileName = document.forms["position"]["linkedinName"].value;
@@ -47,6 +48,7 @@ export class CareerProspectFormComponent implements OnInit {
 
       }
       if(this.readyState==4 && this.status!=200){
+        debugger;
         console.log(xhr.responseText);
         //window.location.replace("http://localhost:4200/selection");
       }

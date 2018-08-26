@@ -33,7 +33,7 @@ export class UserSelectionComponent implements OnInit {
     debugger;
     var xhr = new XMLHttpRequest();
     var self = this;
-    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/get_all_users/');
+    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/get_near_users/');
     xhr.onreadystatechange = function(){
       debugger;
       if(this.readyState==4 && this.status==200){
