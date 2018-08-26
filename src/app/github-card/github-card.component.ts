@@ -61,11 +61,11 @@ export class GithubCardComponent implements OnInit {
     debugger;
     var xhr = new XMLHttpRequest();
     var self = this;
-    xhr.open('GET','https://testhackerman12.lib.id/github-lite@dev/get_user/?token=' + this.oauthToken + 'target=' +this.username);
+    xhr.open('GET','https://testhackerman12.lib.id/github-lite@dev/get_user/?token=' + this.oauthToken + '&target=' +this.username);
     xhr.onreadystatechange = function(){
       debugger;
       if(this.readyState==4 && this.status==200){
-
+        debugger;
         self.gitJson = JSON.parse(xhr.responseText);
       }
     }

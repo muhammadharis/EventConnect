@@ -9,12 +9,13 @@
     <div style="display: inline-block;text-align: right; margin-right: 5%; margin-top:2%">
     <a (click)="onclick()">  <i class="fas fa-times" ></i></a>
     </div>
-    <img src="https://avatars1.githubusercontent.com/u/22064715?v=4" alt="John" style="width:50%;  border-radius: 50% ; margin-left: auto;margin-right: auto;width: 50%;"/>
+    <img src="{{gitJson.avatar_url}}" alt="John" style="width:50%;  border-radius: 50% ; margin-left: auto;margin-right: auto;width: 50%;"/>
     <br>
     <h1>{{gitJson.name}}</h1>
     <p class="title">{{gitJson.email}}</p>
     <ul class="list-group">
     <li class="list-group-item"><h6>Public Repos : {{gitJson.public_repos}}</h6></li>
+    <li class="list-group-item"><h6>{{gitJson.bio}}</h6></li>
   </ul>
     <!-- <ul class="list-group" *ngFor="let position of positions;" style="text-align:center; ">
       <li class="list-group-item" style="text-align:center; ">

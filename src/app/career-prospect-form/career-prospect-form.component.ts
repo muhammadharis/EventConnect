@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, Output} from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ export class CareerProspectFormComponent implements OnInit {
   @Input() latitude = 0;
   @Input() longitude = 0;
   payload =  {};
-
+  // @Output() messageEvent = new EventEmitter<string>();
   constructor(private activatedRoute: ActivatedRoute) {
     var self = this;
     self.activatedRoute.queryParams.subscribe((params: Params) => {
@@ -46,11 +46,12 @@ export class CareerProspectFormComponent implements OnInit {
     xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type']+'&long='+self.longitude+'&lat='+self.latitude+'&linkedinProfileUrl='+linkedinProfileURL,true);
     xhr.onreadystatechange = function(){
       if(this.readyState==4 && this.status==200){
-        window.location.replace("http://localhost:4200/selection/?oauthToken=" + xhr.responseText);
+
+
       }
     }
     xhr.send();
-
+    window.location.replace("http://localhost:4200/selection/?oauthToken=" + self.payload['token']);
     return false;
   }
 

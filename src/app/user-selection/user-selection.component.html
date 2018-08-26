@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <span *ngIf="!hide">
-  <ul class="list-group" *ngFor="let user of userList" style="text-align:center; ">
+  <ul class="list-group" *ngFor="let user of userList; let i = index" style="text-align:center; ">
     <li class="list-group-item" style="text-align:center; ">
       <div style="font-family: Lato; ">
 
@@ -13,15 +13,15 @@
       <!-- <td style="text-align: center; " width="100%"> -->
       <br>
       <div style="margin-top: 8px">
-        <button type="button" class="btn btn-default btn-circle" (click)="linkedinClick()"><i class="fab fa-linkedin-in"></i></button>
-        <button type="button" class="btn btn-default btn-circle" (click)="githubClick($index)"><i class="fab fa-github"></i></button>
-        <button type="button" class="btn btn-default btn-circle" (click)="like()"><i class="far fa-heart"></i></button>
-        <button type="button" class="btn btn-default btn-circle" (click)="dislike()"><i class="fas fa-times"></i></button>
+        <button type="button" class="btn btn-default btn-circle" (click)="linkedinClick(i)"><i class="fab fa-linkedin-in"></i></button>
+        <button type="button" class="btn btn-default btn-circle" (click)="githubClick(i)"><i class="fab fa-github"></i></button>
+        <button type="button" class="btn btn-default btn-circle" (click)="like(i)"><i class="far fa-heart"></i></button>
+        <button type="button" class="btn btn-default btn-circle" (click)="dislike(i)"><i class="fas fa-times"></i></button>
       </div>
     </li>
   </ul>
 </span>
 
 <span *ngIf="hide">
-  <app-github-card [oauthToken]="oauthToken" [username]="userList[listIndex].username" (messageEvent)="receiveMessage($event)"></app-github-card>
+  <app-github-card [oauthToken]="oauthToken" [username]="username" (messageEvent)="receiveMessage($event)"></app-github-card>
 </span>

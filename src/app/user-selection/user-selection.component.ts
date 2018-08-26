@@ -26,6 +26,7 @@ export class UserSelectionComponent implements OnInit {
   ];
 
   oauthToken = "";
+  username = "";
   constructor() { }
   listIndex = 10;
   ngOnInit() {
@@ -47,7 +48,8 @@ export class UserSelectionComponent implements OnInit {
   }
 
   githubClick(index) {
-    this.listIndex = index;
+    debugger;
+    this.username = this.userList[index].username;
     console.log("github");
     debugger;
       // window.location.replace("http://localhost:4200/linke/");
