@@ -38,7 +38,7 @@ export class CareerProspectFormComponent implements OnInit {
     console.log(self.payload);
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type']+'&long='+this.longitude+'&lat='+this.latitude,true);
+    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type']+'&long='+self.longitude+'&lat='+self.latitude,true);
     xhr.onreadystatechange = function(){
       if(this.readyState==4 && this.status==200){
         console.log(xhr.responseText);

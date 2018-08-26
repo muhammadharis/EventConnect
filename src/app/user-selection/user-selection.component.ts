@@ -34,7 +34,7 @@ export class UserSelectionComponent implements OnInit {
     console.log("github");
     debugger;
       // window.location.replace("http://localhost:4200/linke/");
-      self = this;
+      var self = this;
       self.hide = true;
   }
   like(){
