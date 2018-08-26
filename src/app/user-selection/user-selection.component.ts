@@ -93,7 +93,7 @@ export class UserSelectionComponent implements OnInit {
   }
 
   linkedinClick(index) {
-    window.open("https://www.linkedin.com/in/" + this.userList[index].linkedinProfileUrl);
+    window.open("https://www.linkedin.com/in/" + this.userList[index].linkedinProfileName);
   }
 
   receiveMessage($event) {

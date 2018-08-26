@@ -20,7 +20,7 @@
   </div>
     <div *ngFor="let repo of repos">
       <li class="list-group-item">
-        <h5>{{repo.name}}</h5>
+      <a href="{{repo.svn_url}}"  ><h5>{{repo.name}}</h5></a> 
       <p class="title">{{repo.description}}</p>
       </li>
     </div>
