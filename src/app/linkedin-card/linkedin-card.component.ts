@@ -79,5 +79,5 @@ export class LinkedinCardComponent implements OnInit {
     });
     console.log(this.positions);
   }
-
+}
 }

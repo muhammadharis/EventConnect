@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./user-selection.component.css']
 })
 export class UserSelectionComponent implements OnInit {
+  hide = false;
   userList = [{
     'name': 'Anish',
     'img': 'randomurl',
@@ -30,23 +31,26 @@ export class UserSelectionComponent implements OnInit {
   }
 
   githubClick() {
-    // this.httpClient.get('/url', {
-    //   params: {
-    //     appid: 'id1234',
-    //     cnt: '5'
-    //   },
-    //   observe: 'response'
-    // })
-    //   .toPromise()
-    //   .then(response => {
-    //     console.log(response);
-    //   })
-    //   .catch(console.log);
+    console.log("github");
+    debugger;
+      // window.location.replace("http://localhost:4200/linke/");
+      self = this;
+      self.hide = true;
+  }
+  like(){
+
+  }
+  dislike(){
+
   }
 
-
   linkedinClick() {
-    alert('Linkedin')
+
+  }
+
+  receiveMessage($event) {
+    debugger;
+    this.hide = $event
   }
 
 }
