@@ -24,13 +24,30 @@ export class UserSelectionComponent implements OnInit {
     'title': 'Dev Ops btw'
   }
   ];
+
+  oauthToken = "";
   constructor() { }
-
+  listIndex = 10;
   ngOnInit() {
+    debugger;
+    var xhr = new XMLHttpRequest();
+    var self = this;
+    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/get_all_users/');
+    xhr.onreadystatechange = function(){
+      debugger;
+      if(this.readyState==4 && this.status==200){
 
+        self.userList = JSON.parse(xhr.responseText);
+        console.log(self.userList);
+      }
+    }
+    xhr.send();
+
+    this.oauthToken= new URLSearchParams(window.location.search).get('oauthToken');
   }
 
-  githubClick() {
+  githubClick(index) {
+    this.listIndex = index;
     console.log("github");
     debugger;
       // window.location.replace("http://localhost:4200/linke/");

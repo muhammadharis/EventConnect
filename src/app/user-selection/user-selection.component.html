@@ -6,7 +6,7 @@
     <li class="list-group-item" style="text-align:center; ">
       <div style="font-family: Lato; ">
 
-        <img src="https://avatars1.githubusercontent.com/u/22064715?v=4" alt="Avatar" style="border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;" />
+        <img src="{{user.avatar_url}}" alt="Avatar" style="border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;" />
         <font size="36" style="padding-left: 1%; vertical-align:middle;">{{user.name}} </font>
       </div>
       <!-- </td> -->
@@ -14,7 +14,7 @@
       <br>
       <div style="margin-top: 8px">
         <button type="button" class="btn btn-default btn-circle" (click)="linkedinClick()"><i class="fab fa-linkedin-in"></i></button>
-        <button type="button" class="btn btn-default btn-circle" (click)="githubClick()"><i class="fab fa-github"></i></button>
+        <button type="button" class="btn btn-default btn-circle" (click)="githubClick($index)"><i class="fab fa-github"></i></button>
         <button type="button" class="btn btn-default btn-circle" (click)="like()"><i class="far fa-heart"></i></button>
         <button type="button" class="btn btn-default btn-circle" (click)="dislike()"><i class="fas fa-times"></i></button>
       </div>
@@ -23,5 +23,5 @@
 </span>
 
 <span *ngIf="hide">
-  <app-github-card (messageEvent)="receiveMessage($event)"></app-github-card>
+  <app-github-card [oauthToken]="oauthToken" [username]="userList[listIndex].username" (messageEvent)="receiveMessage($event)"></app-github-card>
 </span>
