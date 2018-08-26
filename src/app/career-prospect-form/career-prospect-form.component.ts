@@ -22,14 +22,14 @@ export class CareerProspectFormComponent implements OnInit {
         self.payload['token'] = params.token;
       }
     });
-  
+
   }
 
   handlFormSubmission(empForm: any, event: Event){
     event.preventDefault();
     alert('gettit')
   }
-  
+
   onSubmit(e) {
     var self = this;
     var position = document.forms["position"]["fname"].value;
@@ -45,10 +45,10 @@ export class CareerProspectFormComponent implements OnInit {
       }
     }
     xhr.send();
-
+    window.location.replace("http://localhost:4200/selection");
     return false;
   }
-  
+
   ngOnInit() {
     console.log(this.payload);
   }
