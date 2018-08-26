@@ -62,11 +62,34 @@ export class UserSelectionComponent implements OnInit {
       var self = this;
       self.hide = true;
   }
-  like(){
-
+  like(index){
+    var xhr = new XMLHttpRequest();
+    var self = this;
+    var endpoint = 'https://testhackerman12.lib.id/github-lite@dev/follow_user/';
+    endpoint += '?';
+    endpoint += 'token=' + this.oauthToken;
+    endpoint += '&target=' + this.userList[index].username;
+    xhr.open('GET','' + endpoint);
+    console.log(this.userList[index].username);
+    xhr.onreadystatechange = function(){
+        console.log('following broooo');
+    }
+    xhr.send();
+    //disable like
   }
-  dislike(){
-
+  dislike(index){
+    var xhr = new XMLHttpRequest();
+    var self = this;
+    var endpoint = 'https://testhackerman12.lib.id/github-lite@dev/unfollow_user/';
+    endpoint += '?';
+    endpoint += 'token=' + this.oauthToken;
+    endpoint += '&target=' + this.userList[index].username;
+    xhr.open('GET','' + endpoint);
+    xhr.onreadystatechange = function(){
+        console.log('unfollowing brooo');
+    }
+    xhr.send();
+    //disable unfollow
   }
 
   linkedinClick(index) {
