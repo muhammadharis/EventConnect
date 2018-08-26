@@ -6,7 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./github-card.component.css']
 })
 export class GithubCardComponent implements OnInit {
-  @Input() gitToken = '';
+  @Input() username = '';
   gitJson = {
     "login": "craigericlewis",
     "id": 22064715,
@@ -54,10 +54,22 @@ export class GithubCardComponent implements OnInit {
   };
 
   @Output() messageEvent = new EventEmitter<boolean>();
-
+  @Input() oauthToken = '';
   constructor() { }
 
   ngOnInit() {
+    debugger;
+    var xhr = new XMLHttpRequest();
+    var self = this;
+    xhr.open('GET','https://testhackerman12.lib.id/github-lite@dev/get_user/?token=' + this.oauthToken + 'target=' +this.username);
+    xhr.onreadystatechange = function(){
+      debugger;
+      if(this.readyState==4 && this.status==200){
+
+        self.gitJson = JSON.parse(xhr.responseText);
+      }
+    }
+    xhr.send();
   }
   onclick() {
     // window.location.replace("http://localhost:4200/selection/");

@@ -43,7 +43,7 @@ export class CareerProspectFormComponent implements OnInit {
     xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type']+'&long='+self.longitude+'&lat='+self.latitude+'&linkedinProfileName='+linkedinProfileName,true);
     xhr.onreadystatechange = function(){
       if(this.readyState==4 && this.status==200){
-        console.log(xhr.responseText);
+        window.location.replace("http://localhost:4200/selection/?oauthToken=" + xhr.responseText);
       }
       if(this.readyState==4 && this.status!=200){
         console.log(xhr.responseText);
@@ -51,7 +51,7 @@ export class CareerProspectFormComponent implements OnInit {
       }
     }
     xhr.send();
-    window.location.replace("http://localhost:4200/selection");
+
     return false;
   }
 
