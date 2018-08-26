@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
@@ -7,16 +7,20 @@ import { ActivatedRoute, Params } from '@angular/router';
   styleUrls: ['./career-prospect-form.component.css']
 })
 export class CareerProspectFormComponent implements OnInit {
+  @Input() latitude = 0;
+  @Input() longitude = 0;
   payload =  {};
 
   constructor(private activatedRoute: ActivatedRoute) {
     var self = this;
     self.activatedRoute.queryParams.subscribe((params: Params) => {
-      console.log(params.type); //Linkedin or Github
-      console.log(params.token);
-      console.log(self.payload);
-      self.payload['type'] = params.type;
-      self.payload['token'] = params.token;
+      if(params.type && params.token){
+        console.log(params.type); //Linkedin or Github
+        console.log(params.token);
+        console.log(self.payload);
+        self.payload['type'] = params.type;
+        self.payload['token'] = params.token;
+      }
     });
   
   }
@@ -34,7 +38,7 @@ export class CareerProspectFormComponent implements OnInit {
     console.log(self.payload);
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type'],true);
+    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type']+'&long='+this.longitude+'&lat='+this.latitude,true);
     xhr.onreadystatechange = function(){
       if(this.readyState==4 && this.status==200){
         console.log(xhr.responseText);
