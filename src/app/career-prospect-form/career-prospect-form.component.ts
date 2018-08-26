@@ -33,21 +33,22 @@ export class CareerProspectFormComponent implements OnInit {
   onSubmit(e) {
     var self = this;
     var position = document.forms["position"]["fname"].value;
-    var linkedinProfileURL = document.forms["position"]["linkedinName"].value;
-    if(!position || !linkedinProfileURL){
-      alert("You must submit all fields");
-      return;
-    }
+    var linkedinProfileName = document.forms["position"]["linkedinName"].value;
+
     self.payload['position'] = position;
     console.log(position);
     console.log(self.payload);
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type']+'&long='+self.longitude+'&lat='+self.latitude+'&linkedinProfileUrl='+linkedinProfileURL,true);
+    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/login?position='+position+'&token='+self.payload['token']+'&type='+self.payload['type']+'&long='+self.longitude+'&lat='+self.latitude+'&linkedinProfileName='+linkedinProfileName,true);
     xhr.onreadystatechange = function(){
       if(this.readyState==4 && this.status==200){
 
 
+      }
+      if(this.readyState==4 && this.status!=200){
+        console.log(xhr.responseText);
+        //window.location.replace("http://localhost:4200/selection");
       }
     }
     xhr.send();
