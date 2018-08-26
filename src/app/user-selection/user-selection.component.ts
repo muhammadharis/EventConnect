@@ -63,8 +63,8 @@ export class UserSelectionComponent implements OnInit {
 
   }
 
-  linkedinClick() {
-
+  linkedinClick(index) {
+    window.open("https://www.linkedin.com/in/" + this.userList[index].linkedinProfileUrl);
   }
 
   receiveMessage($event) {
