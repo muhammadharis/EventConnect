@@ -1,7 +1,7 @@
 # Hackthesix
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
-The backend API repo is in https://github.com/yuxuan-ji/hackthe6ix
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.<br/>
+The backend stdlib API is in https://github.com/yuxuan-ji/hackthe6ix
 
 ## Development server
 
