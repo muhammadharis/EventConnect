@@ -11,10 +11,6 @@ export class SignUpComponent implements OnInit {
   lng: number = 7.809007;
   
   constructor() { }
-  
-  findMe() {
-    
-  }
 
   ngOnInit() {
     var self = this;
