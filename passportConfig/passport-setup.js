@@ -23,8 +23,11 @@ passport.use(new GitHubStrategy({
     callbackURL: "/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, done) {
-    console.log(profile);
 
+    //If the user haven't specified a Github profile name, we'll just use their username
+    if(profile.displayName == null || profile.displayName == undefined){
+      profile.displayName = profile.username;
+    }
     var data = {
       githubId: profile.id,
       name: profile.displayName,
@@ -32,22 +35,29 @@ passport.use(new GitHubStrategy({
       avatar_url: profile._json.avatar_url,
       github_followers: profile._json.followers,
       github_following: profile._json.following,
-      url: profile.profileUrl
+      url: profile.profileUrl,
+      access_token: accessToken
     }
-    
+    console.log(data);
     //Check if user already exists
     User.findOne({ githubId: profile.id }, function (err, user) {
       //Create user if it doesn't exist
       if(!user){
         User.create(data, function(err, user){
           console.log('created '+ user);
-        })
+          done(null, user);
+        });
       }
       else{
-        console.log("found "+user);
-      }
+        User.findOneAndUpdate({ githubId: profile.id }, data, {$upsert: true}).then(function(user){
+          console.log("found ");
+          console.log(user);
+          done(null, user);
+        }).catch(function(err){
+          done(error, user);
+        });
 
-      done(null, user);
+      }      
     });
   }
 ));

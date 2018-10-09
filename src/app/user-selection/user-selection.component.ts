@@ -39,23 +39,20 @@ export class UserSelectionComponent implements OnInit {
     debugger;
     var xhr = new XMLHttpRequest();
     var self = this;
-    xhr.open('GET','https://testhackerman12.lib.id/event-connect@dev/get_near_users/');
+    xhr.open('GET','/api/getUsersNearby', true);
     xhr.onreadystatechange = function(){
-      debugger;
       if(this.readyState==4 && this.status==200){
-
         self.userList = JSON.parse(xhr.responseText);
         console.log(self.userList);
       }
     }
     xhr.send();
-
-    this.oauthToken= new URLSearchParams(window.location.search).get('oauthToken');
   }
 
   githubClick(index) {
     debugger;
     this.username = this.userList[index].username;
+    alert(this.userList[index].username);
     console.log("github");
     debugger;
       // window.location.replace("http://localhost:4200/linke/");
@@ -65,14 +62,15 @@ export class UserSelectionComponent implements OnInit {
   like(index){
     var xhr = new XMLHttpRequest();
     var self = this;
-    var endpoint = 'https://testhackerman12.lib.id/github-lite@dev/follow_user/';
-    endpoint += '?';
-    endpoint += 'token=' + this.oauthToken;
-    endpoint += '&target=' + this.userList[index].username;
-    xhr.open('GET','' + endpoint);
-    console.log(this.userList[index].username);
+    xhr.open('POST', '/api/followUser?username='+self.userList[index].username, true);
     xhr.onreadystatechange = function(){
-        console.log('following broooo');
+      if(this.readyState == 4 && this.status == 200){
+        alert("You followed "+self.userList[index].username);
+      }
+
+      else if(this.readyState == 4 && this.status != 200){
+        alert("Error following");
+      }
     }
     xhr.send();
     //disable like
@@ -80,16 +78,17 @@ export class UserSelectionComponent implements OnInit {
   dislike(index){
     var xhr = new XMLHttpRequest();
     var self = this;
-    var endpoint = 'https://testhackerman12.lib.id/github-lite@dev/unfollow_user/';
-    endpoint += '?';
-    endpoint += 'token=' + this.oauthToken;
-    endpoint += '&target=' + this.userList[index].username;
-    xhr.open('GET','' + endpoint);
+    xhr.open('POST', '/api/unfollowUser?username='+self.userList[index].username, true);
     xhr.onreadystatechange = function(){
-        console.log('unfollowing brooo');
+      if(this.readyState == 4 && this.status == 200){
+        alert("You unfollowed "+self.userList[index].username);
+      }
+
+      else if(this.readyState == 4 && this.status != 200){
+        alert("Error following");
+      }
     }
     xhr.send();
-    //disable unfollow
   }
 
   linkedinClick(index) {

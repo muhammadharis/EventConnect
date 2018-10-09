@@ -6,6 +6,10 @@ var users = new Schema({
         type: String,
         required: true
     },
+    access_token:{
+        type: String,
+        required: true
+    },
     name:{
         type: String,
         required: true
@@ -30,16 +34,14 @@ var users = new Schema({
         type: String,
         required: true
     },
-    loc:{
-        lat:{
-            type: Number,
-            required: false
-        },
-        lng:{
-            type: Number,
-            required: false
-        },
-        required: false
+
+    /**NOTE** we've defaulted the coordinates to be [0,0]
+    ** The user MUST allow location access, or these coordinates will stay [0,0]
+    ** This is not good, because they will see nobody in their vicinity
+    */
+    loc: {
+        type: { type: String, enum: "Point", default: "Point" },
+        coordinates: {type: [Number],   default: [0,0]}
     },
     career:{
         type: String,
@@ -50,6 +52,9 @@ var users = new Schema({
         required: false
     }
 });
+
+users.index({ "loc": "2dsphere" });
+
 var user = mongoose.model("user",users);
 
 module.exports = user;

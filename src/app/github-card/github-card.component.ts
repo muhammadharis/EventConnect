@@ -55,28 +55,31 @@ export class GithubCardComponent implements OnInit {
   // };
 
   @Output() messageEvent = new EventEmitter<boolean>();
-  @Input() oauthToken = '';
   constructor() { }
 
   ngOnInit() {
     debugger;
     var xhr = new XMLHttpRequest();
     var self = this;
-    xhr.open('GET','https://testhackerman12.lib.id/github-lite@dev/get_user/?token=' + this.oauthToken + '&target=' +this.username);
+    xhr.open('GET','/api/fetchPublicUser?username='+self.username, true);
     xhr.onreadystatechange = function(){
       if(this.readyState==4 && this.status==200){
-        debugger;
         self.gitJson = JSON.parse(xhr.responseText);
+        console.log('user');
+        console.log(self.gitJson);
+        console.log(self.gitJson['login']);
       }
     }
     xhr.send();
 
     var xhr2 = new XMLHttpRequest();
-    xhr2.open('GET','https://testhackerman12.lib.id/github-lite@dev/get_user_repos/?token=' + this.oauthToken + '&target=' +this.username);
+    xhr2.open('GET', '/api/getUserRepos?username='+self.username);
     xhr2.onreadystatechange = function(){
       if(this.readyState==4 && this.status==200){
         debugger;
         self.repos = JSON.parse(xhr2.responseText);
+        console.log('repos');
+        console.log(self.repos);
       }
     }
     xhr2.send();

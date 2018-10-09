@@ -472,26 +472,29 @@ var GithubCardComponent = /** @class */ (function () {
         //   }
         // };
         this.messageEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        this.oauthToken = '';
     }
     GithubCardComponent.prototype.ngOnInit = function () {
         debugger;
         var xhr = new XMLHttpRequest();
         var self = this;
-        xhr.open('GET', 'https://testhackerman12.lib.id/github-lite@dev/get_user/?token=' + this.oauthToken + '&target=' + this.username);
+        xhr.open('GET', '/api/fetchPublicUser?username=' + self.username, true);
         xhr.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                debugger;
                 self.gitJson = JSON.parse(xhr.responseText);
+                console.log('user');
+                console.log(self.gitJson);
+                console.log(self.gitJson['login']);
             }
         };
         xhr.send();
         var xhr2 = new XMLHttpRequest();
-        xhr2.open('GET', 'https://testhackerman12.lib.id/github-lite@dev/get_user_repos/?token=' + this.oauthToken + '&target=' + this.username);
+        xhr2.open('GET', '/api/getUserRepos?username=' + self.username);
         xhr2.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 debugger;
                 self.repos = JSON.parse(xhr2.responseText);
+                console.log('repos');
+                console.log(self.repos);
             }
         };
         xhr2.send();
@@ -509,10 +512,6 @@ var GithubCardComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
         __metadata("design:type", Object)
     ], GithubCardComponent.prototype, "messageEvent", void 0);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-        __metadata("design:type", Object)
-    ], GithubCardComponent.prototype, "oauthToken", void 0);
     GithubCardComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-github-card',
@@ -811,7 +810,7 @@ var SignUpComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-align: center;\r\n  padding: 6px 0;\r\n  font-size: 12px;\r\n  line-height: 1.42;\r\n  border-radius: 15px;\r\n},\r\n.row-center {\r\n  position:absolute;\r\nleft:0;\r\nright:0;\r\nmargin-left:auto;\r\nmargin-right:auto;\r\n}\r\n"
+module.exports = ".btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-align: center;\r\n  padding: 6px 0;\r\n  font-size: 12px;\r\n  line-height: 1.42;\r\n  border-radius: 15px;\r\n}\r\n.row-center {\r\n  position:absolute;\r\nleft:0;\r\nright:0;\r\nmargin-left:auto;\r\nmargin-right:auto;\r\n}\r\n.separation-between-buttons{\r\n  padding-right: 5px;\r\n}"
 
 /***/ }),
 
@@ -822,7 +821,7 @@ module.exports = ".btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-a
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" integrity=\"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ\" crossorigin=\"anonymous\">\r\n\r\n<span *ngIf=\"!hide\">\r\n  <li class=\"list-group-item\" style=\"text-align:center; \">\r\n    <strong><font size=\"100\" style=\"padding-left: 1%; vertical-align:middle;\">Hack the 6ix</font></strong>\r\n  </li>\r\n  <ul class=\"list-group\" *ngFor=\"let user of userList; let i = index\" style=\"text-align:center; \">\r\n    <li class=\"list-group-item\" style=\"text-align:center; \">\r\n      <div style=\"font-family: Lato; \">\r\n\r\n        <img src=\"{{user.avatar_url}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\r\n        <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{user.name}} </font>\r\n      </div>\r\n      <!-- </td> -->\r\n      <!-- <td style=\"text-align: center; \" width=\"100%\"> -->\r\n      <br>\r\n      <div style=\"margin-top: 8px\">\r\n        <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"linkedinClick(i)\"><i class=\"fab fa-linkedin-in\"></i></button>\r\n        <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"githubClick(i)\"><i class=\"fab fa-github\"></i></button>\r\n        <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"like(i)\"><i class=\"far fa-heart\"></i></button>\r\n        <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"dislike(i)\"><i class=\"fas fa-times\"></i></button>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n</span>\r\n\r\n<span *ngIf=\"hide\">\r\n  <app-github-card [oauthToken]=\"oauthToken\" [username]=\"username\" (messageEvent)=\"receiveMessage($event)\"></app-github-card>\r\n</span>\r\n"
+module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" integrity=\"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ\" crossorigin=\"anonymous\">\r\n\r\n<span *ngIf=\"!hide\">\r\n  <li class=\"list-group-item\" style=\"text-align:center; \">\r\n    <strong><font size=\"100\" style=\"padding-left: 1%; vertical-align:middle;\">EventConnect</font></strong>\r\n  </li>\r\n  <ul class=\"list-group\" *ngFor=\"let user of userList; let i = index\" style=\"text-align:center; \">\r\n    <li class=\"list-group-item\" style=\"text-align:center; \">\r\n      <div style=\"font-family: Lato; \">\r\n\r\n        <img src=\"{{user.avatar_url}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\r\n        <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{user.name}} </font>\r\n      </div>\r\n      <!-- </td> -->\r\n      <!-- <td style=\"text-align: center; \" width=\"100%\"> -->\r\n      <br>\r\n      <div style=\"margin-top: 8px\">\r\n        <table align = \"center\">\r\n          <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"linkedinClick(i)\"><i class=\"fab fa-linkedin-in\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"githubClick(i)\"><i class=\"fab fa-github\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"like(i)\"><i class=\"far fa-heart\"></i></button>\r\n        </td>\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"dislike(i)\"><i class=\"fas fa-times\"></i></button>\r\n        </td>\r\n\r\n        </table>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n</span>\r\n\r\n<span *ngIf=\"hide\">\r\n  <app-github-card [username]=\"username\" (messageEvent)=\"receiveMessage($event)\"></app-github-card>\r\n</span>\r\n"
 
 /***/ }),
 
@@ -880,20 +879,19 @@ var UserSelectionComponent = /** @class */ (function () {
         debugger;
         var xhr = new XMLHttpRequest();
         var self = this;
-        xhr.open('GET', 'https://testhackerman12.lib.id/event-connect@dev/get_near_users/');
+        xhr.open('GET', '/api/getUsersNearby', true);
         xhr.onreadystatechange = function () {
-            debugger;
             if (this.readyState == 4 && this.status == 200) {
                 self.userList = JSON.parse(xhr.responseText);
                 console.log(self.userList);
             }
         };
         xhr.send();
-        this.oauthToken = new URLSearchParams(window.location.search).get('oauthToken');
     };
     UserSelectionComponent.prototype.githubClick = function (index) {
         debugger;
         this.username = this.userList[index].username;
+        alert(this.userList[index].username);
         console.log("github");
         debugger;
         // window.location.replace("http://localhost:4200/linke/");
@@ -903,14 +901,14 @@ var UserSelectionComponent = /** @class */ (function () {
     UserSelectionComponent.prototype.like = function (index) {
         var xhr = new XMLHttpRequest();
         var self = this;
-        var endpoint = 'https://testhackerman12.lib.id/github-lite@dev/follow_user/';
-        endpoint += '?';
-        endpoint += 'token=' + this.oauthToken;
-        endpoint += '&target=' + this.userList[index].username;
-        xhr.open('GET', '' + endpoint);
-        console.log(this.userList[index].username);
+        xhr.open('POST', '/api/followUser?username=' + self.userList[index].username, true);
         xhr.onreadystatechange = function () {
-            console.log('following broooo');
+            if (this.readyState == 4 && this.status == 200) {
+                alert("You followed " + self.userList[index].username);
+            }
+            else if (this.readyState == 4 && this.status != 200) {
+                alert("Error following");
+            }
         };
         xhr.send();
         //disable like
@@ -918,16 +916,16 @@ var UserSelectionComponent = /** @class */ (function () {
     UserSelectionComponent.prototype.dislike = function (index) {
         var xhr = new XMLHttpRequest();
         var self = this;
-        var endpoint = 'https://testhackerman12.lib.id/github-lite@dev/unfollow_user/';
-        endpoint += '?';
-        endpoint += 'token=' + this.oauthToken;
-        endpoint += '&target=' + this.userList[index].username;
-        xhr.open('GET', '' + endpoint);
+        xhr.open('POST', '/api/unfollowUser?username=' + self.userList[index].username, true);
         xhr.onreadystatechange = function () {
-            console.log('unfollowing brooo');
+            if (this.readyState == 4 && this.status == 200) {
+                alert("You unfollowed " + self.userList[index].username);
+            }
+            else if (this.readyState == 4 && this.status != 200) {
+                alert("Error following");
+            }
         };
         xhr.send();
-        //disable unfollow
     };
     UserSelectionComponent.prototype.linkedinClick = function (index) {
         window.open("https://www.linkedin.com/in/" + this.userList[index].linkedinProfileName);

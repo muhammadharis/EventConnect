@@ -32,6 +32,7 @@ app.use(passport.session());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+
 // Point static path to dist
 app.use('/', express.static(path.join(__dirname, 'dist/hackthesix')));
 app.use('/auth', github);

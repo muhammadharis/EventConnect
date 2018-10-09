@@ -3,7 +3,7 @@
 
 <span *ngIf="!hide">
   <li class="list-group-item" style="text-align:center; ">
-    <strong><font size="100" style="padding-left: 1%; vertical-align:middle;">Hack the 6ix</font></strong>
+    <strong><font size="100" style="padding-left: 1%; vertical-align:middle;">EventConnect</font></strong>
   </li>
   <ul class="list-group" *ngFor="let user of userList; let i = index" style="text-align:center; ">
     <li class="list-group-item" style="text-align:center; ">
@@ -16,15 +16,26 @@
       <!-- <td style="text-align: center; " width="100%"> -->
       <br>
       <div style="margin-top: 8px">
-        <button type="button" class="btn btn-default btn-circle" (click)="linkedinClick(i)"><i class="fab fa-linkedin-in"></i></button>
-        <button type="button" class="btn btn-default btn-circle" (click)="githubClick(i)"><i class="fab fa-github"></i></button>
-        <button type="button" class="btn btn-default btn-circle" (click)="like(i)"><i class="far fa-heart"></i></button>
-        <button type="button" class="btn btn-default btn-circle" (click)="dislike(i)"><i class="fas fa-times"></i></button>
+        <table align = "center">
+          <td class = "separation-between-buttons">
+          <button type="button" class="btn btn-default btn-circle" (click)="linkedinClick(i)"><i class="fab fa-linkedin-in"></i></button>
+        </td>
+        <td class = "separation-between-buttons">
+          <button type="button" class="btn btn-default btn-circle" (click)="githubClick(i)"><i class="fab fa-github"></i></button>
+        </td>
+        <td class = "separation-between-buttons">
+          <button type="button" class="btn btn-default btn-circle" (click)="like(i)"><i class="far fa-heart"></i></button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-default btn-circle" (click)="dislike(i)"><i class="fas fa-times"></i></button>
+        </td>
+
+        </table>
       </div>
     </li>
   </ul>
 </span>
 
 <span *ngIf="hide">
-  <app-github-card [oauthToken]="oauthToken" [username]="username" (messageEvent)="receiveMessage($event)"></app-github-card>
+  <app-github-card [username]="username" (messageEvent)="receiveMessage($event)"></app-github-card>
 </span>

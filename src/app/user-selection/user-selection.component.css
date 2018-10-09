@@ -6,11 +6,14 @@
   font-size: 12px;
   line-height: 1.42;
   border-radius: 15px;
-},
+}
 .row-center {
   position:absolute;
 left:0;
 right:0;
 margin-left:auto;
 margin-right:auto;
+}
+.separation-between-buttons{
+  padding-right: 5px;
 }
