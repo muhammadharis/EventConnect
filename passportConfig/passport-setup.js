@@ -50,8 +50,6 @@ passport.use(new GitHubStrategy({
       }
       else{
         User.findOneAndUpdate({ githubId: profile.id }, data, {$upsert: true}).then(function(user){
-          console.log("found ");
-          console.log(user);
           done(null, user);
         }).catch(function(err){
           done(error, user);

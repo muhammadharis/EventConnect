@@ -53350,6 +53350,5642 @@ function sanitizeResourceUrl(unsafeResourceUrl) {
 
 /***/ }),
 
+/***/ "./node_modules/@angular/forms/fesm5/forms.js":
+/*!****************************************************!*\
+  !*** ./node_modules/@angular/forms/fesm5/forms.js ***!
+  \****************************************************/
+/*! exports provided: ɵangular_packages_forms_forms_bb, ɵangular_packages_forms_forms_ba, ɵangular_packages_forms_forms_y, ɵangular_packages_forms_forms_z, ɵangular_packages_forms_forms_a, ɵangular_packages_forms_forms_b, ɵangular_packages_forms_forms_c, ɵangular_packages_forms_forms_d, ɵangular_packages_forms_forms_e, ɵangular_packages_forms_forms_f, ɵangular_packages_forms_forms_g, ɵangular_packages_forms_forms_bg, ɵangular_packages_forms_forms_bc, ɵangular_packages_forms_forms_bd, ɵangular_packages_forms_forms_h, ɵangular_packages_forms_forms_i, ɵangular_packages_forms_forms_be, ɵangular_packages_forms_forms_bf, ɵangular_packages_forms_forms_j, ɵangular_packages_forms_forms_k, ɵangular_packages_forms_forms_l, ɵangular_packages_forms_forms_m, ɵangular_packages_forms_forms_o, ɵangular_packages_forms_forms_n, ɵangular_packages_forms_forms_p, ɵangular_packages_forms_forms_r, ɵangular_packages_forms_forms_q, ɵangular_packages_forms_forms_t, ɵangular_packages_forms_forms_u, ɵangular_packages_forms_forms_w, ɵangular_packages_forms_forms_v, ɵangular_packages_forms_forms_x, ɵangular_packages_forms_forms_s, AbstractControlDirective, AbstractFormGroupDirective, CheckboxControlValueAccessor, ControlContainer, NG_VALUE_ACCESSOR, COMPOSITION_BUFFER_MODE, DefaultValueAccessor, NgControl, NgControlStatus, NgControlStatusGroup, NgForm, NgModel, NgModelGroup, RadioControlValueAccessor, FormControlDirective, FormControlName, FormGroupDirective, FormArrayName, FormGroupName, NgSelectOption, SelectControlValueAccessor, SelectMultipleControlValueAccessor, CheckboxRequiredValidator, EmailValidator, MaxLengthValidator, MinLengthValidator, PatternValidator, RequiredValidator, FormBuilder, AbstractControl, FormArray, FormControl, FormGroup, NG_ASYNC_VALIDATORS, NG_VALIDATORS, Validators, VERSION, FormsModule, ReactiveFormsModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_bb", function() { return InternalFormsSharedModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_ba", function() { return REACTIVE_DRIVEN_DIRECTIVES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_y", function() { return SHARED_FORM_DIRECTIVES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_z", function() { return TEMPLATE_DRIVEN_DIRECTIVES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_a", function() { return CHECKBOX_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_b", function() { return DEFAULT_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_c", function() { return AbstractControlStatus; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_d", function() { return ngControlStatusHost; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_e", function() { return formDirectiveProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_f", function() { return formControlBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_g", function() { return modelGroupProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_bg", function() { return NgNoValidate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_bc", function() { return NUMBER_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_bd", function() { return NumberValueAccessor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_h", function() { return RADIO_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_i", function() { return RadioControlRegistry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_be", function() { return RANGE_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_bf", function() { return RangeValueAccessor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_j", function() { return NG_MODEL_WITH_FORM_CONTROL_WARNING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_k", function() { return formControlBinding$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_l", function() { return controlNameBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_m", function() { return formDirectiveProvider$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_o", function() { return formArrayNameProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_n", function() { return formGroupNameProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_p", function() { return SELECT_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_r", function() { return NgSelectMultipleOption; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_q", function() { return SELECT_MULTIPLE_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_t", function() { return CHECKBOX_REQUIRED_VALIDATOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_u", function() { return EMAIL_VALIDATOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_w", function() { return MAX_LENGTH_VALIDATOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_v", function() { return MIN_LENGTH_VALIDATOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_x", function() { return PATTERN_VALIDATOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_forms_forms_s", function() { return REQUIRED_VALIDATOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractControlDirective", function() { return AbstractControlDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractFormGroupDirective", function() { return AbstractFormGroupDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckboxControlValueAccessor", function() { return CheckboxControlValueAccessor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ControlContainer", function() { return ControlContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NG_VALUE_ACCESSOR", function() { return NG_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COMPOSITION_BUFFER_MODE", function() { return COMPOSITION_BUFFER_MODE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultValueAccessor", function() { return DefaultValueAccessor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgControl", function() { return NgControl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgControlStatus", function() { return NgControlStatus; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgControlStatusGroup", function() { return NgControlStatusGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgForm", function() { return NgForm; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgModel", function() { return NgModel; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgModelGroup", function() { return NgModelGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RadioControlValueAccessor", function() { return RadioControlValueAccessor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormControlDirective", function() { return FormControlDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormControlName", function() { return FormControlName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormGroupDirective", function() { return FormGroupDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormArrayName", function() { return FormArrayName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormGroupName", function() { return FormGroupName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgSelectOption", function() { return NgSelectOption; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SelectControlValueAccessor", function() { return SelectControlValueAccessor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SelectMultipleControlValueAccessor", function() { return SelectMultipleControlValueAccessor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckboxRequiredValidator", function() { return CheckboxRequiredValidator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailValidator", function() { return EmailValidator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaxLengthValidator", function() { return MaxLengthValidator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MinLengthValidator", function() { return MinLengthValidator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PatternValidator", function() { return PatternValidator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RequiredValidator", function() { return RequiredValidator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormBuilder", function() { return FormBuilder; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractControl", function() { return AbstractControl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormArray", function() { return FormArray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormControl", function() { return FormControl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormGroup", function() { return FormGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NG_ASYNC_VALIDATORS", function() { return NG_ASYNC_VALIDATORS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NG_VALIDATORS", function() { return NG_VALIDATORS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Validators", function() { return Validators; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return VERSION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormsModule", function() { return FormsModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReactiveFormsModule", function() { return ReactiveFormsModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/**
+ * @license Angular v6.1.4
+ * (c) 2010-2018 Google, Inc. https://angular.io/
+ * License: MIT
+ */
+
+
+
+
+
+
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Base class for control directives.
+ *
+ * Only used internally in the forms module.
+ *
+ *
+ */
+var AbstractControlDirective = /** @class */ (function () {
+    function AbstractControlDirective() {
+    }
+    Object.defineProperty(AbstractControlDirective.prototype, "value", {
+        /** The value of the control. */
+        get: function () { return this.control ? this.control.value : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "valid", {
+        /**
+         * A control is `valid` when its `status === VALID`.
+         *
+         * In order to have this status, the control must have passed all its
+         * validation checks.
+         */
+        get: function () { return this.control ? this.control.valid : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "invalid", {
+        /**
+         * A control is `invalid` when its `status === INVALID`.
+         *
+         * In order to have this status, the control must have failed
+         * at least one of its validation checks.
+         */
+        get: function () { return this.control ? this.control.invalid : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "pending", {
+        /**
+         * A control is `pending` when its `status === PENDING`.
+         *
+         * In order to have this status, the control must be in the
+         * middle of conducting a validation check.
+         */
+        get: function () { return this.control ? this.control.pending : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "disabled", {
+        /**
+         * A control is `disabled` when its `status === DISABLED`.
+         *
+         * Disabled controls are exempt from validation checks and
+         * are not included in the aggregate value of their ancestor
+         * controls.
+         */
+        get: function () { return this.control ? this.control.disabled : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "enabled", {
+        /**
+         * A control is `enabled` as long as its `status !== DISABLED`.
+         *
+         * In other words, it has a status of `VALID`, `INVALID`, or
+         * `PENDING`.
+         */
+        get: function () { return this.control ? this.control.enabled : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "errors", {
+        /**
+         * Returns any errors generated by failing validation. If there
+         * are no errors, it will return null.
+         */
+        get: function () { return this.control ? this.control.errors : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "pristine", {
+        /**
+         * A control is `pristine` if the user has not yet changed
+         * the value in the UI.
+         *
+         * Note that programmatic changes to a control's value will
+         * *not* mark it dirty.
+         */
+        get: function () { return this.control ? this.control.pristine : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "dirty", {
+        /**
+         * A control is `dirty` if the user has changed the value
+         * in the UI.
+         *
+         * Note that programmatic changes to a control's value will
+         * *not* mark it dirty.
+         */
+        get: function () { return this.control ? this.control.dirty : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "touched", {
+        /**
+         * A control is marked `touched` once the user has triggered
+         * a `blur` event on it.
+         */
+        get: function () { return this.control ? this.control.touched : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "status", {
+        get: function () { return this.control ? this.control.status : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "untouched", {
+        /**
+         * A control is `untouched` if the user has not yet triggered
+         * a `blur` event on it.
+         */
+        get: function () { return this.control ? this.control.untouched : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "statusChanges", {
+        /**
+         * Emits an event every time the validation status of the control
+         * is re-calculated.
+         */
+        get: function () {
+            return this.control ? this.control.statusChanges : null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "valueChanges", {
+        /**
+         * Emits an event every time the value of the control changes, in
+         * the UI or programmatically.
+         */
+        get: function () {
+            return this.control ? this.control.valueChanges : null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "path", {
+        /**
+         * Returns an array that represents the path from the top-level form
+         * to this control. Each index is the string name of the control on
+         * that level.
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Resets the form control. This means by default:
+     *
+     * * it is marked as `pristine`
+     * * it is marked as `untouched`
+     * * value is set to null
+     *
+     * For more information, see `AbstractControl`.
+     */
+    AbstractControlDirective.prototype.reset = function (value) {
+        if (value === void 0) { value = undefined; }
+        if (this.control)
+            this.control.reset(value);
+    };
+    /**
+     * Returns true if the control with the given path has the error specified. Otherwise
+     * returns false.
+     *
+     * If no path is given, it checks for the error on the present control.
+     */
+    AbstractControlDirective.prototype.hasError = function (errorCode, path) {
+        return this.control ? this.control.hasError(errorCode, path) : false;
+    };
+    /**
+     * Returns error data if the control with the given path has the error specified. Otherwise
+     * returns null or undefined.
+     *
+     * If no path is given, it checks for the error on the present control.
+     */
+    AbstractControlDirective.prototype.getError = function (errorCode, path) {
+        return this.control ? this.control.getError(errorCode, path) : null;
+    };
+    return AbstractControlDirective;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * A directive that contains multiple `NgControl`s.
+ *
+ * Only used by the forms module.
+ *
+ *
+ */
+var ControlContainer = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(ControlContainer, _super);
+    function ControlContainer() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Object.defineProperty(ControlContainer.prototype, "formDirective", {
+        /**
+         * Get the form to which this container belongs.
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ControlContainer.prototype, "path", {
+        /**
+         * Get the path to this container.
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    return ControlContainer;
+}(AbstractControlDirective));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function isEmptyInputValue(value) {
+    // we don't check for string here so it also works with arrays
+    return value == null || value.length === 0;
+}
+/**
+ * @description
+ * An `InjectionToken` for registering additional synchronous validators used with `AbstractControl`s.
+ *
+ * @see `NG_ASYNC_VALIDATORS`
+ *
+ * @usageNotes
+ *
+ * ### Providing a custom validator
+ *
+ * The following example registers a custom validator directive. Adding the validator to the
+ * existing collection of validators requires the `multi: true` option.
+ *
+ * ```typescript
+ * @Directive({
+ *   selector: '[customValidator]',
+ *   providers: [{provide: NG_VALIDATORS, useExisting: CustomValidatorDirective, multi: true}]
+ * })
+ * class CustomValidatorDirective implements Validator {
+ *   validate(control: AbstractControl): ValidationErrors | null {
+ *     return { 'custom': true };
+ *   }
+ * }
+ * ```
+ *
+ */
+var NG_VALIDATORS = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('NgValidators');
+/**
+ * @description
+ * An `InjectionToken` for registering additional asynchronous validators used with `AbstractControl`s.
+ *
+ * @see `NG_VALIDATORS`
+ *
+ */
+var NG_ASYNC_VALIDATORS = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('NgAsyncValidators');
+var EMAIL_REGEXP = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*$/;
+/**
+ * @description
+ * Provides a set of built-in validators that can be used by form controls.
+ *
+ * A validator is a function that processes a `FormControl` or collection of
+ * controls and returns an error map or null. A null map means that validation has passed.
+ *
+ * @see [Form Validation](/guide/form-validation)
+ *
+ */
+var Validators = /** @class */ (function () {
+    function Validators() {
+    }
+    /**
+     * @description
+     * Validator that requires the control's value to be greater than or equal to the provided number.
+     * The validator exists only as a function and not as a directive.
+     *
+     * @usageNotes
+     *
+     * ### Validate against a minimum of 3
+     *
+     * ```typescript
+     * const control = new FormControl(2, Validators.min(3));
+     *
+     * console.log(control.errors); // {min: {min: 3, actual: 2}}
+     * ```
+     *
+     * @returns A validator function that returns an error map with the
+     * `min` property if the validation check fails, otherwise `null`.
+     *
+     */
+    Validators.min = function (min) {
+        return function (control) {
+            if (isEmptyInputValue(control.value) || isEmptyInputValue(min)) {
+                return null; // don't validate empty values to allow optional controls
+            }
+            var value = parseFloat(control.value);
+            // Controls with NaN values after parsing should be treated as not having a
+            // minimum, per the HTML forms spec: https://www.w3.org/TR/html5/forms.html#attr-input-min
+            return !isNaN(value) && value < min ? { 'min': { 'min': min, 'actual': control.value } } : null;
+        };
+    };
+    /**
+     * @description
+     * Validator that requires the control's value to be less than or equal to the provided number.
+     * The validator exists only as a function and not as a directive.
+     *
+     * @usageNotes
+     *
+     * ### Validate against a maximum of 15
+     *
+     * ```typescript
+     * const control = new FormControl(16, Validators.max(15));
+     *
+     * console.log(control.errors); // {max: {max: 15, actual: 16}}
+     * ```
+     *
+     * @returns A validator function that returns an error map with the
+     * `max` property if the validation check fails, otherwise `null`.
+     *
+     */
+    Validators.max = function (max) {
+        return function (control) {
+            if (isEmptyInputValue(control.value) || isEmptyInputValue(max)) {
+                return null; // don't validate empty values to allow optional controls
+            }
+            var value = parseFloat(control.value);
+            // Controls with NaN values after parsing should be treated as not having a
+            // maximum, per the HTML forms spec: https://www.w3.org/TR/html5/forms.html#attr-input-max
+            return !isNaN(value) && value > max ? { 'max': { 'max': max, 'actual': control.value } } : null;
+        };
+    };
+    /**
+     * @description
+     * Validator that requires the control have a non-empty value.
+     *
+     * @usageNotes
+     *
+     * ### Validate that the field is non-empty
+     *
+     * ```typescript
+     * const control = new FormControl('', Validators.required);
+     *
+     * console.log(control.errors); // {required: true}
+     * ```
+     *
+     * @returns An error map with the `required` property
+     * if the validation check fails, otherwise `null`.
+     *
+     */
+    Validators.required = function (control) {
+        return isEmptyInputValue(control.value) ? { 'required': true } : null;
+    };
+    /**
+     * @description
+     * Validator that requires the control's value be true. This validator is commonly
+     * used for required checkboxes.
+     *
+     * @usageNotes
+     *
+     * ### Validate that the field value is true
+     *
+     * ```typescript
+     * const control = new FormControl('', Validators.requiredTrue);
+     *
+     * console.log(control.errors); // {required: true}
+     * ```
+     *
+     * @returns An error map that contains the `required` property
+     * set to `true` if the validation check fails, otherwise `null`.
+     */
+    Validators.requiredTrue = function (control) {
+        return control.value === true ? null : { 'required': true };
+    };
+    /**
+     * @description
+     * Validator that requires the control's value pass an email validation test.
+     *
+     * @usageNotes
+     *
+     * ### Validate that the field matches a valid email pattern
+     *
+     * ```typescript
+     * const control = new FormControl('bad@', Validators.email);
+     *
+     * console.log(control.errors); // {email: true}
+     * ```
+     *
+     * @returns An error map with the `email` property
+     * if the validation check fails, otherwise `null`.
+     *
+     */
+    Validators.email = function (control) {
+        if (isEmptyInputValue(control.value)) {
+            return null; // don't validate empty values to allow optional controls
+        }
+        return EMAIL_REGEXP.test(control.value) ? null : { 'email': true };
+    };
+    /**
+     * @description
+     * Validator that requires the length of the control's value to be greater than or equal
+     * to the provided minimum length. This validator is also provided by default if you use the
+     * the HTML5 `minlength` attribute.
+     *
+     * @usageNotes
+     *
+     * ### Validate that the field has a minimum of 3 characters
+     *
+     * ```typescript
+     * const control = new FormControl('ng', Validators.minLength(3));
+     *
+     * console.log(control.errors); // {minlength: {requiredLength: 3, actualLength: 2}}
+     * ```
+     *
+     * ```html
+     * <input minlength="5">
+     * ```
+     *
+     * @returns A validator function that returns an error map with the
+     * `minlength` if the validation check fails, otherwise `null`.
+     */
+    Validators.minLength = function (minLength) {
+        return function (control) {
+            if (isEmptyInputValue(control.value)) {
+                return null; // don't validate empty values to allow optional controls
+            }
+            var length = control.value ? control.value.length : 0;
+            return length < minLength ?
+                { 'minlength': { 'requiredLength': minLength, 'actualLength': length } } :
+                null;
+        };
+    };
+    /**
+     * @description
+     * Validator that requires the length of the control's value to be less than or equal
+     * to the provided maximum length. This validator is also provided by default if you use the
+     * the HTML5 `maxlength` attribute.
+     *
+     * @usageNotes
+     *
+     * ### Validate that the field has maximum of 5 characters
+     *
+     * ```typescript
+     * const control = new FormControl('Angular', Validators.maxLength(5));
+     *
+     * console.log(control.errors); // {maxlength: {requiredLength: 5, actualLength: 7}}
+     * ```
+     *
+     * ```html
+     * <input maxlength="5">
+     * ```
+     *
+     * @returns A validator function that returns an error map with the
+     * `maxlength` property if the validation check fails, otherwise `null`.
+     */
+    Validators.maxLength = function (maxLength) {
+        return function (control) {
+            var length = control.value ? control.value.length : 0;
+            return length > maxLength ?
+                { 'maxlength': { 'requiredLength': maxLength, 'actualLength': length } } :
+                null;
+        };
+    };
+    /**
+     * @description
+     * Validator that requires the control's value to match a regex pattern. This validator is also
+     * provided
+     * by default if you use the HTML5 `pattern` attribute.
+     *
+     * @usageNotes
+     *
+     * ### Validate that the field only contains letters or spaces
+     *
+     * ```typescript
+     * const control = new FormControl('1', Validators.pattern('[a-zA-Z ]*'));
+     *
+     * console.log(control.errors); // {pattern: {requiredPattern: '^[a-zA-Z ]*$', actualValue: '1'}}
+     * ```
+     *
+     * ```html
+     * <input pattern="[a-zA-Z ]*">
+     * ```
+     *
+     * @returns A validator function that returns an error map with the
+     * `pattern` property if the validation check fails, otherwise `null`.
+     */
+    Validators.pattern = function (pattern) {
+        if (!pattern)
+            return Validators.nullValidator;
+        var regex;
+        var regexStr;
+        if (typeof pattern === 'string') {
+            regexStr = '';
+            if (pattern.charAt(0) !== '^')
+                regexStr += '^';
+            regexStr += pattern;
+            if (pattern.charAt(pattern.length - 1) !== '$')
+                regexStr += '$';
+            regex = new RegExp(regexStr);
+        }
+        else {
+            regexStr = pattern.toString();
+            regex = pattern;
+        }
+        return function (control) {
+            if (isEmptyInputValue(control.value)) {
+                return null; // don't validate empty values to allow optional controls
+            }
+            var value = control.value;
+            return regex.test(value) ? null :
+                { 'pattern': { 'requiredPattern': regexStr, 'actualValue': value } };
+        };
+    };
+    /**
+     * @description
+     * Validator that performs no operation.
+     */
+    Validators.nullValidator = function (c) { return null; };
+    Validators.compose = function (validators) {
+        if (!validators)
+            return null;
+        var presentValidators = validators.filter(isPresent);
+        if (presentValidators.length == 0)
+            return null;
+        return function (control) {
+            return _mergeErrors(_executeValidators(control, presentValidators));
+        };
+    };
+    /**
+     * @description
+     * Compose multiple async validators into a single function that returns the union
+     * of the individual error objects for the provided control.
+     *
+     * @returns A validator function that returns an error map with the
+     * merged error objects of the async validators if the validation check fails, otherwise `null`.
+    */
+    Validators.composeAsync = function (validators) {
+        if (!validators)
+            return null;
+        var presentValidators = validators.filter(isPresent);
+        if (presentValidators.length == 0)
+            return null;
+        return function (control) {
+            var observables = _executeAsyncValidators(control, presentValidators).map(toObservable);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["forkJoin"])(observables).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(_mergeErrors));
+        };
+    };
+    return Validators;
+}());
+function isPresent(o) {
+    return o != null;
+}
+function toObservable(r) {
+    var obs = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisPromise"])(r) ? Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(r) : r;
+    if (!(Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisObservable"])(obs))) {
+        throw new Error("Expected validator to return Promise or Observable.");
+    }
+    return obs;
+}
+function _executeValidators(control, validators) {
+    return validators.map(function (v) { return v(control); });
+}
+function _executeAsyncValidators(control, validators) {
+    return validators.map(function (v) { return v(control); });
+}
+function _mergeErrors(arrayOfErrors) {
+    var res = arrayOfErrors.reduce(function (res, errors) {
+        return errors != null ? Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, res, errors) : res;
+    }, {});
+    return Object.keys(res).length === 0 ? null : res;
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Used to provide a `ControlValueAccessor` for form controls.
+ *
+ * See `DefaultValueAccessor` for how to implement one.
+ *
+ */
+var NG_VALUE_ACCESSOR = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('NgValueAccessor');
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var CHECKBOX_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return CheckboxControlValueAccessor; }),
+    multi: true,
+};
+/**
+ * The accessor for writing a value and listening to changes on a checkbox input element.
+ *
+ *  ### Example
+ *  ```
+ *  <input type="checkbox" name="rememberLogin" ngModel>
+ *  ```
+ *
+ *
+ */
+var CheckboxControlValueAccessor = /** @class */ (function () {
+    function CheckboxControlValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+    }
+    CheckboxControlValueAccessor.prototype.writeValue = function (value) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'checked', value);
+    };
+    CheckboxControlValueAccessor.prototype.registerOnChange = function (fn) { this.onChange = fn; };
+    CheckboxControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    CheckboxControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    CheckboxControlValueAccessor.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'input[type=checkbox][formControlName],input[type=checkbox][formControl],input[type=checkbox][ngModel]',
+                    host: { '(change)': 'onChange($event.target.checked)', '(blur)': 'onTouched()' },
+                    providers: [CHECKBOX_VALUE_ACCESSOR]
+                },] }
+    ];
+    /** @nocollapse */
+    CheckboxControlValueAccessor.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+    ]; };
+    return CheckboxControlValueAccessor;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var DEFAULT_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return DefaultValueAccessor; }),
+    multi: true
+};
+/**
+ * We must check whether the agent is Android because composition events
+ * behave differently between iOS and Android.
+ */
+function _isAndroid() {
+    var userAgent = Object(_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["ɵgetDOM"])() ? Object(_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["ɵgetDOM"])().getUserAgent() : '';
+    return /android (\d+)/.test(userAgent.toLowerCase());
+}
+/**
+ * Turn this mode on if you want form directives to buffer IME input until compositionend
+ * @experimental
+ */
+var COMPOSITION_BUFFER_MODE = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('CompositionEventMode');
+/**
+ * The default accessor for writing a value and listening to changes that is used by the
+ * `NgModel`, `FormControlDirective`, and `FormControlName` directives.
+ *
+ *  ### Example
+ *  ```
+ *  <input type="text" name="searchQuery" ngModel>
+ *  ```
+ *
+ *
+ */
+var DefaultValueAccessor = /** @class */ (function () {
+    function DefaultValueAccessor(_renderer, _elementRef, _compositionMode) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this._compositionMode = _compositionMode;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+        /** Whether the user is creating a composition string (IME events). */
+        this._composing = false;
+        if (this._compositionMode == null) {
+            this._compositionMode = !_isAndroid();
+        }
+    }
+    DefaultValueAccessor.prototype.writeValue = function (value) {
+        var normalizedValue = value == null ? '' : value;
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', normalizedValue);
+    };
+    DefaultValueAccessor.prototype.registerOnChange = function (fn) { this.onChange = fn; };
+    DefaultValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    DefaultValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    /** @internal */
+    DefaultValueAccessor.prototype._handleInput = function (value) {
+        if (!this._compositionMode || (this._compositionMode && !this._composing)) {
+            this.onChange(value);
+        }
+    };
+    /** @internal */
+    DefaultValueAccessor.prototype._compositionStart = function () { this._composing = true; };
+    /** @internal */
+    DefaultValueAccessor.prototype._compositionEnd = function (value) {
+        this._composing = false;
+        this._compositionMode && this.onChange(value);
+    };
+    DefaultValueAccessor.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]',
+                    // TODO: vsavkin replace the above selector with the one below it once
+                    // https://github.com/angular/angular/issues/3011 is implemented
+                    // selector: '[ngModel],[formControl],[formControlName]',
+                    host: {
+                        '(input)': '$any(this)._handleInput($event.target.value)',
+                        '(blur)': 'onTouched()',
+                        '(compositionstart)': '$any(this)._compositionStart()',
+                        '(compositionend)': '$any(this)._compositionEnd($event.target.value)'
+                    },
+                    providers: [DEFAULT_VALUE_ACCESSOR]
+                },] }
+    ];
+    /** @nocollapse */
+    DefaultValueAccessor.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
+        { type: Boolean, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [COMPOSITION_BUFFER_MODE,] }] }
+    ]; };
+    return DefaultValueAccessor;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function normalizeValidator(validator) {
+    if (validator.validate) {
+        return function (c) { return validator.validate(c); };
+    }
+    else {
+        return validator;
+    }
+}
+function normalizeAsyncValidator(validator) {
+    if (validator.validate) {
+        return function (c) { return validator.validate(c); };
+    }
+    else {
+        return validator;
+    }
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var NUMBER_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return NumberValueAccessor; }),
+    multi: true
+};
+/**
+ * The accessor for writing a number value and listening to changes that is used by the
+ * `NgModel`, `FormControlDirective`, and `FormControlName` directives.
+ *
+ *  ### Example
+ *  ```
+ *  <input type="number" [(ngModel)]="age">
+ *  ```
+ */
+var NumberValueAccessor = /** @class */ (function () {
+    function NumberValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+    }
+    NumberValueAccessor.prototype.writeValue = function (value) {
+        // The value needs to be normalized for IE9, otherwise it is set to 'null' when null
+        var normalizedValue = value == null ? '' : value;
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', normalizedValue);
+    };
+    NumberValueAccessor.prototype.registerOnChange = function (fn) {
+        this.onChange = function (value) { fn(value == '' ? null : parseFloat(value)); };
+    };
+    NumberValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    NumberValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    NumberValueAccessor.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'input[type=number][formControlName],input[type=number][formControl],input[type=number][ngModel]',
+                    host: {
+                        '(change)': 'onChange($event.target.value)',
+                        '(input)': 'onChange($event.target.value)',
+                        '(blur)': 'onTouched()'
+                    },
+                    providers: [NUMBER_VALUE_ACCESSOR]
+                },] }
+    ];
+    /** @nocollapse */
+    NumberValueAccessor.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+    ]; };
+    return NumberValueAccessor;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function unimplemented() {
+    throw new Error('unimplemented');
+}
+/**
+ * A base class that all control directive extend.
+ * It binds a `FormControl` object to a DOM element.
+ *
+ * Used internally by Angular forms.
+ *
+ *
+ */
+var NgControl = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(NgControl, _super);
+    function NgControl() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        /** @internal */
+        _this._parent = null;
+        _this.name = null;
+        _this.valueAccessor = null;
+        /** @internal */
+        _this._rawValidators = [];
+        /** @internal */
+        _this._rawAsyncValidators = [];
+        return _this;
+    }
+    Object.defineProperty(NgControl.prototype, "validator", {
+        get: function () { return unimplemented(); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgControl.prototype, "asyncValidator", {
+        get: function () { return unimplemented(); },
+        enumerable: true,
+        configurable: true
+    });
+    return NgControl;
+}(AbstractControlDirective));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var RADIO_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return RadioControlValueAccessor; }),
+    multi: true
+};
+/**
+ * Internal class used by Angular to uncheck radio buttons with the matching name.
+ */
+var RadioControlRegistry = /** @class */ (function () {
+    function RadioControlRegistry() {
+        this._accessors = [];
+    }
+    RadioControlRegistry.prototype.add = function (control, accessor) {
+        this._accessors.push([control, accessor]);
+    };
+    RadioControlRegistry.prototype.remove = function (accessor) {
+        for (var i = this._accessors.length - 1; i >= 0; --i) {
+            if (this._accessors[i][1] === accessor) {
+                this._accessors.splice(i, 1);
+                return;
+            }
+        }
+    };
+    RadioControlRegistry.prototype.select = function (accessor) {
+        var _this = this;
+        this._accessors.forEach(function (c) {
+            if (_this._isSameGroup(c, accessor) && c[1] !== accessor) {
+                c[1].fireUncheck(accessor.value);
+            }
+        });
+    };
+    RadioControlRegistry.prototype._isSameGroup = function (controlPair, accessor) {
+        if (!controlPair[0].control)
+            return false;
+        return controlPair[0]._parent === accessor._control._parent &&
+            controlPair[1].name === accessor.name;
+    };
+    RadioControlRegistry.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] }
+    ];
+    return RadioControlRegistry;
+}());
+/**
+ * @description
+ *
+ * Writes radio control values and listens to radio control changes.
+ *
+ * Used by `NgModel`, `FormControlDirective`, and `FormControlName`
+ * to keep the view synced with the `FormControl` model.
+ *
+ * If you have imported the `FormsModule` or the `ReactiveFormsModule`, this
+ * value accessor will be active on any radio control that has a form directive. You do
+ * **not** need to add a special selector to activate it.
+ *
+ * ### How to use radio buttons with form directives
+ *
+ * To use radio buttons in a template-driven form, you'll want to ensure that radio buttons
+ * in the same group have the same `name` attribute.  Radio buttons with different `name`
+ * attributes do not affect each other.
+ *
+ * {@example forms/ts/radioButtons/radio_button_example.ts region='TemplateDriven'}
+ *
+ * When using radio buttons in a reactive form, radio buttons in the same group should have the
+ * same `formControlName`. You can also add a `name` attribute, but it's optional.
+ *
+ * {@example forms/ts/reactiveRadioButtons/reactive_radio_button_example.ts region='Reactive'}
+ *
+ *  * **npm package**: `@angular/forms`
+ *
+ *
+ */
+var RadioControlValueAccessor = /** @class */ (function () {
+    function RadioControlValueAccessor(_renderer, _elementRef, _registry, _injector) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this._registry = _registry;
+        this._injector = _injector;
+        this.onChange = function () { };
+        this.onTouched = function () { };
+    }
+    RadioControlValueAccessor.prototype.ngOnInit = function () {
+        this._control = this._injector.get(NgControl);
+        this._checkName();
+        this._registry.add(this._control, this);
+    };
+    RadioControlValueAccessor.prototype.ngOnDestroy = function () { this._registry.remove(this); };
+    RadioControlValueAccessor.prototype.writeValue = function (value) {
+        this._state = value === this.value;
+        this._renderer.setProperty(this._elementRef.nativeElement, 'checked', this._state);
+    };
+    RadioControlValueAccessor.prototype.registerOnChange = function (fn) {
+        var _this = this;
+        this._fn = fn;
+        this.onChange = function () {
+            fn(_this.value);
+            _this._registry.select(_this);
+        };
+    };
+    RadioControlValueAccessor.prototype.fireUncheck = function (value) { this.writeValue(value); };
+    RadioControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    RadioControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    RadioControlValueAccessor.prototype._checkName = function () {
+        if (this.name && this.formControlName && this.name !== this.formControlName) {
+            this._throwNameError();
+        }
+        if (!this.name && this.formControlName)
+            this.name = this.formControlName;
+    };
+    RadioControlValueAccessor.prototype._throwNameError = function () {
+        throw new Error("\n      If you define both a name and a formControlName attribute on your radio button, their values\n      must match. Ex: <input type=\"radio\" formControlName=\"food\" name=\"food\">\n    ");
+    };
+    RadioControlValueAccessor.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'input[type=radio][formControlName],input[type=radio][formControl],input[type=radio][ngModel]',
+                    host: { '(change)': 'onChange()', '(blur)': 'onTouched()' },
+                    providers: [RADIO_VALUE_ACCESSOR]
+                },] }
+    ];
+    /** @nocollapse */
+    RadioControlValueAccessor.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
+        { type: RadioControlRegistry },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injector"] }
+    ]; };
+    RadioControlValueAccessor.propDecorators = {
+        name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+        formControlName: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+        value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    };
+    return RadioControlValueAccessor;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var RANGE_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return RangeValueAccessor; }),
+    multi: true
+};
+/**
+ * The accessor for writing a range value and listening to changes that is used by the
+ * `NgModel`, `FormControlDirective`, and `FormControlName` directives.
+ *
+ *  ### Example
+ *  ```
+ *  <input type="range" [(ngModel)]="age" >
+ *  ```
+ */
+var RangeValueAccessor = /** @class */ (function () {
+    function RangeValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+    }
+    RangeValueAccessor.prototype.writeValue = function (value) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', parseFloat(value));
+    };
+    RangeValueAccessor.prototype.registerOnChange = function (fn) {
+        this.onChange = function (value) { fn(value == '' ? null : parseFloat(value)); };
+    };
+    RangeValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    RangeValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    RangeValueAccessor.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'input[type=range][formControlName],input[type=range][formControl],input[type=range][ngModel]',
+                    host: {
+                        '(change)': 'onChange($event.target.value)',
+                        '(input)': 'onChange($event.target.value)',
+                        '(blur)': 'onTouched()'
+                    },
+                    providers: [RANGE_VALUE_ACCESSOR]
+                },] }
+    ];
+    /** @nocollapse */
+    RangeValueAccessor.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+    ]; };
+    return RangeValueAccessor;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var FormErrorExamples = {
+    formControlName: "\n    <div [formGroup]=\"myGroup\">\n      <input formControlName=\"firstName\">\n    </div>\n\n    In your class:\n\n    this.myGroup = new FormGroup({\n       firstName: new FormControl()\n    });",
+    formGroupName: "\n    <div [formGroup]=\"myGroup\">\n       <div formGroupName=\"person\">\n          <input formControlName=\"firstName\">\n       </div>\n    </div>\n\n    In your class:\n\n    this.myGroup = new FormGroup({\n       person: new FormGroup({ firstName: new FormControl() })\n    });",
+    formArrayName: "\n    <div [formGroup]=\"myGroup\">\n      <div formArrayName=\"cities\">\n        <div *ngFor=\"let city of cityArray.controls; index as i\">\n          <input [formControlName]=\"i\">\n        </div>\n      </div>\n    </div>\n\n    In your class:\n\n    this.cityArray = new FormArray([new FormControl('SF')]);\n    this.myGroup = new FormGroup({\n      cities: this.cityArray\n    });",
+    ngModelGroup: "\n    <form>\n       <div ngModelGroup=\"person\">\n          <input [(ngModel)]=\"person.name\" name=\"firstName\">\n       </div>\n    </form>",
+    ngModelWithFormGroup: "\n    <div [formGroup]=\"myGroup\">\n       <input formControlName=\"firstName\">\n       <input [(ngModel)]=\"showMoreControls\" [ngModelOptions]=\"{standalone: true}\">\n    </div>\n  "
+};
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var ReactiveErrors = /** @class */ (function () {
+    function ReactiveErrors() {
+    }
+    ReactiveErrors.controlParentException = function () {
+        throw new Error("formControlName must be used with a parent formGroup directive.  You'll want to add a formGroup\n       directive and pass it an existing FormGroup instance (you can create one in your class).\n\n      Example:\n\n      " + FormErrorExamples.formControlName);
+    };
+    ReactiveErrors.ngModelGroupException = function () {
+        throw new Error("formControlName cannot be used with an ngModelGroup parent. It is only compatible with parents\n       that also have a \"form\" prefix: formGroupName, formArrayName, or formGroup.\n\n       Option 1:  Update the parent to be formGroupName (reactive form strategy)\n\n        " + FormErrorExamples.formGroupName + "\n\n        Option 2: Use ngModel instead of formControlName (template-driven strategy)\n\n        " + FormErrorExamples.ngModelGroup);
+    };
+    ReactiveErrors.missingFormException = function () {
+        throw new Error("formGroup expects a FormGroup instance. Please pass one in.\n\n       Example:\n\n       " + FormErrorExamples.formControlName);
+    };
+    ReactiveErrors.groupParentException = function () {
+        throw new Error("formGroupName must be used with a parent formGroup directive.  You'll want to add a formGroup\n      directive and pass it an existing FormGroup instance (you can create one in your class).\n\n      Example:\n\n      " + FormErrorExamples.formGroupName);
+    };
+    ReactiveErrors.arrayParentException = function () {
+        throw new Error("formArrayName must be used with a parent formGroup directive.  You'll want to add a formGroup\n       directive and pass it an existing FormGroup instance (you can create one in your class).\n\n        Example:\n\n        " + FormErrorExamples.formArrayName);
+    };
+    ReactiveErrors.disabledAttrWarning = function () {
+        console.warn("\n      It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true\n      when you set up this control in your component class, the disabled attribute will actually be set in the DOM for\n      you. We recommend using this approach to avoid 'changed after checked' errors.\n       \n      Example: \n      form = new FormGroup({\n        first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),\n        last: new FormControl('Drew', Validators.required)\n      });\n    ");
+    };
+    ReactiveErrors.ngModelWarning = function (directiveName) {
+        console.warn("\n    It looks like you're using ngModel on the same form field as " + directiveName + ". \n    Support for using the ngModel input property and ngModelChange event with \n    reactive form directives has been deprecated in Angular v6 and will be removed \n    in Angular v7.\n    \n    For more information on this, see our API docs here:\n    https://angular.io/api/forms/" + (directiveName === 'formControl' ? 'FormControlDirective'
+            : 'FormControlName') + "#use-with-ngmodel\n    ");
+    };
+    return ReactiveErrors;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var SELECT_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return SelectControlValueAccessor; }),
+    multi: true
+};
+function _buildValueString(id, value) {
+    if (id == null)
+        return "" + value;
+    if (value && typeof value === 'object')
+        value = 'Object';
+    return (id + ": " + value).slice(0, 50);
+}
+function _extractId(valueString) {
+    return valueString.split(':')[0];
+}
+/**
+ * @description
+ *
+ * Writes values and listens to changes on a select element.
+ *
+ * Used by `NgModel`, `FormControlDirective`, and `FormControlName`
+ * to keep the view synced with the `FormControl` model.
+ *
+ * If you have imported the `FormsModule` or the `ReactiveFormsModule`, this
+ * value accessor will be active on any select control that has a form directive. You do
+ * **not** need to add a special selector to activate it.
+ *
+ * ### How to use select controls with form directives
+ *
+ * To use a select in a template-driven form, simply add an `ngModel` and a `name`
+ * attribute to the main `<select>` tag.
+ *
+ * If your option values are simple strings, you can bind to the normal `value` property
+ * on the option.  If your option values happen to be objects (and you'd like to save the
+ * selection in your form as an object), use `ngValue` instead:
+ *
+ * {@example forms/ts/selectControl/select_control_example.ts region='Component'}
+ *
+ * In reactive forms, you'll also want to add your form directive (`formControlName` or
+ * `formControl`) on the main `<select>` tag. Like in the former example, you have the
+ * choice of binding to the  `value` or `ngValue` property on the select's options.
+ *
+ * {@example forms/ts/reactiveSelectControl/reactive_select_control_example.ts region='Component'}
+ *
+ * ### Caveat: Option selection
+ *
+ * Angular uses object identity to select option. It's possible for the identities of items
+ * to change while the data does not. This can happen, for example, if the items are produced
+ * from an RPC to the server, and that RPC is re-run. Even if the data hasn't changed, the
+ * second response will produce objects with different identities.
+ *
+ * To customize the default option comparison algorithm, `<select>` supports `compareWith` input.
+ * `compareWith` takes a **function** which has two arguments: `option1` and `option2`.
+ * If `compareWith` is given, Angular selects option by the return value of the function.
+ *
+ * #### Syntax
+ *
+ * ```
+ * <select [compareWith]="compareFn"  [(ngModel)]="selectedCountries">
+ *     <option *ngFor="let country of countries" [ngValue]="country">
+ *         {{country.name}}
+ *     </option>
+ * </select>
+ *
+ * compareFn(c1: Country, c2: Country): boolean {
+ *     return c1 && c2 ? c1.id === c2.id : c1 === c2;
+ * }
+ * ```
+ *
+ * Note: We listen to the 'change' event because 'input' events aren't fired
+ * for selects in Firefox and IE:
+ * https://bugzilla.mozilla.org/show_bug.cgi?id=1024350
+ * https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4660045/
+ *
+ * * **npm package**: `@angular/forms`
+ *
+ *
+ */
+var SelectControlValueAccessor = /** @class */ (function () {
+    function SelectControlValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        /** @internal */
+        this._optionMap = new Map();
+        /** @internal */
+        this._idCounter = 0;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+        this._compareWith = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵlooseIdentical"];
+    }
+    Object.defineProperty(SelectControlValueAccessor.prototype, "compareWith", {
+        set: function (fn) {
+            if (typeof fn !== 'function') {
+                throw new Error("compareWith must be a function, but received " + JSON.stringify(fn));
+            }
+            this._compareWith = fn;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    SelectControlValueAccessor.prototype.writeValue = function (value) {
+        this.value = value;
+        var id = this._getOptionId(value);
+        if (id == null) {
+            this._renderer.setProperty(this._elementRef.nativeElement, 'selectedIndex', -1);
+        }
+        var valueString = _buildValueString(id, value);
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', valueString);
+    };
+    SelectControlValueAccessor.prototype.registerOnChange = function (fn) {
+        var _this = this;
+        this.onChange = function (valueString) {
+            _this.value = _this._getOptionValue(valueString);
+            fn(_this.value);
+        };
+    };
+    SelectControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    SelectControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    /** @internal */
+    SelectControlValueAccessor.prototype._registerOption = function () { return (this._idCounter++).toString(); };
+    /** @internal */
+    SelectControlValueAccessor.prototype._getOptionId = function (value) {
+        var e_1, _a;
+        try {
+            for (var _b = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__values"])(Array.from(this._optionMap.keys())), _c = _b.next(); !_c.done; _c = _b.next()) {
+                var id = _c.value;
+                if (this._compareWith(this._optionMap.get(id), value))
+                    return id;
+            }
+        }
+        catch (e_1_1) { e_1 = { error: e_1_1 }; }
+        finally {
+            try {
+                if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+            }
+            finally { if (e_1) throw e_1.error; }
+        }
+        return null;
+    };
+    /** @internal */
+    SelectControlValueAccessor.prototype._getOptionValue = function (valueString) {
+        var id = _extractId(valueString);
+        return this._optionMap.has(id) ? this._optionMap.get(id) : valueString;
+    };
+    SelectControlValueAccessor.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'select:not([multiple])[formControlName],select:not([multiple])[formControl],select:not([multiple])[ngModel]',
+                    host: { '(change)': 'onChange($event.target.value)', '(blur)': 'onTouched()' },
+                    providers: [SELECT_VALUE_ACCESSOR]
+                },] }
+    ];
+    /** @nocollapse */
+    SelectControlValueAccessor.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+    ]; };
+    SelectControlValueAccessor.propDecorators = {
+        compareWith: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    };
+    return SelectControlValueAccessor;
+}());
+/**
+ * @description
+ *
+ * Marks `<option>` as dynamic, so Angular can be notified when options change.
+ *
+ * See docs for `SelectControlValueAccessor` for usage examples.
+ *
+ *
+ */
+var NgSelectOption = /** @class */ (function () {
+    function NgSelectOption(_element, _renderer, _select) {
+        this._element = _element;
+        this._renderer = _renderer;
+        this._select = _select;
+        if (this._select)
+            this.id = this._select._registerOption();
+    }
+    Object.defineProperty(NgSelectOption.prototype, "ngValue", {
+        set: function (value) {
+            if (this._select == null)
+                return;
+            this._select._optionMap.set(this.id, value);
+            this._setElementValue(_buildValueString(this.id, value));
+            this._select.writeValue(this._select.value);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgSelectOption.prototype, "value", {
+        set: function (value) {
+            this._setElementValue(value);
+            if (this._select)
+                this._select.writeValue(this._select.value);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /** @internal */
+    NgSelectOption.prototype._setElementValue = function (value) {
+        this._renderer.setProperty(this._element.nativeElement, 'value', value);
+    };
+    NgSelectOption.prototype.ngOnDestroy = function () {
+        if (this._select) {
+            this._select._optionMap.delete(this.id);
+            this._select.writeValue(this._select.value);
+        }
+    };
+    NgSelectOption.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: 'option' },] }
+    ];
+    /** @nocollapse */
+    NgSelectOption.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: SelectControlValueAccessor, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"] }] }
+    ]; };
+    NgSelectOption.propDecorators = {
+        ngValue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['ngValue',] }],
+        value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['value',] }]
+    };
+    return NgSelectOption;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var SELECT_MULTIPLE_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return SelectMultipleControlValueAccessor; }),
+    multi: true
+};
+function _buildValueString$1(id, value) {
+    if (id == null)
+        return "" + value;
+    if (typeof value === 'string')
+        value = "'" + value + "'";
+    if (value && typeof value === 'object')
+        value = 'Object';
+    return (id + ": " + value).slice(0, 50);
+}
+function _extractId$1(valueString) {
+    return valueString.split(':')[0];
+}
+/**
+ * The accessor for writing a value and listening to changes on a select element.
+ *
+ *  ### Caveat: Options selection
+ *
+ * Angular uses object identity to select options. It's possible for the identities of items
+ * to change while the data does not. This can happen, for example, if the items are produced
+ * from an RPC to the server, and that RPC is re-run. Even if the data hasn't changed, the
+ * second response will produce objects with different identities.
+ *
+ * To customize the default option comparison algorithm, `<select multiple>` supports `compareWith`
+ * input. `compareWith` takes a **function** which has two arguments: `option1` and `option2`.
+ * If `compareWith` is given, Angular selects options by the return value of the function.
+ *
+ * #### Syntax
+ *
+ * ```
+ * <select multiple [compareWith]="compareFn"  [(ngModel)]="selectedCountries">
+ *     <option *ngFor="let country of countries" [ngValue]="country">
+ *         {{country.name}}
+ *     </option>
+ * </select>
+ *
+ * compareFn(c1: Country, c2: Country): boolean {
+ *     return c1 && c2 ? c1.id === c2.id : c1 === c2;
+ * }
+ * ```
+ *
+ *
+ */
+var SelectMultipleControlValueAccessor = /** @class */ (function () {
+    function SelectMultipleControlValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        /** @internal */
+        this._optionMap = new Map();
+        /** @internal */
+        this._idCounter = 0;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+        this._compareWith = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵlooseIdentical"];
+    }
+    Object.defineProperty(SelectMultipleControlValueAccessor.prototype, "compareWith", {
+        set: function (fn) {
+            if (typeof fn !== 'function') {
+                throw new Error("compareWith must be a function, but received " + JSON.stringify(fn));
+            }
+            this._compareWith = fn;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    SelectMultipleControlValueAccessor.prototype.writeValue = function (value) {
+        var _this = this;
+        this.value = value;
+        var optionSelectedStateSetter;
+        if (Array.isArray(value)) {
+            // convert values to ids
+            var ids_1 = value.map(function (v) { return _this._getOptionId(v); });
+            optionSelectedStateSetter = function (opt, o) { opt._setSelected(ids_1.indexOf(o.toString()) > -1); };
+        }
+        else {
+            optionSelectedStateSetter = function (opt, o) { opt._setSelected(false); };
+        }
+        this._optionMap.forEach(optionSelectedStateSetter);
+    };
+    SelectMultipleControlValueAccessor.prototype.registerOnChange = function (fn) {
+        var _this = this;
+        this.onChange = function (_) {
+            var selected = [];
+            if (_.hasOwnProperty('selectedOptions')) {
+                var options = _.selectedOptions;
+                for (var i = 0; i < options.length; i++) {
+                    var opt = options.item(i);
+                    var val = _this._getOptionValue(opt.value);
+                    selected.push(val);
+                }
+            }
+            // Degrade on IE
+            else {
+                var options = _.options;
+                for (var i = 0; i < options.length; i++) {
+                    var opt = options.item(i);
+                    if (opt.selected) {
+                        var val = _this._getOptionValue(opt.value);
+                        selected.push(val);
+                    }
+                }
+            }
+            _this.value = selected;
+            fn(selected);
+        };
+    };
+    SelectMultipleControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    SelectMultipleControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    /** @internal */
+    SelectMultipleControlValueAccessor.prototype._registerOption = function (value) {
+        var id = (this._idCounter++).toString();
+        this._optionMap.set(id, value);
+        return id;
+    };
+    /** @internal */
+    SelectMultipleControlValueAccessor.prototype._getOptionId = function (value) {
+        var e_1, _a;
+        try {
+            for (var _b = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__values"])(Array.from(this._optionMap.keys())), _c = _b.next(); !_c.done; _c = _b.next()) {
+                var id = _c.value;
+                if (this._compareWith(this._optionMap.get(id)._value, value))
+                    return id;
+            }
+        }
+        catch (e_1_1) { e_1 = { error: e_1_1 }; }
+        finally {
+            try {
+                if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+            }
+            finally { if (e_1) throw e_1.error; }
+        }
+        return null;
+    };
+    /** @internal */
+    SelectMultipleControlValueAccessor.prototype._getOptionValue = function (valueString) {
+        var id = _extractId$1(valueString);
+        return this._optionMap.has(id) ? this._optionMap.get(id)._value : valueString;
+    };
+    SelectMultipleControlValueAccessor.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'select[multiple][formControlName],select[multiple][formControl],select[multiple][ngModel]',
+                    host: { '(change)': 'onChange($event.target)', '(blur)': 'onTouched()' },
+                    providers: [SELECT_MULTIPLE_VALUE_ACCESSOR]
+                },] }
+    ];
+    /** @nocollapse */
+    SelectMultipleControlValueAccessor.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+    ]; };
+    SelectMultipleControlValueAccessor.propDecorators = {
+        compareWith: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    };
+    return SelectMultipleControlValueAccessor;
+}());
+/**
+ * Marks `<option>` as dynamic, so Angular can be notified when options change.
+ *
+ * ### Example
+ *
+ * ```
+ * <select multiple name="city" ngModel>
+ *   <option *ngFor="let c of cities" [value]="c"></option>
+ * </select>
+ * ```
+ */
+var NgSelectMultipleOption = /** @class */ (function () {
+    function NgSelectMultipleOption(_element, _renderer, _select) {
+        this._element = _element;
+        this._renderer = _renderer;
+        this._select = _select;
+        if (this._select) {
+            this.id = this._select._registerOption(this);
+        }
+    }
+    Object.defineProperty(NgSelectMultipleOption.prototype, "ngValue", {
+        set: function (value) {
+            if (this._select == null)
+                return;
+            this._value = value;
+            this._setElementValue(_buildValueString$1(this.id, value));
+            this._select.writeValue(this._select.value);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgSelectMultipleOption.prototype, "value", {
+        set: function (value) {
+            if (this._select) {
+                this._value = value;
+                this._setElementValue(_buildValueString$1(this.id, value));
+                this._select.writeValue(this._select.value);
+            }
+            else {
+                this._setElementValue(value);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /** @internal */
+    NgSelectMultipleOption.prototype._setElementValue = function (value) {
+        this._renderer.setProperty(this._element.nativeElement, 'value', value);
+    };
+    /** @internal */
+    NgSelectMultipleOption.prototype._setSelected = function (selected) {
+        this._renderer.setProperty(this._element.nativeElement, 'selected', selected);
+    };
+    NgSelectMultipleOption.prototype.ngOnDestroy = function () {
+        if (this._select) {
+            this._select._optionMap.delete(this.id);
+            this._select.writeValue(this._select.value);
+        }
+    };
+    NgSelectMultipleOption.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: 'option' },] }
+    ];
+    /** @nocollapse */
+    NgSelectMultipleOption.ctorParameters = function () { return [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
+        { type: SelectMultipleControlValueAccessor, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"] }] }
+    ]; };
+    NgSelectMultipleOption.propDecorators = {
+        ngValue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['ngValue',] }],
+        value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['value',] }]
+    };
+    return NgSelectMultipleOption;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function controlPath(name, parent) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"])(parent.path, [name]);
+}
+function setUpControl(control, dir) {
+    if (!control)
+        _throwError(dir, 'Cannot find control with');
+    if (!dir.valueAccessor)
+        _throwError(dir, 'No value accessor for form control with');
+    control.validator = Validators.compose([control.validator, dir.validator]);
+    control.asyncValidator = Validators.composeAsync([control.asyncValidator, dir.asyncValidator]);
+    dir.valueAccessor.writeValue(control.value);
+    setUpViewChangePipeline(control, dir);
+    setUpModelChangePipeline(control, dir);
+    setUpBlurPipeline(control, dir);
+    if (dir.valueAccessor.setDisabledState) {
+        control.registerOnDisabledChange(function (isDisabled) { dir.valueAccessor.setDisabledState(isDisabled); });
+    }
+    // re-run validation when validator binding changes, e.g. minlength=3 -> minlength=4
+    dir._rawValidators.forEach(function (validator) {
+        if (validator.registerOnValidatorChange)
+            validator.registerOnValidatorChange(function () { return control.updateValueAndValidity(); });
+    });
+    dir._rawAsyncValidators.forEach(function (validator) {
+        if (validator.registerOnValidatorChange)
+            validator.registerOnValidatorChange(function () { return control.updateValueAndValidity(); });
+    });
+}
+function cleanUpControl(control, dir) {
+    dir.valueAccessor.registerOnChange(function () { return _noControlError(dir); });
+    dir.valueAccessor.registerOnTouched(function () { return _noControlError(dir); });
+    dir._rawValidators.forEach(function (validator) {
+        if (validator.registerOnValidatorChange) {
+            validator.registerOnValidatorChange(null);
+        }
+    });
+    dir._rawAsyncValidators.forEach(function (validator) {
+        if (validator.registerOnValidatorChange) {
+            validator.registerOnValidatorChange(null);
+        }
+    });
+    if (control)
+        control._clearChangeFns();
+}
+function setUpViewChangePipeline(control, dir) {
+    dir.valueAccessor.registerOnChange(function (newValue) {
+        control._pendingValue = newValue;
+        control._pendingChange = true;
+        control._pendingDirty = true;
+        if (control.updateOn === 'change')
+            updateControl(control, dir);
+    });
+}
+function setUpBlurPipeline(control, dir) {
+    dir.valueAccessor.registerOnTouched(function () {
+        control._pendingTouched = true;
+        if (control.updateOn === 'blur' && control._pendingChange)
+            updateControl(control, dir);
+        if (control.updateOn !== 'submit')
+            control.markAsTouched();
+    });
+}
+function updateControl(control, dir) {
+    if (control._pendingDirty)
+        control.markAsDirty();
+    control.setValue(control._pendingValue, { emitModelToViewChange: false });
+    dir.viewToModelUpdate(control._pendingValue);
+    control._pendingChange = false;
+}
+function setUpModelChangePipeline(control, dir) {
+    control.registerOnChange(function (newValue, emitModelEvent) {
+        // control -> view
+        dir.valueAccessor.writeValue(newValue);
+        // control -> ngModel
+        if (emitModelEvent)
+            dir.viewToModelUpdate(newValue);
+    });
+}
+function setUpFormContainer(control, dir) {
+    if (control == null)
+        _throwError(dir, 'Cannot find control with');
+    control.validator = Validators.compose([control.validator, dir.validator]);
+    control.asyncValidator = Validators.composeAsync([control.asyncValidator, dir.asyncValidator]);
+}
+function _noControlError(dir) {
+    return _throwError(dir, 'There is no FormControl instance attached to form control element with');
+}
+function _throwError(dir, message) {
+    var messageEnd;
+    if (dir.path.length > 1) {
+        messageEnd = "path: '" + dir.path.join(' -> ') + "'";
+    }
+    else if (dir.path[0]) {
+        messageEnd = "name: '" + dir.path + "'";
+    }
+    else {
+        messageEnd = 'unspecified name attribute';
+    }
+    throw new Error(message + " " + messageEnd);
+}
+function composeValidators(validators) {
+    return validators != null ? Validators.compose(validators.map(normalizeValidator)) : null;
+}
+function composeAsyncValidators(validators) {
+    return validators != null ? Validators.composeAsync(validators.map(normalizeAsyncValidator)) :
+        null;
+}
+function isPropertyUpdated(changes, viewModel) {
+    if (!changes.hasOwnProperty('model'))
+        return false;
+    var change = changes['model'];
+    if (change.isFirstChange())
+        return true;
+    return !Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵlooseIdentical"])(viewModel, change.currentValue);
+}
+var BUILTIN_ACCESSORS = [
+    CheckboxControlValueAccessor,
+    RangeValueAccessor,
+    NumberValueAccessor,
+    SelectControlValueAccessor,
+    SelectMultipleControlValueAccessor,
+    RadioControlValueAccessor,
+];
+function isBuiltInAccessor(valueAccessor) {
+    return BUILTIN_ACCESSORS.some(function (a) { return valueAccessor.constructor === a; });
+}
+function syncPendingControls(form, directives) {
+    form._syncPendingControls();
+    directives.forEach(function (dir) {
+        var control = dir.control;
+        if (control.updateOn === 'submit' && control._pendingChange) {
+            dir.viewToModelUpdate(control._pendingValue);
+            control._pendingChange = false;
+        }
+    });
+}
+// TODO: vsavkin remove it once https://github.com/angular/angular/issues/3011 is implemented
+function selectValueAccessor(dir, valueAccessors) {
+    if (!valueAccessors)
+        return null;
+    if (!Array.isArray(valueAccessors))
+        _throwError(dir, 'Value accessor was not provided as an array for form control with');
+    var defaultAccessor = undefined;
+    var builtinAccessor = undefined;
+    var customAccessor = undefined;
+    valueAccessors.forEach(function (v) {
+        if (v.constructor === DefaultValueAccessor) {
+            defaultAccessor = v;
+        }
+        else if (isBuiltInAccessor(v)) {
+            if (builtinAccessor)
+                _throwError(dir, 'More than one built-in value accessor matches form control with');
+            builtinAccessor = v;
+        }
+        else {
+            if (customAccessor)
+                _throwError(dir, 'More than one custom value accessor matches form control with');
+            customAccessor = v;
+        }
+    });
+    if (customAccessor)
+        return customAccessor;
+    if (builtinAccessor)
+        return builtinAccessor;
+    if (defaultAccessor)
+        return defaultAccessor;
+    _throwError(dir, 'No valid value accessor for form control with');
+    return null;
+}
+function removeDir(list, el) {
+    var index = list.indexOf(el);
+    if (index > -1)
+        list.splice(index, 1);
+}
+// TODO(kara): remove after deprecation period
+function _ngModelWarning(name, type, instance, warningConfig) {
+    if (!Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["isDevMode"])() || warningConfig === 'never')
+        return;
+    if (((warningConfig === null || warningConfig === 'once') && !type._ngModelWarningSentOnce) ||
+        (warningConfig === 'always' && !instance._ngModelWarningSent)) {
+        ReactiveErrors.ngModelWarning(name);
+        type._ngModelWarningSentOnce = true;
+        instance._ngModelWarningSent = true;
+    }
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * This is a base class for code shared between `NgModelGroup` and `FormGroupName`.
+ *
+ *
+ */
+var AbstractFormGroupDirective = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(AbstractFormGroupDirective, _super);
+    function AbstractFormGroupDirective() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    AbstractFormGroupDirective.prototype.ngOnInit = function () {
+        this._checkParentType();
+        this.formDirective.addFormGroup(this);
+    };
+    AbstractFormGroupDirective.prototype.ngOnDestroy = function () {
+        if (this.formDirective) {
+            this.formDirective.removeFormGroup(this);
+        }
+    };
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "control", {
+        /**
+         * Get the `FormGroup` backing this binding.
+         */
+        get: function () { return this.formDirective.getFormGroup(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "path", {
+        /**
+         * Get the path to this control group.
+         */
+        get: function () { return controlPath(this.name, this._parent); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "formDirective", {
+        /**
+         * Get the `Form` to which this group belongs.
+         */
+        get: function () { return this._parent ? this._parent.formDirective : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "validator", {
+        get: function () { return composeValidators(this._validators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "asyncValidator", {
+        get: function () {
+            return composeAsyncValidators(this._asyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /** @internal */
+    AbstractFormGroupDirective.prototype._checkParentType = function () { };
+    return AbstractFormGroupDirective;
+}(ControlContainer));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var AbstractControlStatus = /** @class */ (function () {
+    function AbstractControlStatus(cd) {
+        this._cd = cd;
+    }
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassUntouched", {
+        get: function () { return this._cd.control ? this._cd.control.untouched : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassTouched", {
+        get: function () { return this._cd.control ? this._cd.control.touched : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassPristine", {
+        get: function () { return this._cd.control ? this._cd.control.pristine : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassDirty", {
+        get: function () { return this._cd.control ? this._cd.control.dirty : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassValid", {
+        get: function () { return this._cd.control ? this._cd.control.valid : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassInvalid", {
+        get: function () { return this._cd.control ? this._cd.control.invalid : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassPending", {
+        get: function () { return this._cd.control ? this._cd.control.pending : false; },
+        enumerable: true,
+        configurable: true
+    });
+    return AbstractControlStatus;
+}());
+var ngControlStatusHost = {
+    '[class.ng-untouched]': 'ngClassUntouched',
+    '[class.ng-touched]': 'ngClassTouched',
+    '[class.ng-pristine]': 'ngClassPristine',
+    '[class.ng-dirty]': 'ngClassDirty',
+    '[class.ng-valid]': 'ngClassValid',
+    '[class.ng-invalid]': 'ngClassInvalid',
+    '[class.ng-pending]': 'ngClassPending',
+};
+/**
+ * Directive automatically applied to Angular form controls that sets CSS classes
+ * based on control status. The following classes are applied as the properties
+ * become true:
+ *
+ * * ng-valid
+ * * ng-invalid
+ * * ng-pending
+ * * ng-pristine
+ * * ng-dirty
+ * * ng-untouched
+ * * ng-touched
+ *
+ *
+ */
+var NgControlStatus = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(NgControlStatus, _super);
+    function NgControlStatus(cd) {
+        return _super.call(this, cd) || this;
+    }
+    NgControlStatus.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: '[formControlName],[ngModel],[formControl]', host: ngControlStatusHost },] }
+    ];
+    /** @nocollapse */
+    NgControlStatus.ctorParameters = function () { return [
+        { type: NgControl, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }] }
+    ]; };
+    return NgControlStatus;
+}(AbstractControlStatus));
+/**
+ * Directive automatically applied to Angular form groups that sets CSS classes
+ * based on control status (valid/invalid/dirty/etc).
+ *
+ *
+ */
+var NgControlStatusGroup = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(NgControlStatusGroup, _super);
+    function NgControlStatusGroup(cd) {
+        return _super.call(this, cd) || this;
+    }
+    NgControlStatusGroup.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: '[formGroupName],[formArrayName],[ngModelGroup],[formGroup],form:not([ngNoForm]),[ngForm]',
+                    host: ngControlStatusHost
+                },] }
+    ];
+    /** @nocollapse */
+    NgControlStatusGroup.ctorParameters = function () { return [
+        { type: ControlContainer, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }] }
+    ]; };
+    return NgControlStatusGroup;
+}(AbstractControlStatus));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Reports that a FormControl is valid, meaning that no errors exist in the input value.
+ *
+ * @see `status`
+ */
+var VALID = 'VALID';
+/**
+ * Reports that a FormControl is invalid, meaning that an error exists in the input value.
+ *
+ * @see `status`
+ */
+var INVALID = 'INVALID';
+/**
+ * Reports that a FormControl is pending, meaning that that async validation is occurring and
+ * errors are not yet available for the input value.
+ *
+ * @see `markAsPending`
+ * @see `status`
+ */
+var PENDING = 'PENDING';
+/**
+ * Reports that a FormControl is disabled, meaning that the control is exempt from ancestor
+ * calculations of validity or value.
+ *
+ * @see `markAsDisabled`
+ * @see `status`
+ */
+var DISABLED = 'DISABLED';
+function _find(control, path, delimiter) {
+    if (path == null)
+        return null;
+    if (!(path instanceof Array)) {
+        path = path.split(delimiter);
+    }
+    if (path instanceof Array && (path.length === 0))
+        return null;
+    return path.reduce(function (v, name) {
+        if (v instanceof FormGroup) {
+            return v.controls.hasOwnProperty(name) ? v.controls[name] : null;
+        }
+        if (v instanceof FormArray) {
+            return v.at(name) || null;
+        }
+        return null;
+    }, control);
+}
+function coerceToValidator(validatorOrOpts) {
+    var validator = (isOptionsObj(validatorOrOpts) ? validatorOrOpts.validators :
+        validatorOrOpts);
+    return Array.isArray(validator) ? composeValidators(validator) : validator || null;
+}
+function coerceToAsyncValidator(asyncValidator, validatorOrOpts) {
+    var origAsyncValidator = (isOptionsObj(validatorOrOpts) ? validatorOrOpts.asyncValidators :
+        asyncValidator);
+    return Array.isArray(origAsyncValidator) ? composeAsyncValidators(origAsyncValidator) :
+        origAsyncValidator || null;
+}
+function isOptionsObj(validatorOrOpts) {
+    return validatorOrOpts != null && !Array.isArray(validatorOrOpts) &&
+        typeof validatorOrOpts === 'object';
+}
+/**
+ * This is the base class for `FormControl`, `FormGroup`, and `FormArray`.
+ *
+ * It provides some of the shared behavior that all controls and groups of controls have, like
+ * running validators, calculating status, and resetting state. It also defines the properties
+ * that are shared between all sub-classes, like `value`, `valid`, and `dirty`. It shouldn't be
+ * instantiated directly.
+ *
+ * @see [Forms Guide](/guide/forms)
+ * @see [Reactive Forms Guide](/guide/reactive-forms)
+ * @see [Dynamic Forms Guide](/guide/dynamic-form)
+ *
+ */
+var AbstractControl = /** @class */ (function () {
+    /**
+     * Initialize the AbstractControl instance.
+     *
+     * @param validator The function that determines the synchronous validity of this control.
+     * @param asyncValidator The function that determines the asynchronous validity of this
+     * control.
+     */
+    function AbstractControl(validator, asyncValidator) {
+        this.validator = validator;
+        this.asyncValidator = asyncValidator;
+        /** @internal */
+        this._onCollectionChange = function () { };
+        /**
+         * A control is `pristine` if the user has not yet changed
+         * the value in the UI.
+         *
+         * @returns True if the user has not yet changed the value in the UI; compare `dirty`.
+         * Programmatic changes to a control's value do not mark it dirty.
+         */
+        this.pristine = true;
+        /**
+         * True if the control is marked as `touched`.
+         *
+         * A control is marked `touched` once the user has triggered
+         * a `blur` event on it.
+         */
+        this.touched = false;
+        /** @internal */
+        this._onDisabledChange = [];
+    }
+    Object.defineProperty(AbstractControl.prototype, "parent", {
+        /**
+         * The parent control.
+         */
+        get: function () { return this._parent; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "valid", {
+        /**
+         * A control is `valid` when its `status` is `VALID`.
+         *
+         * @see `status`
+         *
+         * @returns True if the control has passed all of its validation tests,
+         * false otherwise.
+         */
+        get: function () { return this.status === VALID; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "invalid", {
+        /**
+         * A control is `invalid` when its `status` is `INVALID`.
+         *
+         * @see `status`
+         *
+         * @returns True if this control has failed one or more of its validation checks,
+         * false otherwise.
+         */
+        get: function () { return this.status === INVALID; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "pending", {
+        /**
+         * A control is `pending` when its `status` is `PENDING`.
+         *
+         * @see `status`
+         *
+         * @returns True if this control is in the process of conducting a validation check,
+         * false otherwise.
+         */
+        get: function () { return this.status == PENDING; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "disabled", {
+        /**
+         * A control is `disabled` when its `status` is `DISABLED`.
+         *
+         * @see `status`
+         *
+         * Disabled controls are exempt from validation checks and
+         * are not included in the aggregate value of their ancestor
+         * controls.
+         *
+         * @returns True if the control is disabled, false otherwise.
+         */
+        get: function () { return this.status === DISABLED; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "enabled", {
+        /**
+         * A control is `enabled` as long as its `status` is not `DISABLED`.
+         *
+         * @see `status`
+         *
+         * @returns True if the control has any status other than 'DISABLED',
+         * false if the status is 'DISABLED'.
+         *
+         */
+        get: function () { return this.status !== DISABLED; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "dirty", {
+        /**
+         * A control is `dirty` if the user has changed the value
+         * in the UI.
+         *
+         * @returns True if the user has changed the value of this control in the UI; compare `pristine`.
+         * Programmatic changes to a control's value do not mark it dirty.
+         */
+        get: function () { return !this.pristine; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "untouched", {
+        /**
+         * True if the control has not been marked as touched
+         *
+         * A control is `untouched` if the user has not yet triggered
+         * a `blur` event on it.
+         */
+        get: function () { return !this.touched; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "updateOn", {
+        /**
+         * Reports the update strategy of the `AbstractControl` (meaning
+         * the event on which the control updates itself).
+         * Possible values: `'change'` | `'blur'` | `'submit'`
+         * Default value: `'change'`
+         */
+        get: function () {
+            return this._updateOn ? this._updateOn : (this.parent ? this.parent.updateOn : 'change');
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Sets the synchronous validators that are active on this control.  Calling
+     * this overwrites any existing sync validators.
+     */
+    AbstractControl.prototype.setValidators = function (newValidator) {
+        this.validator = coerceToValidator(newValidator);
+    };
+    /**
+     * Sets the async validators that are active on this control. Calling this
+     * overwrites any existing async validators.
+     */
+    AbstractControl.prototype.setAsyncValidators = function (newValidator) {
+        this.asyncValidator = coerceToAsyncValidator(newValidator);
+    };
+    /**
+     * Empties out the sync validator list.
+     */
+    AbstractControl.prototype.clearValidators = function () { this.validator = null; };
+    /**
+     * Empties out the async validator list.
+     */
+    AbstractControl.prototype.clearAsyncValidators = function () { this.asyncValidator = null; };
+    /**
+     * Marks the control as `touched`. A control is touched by focus and
+     * blur events that do not change the value; compare `markAsDirty`;
+     *
+     *  @param opts Configuration options that determine how the control propagates changes
+     * and emits events events after marking is applied.
+     * * `onlySelf`: When true, mark only this control. When false or not supplied,
+     * marks all direct ancestors. Default is false.
+     */
+    AbstractControl.prototype.markAsTouched = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.touched = true;
+        if (this._parent && !opts.onlySelf) {
+            this._parent.markAsTouched(opts);
+        }
+    };
+    /**
+     * Marks the control as `untouched`.
+     *
+     * If the control has any children, also marks all children as `untouched`
+     * and recalculates the `touched` status of all parent controls.
+     *
+     *  @param opts Configuration options that determine how the control propagates changes
+     * and emits events after the marking is applied.
+     * * `onlySelf`: When true, mark only this control. When false or not supplied,
+     * marks all direct ancestors. Default is false.
+     */
+    AbstractControl.prototype.markAsUntouched = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.touched = false;
+        this._pendingTouched = false;
+        this._forEachChild(function (control) { control.markAsUntouched({ onlySelf: true }); });
+        if (this._parent && !opts.onlySelf) {
+            this._parent._updateTouched(opts);
+        }
+    };
+    /**
+     * Marks the control as `dirty`. A control becomes dirty when
+     * the control's is changed through the UI; compare `markAsTouched`.
+     *
+     *  @param opts Configuration options that determine how the control propagates changes
+     * and emits events after marking is applied.
+     * * `onlySelf`: When true, mark only this control. When false or not supplied,
+     * marks all direct ancestors. Default is false.
+     */
+    AbstractControl.prototype.markAsDirty = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.pristine = false;
+        if (this._parent && !opts.onlySelf) {
+            this._parent.markAsDirty(opts);
+        }
+    };
+    /**
+     * Marks the control as `pristine`.
+     *
+     * If the control has any children, marks all children as `pristine`,
+     * and recalculates the `pristine` status of all parent
+     * controls.
+     *
+     *  @param opts Configuration options that determine how the control emits events after
+     * marking is applied.
+     * * `onlySelf`: When true, mark only this control. When false or not supplied,
+     * marks all direct ancestors. Default is false..
+     */
+    AbstractControl.prototype.markAsPristine = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.pristine = true;
+        this._pendingDirty = false;
+        this._forEachChild(function (control) { control.markAsPristine({ onlySelf: true }); });
+        if (this._parent && !opts.onlySelf) {
+            this._parent._updatePristine(opts);
+        }
+    };
+    /**
+     * Marks the control as `pending`.
+     *
+     * A control is pending while the control performs async validation.
+     *
+     *  @param opts Configuration options that determine how the control propagates changes and
+     * emits events after marking is applied.
+     * * `onlySelf`: When true, mark only this control. When false or not supplied,
+     * marks all direct ancestors. Default is false..
+     * * `emitEvent`: When true or not supplied (the default), the `statusChanges`
+     * observable emits an event with the latest status the control is marked pending.
+     * When false, no events are emitted.
+     *
+     */
+    AbstractControl.prototype.markAsPending = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.status = PENDING;
+        if (opts.emitEvent !== false) {
+            this.statusChanges.emit(this.status);
+        }
+        if (this._parent && !opts.onlySelf) {
+            this._parent.markAsPending(opts);
+        }
+    };
+    /**
+     * Disables the control. This means the control is exempt from validation checks and
+     * excluded from the aggregate value of any parent. Its status is `DISABLED`.
+     *
+     * If the control has children, all children are also disabled.
+     *
+     *  @param opts Configuration options that determine how the control propagates
+     * changes and emits events after the control is disabled.
+     * * `onlySelf`: When true, mark only this control. When false or not supplied,
+     * marks all direct ancestors. Default is false..
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control is disabled.
+     * When false, no events are emitted.
+     */
+    AbstractControl.prototype.disable = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.status = DISABLED;
+        this.errors = null;
+        this._forEachChild(function (control) { control.disable(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, opts, { onlySelf: true })); });
+        this._updateValue();
+        if (opts.emitEvent !== false) {
+            this.valueChanges.emit(this.value);
+            this.statusChanges.emit(this.status);
+        }
+        this._updateAncestors(opts);
+        this._onDisabledChange.forEach(function (changeFn) { return changeFn(true); });
+    };
+    /**
+     * Enables the control. This means the control is included in validation checks and
+     * the aggregate value of its parent. Its status recalculates based on its value and
+     * its validators.
+     *
+     * By default, if the control has children, all children are enabled.
+     *
+     *  @param opts Configure options that control how the control propagates changes and
+     * emits events when marked as untouched
+     * * `onlySelf`: When true, mark only this control. When false or not supplied,
+     * marks all direct ancestors. Default is false..
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control is enabled.
+     * When false, no events are emitted.
+     */
+    AbstractControl.prototype.enable = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.status = VALID;
+        this._forEachChild(function (control) { control.enable(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, opts, { onlySelf: true })); });
+        this.updateValueAndValidity({ onlySelf: true, emitEvent: opts.emitEvent });
+        this._updateAncestors(opts);
+        this._onDisabledChange.forEach(function (changeFn) { return changeFn(false); });
+    };
+    AbstractControl.prototype._updateAncestors = function (opts) {
+        if (this._parent && !opts.onlySelf) {
+            this._parent.updateValueAndValidity(opts);
+            this._parent._updatePristine();
+            this._parent._updateTouched();
+        }
+    };
+    /**
+     * @param parent Sets the parent of the control
+     */
+    AbstractControl.prototype.setParent = function (parent) { this._parent = parent; };
+    /**
+     * Recalculates the value and validation status of the control.
+     *
+     * By default, it also updates the value and validity of its ancestors.
+     *
+     * @param opts Configuration options determine how the control propagates changes and emits events
+     * after updates and validity checks are applied.
+     * * `onlySelf`: When true, only update this control. When false or not supplied,
+     * update all direct ancestors. Default is false..
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control is updated.
+     * When false, no events are emitted.
+     */
+    AbstractControl.prototype.updateValueAndValidity = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._setInitialStatus();
+        this._updateValue();
+        if (this.enabled) {
+            this._cancelExistingSubscription();
+            this.errors = this._runValidator();
+            this.status = this._calculateStatus();
+            if (this.status === VALID || this.status === PENDING) {
+                this._runAsyncValidator(opts.emitEvent);
+            }
+        }
+        if (opts.emitEvent !== false) {
+            this.valueChanges.emit(this.value);
+            this.statusChanges.emit(this.status);
+        }
+        if (this._parent && !opts.onlySelf) {
+            this._parent.updateValueAndValidity(opts);
+        }
+    };
+    /** @internal */
+    AbstractControl.prototype._updateTreeValidity = function (opts) {
+        if (opts === void 0) { opts = { emitEvent: true }; }
+        this._forEachChild(function (ctrl) { return ctrl._updateTreeValidity(opts); });
+        this.updateValueAndValidity({ onlySelf: true, emitEvent: opts.emitEvent });
+    };
+    AbstractControl.prototype._setInitialStatus = function () {
+        this.status = this._allControlsDisabled() ? DISABLED : VALID;
+    };
+    AbstractControl.prototype._runValidator = function () {
+        return this.validator ? this.validator(this) : null;
+    };
+    AbstractControl.prototype._runAsyncValidator = function (emitEvent) {
+        var _this = this;
+        if (this.asyncValidator) {
+            this.status = PENDING;
+            var obs = toObservable(this.asyncValidator(this));
+            this._asyncValidationSubscription =
+                obs.subscribe(function (errors) { return _this.setErrors(errors, { emitEvent: emitEvent }); });
+        }
+    };
+    AbstractControl.prototype._cancelExistingSubscription = function () {
+        if (this._asyncValidationSubscription) {
+            this._asyncValidationSubscription.unsubscribe();
+        }
+    };
+    /**
+     * Sets errors on a form control when running validations manually, rather than automatically.
+     *
+     * Calling `setErrors` also updates the validity of the parent control.
+     *
+     * ### Manually set the errors for a control
+     *
+     * ```
+     * const login = new FormControl('someLogin');
+     * login.setErrors({
+     *   notUnique: true
+     * });
+     *
+     * expect(login.valid).toEqual(false);
+     * expect(login.errors).toEqual({ notUnique: true });
+     *
+     * login.setValue('someOtherLogin');
+     *
+     * expect(login.valid).toEqual(true);
+     * ```
+     */
+    AbstractControl.prototype.setErrors = function (errors, opts) {
+        if (opts === void 0) { opts = {}; }
+        this.errors = errors;
+        this._updateControlsErrors(opts.emitEvent !== false);
+    };
+    /**
+     * Retrieves a child control given the control's name or path.
+     *
+     * @param path A dot-delimited string or array of string/number values that define the path to the
+     * control.
+     *
+     * ### Retrieve a nested control
+     *
+     * For example, to get a `name` control nested within a `person` sub-group:
+     *
+     * * `this.form.get('person.name');`
+     *
+     * -OR-
+     *
+     * * `this.form.get(['person', 'name']);`
+     */
+    AbstractControl.prototype.get = function (path) { return _find(this, path, '.'); };
+    /**
+     * Reports error data for a specific error occurring in this control or in another control.
+     *
+     * @param errorCode The error code for which to retrieve data
+     * @param path The path to a control to check. If not supplied, checks for the error in this
+     * control.
+     *
+     * @returns The error data if the control with the given path has the given error, otherwise null
+     * or undefined.
+     */
+    AbstractControl.prototype.getError = function (errorCode, path) {
+        var control = path ? this.get(path) : this;
+        return control && control.errors ? control.errors[errorCode] : null;
+    };
+    /**
+     * Reports whether the control with the given path has the error specified.
+     *
+     * @param errorCode The error code for which to retrieve data
+     * @param path The path to a control to check. If not supplied, checks for the error in this
+     * control.
+     * @returns True when the control with the given path has the error, otherwise false.
+     */
+    AbstractControl.prototype.hasError = function (errorCode, path) { return !!this.getError(errorCode, path); };
+    Object.defineProperty(AbstractControl.prototype, "root", {
+        /**
+         * Retrieves the top-level ancestor of this control.
+         */
+        get: function () {
+            var x = this;
+            while (x._parent) {
+                x = x._parent;
+            }
+            return x;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /** @internal */
+    AbstractControl.prototype._updateControlsErrors = function (emitEvent) {
+        this.status = this._calculateStatus();
+        if (emitEvent) {
+            this.statusChanges.emit(this.status);
+        }
+        if (this._parent) {
+            this._parent._updateControlsErrors(emitEvent);
+        }
+    };
+    /** @internal */
+    AbstractControl.prototype._initObservables = function () {
+        this.valueChanges = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.statusChanges = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+    };
+    AbstractControl.prototype._calculateStatus = function () {
+        if (this._allControlsDisabled())
+            return DISABLED;
+        if (this.errors)
+            return INVALID;
+        if (this._anyControlsHaveStatus(PENDING))
+            return PENDING;
+        if (this._anyControlsHaveStatus(INVALID))
+            return INVALID;
+        return VALID;
+    };
+    /** @internal */
+    AbstractControl.prototype._anyControlsHaveStatus = function (status) {
+        return this._anyControls(function (control) { return control.status === status; });
+    };
+    /** @internal */
+    AbstractControl.prototype._anyControlsDirty = function () {
+        return this._anyControls(function (control) { return control.dirty; });
+    };
+    /** @internal */
+    AbstractControl.prototype._anyControlsTouched = function () {
+        return this._anyControls(function (control) { return control.touched; });
+    };
+    /** @internal */
+    AbstractControl.prototype._updatePristine = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.pristine = !this._anyControlsDirty();
+        if (this._parent && !opts.onlySelf) {
+            this._parent._updatePristine(opts);
+        }
+    };
+    /** @internal */
+    AbstractControl.prototype._updateTouched = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this.touched = this._anyControlsTouched();
+        if (this._parent && !opts.onlySelf) {
+            this._parent._updateTouched(opts);
+        }
+    };
+    /** @internal */
+    AbstractControl.prototype._isBoxedValue = function (formState) {
+        return typeof formState === 'object' && formState !== null &&
+            Object.keys(formState).length === 2 && 'value' in formState && 'disabled' in formState;
+    };
+    /** @internal */
+    AbstractControl.prototype._registerOnCollectionChange = function (fn) { this._onCollectionChange = fn; };
+    /** @internal */
+    AbstractControl.prototype._setUpdateStrategy = function (opts) {
+        if (isOptionsObj(opts) && opts.updateOn != null) {
+            this._updateOn = opts.updateOn;
+        }
+    };
+    return AbstractControl;
+}());
+/**
+ * Tracks the value and validation status of an individual form control.
+ *
+ * This is one of the three fundamental building blocks of Angular forms, along with
+ * `FormGroup` and `FormArray`. It extends the `AbstractControl` class that
+ * implements most of the base functionality for accessing the value, validation status,
+ * user interactions and events.
+ *
+ * @see `AbstractControl`
+ * @see [Reactive Forms Guide](guide/reactive-forms)
+ * @see [Usage Notes](#usage-notes)
+ *
+ * @usageNotes
+ *
+ * ### Initializing Form Controls
+ *
+ * Instantiate a `FormControl`, with an initial value.
+ *
+ * ```ts
+ * const control = new FormControl('some value');
+ * console.log(control.value);     // 'some value'
+ *```
+ *
+ * The following example initializes the control with a form state object. The `value`
+ * and `disabled` keys are required in this case.
+ *
+ * ```ts
+ * const control = new FormControl({ value: 'n/a', disabled: true });
+ * console.log(control.value);     // 'n/a'
+ * console.log(control.status);    // 'DISABLED'
+ * ```
+ *
+ * The following example initializes the control with a sync validator.
+ *
+ * ```ts
+ * const control = new FormControl('', Validators.required);
+ * console.log(control.value);      // ''
+ * console.log(control.status);     // 'INVALID'
+ * ```
+ *
+ * The following example initializes the control using an options object.
+ *
+ * ```ts
+ * const control = new FormControl('', {
+ *    validators: Validators.required,
+ *    asyncValidators: myAsyncValidator
+ * });
+ * ```
+ *
+ * ### Configure the control to update on a blur event
+ *
+ * Set the `updateOn` option to `'blur'` to update on the blur `event`.
+ *
+ * ```ts
+ * const control = new FormControl('', { updateOn: 'blur' });
+ * ```
+ *
+ * ### Configure the control to update on a submit event
+ *
+ * Set the `updateOn` option to `'submit'` to update on a submit `event`.
+ *
+ * ```ts
+ * const control = new FormControl('', { updateOn: 'submit' });
+ * ```
+ *
+ * ### Reset the control back to an initial value
+ *
+ * You reset to a specific form state by passing through a standalone
+ * value or a form state object that contains both a value and a disabled state
+ * (these are the only two properties that cannot be calculated).
+ *
+ * ```ts
+ * const control = new FormControl('Nancy');
+ *
+ * console.log(control.value); // 'Nancy'
+ *
+ * control.reset('Drew');
+ *
+ * console.log(control.value); // 'Drew'
+ * ```
+ *
+ * ### Reset the control back to an initial value and disabled
+ *
+ * ```
+ * const control = new FormControl('Nancy');
+ *
+ * console.log(control.value); // 'Nancy'
+ * console.log(control.status); // 'VALID'
+ *
+ * control.reset({ value: 'Drew', disabled: true });
+ *
+ * console.log(control.value); // 'Drew'
+ * console.log(control.status); // 'DISABLED'
+ *
+*/
+var FormControl = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(FormControl, _super);
+    /**
+    * Creates a new `FormControl` instance.
+    *
+    * @param formState Initializes the control with an initial value,
+    * or an object that defines the initial value and disabled state.
+    *
+    * @param validatorOrOpts A synchronous validator function, or an array of
+    * such functions, or an `AbstractControlOptions` object that contains validation functions
+    * and a validation trigger.
+    *
+    * @param asyncValidator A single async validator or array of async validator functions
+    *
+    */
+    function FormControl(formState, validatorOrOpts, asyncValidator) {
+        if (formState === void 0) { formState = null; }
+        var _this = _super.call(this, coerceToValidator(validatorOrOpts), coerceToAsyncValidator(asyncValidator, validatorOrOpts)) || this;
+        /** @internal */
+        _this._onChange = [];
+        _this._applyFormState(formState);
+        _this._setUpdateStrategy(validatorOrOpts);
+        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
+        _this._initObservables();
+        return _this;
+    }
+    /**
+     * Sets a new value for the form control.
+     *
+     * @param value The new value for the control.
+     * @param options Configuration options that determine how the control proopagates changes
+     * and emits events when the value changes.
+     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+     * updateValueAndValidity} method.
+     *
+     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default is
+     * false.
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control value is updated.
+     * When false, no events are emitted.
+     * * `emitModelToViewChange`: When true or not supplied  (the default), each change triggers an
+     * `onChange` event to
+     * update the view.
+     * * `emitViewToModelChange`: When true or not supplied (the default), each change triggers an
+     * `ngModelChange`
+     * event to update the model.
+     *
+     */
+    FormControl.prototype.setValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        this.value = this._pendingValue = value;
+        if (this._onChange.length && options.emitModelToViewChange !== false) {
+            this._onChange.forEach(function (changeFn) { return changeFn(_this.value, options.emitViewToModelChange !== false); });
+        }
+        this.updateValueAndValidity(options);
+    };
+    /**
+     * Patches the value of a control.
+     *
+     * This function is functionally the same as {@link FormControl#setValue setValue} at this level.
+     * It exists for symmetry with {@link FormGroup#patchValue patchValue} on `FormGroups` and
+     * `FormArrays`, where it does behave differently.
+     *
+     * @see `setValue` for options
+     */
+    FormControl.prototype.patchValue = function (value, options) {
+        if (options === void 0) { options = {}; }
+        this.setValue(value, options);
+    };
+    /**
+     * Resets the form control, marking it `pristine` and `untouched`, and setting
+     * the value to null.
+     *
+     * @param formState Resets the control with an initial value,
+     * or an object that defines the initial value and disabled state.
+     *
+     * @param options Configuration options that determine how the control propagates changes
+     * and emits events after the value changes.
+     *
+     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default is
+     * false.
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control is reset.
+     * When false, no events are emitted.
+     *
+     */
+    FormControl.prototype.reset = function (formState, options) {
+        if (formState === void 0) { formState = null; }
+        if (options === void 0) { options = {}; }
+        this._applyFormState(formState);
+        this.markAsPristine(options);
+        this.markAsUntouched(options);
+        this.setValue(this.value, options);
+        this._pendingChange = false;
+    };
+    /**
+     * @internal
+     */
+    FormControl.prototype._updateValue = function () { };
+    /**
+     * @internal
+     */
+    FormControl.prototype._anyControls = function (condition) { return false; };
+    /**
+     * @internal
+     */
+    FormControl.prototype._allControlsDisabled = function () { return this.disabled; };
+    /**
+     * Register a listener for change events.
+     *
+     * @param fn The method that is called when the value changes
+     */
+    FormControl.prototype.registerOnChange = function (fn) { this._onChange.push(fn); };
+    /**
+     * @internal
+     */
+    FormControl.prototype._clearChangeFns = function () {
+        this._onChange = [];
+        this._onDisabledChange = [];
+        this._onCollectionChange = function () { };
+    };
+    /**
+     * Register a listener for disabled events.
+     *
+     * @param fn The method that is called when the disabled status changes.
+     */
+    FormControl.prototype.registerOnDisabledChange = function (fn) {
+        this._onDisabledChange.push(fn);
+    };
+    /**
+     * @internal
+     */
+    FormControl.prototype._forEachChild = function (cb) { };
+    /** @internal */
+    FormControl.prototype._syncPendingControls = function () {
+        if (this.updateOn === 'submit') {
+            if (this._pendingDirty)
+                this.markAsDirty();
+            if (this._pendingTouched)
+                this.markAsTouched();
+            if (this._pendingChange) {
+                this.setValue(this._pendingValue, { onlySelf: true, emitModelToViewChange: false });
+                return true;
+            }
+        }
+        return false;
+    };
+    FormControl.prototype._applyFormState = function (formState) {
+        if (this._isBoxedValue(formState)) {
+            this.value = this._pendingValue = formState.value;
+            formState.disabled ? this.disable({ onlySelf: true, emitEvent: false }) :
+                this.enable({ onlySelf: true, emitEvent: false });
+        }
+        else {
+            this.value = this._pendingValue = formState;
+        }
+    };
+    return FormControl;
+}(AbstractControl));
+/**
+ * Tracks the value and validity state of a group of `FormControl` instances.
+ *
+ * A `FormGroup` aggregates the values of each child `FormControl` into one object,
+ * with each control name as the key.  It calculates its status by reducing the status values
+ * of its children. For example, if one of the controls in a group is invalid, the entire
+ * group becomes invalid.
+ *
+ * `FormGroup` is one of the three fundamental building blocks used to define forms in Angular,
+ * along with `FormControl` and `FormArray`.
+ *
+ * When instantiating a `FormGroup`, pass in a collection of child controls as the first
+ * argument. The key for each child registers the name for the control.
+ *
+ * @usageNotes
+ *
+ * ### Create a form group with 2 controls
+ *
+ * ```
+ * const form = new FormGroup({
+ *   first: new FormControl('Nancy', Validators.minLength(2)),
+ *   last: new FormControl('Drew'),
+ * });
+ *
+ * console.log(form.value);   // {first: 'Nancy', last; 'Drew'}
+ * console.log(form.status);  // 'VALID'
+ * ```
+ *
+ * ### Create a form group with a group-level validator
+ *
+ * You include group-level validators as the second arg, or group-level async
+ * validators as the third arg. These come in handy when you want to perform validation
+ * that considers the value of more than one child control.
+ *
+ * ```
+ * const form = new FormGroup({
+ *   password: new FormControl('', Validators.minLength(2)),
+ *   passwordConfirm: new FormControl('', Validators.minLength(2)),
+ * }, passwordMatchValidator);
+ *
+ *
+ * function passwordMatchValidator(g: FormGroup) {
+ *    return g.get('password').value === g.get('passwordConfirm').value
+ *       ? null : {'mismatch': true};
+ * }
+ * ```
+ *
+ * Like `FormControl` instances, you choose to pass in
+ * validators and async validators as part of an options object.
+ *
+ * ```
+ * const form = new FormGroup({
+ *   password: new FormControl('')
+ *   passwordConfirm: new FormControl('')
+ * }, { validators: passwordMatchValidator, asyncValidators: otherValidator });
+ * ```
+ *
+ * ### Set the updateOn property for all controls in a form group
+ *
+ * The options object is used to set a default value for each child
+ * control's `updateOn` property. If you set `updateOn` to `'blur'` at the
+ * group level, all child controls default to 'blur', unless the child
+ * has explicitly specified a different `updateOn` value.
+ *
+ * ```ts
+ * const c = new FormGroup({
+ *   one: new FormControl()
+ * }, { updateOn: 'blur' });
+ * ```
+ */
+var FormGroup = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(FormGroup, _super);
+    /**
+    * Creates a new `FormGroup` instance.
+    *
+    * @param controls A collection of child controls. The key for each child is the name
+    * under which it is registered.
+    *
+    * @param validatorOrOpts A synchronous validator function, or an array of
+    * such functions, or an `AbstractControlOptions` object that contains validation functions
+    * and a validation trigger.
+    *
+    * @param asyncValidator A single async validator or array of async validator functions
+    *
+    */
+    function FormGroup(controls, validatorOrOpts, asyncValidator) {
+        var _this = _super.call(this, coerceToValidator(validatorOrOpts), coerceToAsyncValidator(asyncValidator, validatorOrOpts)) || this;
+        _this.controls = controls;
+        _this._initObservables();
+        _this._setUpdateStrategy(validatorOrOpts);
+        _this._setUpControls();
+        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
+        return _this;
+    }
+    /**
+     * Registers a control with the group's list of controls.
+     *
+     * This method does not update the value or validity of the control.
+     * Use {@link FormGroup#addControl addControl} instead.
+     *
+     * @param name The control name to register in the collection
+     * @param control Provides the control for the given name
+     */
+    FormGroup.prototype.registerControl = function (name, control) {
+        if (this.controls[name])
+            return this.controls[name];
+        this.controls[name] = control;
+        control.setParent(this);
+        control._registerOnCollectionChange(this._onCollectionChange);
+        return control;
+    };
+    /**
+     * Add a control to this group.
+     *
+     * This method also updates the value and validity of the control.
+     *
+     * @param name The control name to add to the collection
+     * @param control Provides the control for the given name
+     */
+    FormGroup.prototype.addControl = function (name, control) {
+        this.registerControl(name, control);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Remove a control from this group.
+     *
+     * @param name The control name to remove from the collection
+     */
+    FormGroup.prototype.removeControl = function (name) {
+        if (this.controls[name])
+            this.controls[name]._registerOnCollectionChange(function () { });
+        delete (this.controls[name]);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Replace an existing control.
+     *
+     * @param name The control name to replace in the collection
+     * @param control Provides the control for the given name
+     */
+    FormGroup.prototype.setControl = function (name, control) {
+        if (this.controls[name])
+            this.controls[name]._registerOnCollectionChange(function () { });
+        delete (this.controls[name]);
+        if (control)
+            this.registerControl(name, control);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Check whether there is an enabled control with the given name in the group.
+     *
+     * Reports false for disabled controls. If you'd like to check for existence in the group
+     * only, use {@link AbstractControl#get get} instead.
+     *
+     * @param name The control name to check for existence in the collection
+     *
+     * @returns false for disabled controls, true otherwise.
+     */
+    FormGroup.prototype.contains = function (controlName) {
+        return this.controls.hasOwnProperty(controlName) && this.controls[controlName].enabled;
+    };
+    /**
+     * Sets the value of the `FormGroup`. It accepts an object that matches
+     * the structure of the group, with control names as keys.
+     *
+     * ### Set the complete value for the form group
+     *
+     * ```
+     * const form = new FormGroup({
+     *   first: new FormControl(),
+     *   last: new FormControl()
+     * });
+     *
+     * console.log(form.value);   // {first: null, last: null}
+     *
+     * form.setValue({first: 'Nancy', last: 'Drew'});
+     * console.log(form.value);   // {first: 'Nancy', last: 'Drew'}
+     *
+     * ```
+     * @throws When strict checks fail, such as setting the value of a control
+     * that doesn't exist or if you excluding the value of a control.
+     *
+     * @param value The new value for the control that matches the structure of the group.
+     * @param options Configuration options that determine how the control propagates changes
+     * and emits events after the value changes.
+     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+     * updateValueAndValidity} method.
+     *
+     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default is
+     * false.
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control value is updated.
+     * When false, no events are emitted.
+     */
+    FormGroup.prototype.setValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        this._checkAllValuesPresent(value);
+        Object.keys(value).forEach(function (name) {
+            _this._throwIfControlMissing(name);
+            _this.controls[name].setValue(value[name], { onlySelf: true, emitEvent: options.emitEvent });
+        });
+        this.updateValueAndValidity(options);
+    };
+    /**
+     * Patches the value of the `FormGroup`. It accepts an object with control
+     * names as keys, and does its best to match the values to the correct controls
+     * in the group.
+     *
+     * It accepts both super-sets and sub-sets of the group without throwing an error.
+     *
+     * ### Patch the value for a form group
+     *
+     *  ```
+     *  const form = new FormGroup({
+     *     first: new FormControl(),
+     *     last: new FormControl()
+     *  });
+     *  console.log(form.value);   // {first: null, last: null}
+     *
+     *  form.patchValue({first: 'Nancy'});
+     *  console.log(form.value);   // {first: 'Nancy', last: null}
+     *
+     *  ```
+     *
+     * @param value The object that matches the structure of the group
+     * @param options Configure options that determines how the control propagates changes and
+     * emits events after the value is patched
+     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default is
+     * true.
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control value is updated.
+     * When false, no events are emitted.
+     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+     * updateValueAndValidity} method.
+     */
+    FormGroup.prototype.patchValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        Object.keys(value).forEach(function (name) {
+            if (_this.controls[name]) {
+                _this.controls[name].patchValue(value[name], { onlySelf: true, emitEvent: options.emitEvent });
+            }
+        });
+        this.updateValueAndValidity(options);
+    };
+    /**
+     * Resets the `FormGroup`, marks all descendants are marked `pristine` and `untouched`, and
+     * the value of all descendants to null.
+     *
+     * You reset to a specific form state by passing in a map of states
+     * that matches the structure of your form, with control names as keys. The state
+     * is a standalone value or a form state object with both a value and a disabled
+     * status.
+     *
+     * @param formState Resets the control with an initial value,
+     * or an object that defines the initial value and disabled state.
+     *
+     * @param options Configuration options that determine how the control propagates changes
+     * and emits events when the group is reset.
+     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default is
+     * false.
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control is reset.
+     * When false, no events are emitted.
+     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+     * updateValueAndValidity} method.
+     *
+     * @usageNotes
+     *
+     * ### Reset the form group values
+     *
+     * ```ts
+     * const form = new FormGroup({
+     *   first: new FormControl('first name'),
+     *   last: new FormControl('last name')
+     * });
+     *
+     * console.log(form.value);  // {first: 'first name', last: 'last name'}
+     *
+     * form.reset({ first: 'name', last: 'last name' });
+     *
+     * console.log(form.value);  // {first: 'name', last: 'last name'}
+     * ```
+     *
+     * ### Reset the form group values and disabled status
+     *
+     * ```
+     * const form = new FormGroup({
+     *   first: new FormControl('first name'),
+     *   last: new FormControl('last name')
+     * });
+     *
+     * form.reset({
+     *   first: {value: 'name', disabled: true},
+     *   last: 'last'
+     * });
+     *
+     * console.log(this.form.value);  // {first: 'name', last: 'last name'}
+     * console.log(this.form.get('first').status);  // 'DISABLED'
+     * ```
+     */
+    FormGroup.prototype.reset = function (value, options) {
+        if (value === void 0) { value = {}; }
+        if (options === void 0) { options = {}; }
+        this._forEachChild(function (control, name) {
+            control.reset(value[name], { onlySelf: true, emitEvent: options.emitEvent });
+        });
+        this.updateValueAndValidity(options);
+        this._updatePristine(options);
+        this._updateTouched(options);
+    };
+    /**
+     * The aggregate value of the `FormGroup`, including any disabled controls.
+     *
+     * Retrieves all values regardless of disabled status.
+     * The `value` property is the best way to get the value of the group, because
+     * it excludes disabled controls in the `FormGroup`.
+     */
+    FormGroup.prototype.getRawValue = function () {
+        return this._reduceChildren({}, function (acc, control, name) {
+            acc[name] = control instanceof FormControl ? control.value : control.getRawValue();
+            return acc;
+        });
+    };
+    /** @internal */
+    FormGroup.prototype._syncPendingControls = function () {
+        var subtreeUpdated = this._reduceChildren(false, function (updated, child) {
+            return child._syncPendingControls() ? true : updated;
+        });
+        if (subtreeUpdated)
+            this.updateValueAndValidity({ onlySelf: true });
+        return subtreeUpdated;
+    };
+    /** @internal */
+    FormGroup.prototype._throwIfControlMissing = function (name) {
+        if (!Object.keys(this.controls).length) {
+            throw new Error("\n        There are no form controls registered with this group yet.  If you're using ngModel,\n        you may want to check next tick (e.g. use setTimeout).\n      ");
+        }
+        if (!this.controls[name]) {
+            throw new Error("Cannot find form control with name: " + name + ".");
+        }
+    };
+    /** @internal */
+    FormGroup.prototype._forEachChild = function (cb) {
+        var _this = this;
+        Object.keys(this.controls).forEach(function (k) { return cb(_this.controls[k], k); });
+    };
+    /** @internal */
+    FormGroup.prototype._setUpControls = function () {
+        var _this = this;
+        this._forEachChild(function (control) {
+            control.setParent(_this);
+            control._registerOnCollectionChange(_this._onCollectionChange);
+        });
+    };
+    /** @internal */
+    FormGroup.prototype._updateValue = function () { this.value = this._reduceValue(); };
+    /** @internal */
+    FormGroup.prototype._anyControls = function (condition) {
+        var _this = this;
+        var res = false;
+        this._forEachChild(function (control, name) {
+            res = res || (_this.contains(name) && condition(control));
+        });
+        return res;
+    };
+    /** @internal */
+    FormGroup.prototype._reduceValue = function () {
+        var _this = this;
+        return this._reduceChildren({}, function (acc, control, name) {
+            if (control.enabled || _this.disabled) {
+                acc[name] = control.value;
+            }
+            return acc;
+        });
+    };
+    /** @internal */
+    FormGroup.prototype._reduceChildren = function (initValue, fn) {
+        var res = initValue;
+        this._forEachChild(function (control, name) { res = fn(res, control, name); });
+        return res;
+    };
+    /** @internal */
+    FormGroup.prototype._allControlsDisabled = function () {
+        var e_1, _a;
+        try {
+            for (var _b = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__values"])(Object.keys(this.controls)), _c = _b.next(); !_c.done; _c = _b.next()) {
+                var controlName = _c.value;
+                if (this.controls[controlName].enabled) {
+                    return false;
+                }
+            }
+        }
+        catch (e_1_1) { e_1 = { error: e_1_1 }; }
+        finally {
+            try {
+                if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+            }
+            finally { if (e_1) throw e_1.error; }
+        }
+        return Object.keys(this.controls).length > 0 || this.disabled;
+    };
+    /** @internal */
+    FormGroup.prototype._checkAllValuesPresent = function (value) {
+        this._forEachChild(function (control, name) {
+            if (value[name] === undefined) {
+                throw new Error("Must supply a value for form control with name: '" + name + "'.");
+            }
+        });
+    };
+    return FormGroup;
+}(AbstractControl));
+/**
+ * Tracks the value and validity state of an array of `FormControl`,
+ * `FormGroup` or `FormArray` instances.
+ *
+ * A `FormArray` aggregates the values of each child `FormControl` into an array.
+ * It calculates its status by reducing the status values of its children. For example, if one of
+ * the controls in a `FormArray` is invalid, the entire array becomes invalid.
+ *
+ * `FormArray` is one of the three fundamental building blocks used to define forms in Angular,
+ * along with `FormControl` and `FormGroup`.
+ *
+ * @usageNotes
+ *
+ * ### Create an array of form controls
+ *
+ * ```
+ * const arr = new FormArray([
+ *   new FormControl('Nancy', Validators.minLength(2)),
+ *   new FormControl('Drew'),
+ * ]);
+ *
+ * console.log(arr.value);   // ['Nancy', 'Drew']
+ * console.log(arr.status);  // 'VALID'
+ * ```
+ *
+ * ### Create a form array with array-level validators
+ *
+ * You include array-level validators and async validators. These come in handy
+ * when you want to perform validation that considers the value of more than one child
+ * control.
+ *
+ * The two types of validators are passed in separately as the second and third arg
+ * respectively, or together as part of an options object.
+ *
+ * ```
+ * const arr = new FormArray([
+ *   new FormControl('Nancy'),
+ *   new FormControl('Drew')
+ * ], {validators: myValidator, asyncValidators: myAsyncValidator});
+ * ```
+ *
+  * ### Set the updateOn property for all controls in a form array
+ *
+ * The options object is used to set a default value for each child
+ * control's `updateOn` property. If you set `updateOn` to `'blur'` at the
+ * array level, all child controls default to 'blur', unless the child
+ * has explicitly specified a different `updateOn` value.
+ *
+ * ```ts
+ * const arr = new FormArray([
+ *    new FormControl()
+ * ], {updateOn: 'blur'});
+ * ```
+ *
+ * ### Adding or removing controls from a form array
+ *
+ * To change the controls in the array, use the `push`, `insert`, or `removeAt` methods
+ * in `FormArray` itself. These methods ensure the controls are properly tracked in the
+ * form's hierarchy. Do not modify the array of `AbstractControl`s used to instantiate
+ * the `FormArray` directly, as that result in strange and unexpected behavior such
+ * as broken change detection.
+ *
+ *
+ */
+var FormArray = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(FormArray, _super);
+    /**
+    * Creates a new `FormArray` instance.
+    *
+    * @param controls An array of child controls. Each child control is given an index
+    * wheh it is registered.
+    *
+    * @param validatorOrOpts A synchronous validator function, or an array of
+    * such functions, or an `AbstractControlOptions` object that contains validation functions
+    * and a validation trigger.
+    *
+    * @param asyncValidator A single async validator or array of async validator functions
+    *
+    */
+    function FormArray(controls, validatorOrOpts, asyncValidator) {
+        var _this = _super.call(this, coerceToValidator(validatorOrOpts), coerceToAsyncValidator(asyncValidator, validatorOrOpts)) || this;
+        _this.controls = controls;
+        _this._initObservables();
+        _this._setUpdateStrategy(validatorOrOpts);
+        _this._setUpControls();
+        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
+        return _this;
+    }
+    /**
+     * Get the `AbstractControl` at the given `index` in the array.
+     *
+     * @param index Index in the array to retrieve the control
+     */
+    FormArray.prototype.at = function (index) { return this.controls[index]; };
+    /**
+     * Insert a new `AbstractControl` at the end of the array.
+     *
+     * @param control Form control to be inserted
+     */
+    FormArray.prototype.push = function (control) {
+        this.controls.push(control);
+        this._registerControl(control);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Insert a new `AbstractControl` at the given `index` in the array.
+     *
+     * @param index Index in the array to insert the control
+     * @param control Form control to be inserted
+     */
+    FormArray.prototype.insert = function (index, control) {
+        this.controls.splice(index, 0, control);
+        this._registerControl(control);
+        this.updateValueAndValidity();
+    };
+    /**
+     * Remove the control at the given `index` in the array.
+     *
+     * @param index Index in the array to remove the control
+     */
+    FormArray.prototype.removeAt = function (index) {
+        if (this.controls[index])
+            this.controls[index]._registerOnCollectionChange(function () { });
+        this.controls.splice(index, 1);
+        this.updateValueAndValidity();
+    };
+    /**
+     * Replace an existing control.
+     *
+     * @param index Index in the array to replace the control
+     * @param control The `AbstractControl` control to replace the existing control
+     */
+    FormArray.prototype.setControl = function (index, control) {
+        if (this.controls[index])
+            this.controls[index]._registerOnCollectionChange(function () { });
+        this.controls.splice(index, 1);
+        if (control) {
+            this.controls.splice(index, 0, control);
+            this._registerControl(control);
+        }
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    Object.defineProperty(FormArray.prototype, "length", {
+        /**
+         * Length of the control array.
+         */
+        get: function () { return this.controls.length; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Sets the value of the `FormArray`. It accepts an array that matches
+     * the structure of the control.
+     *
+     * This method performs strict checks, and throws an error if you try
+     * to set the value of a control that doesn't exist or if you exclude the
+     * value of a control.
+     *
+     * ### Set the values for the controls in the form array
+     *
+     * ```
+     * const arr = new FormArray([
+     *   new FormControl(),
+     *   new FormControl()
+     * ]);
+     * console.log(arr.value);   // [null, null]
+     *
+     * arr.setValue(['Nancy', 'Drew']);
+     * console.log(arr.value);   // ['Nancy', 'Drew']
+     * ```
+     *
+     * @param value Array of values for the controls
+     * @param options Configure options that determine how the control propagates changes and
+     * emits events after the value changes
+     *
+     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
+     * is false.
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control value is updated.
+     * When false, no events are emitted.
+     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+     * updateValueAndValidity} method.
+     */
+    FormArray.prototype.setValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        this._checkAllValuesPresent(value);
+        value.forEach(function (newValue, index) {
+            _this._throwIfControlMissing(index);
+            _this.at(index).setValue(newValue, { onlySelf: true, emitEvent: options.emitEvent });
+        });
+        this.updateValueAndValidity(options);
+    };
+    /**
+     * Patches the value of the `FormArray`. It accepts an array that matches the
+     * structure of the control, and does its best to match the values to the correct
+     * controls in the group.
+     *
+     * It accepts both super-sets and sub-sets of the array without throwing an error.
+     *
+     * ### Patch the values for controls in a form array
+     *
+     * ```
+     * const arr = new FormArray([
+     *    new FormControl(),
+     *    new FormControl()
+     * ]);
+     * console.log(arr.value);   // [null, null]
+     *
+     * arr.patchValue(['Nancy']);
+     * console.log(arr.value);   // ['Nancy', null]
+     * ```
+     *
+     * @param value Array of latest values for the controls
+     * @param options Configure options that determine how the control propagates changes and
+     * emits events after the value changes
+     *
+     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
+     * is false.
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control value is updated.
+     * When false, no events are emitted.
+     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+     * updateValueAndValidity} method.
+     */
+    FormArray.prototype.patchValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        value.forEach(function (newValue, index) {
+            if (_this.at(index)) {
+                _this.at(index).patchValue(newValue, { onlySelf: true, emitEvent: options.emitEvent });
+            }
+        });
+        this.updateValueAndValidity(options);
+    };
+    /**
+     * Resets the `FormArray` and all descendants are marked `pristine` and `untouched`, and the
+     * value of all descendants to null or null maps.
+     *
+     * You reset to a specific form state by passing in an array of states
+     * that matches the structure of the control. The state is a standalone value
+     * or a form state object with both a value and a disabled status.
+     *
+     * ### Reset the values in a form array
+     *
+     * ```ts
+     * const arr = new FormArray([
+     *    new FormControl(),
+     *    new FormControl()
+     * ]);
+     * arr.reset(['name', 'last name']);
+     *
+     * console.log(this.arr.value);  // ['name', 'last name']
+     * ```
+     *
+     * ### Reset the values in a form array and the disabled status for the first control
+     *
+     * ```
+     * this.arr.reset([
+     *   {value: 'name', disabled: true},
+     *   'last'
+     * ]);
+     *
+     * console.log(this.arr.value);  // ['name', 'last name']
+     * console.log(this.arr.get(0).status);  // 'DISABLED'
+     * ```
+     *
+     * @param value Array of values for the controls
+     * @param options Configure options that determine how the control propagates changes and
+     * emits events after the value changes
+     *
+     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
+     * is false.
+     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+     * `valueChanges`
+     * observables emit events with the latest status and value when the control is reset.
+     * When false, no events are emitted.
+     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+     * updateValueAndValidity} method.
+     */
+    FormArray.prototype.reset = function (value, options) {
+        if (value === void 0) { value = []; }
+        if (options === void 0) { options = {}; }
+        this._forEachChild(function (control, index) {
+            control.reset(value[index], { onlySelf: true, emitEvent: options.emitEvent });
+        });
+        this.updateValueAndValidity(options);
+        this._updatePristine(options);
+        this._updateTouched(options);
+    };
+    /**
+     * The aggregate value of the array, including any disabled controls.
+     *
+     * Reports all values regardless of disabled status.
+     * For enabled controls only, the `value` property is the best way to get the value of the array.
+     */
+    FormArray.prototype.getRawValue = function () {
+        return this.controls.map(function (control) {
+            return control instanceof FormControl ? control.value : control.getRawValue();
+        });
+    };
+    /** @internal */
+    FormArray.prototype._syncPendingControls = function () {
+        var subtreeUpdated = this.controls.reduce(function (updated, child) {
+            return child._syncPendingControls() ? true : updated;
+        }, false);
+        if (subtreeUpdated)
+            this.updateValueAndValidity({ onlySelf: true });
+        return subtreeUpdated;
+    };
+    /** @internal */
+    FormArray.prototype._throwIfControlMissing = function (index) {
+        if (!this.controls.length) {
+            throw new Error("\n        There are no form controls registered with this array yet.  If you're using ngModel,\n        you may want to check next tick (e.g. use setTimeout).\n      ");
+        }
+        if (!this.at(index)) {
+            throw new Error("Cannot find form control at index " + index);
+        }
+    };
+    /** @internal */
+    FormArray.prototype._forEachChild = function (cb) {
+        this.controls.forEach(function (control, index) { cb(control, index); });
+    };
+    /** @internal */
+    FormArray.prototype._updateValue = function () {
+        var _this = this;
+        this.value =
+            this.controls.filter(function (control) { return control.enabled || _this.disabled; })
+                .map(function (control) { return control.value; });
+    };
+    /** @internal */
+    FormArray.prototype._anyControls = function (condition) {
+        return this.controls.some(function (control) { return control.enabled && condition(control); });
+    };
+    /** @internal */
+    FormArray.prototype._setUpControls = function () {
+        var _this = this;
+        this._forEachChild(function (control) { return _this._registerControl(control); });
+    };
+    /** @internal */
+    FormArray.prototype._checkAllValuesPresent = function (value) {
+        this._forEachChild(function (control, i) {
+            if (value[i] === undefined) {
+                throw new Error("Must supply a value for form control at index: " + i + ".");
+            }
+        });
+    };
+    /** @internal */
+    FormArray.prototype._allControlsDisabled = function () {
+        var e_2, _a;
+        try {
+            for (var _b = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__values"])(this.controls), _c = _b.next(); !_c.done; _c = _b.next()) {
+                var control = _c.value;
+                if (control.enabled)
+                    return false;
+            }
+        }
+        catch (e_2_1) { e_2 = { error: e_2_1 }; }
+        finally {
+            try {
+                if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+            }
+            finally { if (e_2) throw e_2.error; }
+        }
+        return this.controls.length > 0 || this.disabled;
+    };
+    FormArray.prototype._registerControl = function (control) {
+        control.setParent(this);
+        control._registerOnCollectionChange(this._onCollectionChange);
+    };
+    return FormArray;
+}(AbstractControl));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formDirectiveProvider = {
+    provide: ControlContainer,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return NgForm; })
+};
+var resolvedPromise = Promise.resolve(null);
+/**
+ * @description
+ *
+ * Creates a top-level `FormGroup` instance and binds it to a form
+ * to track aggregate form value and validation status.
+ *
+ * As soon as you import the `FormsModule`, this directive becomes active by default on
+ * all `<form>` tags.  You don't need to add a special selector.
+ *
+ * You can export the directive into a local template variable using `ngForm` as the key
+ * (ex: `#myForm="ngForm"`). This is optional, but useful.  Many properties from the underlying
+ * `FormGroup` instance are duplicated on the directive itself, so a reference to it
+ * will give you access to the aggregate value and validity status of the form, as well as
+ * user interaction properties like `dirty` and `touched`.
+ *
+ * To register child controls with the form, you'll want to use `NgModel` with a
+ * `name` attribute.  You can also use `NgModelGroup` if you'd like to create
+ * sub-groups within the form.
+ *
+ * You can listen to the directive's `ngSubmit` event to be notified when the user has
+ * triggered a form submission. The `ngSubmit` event will be emitted with the original form
+ * submission event.
+ *
+ * In template driven forms, all `<form>` tags are automatically tagged as `NgForm`.
+ * If you want to import the `FormsModule` but skip its usage in some forms,
+ * for example, to use native HTML5 validation, you can add `ngNoForm` and the `<form>`
+ * tags won't create an `NgForm` directive. In reactive forms, using `ngNoForm` is
+ * unnecessary because the `<form>` tags are inert. In that case, you would
+ * refrain from using the `formGroup` directive.
+ *
+ * {@example forms/ts/simpleForm/simple_form_example.ts region='Component'}
+ *
+ * * **npm package**: `@angular/forms`
+ *
+ * * **NgModule**: `FormsModule`
+ *
+ *
+ */
+var NgForm = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(NgForm, _super);
+    function NgForm(validators, asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this.submitted = false;
+        _this._directives = [];
+        _this.ngSubmit = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        _this.form =
+            new FormGroup({}, composeValidators(validators), composeAsyncValidators(asyncValidators));
+        return _this;
+    }
+    NgForm.prototype.ngAfterViewInit = function () { this._setUpdateStrategy(); };
+    Object.defineProperty(NgForm.prototype, "formDirective", {
+        get: function () { return this; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForm.prototype, "control", {
+        get: function () { return this.form; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForm.prototype, "path", {
+        get: function () { return []; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForm.prototype, "controls", {
+        get: function () { return this.form.controls; },
+        enumerable: true,
+        configurable: true
+    });
+    NgForm.prototype.addControl = function (dir) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var container = _this._findContainer(dir.path);
+            dir.control =
+                container.registerControl(dir.name, dir.control);
+            setUpControl(dir.control, dir);
+            dir.control.updateValueAndValidity({ emitEvent: false });
+            _this._directives.push(dir);
+        });
+    };
+    NgForm.prototype.getControl = function (dir) { return this.form.get(dir.path); };
+    NgForm.prototype.removeControl = function (dir) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var container = _this._findContainer(dir.path);
+            if (container) {
+                container.removeControl(dir.name);
+            }
+            removeDir(_this._directives, dir);
+        });
+    };
+    NgForm.prototype.addFormGroup = function (dir) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var container = _this._findContainer(dir.path);
+            var group = new FormGroup({});
+            setUpFormContainer(group, dir);
+            container.registerControl(dir.name, group);
+            group.updateValueAndValidity({ emitEvent: false });
+        });
+    };
+    NgForm.prototype.removeFormGroup = function (dir) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var container = _this._findContainer(dir.path);
+            if (container) {
+                container.removeControl(dir.name);
+            }
+        });
+    };
+    NgForm.prototype.getFormGroup = function (dir) { return this.form.get(dir.path); };
+    NgForm.prototype.updateModel = function (dir, value) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var ctrl = _this.form.get(dir.path);
+            ctrl.setValue(value);
+        });
+    };
+    NgForm.prototype.setValue = function (value) { this.control.setValue(value); };
+    NgForm.prototype.onSubmit = function ($event) {
+        this.submitted = true;
+        syncPendingControls(this.form, this._directives);
+        this.ngSubmit.emit($event);
+        return false;
+    };
+    NgForm.prototype.onReset = function () { this.resetForm(); };
+    NgForm.prototype.resetForm = function (value) {
+        if (value === void 0) { value = undefined; }
+        this.form.reset(value);
+        this.submitted = false;
+    };
+    NgForm.prototype._setUpdateStrategy = function () {
+        if (this.options && this.options.updateOn != null) {
+            this.form._updateOn = this.options.updateOn;
+        }
+    };
+    /** @internal */
+    NgForm.prototype._findContainer = function (path) {
+        path.pop();
+        return path.length ? this.form.get(path) : this.form;
+    };
+    NgForm.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'form:not([ngNoForm]):not([formGroup]),ngForm,[ngForm]',
+                    providers: [formDirectiveProvider],
+                    host: { '(submit)': 'onSubmit($event)', '(reset)': 'onReset()' },
+                    outputs: ['ngSubmit'],
+                    exportAs: 'ngForm'
+                },] }
+    ];
+    /** @nocollapse */
+    NgForm.ctorParameters = function () { return [
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_ASYNC_VALIDATORS,] }] }
+    ]; };
+    NgForm.propDecorators = {
+        options: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['ngFormOptions',] }]
+    };
+    return NgForm;
+}(ControlContainer));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var TemplateDrivenErrors = /** @class */ (function () {
+    function TemplateDrivenErrors() {
+    }
+    TemplateDrivenErrors.modelParentException = function () {
+        throw new Error("\n      ngModel cannot be used to register form controls with a parent formGroup directive.  Try using\n      formGroup's partner directive \"formControlName\" instead.  Example:\n\n      " + FormErrorExamples.formControlName + "\n\n      Or, if you'd like to avoid registering this form control, indicate that it's standalone in ngModelOptions:\n\n      Example:\n\n      " + FormErrorExamples.ngModelWithFormGroup);
+    };
+    TemplateDrivenErrors.formGroupNameException = function () {
+        throw new Error("\n      ngModel cannot be used to register form controls with a parent formGroupName or formArrayName directive.\n\n      Option 1: Use formControlName instead of ngModel (reactive strategy):\n\n      " + FormErrorExamples.formGroupName + "\n\n      Option 2:  Update ngModel's parent be ngModelGroup (template-driven strategy):\n\n      " + FormErrorExamples.ngModelGroup);
+    };
+    TemplateDrivenErrors.missingNameException = function () {
+        throw new Error("If ngModel is used within a form tag, either the name attribute must be set or the form\n      control must be defined as 'standalone' in ngModelOptions.\n\n      Example 1: <input [(ngModel)]=\"person.firstName\" name=\"first\">\n      Example 2: <input [(ngModel)]=\"person.firstName\" [ngModelOptions]=\"{standalone: true}\">");
+    };
+    TemplateDrivenErrors.modelGroupParentException = function () {
+        throw new Error("\n      ngModelGroup cannot be used with a parent formGroup directive.\n\n      Option 1: Use formGroupName instead of ngModelGroup (reactive strategy):\n\n      " + FormErrorExamples.formGroupName + "\n\n      Option 2:  Use a regular form tag instead of the formGroup directive (template-driven strategy):\n\n      " + FormErrorExamples.ngModelGroup);
+    };
+    return TemplateDrivenErrors;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var modelGroupProvider = {
+    provide: ControlContainer,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return NgModelGroup; })
+};
+/**
+ * @description
+ *
+ * Creates and binds a `FormGroup` instance to a DOM element.
+ *
+ * This directive can only be used as a child of `NgForm` (or in other words,
+ * within `<form>` tags).
+ *
+ * Use this directive if you'd like to create a sub-group within a form. This can
+ * come in handy if you want to validate a sub-group of your form separately from
+ * the rest of your form, or if some values in your domain model make more sense to
+ * consume together in a nested object.
+ *
+ * Pass in the name you'd like this sub-group to have and it will become the key
+ * for the sub-group in the form's full value. You can also export the directive into
+ * a local template variable using `ngModelGroup` (ex: `#myGroup="ngModelGroup"`).
+ *
+ * {@example forms/ts/ngModelGroup/ng_model_group_example.ts region='Component'}
+ *
+ * * **npm package**: `@angular/forms`
+ *
+ * * **NgModule**: `FormsModule`
+ *
+ *
+ */
+var NgModelGroup = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(NgModelGroup, _super);
+    function NgModelGroup(parent, validators, asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._parent = parent;
+        _this._validators = validators;
+        _this._asyncValidators = asyncValidators;
+        return _this;
+    }
+    /** @internal */
+    NgModelGroup.prototype._checkParentType = function () {
+        if (!(this._parent instanceof NgModelGroup) && !(this._parent instanceof NgForm)) {
+            TemplateDrivenErrors.modelGroupParentException();
+        }
+    };
+    NgModelGroup.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: '[ngModelGroup]', providers: [modelGroupProvider], exportAs: 'ngModelGroup' },] }
+    ];
+    /** @nocollapse */
+    NgModelGroup.ctorParameters = function () { return [
+        { type: ControlContainer, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["SkipSelf"] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_ASYNC_VALIDATORS,] }] }
+    ]; };
+    NgModelGroup.propDecorators = {
+        name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['ngModelGroup',] }]
+    };
+    return NgModelGroup;
+}(AbstractFormGroupDirective));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formControlBinding = {
+    provide: NgControl,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return NgModel; })
+};
+/**
+ * `ngModel` forces an additional change detection run when its inputs change:
+ * E.g.:
+ * ```
+ * <div>{{myModel.valid}}</div>
+ * <input [(ngModel)]="myValue" #myModel="ngModel">
+ * ```
+ * I.e. `ngModel` can export itself on the element and then be used in the template.
+ * Normally, this would result in expressions before the `input` that use the exported directive
+ * to have and old value as they have been
+ * dirty checked before. As this is a very common case for `ngModel`, we added this second change
+ * detection run.
+ *
+ * Notes:
+ * - this is just one extra run no matter how many `ngModel` have been changed.
+ * - this is a general problem when using `exportAs` for directives!
+ */
+var resolvedPromise$1 = Promise.resolve(null);
+/**
+ * @description
+ *
+ * Creates a `FormControl` instance from a domain model and binds it
+ * to a form control element.
+ *
+ * The `FormControl` instance will track the value, user interaction, and
+ * validation status of the control and keep the view synced with the model. If used
+ * within a parent form, the directive will also register itself with the form as a child
+ * control.
+ *
+ * This directive can be used by itself or as part of a larger form. All you need is the
+ * `ngModel` selector to activate it.
+ *
+ * It accepts a domain model as an optional `Input`. If you have a one-way binding
+ * to `ngModel` with `[]` syntax, changing the value of the domain model in the component
+ * class will set the value in the view. If you have a two-way binding with `[()]` syntax
+ * (also known as 'banana-box syntax'), the value in the UI will always be synced back to
+ * the domain model in your class as well.
+ *
+ * If you wish to inspect the properties of the associated `FormControl` (like
+ * validity state), you can also export the directive into a local template variable using
+ * `ngModel` as the key (ex: `#myVar="ngModel"`). You can then access the control using the
+ * directive's `control` property, but most properties you'll need (like `valid` and `dirty`)
+ * will fall through to the control anyway, so you can access them directly. You can see a
+ * full list of properties directly available in `AbstractControlDirective`.
+ *
+ * The following is an example of a simple standalone control using `ngModel`:
+ *
+ * {@example forms/ts/simpleNgModel/simple_ng_model_example.ts region='Component'}
+ *
+ * When using the `ngModel` within `<form>` tags, you'll also need to supply a `name` attribute
+ * so that the control can be registered with the parent form under that name.
+ *
+ * It's worth noting that in the context of a parent form, you often can skip one-way or
+ * two-way binding because the parent form will sync the value for you. You can access
+ * its properties by exporting it into a local template variable using `ngForm` (ex:
+ * `#f="ngForm"`). Then you can pass it where it needs to go on submit.
+ *
+ * If you do need to populate initial values into your form, using a one-way binding for
+ * `ngModel` tends to be sufficient as long as you use the exported form's value rather
+ * than the domain model's value on submit.
+ *
+ * Take a look at an example of using `ngModel` within a form:
+ *
+ * {@example forms/ts/simpleForm/simple_form_example.ts region='Component'}
+ *
+ * To see `ngModel` examples with different form control types, see:
+ *
+ * * Radio buttons: `RadioControlValueAccessor`
+ * * Selects: `SelectControlValueAccessor`
+ *
+ * **npm package**: `@angular/forms`
+ *
+ * **NgModule**: `FormsModule`
+ *
+ *
+ */
+var NgModel = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(NgModel, _super);
+    function NgModel(parent, validators, asyncValidators, valueAccessors) {
+        var _this = _super.call(this) || this;
+        _this.control = new FormControl();
+        /** @internal */
+        _this._registered = false;
+        _this.update = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        _this._parent = parent;
+        _this._rawValidators = validators || [];
+        _this._rawAsyncValidators = asyncValidators || [];
+        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
+        return _this;
+    }
+    NgModel.prototype.ngOnChanges = function (changes) {
+        this._checkForErrors();
+        if (!this._registered)
+            this._setUpControl();
+        if ('isDisabled' in changes) {
+            this._updateDisabled(changes);
+        }
+        if (isPropertyUpdated(changes, this.viewModel)) {
+            this._updateValue(this.model);
+            this.viewModel = this.model;
+        }
+    };
+    NgModel.prototype.ngOnDestroy = function () { this.formDirective && this.formDirective.removeControl(this); };
+    Object.defineProperty(NgModel.prototype, "path", {
+        get: function () {
+            return this._parent ? controlPath(this.name, this._parent) : [this.name];
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgModel.prototype, "formDirective", {
+        get: function () { return this._parent ? this._parent.formDirective : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgModel.prototype, "validator", {
+        get: function () { return composeValidators(this._rawValidators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgModel.prototype, "asyncValidator", {
+        get: function () {
+            return composeAsyncValidators(this._rawAsyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    NgModel.prototype.viewToModelUpdate = function (newValue) {
+        this.viewModel = newValue;
+        this.update.emit(newValue);
+    };
+    NgModel.prototype._setUpControl = function () {
+        this._setUpdateStrategy();
+        this._isStandalone() ? this._setUpStandalone() :
+            this.formDirective.addControl(this);
+        this._registered = true;
+    };
+    NgModel.prototype._setUpdateStrategy = function () {
+        if (this.options && this.options.updateOn != null) {
+            this.control._updateOn = this.options.updateOn;
+        }
+    };
+    NgModel.prototype._isStandalone = function () {
+        return !this._parent || !!(this.options && this.options.standalone);
+    };
+    NgModel.prototype._setUpStandalone = function () {
+        setUpControl(this.control, this);
+        this.control.updateValueAndValidity({ emitEvent: false });
+    };
+    NgModel.prototype._checkForErrors = function () {
+        if (!this._isStandalone()) {
+            this._checkParentType();
+        }
+        this._checkName();
+    };
+    NgModel.prototype._checkParentType = function () {
+        if (!(this._parent instanceof NgModelGroup) &&
+            this._parent instanceof AbstractFormGroupDirective) {
+            TemplateDrivenErrors.formGroupNameException();
+        }
+        else if (!(this._parent instanceof NgModelGroup) && !(this._parent instanceof NgForm)) {
+            TemplateDrivenErrors.modelParentException();
+        }
+    };
+    NgModel.prototype._checkName = function () {
+        if (this.options && this.options.name)
+            this.name = this.options.name;
+        if (!this._isStandalone() && !this.name) {
+            TemplateDrivenErrors.missingNameException();
+        }
+    };
+    NgModel.prototype._updateValue = function (value) {
+        var _this = this;
+        resolvedPromise$1.then(function () { _this.control.setValue(value, { emitViewToModelChange: false }); });
+    };
+    NgModel.prototype._updateDisabled = function (changes) {
+        var _this = this;
+        var disabledValue = changes['isDisabled'].currentValue;
+        var isDisabled = disabledValue === '' || (disabledValue && disabledValue !== 'false');
+        resolvedPromise$1.then(function () {
+            if (isDisabled && !_this.control.disabled) {
+                _this.control.disable();
+            }
+            else if (!isDisabled && _this.control.disabled) {
+                _this.control.enable();
+            }
+        });
+    };
+    NgModel.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: '[ngModel]:not([formControlName]):not([formControl])',
+                    providers: [formControlBinding],
+                    exportAs: 'ngModel'
+                },] }
+    ];
+    /** @nocollapse */
+    NgModel.ctorParameters = function () { return [
+        { type: ControlContainer, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_ASYNC_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALUE_ACCESSOR,] }] }
+    ]; };
+    NgModel.propDecorators = {
+        name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+        isDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['disabled',] }],
+        model: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['ngModel',] }],
+        options: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['ngModelOptions',] }],
+        update: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"], args: ['ngModelChange',] }]
+    };
+    return NgModel;
+}(NgControl));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Token to provide to turn off the ngModel warning on formControl and formControlName.
+ */
+var NG_MODEL_WITH_FORM_CONTROL_WARNING = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('NgModelWithFormControlWarning');
+var formControlBinding$1 = {
+    provide: NgControl,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return FormControlDirective; })
+};
+/**
+ * @description
+ *
+ * Syncs a standalone `FormControl` instance to a form control element.
+ *
+ * This directive ensures that any values written to the `FormControl`
+ * instance programmatically will be written to the DOM element (model -> view). Conversely,
+ * any values written to the DOM element through user input will be reflected in the
+ * `FormControl` instance (view -> model).
+ *
+ * Use this directive if you'd like to create and manage a `FormControl` instance directly.
+ * Simply create a `FormControl`, save it to your component class, and pass it into the
+ * `FormControlDirective`.
+ *
+ * This directive is designed to be used as a standalone control.  Unlike `FormControlName`,
+ * it does not require that your `FormControl` instance be part of any parent
+ * `FormGroup`, and it won't be registered to any `FormGroupDirective` that
+ * exists above it.
+ *
+ * **Get the value**: the `value` property is always synced and available on the
+ * `FormControl` instance. See a full list of available properties in
+ * `AbstractControl`.
+ *
+ * **Set the value**: You can pass in an initial value when instantiating the `FormControl`,
+ * or you can set it programmatically later using {@link AbstractControl#setValue setValue} or
+ * {@link AbstractControl#patchValue patchValue}.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the control, you can
+ * subscribe to the {@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
+ * {@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
+ * re-calculated.
+ *
+ * ### Example
+ *
+ * {@example forms/ts/simpleFormControl/simple_form_control_example.ts region='Component'}
+ *
+ * * **npm package**: `@angular/forms`
+ *
+ * * **NgModule**: `ReactiveFormsModule`
+ *
+ * ### Use with ngModel
+ *
+ * Support for using the `ngModel` input property and `ngModelChange` event with reactive
+ * form directives has been deprecated in Angular v6 and will be removed in Angular v7.
+ *
+ * Now deprecated:
+ * ```html
+ * <input [formControl]="control" [(ngModel)]="value">
+ * ```
+ *
+ * ```ts
+ * this.value = 'some value';
+ * ```
+ *
+ * This has been deprecated for a few reasons. First, developers have found this pattern
+ * confusing. It seems like the actual `ngModel` directive is being used, but in fact it's
+ * an input/output property named `ngModel` on the reactive form directive that simply
+ * approximates (some of) its behavior. Specifically, it allows getting/setting the value
+ * and intercepting value events. However, some of `ngModel`'s other features - like
+ * delaying updates with`ngModelOptions` or exporting the directive - simply don't work,
+ * which has understandably caused some confusion.
+ *
+ * In addition, this pattern mixes template-driven and reactive forms strategies, which
+ * we generally don't recommend because it doesn't take advantage of the full benefits of
+ * either strategy. Setting the value in the template violates the template-agnostic
+ * principles behind reactive forms, whereas adding a `FormControl`/`FormGroup` layer in
+ * the class removes the convenience of defining forms in the template.
+ *
+ * To update your code before v7, you'll want to decide whether to stick with reactive form
+ * directives (and get/set values using reactive forms patterns) or switch over to
+ * template-driven directives.
+ *
+ * After (choice 1 - use reactive forms):
+ *
+ * ```html
+ * <input [formControl]="control">
+ * ```
+ *
+ * ```ts
+ * this.control.setValue('some value');
+ * ```
+ *
+ * After (choice 2 - use template-driven forms):
+ *
+ * ```html
+ * <input [(ngModel)]="value">
+ * ```
+ *
+ * ```ts
+ * this.value = 'some value';
+ * ```
+ *
+ * By default, when you use this pattern, you will see a deprecation warning once in dev
+ * mode. You can choose to silence this warning by providing a config for
+ * `ReactiveFormsModule` at import time:
+ *
+ * ```ts
+ * imports: [
+ *   ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'});
+ * ]
+ * ```
+ *
+ * Alternatively, you can choose to surface a separate warning for each instance of this
+ * pattern with a config value of `"always"`. This may help to track down where in the code
+ * the pattern is being used as the code is being updated.
+ *
+ *
+ */
+var FormControlDirective = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(FormControlDirective, _super);
+    function FormControlDirective(validators, asyncValidators, valueAccessors, _ngModelWarningConfig) {
+        var _this = _super.call(this) || this;
+        _this._ngModelWarningConfig = _ngModelWarningConfig;
+        /** @deprecated as of v6 */
+        _this.update = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        /**
+         * Instance property used to track whether an ngModel warning has been sent out for this
+         * particular FormControlDirective instance. Used to support warning config of "always".
+         *
+         * @internal
+         */
+        _this._ngModelWarningSent = false;
+        _this._rawValidators = validators || [];
+        _this._rawAsyncValidators = asyncValidators || [];
+        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
+        return _this;
+    }
+    Object.defineProperty(FormControlDirective.prototype, "isDisabled", {
+        set: function (isDisabled) { ReactiveErrors.disabledAttrWarning(); },
+        enumerable: true,
+        configurable: true
+    });
+    FormControlDirective.prototype.ngOnChanges = function (changes) {
+        if (this._isControlChanged(changes)) {
+            setUpControl(this.form, this);
+            if (this.control.disabled && this.valueAccessor.setDisabledState) {
+                this.valueAccessor.setDisabledState(true);
+            }
+            this.form.updateValueAndValidity({ emitEvent: false });
+        }
+        if (isPropertyUpdated(changes, this.viewModel)) {
+            _ngModelWarning('formControl', FormControlDirective, this, this._ngModelWarningConfig);
+            this.form.setValue(this.model);
+            this.viewModel = this.model;
+        }
+    };
+    Object.defineProperty(FormControlDirective.prototype, "path", {
+        get: function () { return []; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlDirective.prototype, "validator", {
+        get: function () { return composeValidators(this._rawValidators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlDirective.prototype, "asyncValidator", {
+        get: function () {
+            return composeAsyncValidators(this._rawAsyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlDirective.prototype, "control", {
+        get: function () { return this.form; },
+        enumerable: true,
+        configurable: true
+    });
+    FormControlDirective.prototype.viewToModelUpdate = function (newValue) {
+        this.viewModel = newValue;
+        this.update.emit(newValue);
+    };
+    FormControlDirective.prototype._isControlChanged = function (changes) {
+        return changes.hasOwnProperty('form');
+    };
+    /**
+     * Static property used to track whether any ngModel warnings have been sent across
+     * all instances of FormControlDirective. Used to support warning config of "once".
+     *
+     * @internal
+     */
+    FormControlDirective._ngModelWarningSentOnce = false;
+    FormControlDirective.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: '[formControl]', providers: [formControlBinding$1], exportAs: 'ngForm' },] }
+    ];
+    /** @nocollapse */
+    FormControlDirective.ctorParameters = function () { return [
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_ASYNC_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALUE_ACCESSOR,] }] },
+        { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_MODEL_WITH_FORM_CONTROL_WARNING,] }] }
+    ]; };
+    FormControlDirective.propDecorators = {
+        form: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['formControl',] }],
+        isDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['disabled',] }],
+        model: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['ngModel',] }],
+        update: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"], args: ['ngModelChange',] }]
+    };
+    return FormControlDirective;
+}(NgControl));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formDirectiveProvider$1 = {
+    provide: ControlContainer,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return FormGroupDirective; })
+};
+/**
+ * @description
+ *
+ * Binds an existing `FormGroup` to a DOM element.
+ *
+ * This directive accepts an existing `FormGroup` instance. It will then use this
+ * `FormGroup` instance to match any child `FormControl`, `FormGroup`,
+ * and `FormArray` instances to child `FormControlName`, `FormGroupName`,
+ * and `FormArrayName` directives.
+ *
+ * **Set value**: You can set the form's initial value when instantiating the
+ * `FormGroup`, or you can set it programmatically later using the `FormGroup`'s
+ * {@link AbstractControl#setValue setValue} or {@link AbstractControl#patchValue patchValue}
+ * methods.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the form, you can subscribe
+ * to the `FormGroup`'s {@link AbstractControl#valueChanges valueChanges} event.  You can also
+ * listen to its {@link AbstractControl#statusChanges statusChanges} event to be notified when the
+ * validation status is re-calculated.
+ *
+ * Furthermore, you can listen to the directive's `ngSubmit` event to be notified when the user has
+ * triggered a form submission. The `ngSubmit` event will be emitted with the original form
+ * submission event.
+ *
+ * ### Example
+ *
+ * In this example, we create form controls for first name and last name.
+ *
+ * {@example forms/ts/simpleFormGroup/simple_form_group_example.ts region='Component'}
+ *
+ * **npm package**: `@angular/forms`
+ *
+ * **NgModule**: `ReactiveFormsModule`
+ *
+ *
+ */
+var FormGroupDirective = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(FormGroupDirective, _super);
+    function FormGroupDirective(_validators, _asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._validators = _validators;
+        _this._asyncValidators = _asyncValidators;
+        _this.submitted = false;
+        _this.directives = [];
+        _this.form = null;
+        _this.ngSubmit = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        return _this;
+    }
+    FormGroupDirective.prototype.ngOnChanges = function (changes) {
+        this._checkFormPresent();
+        if (changes.hasOwnProperty('form')) {
+            this._updateValidators();
+            this._updateDomValue();
+            this._updateRegistrations();
+        }
+    };
+    Object.defineProperty(FormGroupDirective.prototype, "formDirective", {
+        get: function () { return this; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormGroupDirective.prototype, "control", {
+        get: function () { return this.form; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormGroupDirective.prototype, "path", {
+        get: function () { return []; },
+        enumerable: true,
+        configurable: true
+    });
+    FormGroupDirective.prototype.addControl = function (dir) {
+        var ctrl = this.form.get(dir.path);
+        setUpControl(ctrl, dir);
+        ctrl.updateValueAndValidity({ emitEvent: false });
+        this.directives.push(dir);
+        return ctrl;
+    };
+    FormGroupDirective.prototype.getControl = function (dir) { return this.form.get(dir.path); };
+    FormGroupDirective.prototype.removeControl = function (dir) { removeDir(this.directives, dir); };
+    FormGroupDirective.prototype.addFormGroup = function (dir) {
+        var ctrl = this.form.get(dir.path);
+        setUpFormContainer(ctrl, dir);
+        ctrl.updateValueAndValidity({ emitEvent: false });
+    };
+    FormGroupDirective.prototype.removeFormGroup = function (dir) { };
+    FormGroupDirective.prototype.getFormGroup = function (dir) { return this.form.get(dir.path); };
+    FormGroupDirective.prototype.addFormArray = function (dir) {
+        var ctrl = this.form.get(dir.path);
+        setUpFormContainer(ctrl, dir);
+        ctrl.updateValueAndValidity({ emitEvent: false });
+    };
+    FormGroupDirective.prototype.removeFormArray = function (dir) { };
+    FormGroupDirective.prototype.getFormArray = function (dir) { return this.form.get(dir.path); };
+    FormGroupDirective.prototype.updateModel = function (dir, value) {
+        var ctrl = this.form.get(dir.path);
+        ctrl.setValue(value);
+    };
+    FormGroupDirective.prototype.onSubmit = function ($event) {
+        this.submitted = true;
+        syncPendingControls(this.form, this.directives);
+        this.ngSubmit.emit($event);
+        return false;
+    };
+    FormGroupDirective.prototype.onReset = function () { this.resetForm(); };
+    FormGroupDirective.prototype.resetForm = function (value) {
+        if (value === void 0) { value = undefined; }
+        this.form.reset(value);
+        this.submitted = false;
+    };
+    /** @internal */
+    FormGroupDirective.prototype._updateDomValue = function () {
+        var _this = this;
+        this.directives.forEach(function (dir) {
+            var newCtrl = _this.form.get(dir.path);
+            if (dir.control !== newCtrl) {
+                cleanUpControl(dir.control, dir);
+                if (newCtrl)
+                    setUpControl(newCtrl, dir);
+                dir.control = newCtrl;
+            }
+        });
+        this.form._updateTreeValidity({ emitEvent: false });
+    };
+    FormGroupDirective.prototype._updateRegistrations = function () {
+        var _this = this;
+        this.form._registerOnCollectionChange(function () { return _this._updateDomValue(); });
+        if (this._oldForm)
+            this._oldForm._registerOnCollectionChange(function () { });
+        this._oldForm = this.form;
+    };
+    FormGroupDirective.prototype._updateValidators = function () {
+        var sync = composeValidators(this._validators);
+        this.form.validator = Validators.compose([this.form.validator, sync]);
+        var async = composeAsyncValidators(this._asyncValidators);
+        this.form.asyncValidator = Validators.composeAsync([this.form.asyncValidator, async]);
+    };
+    FormGroupDirective.prototype._checkFormPresent = function () {
+        if (!this.form) {
+            ReactiveErrors.missingFormException();
+        }
+    };
+    FormGroupDirective.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: '[formGroup]',
+                    providers: [formDirectiveProvider$1],
+                    host: { '(submit)': 'onSubmit($event)', '(reset)': 'onReset()' },
+                    exportAs: 'ngForm'
+                },] }
+    ];
+    /** @nocollapse */
+    FormGroupDirective.ctorParameters = function () { return [
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_ASYNC_VALIDATORS,] }] }
+    ]; };
+    FormGroupDirective.propDecorators = {
+        form: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['formGroup',] }],
+        ngSubmit: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }]
+    };
+    return FormGroupDirective;
+}(ControlContainer));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formGroupNameProvider = {
+    provide: ControlContainer,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return FormGroupName; })
+};
+/**
+ * @description
+ *
+ * Syncs a nested `FormGroup` to a DOM element.
+ *
+ * This directive can only be used with a parent `FormGroupDirective` (selector:
+ * `[formGroup]`).
+ *
+ * It accepts the string name of the nested `FormGroup` you want to link, and
+ * will look for a `FormGroup` registered with that name in the parent
+ * `FormGroup` instance you passed into `FormGroupDirective`.
+ *
+ * Nested form groups can come in handy when you want to validate a sub-group of a
+ * form separately from the rest or when you'd like to group the values of certain
+ * controls into their own nested object.
+ *
+ * **Access the group**: You can access the associated `FormGroup` using the
+ * {@link AbstractControl#get get} method. Ex: `this.form.get('name')`.
+ *
+ * You can also access individual controls within the group using dot syntax.
+ * Ex: `this.form.get('name.first')`
+ *
+ * **Get the value**: the `value` property is always synced and available on the
+ * `FormGroup`. See a full list of available properties in `AbstractControl`.
+ *
+ * **Set the value**: You can set an initial value for each child control when instantiating
+ * the `FormGroup`, or you can set it programmatically later using
+ * {@link AbstractControl#setValue setValue} or {@link AbstractControl#patchValue patchValue}.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the group, you can
+ * subscribe to the {@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
+ * {@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
+ * re-calculated.
+ *
+ * ### Example
+ *
+ * {@example forms/ts/nestedFormGroup/nested_form_group_example.ts region='Component'}
+ *
+ * * **npm package**: `@angular/forms`
+ *
+ * * **NgModule**: `ReactiveFormsModule`
+ *
+ *
+ */
+var FormGroupName = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(FormGroupName, _super);
+    function FormGroupName(parent, validators, asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._parent = parent;
+        _this._validators = validators;
+        _this._asyncValidators = asyncValidators;
+        return _this;
+    }
+    /** @internal */
+    FormGroupName.prototype._checkParentType = function () {
+        if (_hasInvalidParent(this._parent)) {
+            ReactiveErrors.groupParentException();
+        }
+    };
+    FormGroupName.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: '[formGroupName]', providers: [formGroupNameProvider] },] }
+    ];
+    /** @nocollapse */
+    FormGroupName.ctorParameters = function () { return [
+        { type: ControlContainer, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["SkipSelf"] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_ASYNC_VALIDATORS,] }] }
+    ]; };
+    FormGroupName.propDecorators = {
+        name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['formGroupName',] }]
+    };
+    return FormGroupName;
+}(AbstractFormGroupDirective));
+var formArrayNameProvider = {
+    provide: ControlContainer,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return FormArrayName; })
+};
+/**
+ * @description
+ *
+ * Syncs a nested `FormArray` to a DOM element.
+ *
+ * This directive is designed to be used with a parent `FormGroupDirective` (selector:
+ * `[formGroup]`).
+ *
+ * It accepts the string name of the nested `FormArray` you want to link, and
+ * will look for a `FormArray` registered with that name in the parent
+ * `FormGroup` instance you passed into `FormGroupDirective`.
+ *
+ * Nested form arrays can come in handy when you have a group of form controls but
+ * you're not sure how many there will be. Form arrays allow you to create new
+ * form controls dynamically.
+ *
+ * **Access the array**: You can access the associated `FormArray` using the
+ * {@link AbstractControl#get get} method on the parent `FormGroup`.
+ * Ex: `this.form.get('cities')`.
+ *
+ * **Get the value**: the `value` property is always synced and available on the
+ * `FormArray`. See a full list of available properties in `AbstractControl`.
+ *
+ * **Set the value**: You can set an initial value for each child control when instantiating
+ * the `FormArray`, or you can set the value programmatically later using the
+ * `FormArray`'s {@link AbstractControl#setValue setValue} or
+ * {@link AbstractControl#patchValue patchValue} methods.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the array, you can
+ * subscribe to the `FormArray`'s {@link AbstractControl#valueChanges valueChanges} event.
+ * You can also listen to its {@link AbstractControl#statusChanges statusChanges} event to be
+ * notified when the validation status is re-calculated.
+ *
+ * **Add new controls**: You can add new controls to the `FormArray` dynamically by calling
+ * its {@link FormArray#push push} method.
+ * Ex: `this.form.get('cities').push(new FormControl());`
+ *
+ * ### Example
+ *
+ * {@example forms/ts/nestedFormArray/nested_form_array_example.ts region='Component'}
+ *
+ * * **npm package**: `@angular/forms`
+ *
+ * * **NgModule**: `ReactiveFormsModule`
+ *
+ *
+ */
+var FormArrayName = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(FormArrayName, _super);
+    function FormArrayName(parent, validators, asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._parent = parent;
+        _this._validators = validators;
+        _this._asyncValidators = asyncValidators;
+        return _this;
+    }
+    FormArrayName.prototype.ngOnInit = function () {
+        this._checkParentType();
+        this.formDirective.addFormArray(this);
+    };
+    FormArrayName.prototype.ngOnDestroy = function () {
+        if (this.formDirective) {
+            this.formDirective.removeFormArray(this);
+        }
+    };
+    Object.defineProperty(FormArrayName.prototype, "control", {
+        get: function () { return this.formDirective.getFormArray(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormArrayName.prototype, "formDirective", {
+        get: function () {
+            return this._parent ? this._parent.formDirective : null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormArrayName.prototype, "path", {
+        get: function () { return controlPath(this.name, this._parent); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormArrayName.prototype, "validator", {
+        get: function () { return composeValidators(this._validators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormArrayName.prototype, "asyncValidator", {
+        get: function () {
+            return composeAsyncValidators(this._asyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    FormArrayName.prototype._checkParentType = function () {
+        if (_hasInvalidParent(this._parent)) {
+            ReactiveErrors.arrayParentException();
+        }
+    };
+    FormArrayName.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: '[formArrayName]', providers: [formArrayNameProvider] },] }
+    ];
+    /** @nocollapse */
+    FormArrayName.ctorParameters = function () { return [
+        { type: ControlContainer, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["SkipSelf"] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_ASYNC_VALIDATORS,] }] }
+    ]; };
+    FormArrayName.propDecorators = {
+        name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['formArrayName',] }]
+    };
+    return FormArrayName;
+}(ControlContainer));
+function _hasInvalidParent(parent) {
+    return !(parent instanceof FormGroupName) && !(parent instanceof FormGroupDirective) &&
+        !(parent instanceof FormArrayName);
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var controlNameBinding = {
+    provide: NgControl,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return FormControlName; })
+};
+/**
+ * @description
+ *
+ * Syncs a `FormControl` in an existing `FormGroup` to a form control
+ * element by name.
+ *
+ * This directive ensures that any values written to the `FormControl`
+ * instance programmatically will be written to the DOM element (model -> view). Conversely,
+ * any values written to the DOM element through user input will be reflected in the
+ * `FormControl` instance (view -> model).
+ *
+ * This directive is designed to be used with a parent `FormGroupDirective` (selector:
+ * `[formGroup]`).
+ *
+ * It accepts the string name of the `FormControl` instance you want to
+ * link, and will look for a `FormControl` registered with that name in the
+ * closest `FormGroup` or `FormArray` above it.
+ *
+ * **Access the control**: You can access the `FormControl` associated with
+ * this directive by using the {@link AbstractControl#get get} method.
+ * Ex: `this.form.get('first');`
+ *
+ * **Get value**: the `value` property is always synced and available on the `FormControl`.
+ * See a full list of available properties in `AbstractControl`.
+ *
+ *  **Set value**: You can set an initial value for the control when instantiating the
+ *  `FormControl`, or you can set it programmatically later using
+ *  {@link AbstractControl#setValue setValue} or {@link AbstractControl#patchValue patchValue}.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the control, you can
+ * subscribe to the {@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
+ * {@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
+ * re-calculated.
+ *
+ * ### Example
+ *
+ * In this example, we create form controls for first name and last name.
+ *
+ * {@example forms/ts/simpleFormGroup/simple_form_group_example.ts region='Component'}
+ *
+ * To see `formControlName` examples with different form control types, see:
+ *
+ * * Radio buttons: `RadioControlValueAccessor`
+ * * Selects: `SelectControlValueAccessor`
+ *
+ * **npm package**: `@angular/forms`
+ *
+ * **NgModule**: `ReactiveFormsModule`
+ *
+ * ### Use with ngModel
+ *
+ * Support for using the `ngModel` input property and `ngModelChange` event with reactive
+ * form directives has been deprecated in Angular v6 and will be removed in Angular v7.
+ *
+ * Now deprecated:
+ * ```html
+ * <form [formGroup]="form">
+ *   <input formControlName="first" [(ngModel)]="value">
+ * </form>
+ * ```
+ *
+ * ```ts
+ * this.value = 'some value';
+ * ```
+ *
+ * This has been deprecated for a few reasons. First, developers have found this pattern
+ * confusing. It seems like the actual `ngModel` directive is being used, but in fact it's
+ * an input/output property named `ngModel` on the reactive form directive that simply
+ * approximates (some of) its behavior. Specifically, it allows getting/setting the value
+ * and intercepting value events. However, some of `ngModel`'s other features - like
+ * delaying updates with`ngModelOptions` or exporting the directive - simply don't work,
+ * which has understandably caused some confusion.
+ *
+ * In addition, this pattern mixes template-driven and reactive forms strategies, which
+ * we generally don't recommend because it doesn't take advantage of the full benefits of
+ * either strategy. Setting the value in the template violates the template-agnostic
+ * principles behind reactive forms, whereas adding a `FormControl`/`FormGroup` layer in
+ * the class removes the convenience of defining forms in the template.
+ *
+ * To update your code before v7, you'll want to decide whether to stick with reactive form
+ * directives (and get/set values using reactive forms patterns) or switch over to
+ * template-driven directives.
+ *
+ * After (choice 1 - use reactive forms):
+ *
+ * ```html
+ * <form [formGroup]="form">
+ *   <input formControlName="first">
+ * </form>
+ * ```
+ *
+ * ```ts
+ * this.form.get('first').setValue('some value');
+ * ```
+ *
+ * After (choice 2 - use template-driven forms):
+ *
+ * ```html
+ * <input [(ngModel)]="value">
+ * ```
+ *
+ * ```ts
+ * this.value = 'some value';
+ * ```
+ *
+ * By default, when you use this pattern, you will see a deprecation warning once in dev
+ * mode. You can choose to silence this warning by providing a config for
+ * `ReactiveFormsModule` at import time:
+ *
+ * ```ts
+ * imports: [
+ *   ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'});
+ * ]
+ * ```
+ *
+ * Alternatively, you can choose to surface a separate warning for each instance of this
+ * pattern with a config value of `"always"`. This may help to track down where in the code
+ * the pattern is being used as the code is being updated.
+ *
+ *
+ */
+var FormControlName = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(FormControlName, _super);
+    function FormControlName(parent, validators, asyncValidators, valueAccessors, _ngModelWarningConfig) {
+        var _this = _super.call(this) || this;
+        _this._ngModelWarningConfig = _ngModelWarningConfig;
+        _this._added = false;
+        /** @deprecated as of v6 */
+        _this.update = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        /**
+         * Instance property used to track whether an ngModel warning has been sent out for this
+         * particular FormControlName instance. Used to support warning config of "always".
+         *
+         * @internal
+         */
+        _this._ngModelWarningSent = false;
+        _this._parent = parent;
+        _this._rawValidators = validators || [];
+        _this._rawAsyncValidators = asyncValidators || [];
+        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
+        return _this;
+    }
+    Object.defineProperty(FormControlName.prototype, "isDisabled", {
+        set: function (isDisabled) { ReactiveErrors.disabledAttrWarning(); },
+        enumerable: true,
+        configurable: true
+    });
+    FormControlName.prototype.ngOnChanges = function (changes) {
+        if (!this._added)
+            this._setUpControl();
+        if (isPropertyUpdated(changes, this.viewModel)) {
+            _ngModelWarning('formControlName', FormControlName, this, this._ngModelWarningConfig);
+            this.viewModel = this.model;
+            this.formDirective.updateModel(this, this.model);
+        }
+    };
+    FormControlName.prototype.ngOnDestroy = function () {
+        if (this.formDirective) {
+            this.formDirective.removeControl(this);
+        }
+    };
+    FormControlName.prototype.viewToModelUpdate = function (newValue) {
+        this.viewModel = newValue;
+        this.update.emit(newValue);
+    };
+    Object.defineProperty(FormControlName.prototype, "path", {
+        get: function () { return controlPath(this.name, this._parent); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlName.prototype, "formDirective", {
+        get: function () { return this._parent ? this._parent.formDirective : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlName.prototype, "validator", {
+        get: function () { return composeValidators(this._rawValidators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlName.prototype, "asyncValidator", {
+        get: function () {
+            return composeAsyncValidators(this._rawAsyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    FormControlName.prototype._checkParentType = function () {
+        if (!(this._parent instanceof FormGroupName) &&
+            this._parent instanceof AbstractFormGroupDirective) {
+            ReactiveErrors.ngModelGroupException();
+        }
+        else if (!(this._parent instanceof FormGroupName) && !(this._parent instanceof FormGroupDirective) &&
+            !(this._parent instanceof FormArrayName)) {
+            ReactiveErrors.controlParentException();
+        }
+    };
+    FormControlName.prototype._setUpControl = function () {
+        this._checkParentType();
+        this.control = this.formDirective.addControl(this);
+        if (this.control.disabled && this.valueAccessor.setDisabledState) {
+            this.valueAccessor.setDisabledState(true);
+        }
+        this._added = true;
+    };
+    /**
+     * Static property used to track whether any ngModel warnings have been sent across
+     * all instances of FormControlName. Used to support warning config of "once".
+     *
+     * @internal
+     */
+    FormControlName._ngModelWarningSentOnce = false;
+    FormControlName.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{ selector: '[formControlName]', providers: [controlNameBinding] },] }
+    ];
+    /** @nocollapse */
+    FormControlName.ctorParameters = function () { return [
+        { type: ControlContainer, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["SkipSelf"] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_ASYNC_VALIDATORS,] }] },
+        { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_VALUE_ACCESSOR,] }] },
+        { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NG_MODEL_WITH_FORM_CONTROL_WARNING,] }] }
+    ]; };
+    FormControlName.propDecorators = {
+        name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['formControlName',] }],
+        isDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['disabled',] }],
+        model: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['ngModel',] }],
+        update: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"], args: ['ngModelChange',] }]
+    };
+    return FormControlName;
+}(NgControl));
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var REQUIRED_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return RequiredValidator; }),
+    multi: true
+};
+var CHECKBOX_REQUIRED_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return CheckboxRequiredValidator; }),
+    multi: true
+};
+/**
+ * A Directive that adds the `required` validator to any controls marked with the
+ * `required` attribute, via the `NG_VALIDATORS` binding.
+ *
+ * ### Example
+ *
+ * ```
+ * <input name="fullName" ngModel required>
+ * ```
+ *
+ *
+ */
+var RequiredValidator = /** @class */ (function () {
+    function RequiredValidator() {
+    }
+    Object.defineProperty(RequiredValidator.prototype, "required", {
+        get: function () { return this._required; },
+        set: function (value) {
+            this._required = value != null && value !== false && "" + value !== 'false';
+            if (this._onChange)
+                this._onChange();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    RequiredValidator.prototype.validate = function (c) {
+        return this.required ? Validators.required(c) : null;
+    };
+    RequiredValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    RequiredValidator.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: ':not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel]',
+                    providers: [REQUIRED_VALIDATOR],
+                    host: { '[attr.required]': 'required ? "" : null' }
+                },] }
+    ];
+    RequiredValidator.propDecorators = {
+        required: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    };
+    return RequiredValidator;
+}());
+/**
+ * A Directive that adds the `required` validator to checkbox controls marked with the
+ * `required` attribute, via the `NG_VALIDATORS` binding.
+ *
+ * ### Example
+ *
+ * ```
+ * <input type="checkbox" name="active" ngModel required>
+ * ```
+ *
+ * @experimental
+ */
+var CheckboxRequiredValidator = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(CheckboxRequiredValidator, _super);
+    function CheckboxRequiredValidator() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    CheckboxRequiredValidator.prototype.validate = function (c) {
+        return this.required ? Validators.requiredTrue(c) : null;
+    };
+    CheckboxRequiredValidator.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'input[type=checkbox][required][formControlName],input[type=checkbox][required][formControl],input[type=checkbox][required][ngModel]',
+                    providers: [CHECKBOX_REQUIRED_VALIDATOR],
+                    host: { '[attr.required]': 'required ? "" : null' }
+                },] }
+    ];
+    return CheckboxRequiredValidator;
+}(RequiredValidator));
+/**
+ * Provider which adds `EmailValidator` to `NG_VALIDATORS`.
+ */
+var EMAIL_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return EmailValidator; }),
+    multi: true
+};
+/**
+ * A Directive that adds the `email` validator to controls marked with the
+ * `email` attribute, via the `NG_VALIDATORS` binding.
+ *
+ * ### Example
+ *
+ * ```
+ * <input type="email" name="email" ngModel email>
+ * <input type="email" name="email" ngModel email="true">
+ * <input type="email" name="email" ngModel [email]="true">
+ * ```
+ *
+ * @experimental
+ */
+var EmailValidator = /** @class */ (function () {
+    function EmailValidator() {
+    }
+    Object.defineProperty(EmailValidator.prototype, "email", {
+        set: function (value) {
+            this._enabled = value === '' || value === true || value === 'true';
+            if (this._onChange)
+                this._onChange();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    EmailValidator.prototype.validate = function (c) {
+        return this._enabled ? Validators.email(c) : null;
+    };
+    EmailValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    EmailValidator.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: '[email][formControlName],[email][formControl],[email][ngModel]',
+                    providers: [EMAIL_VALIDATOR]
+                },] }
+    ];
+    EmailValidator.propDecorators = {
+        email: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    };
+    return EmailValidator;
+}());
+/**
+ * Provider which adds `MinLengthValidator` to `NG_VALIDATORS`.
+ *
+ * ## Example:
+ *
+ * {@example common/forms/ts/validators/validators.ts region='min'}
+ */
+var MIN_LENGTH_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return MinLengthValidator; }),
+    multi: true
+};
+/**
+ * A directive which installs the `MinLengthValidator` for any `formControlName`,
+ * `formControl`, or control with `ngModel` that also has a `minlength` attribute.
+ *
+ *
+ */
+var MinLengthValidator = /** @class */ (function () {
+    function MinLengthValidator() {
+    }
+    MinLengthValidator.prototype.ngOnChanges = function (changes) {
+        if ('minlength' in changes) {
+            this._createValidator();
+            if (this._onChange)
+                this._onChange();
+        }
+    };
+    MinLengthValidator.prototype.validate = function (c) {
+        return this.minlength == null ? null : this._validator(c);
+    };
+    MinLengthValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    MinLengthValidator.prototype._createValidator = function () {
+        this._validator = Validators.minLength(parseInt(this.minlength, 10));
+    };
+    MinLengthValidator.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: '[minlength][formControlName],[minlength][formControl],[minlength][ngModel]',
+                    providers: [MIN_LENGTH_VALIDATOR],
+                    host: { '[attr.minlength]': 'minlength ? minlength : null' }
+                },] }
+    ];
+    MinLengthValidator.propDecorators = {
+        minlength: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    };
+    return MinLengthValidator;
+}());
+/**
+ * Provider which adds `MaxLengthValidator` to `NG_VALIDATORS`.
+ *
+ * ## Example:
+ *
+ * {@example common/forms/ts/validators/validators.ts region='max'}
+ */
+var MAX_LENGTH_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return MaxLengthValidator; }),
+    multi: true
+};
+/**
+ * A directive which installs the `MaxLengthValidator` for any `formControlName`,
+ * `formControl`, or control with `ngModel` that also has a `maxlength` attribute.
+ *
+ *
+ */
+var MaxLengthValidator = /** @class */ (function () {
+    function MaxLengthValidator() {
+    }
+    MaxLengthValidator.prototype.ngOnChanges = function (changes) {
+        if ('maxlength' in changes) {
+            this._createValidator();
+            if (this._onChange)
+                this._onChange();
+        }
+    };
+    MaxLengthValidator.prototype.validate = function (c) {
+        return this.maxlength != null ? this._validator(c) : null;
+    };
+    MaxLengthValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    MaxLengthValidator.prototype._createValidator = function () {
+        this._validator = Validators.maxLength(parseInt(this.maxlength, 10));
+    };
+    MaxLengthValidator.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: '[maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel]',
+                    providers: [MAX_LENGTH_VALIDATOR],
+                    host: { '[attr.maxlength]': 'maxlength ? maxlength : null' }
+                },] }
+    ];
+    MaxLengthValidator.propDecorators = {
+        maxlength: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    };
+    return MaxLengthValidator;
+}());
+var PATTERN_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function () { return PatternValidator; }),
+    multi: true
+};
+/**
+ * A Directive that adds the `pattern` validator to any controls marked with the
+ * `pattern` attribute, via the `NG_VALIDATORS` binding. Uses attribute value
+ * as the regex to validate Control value against.  Follows pattern attribute
+ * semantics; i.e. regex must match entire Control value.
+ *
+ * ### Example
+ *
+ * ```
+ * <input [name]="fullName" pattern="[a-zA-Z ]*" ngModel>
+ * ```
+ *
+ */
+var PatternValidator = /** @class */ (function () {
+    function PatternValidator() {
+    }
+    PatternValidator.prototype.ngOnChanges = function (changes) {
+        if ('pattern' in changes) {
+            this._createValidator();
+            if (this._onChange)
+                this._onChange();
+        }
+    };
+    PatternValidator.prototype.validate = function (c) { return this._validator(c); };
+    PatternValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    PatternValidator.prototype._createValidator = function () { this._validator = Validators.pattern(this.pattern); };
+    PatternValidator.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: '[pattern][formControlName],[pattern][formControl],[pattern][ngModel]',
+                    providers: [PATTERN_VALIDATOR],
+                    host: { '[attr.pattern]': 'pattern ? pattern : null' }
+                },] }
+    ];
+    PatternValidator.propDecorators = {
+        pattern: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    };
+    return PatternValidator;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ * Creates an `AbstractControl` from a user-specified configuration.
+ *
+ * The `FormBuilder` provides syntactic sugar that shortens creating instances of a `FormControl`,
+ * `FormGroup`, or `FormArray`. It reduces the amount of boilerplate needed to build complex
+ * forms.
+ *
+ * @see [Reactive Forms Guide](/guide/reactive-forms)
+ *
+ */
+var FormBuilder = /** @class */ (function () {
+    function FormBuilder() {
+    }
+    /**
+     * @description
+     * Construct a new `FormGroup` instance.
+     *
+     * @param controlsConfig A collection of child controls. The key for each child is the name
+     * under which it is registered.
+     *
+     * @param extra An object of configuration options for the `FormGroup`.
+     * * `validator`: A synchronous validator function, or an array of validator functions
+     * * `asyncValidator`: A single async validator or array of async validator functions
+     *
+     */
+    FormBuilder.prototype.group = function (controlsConfig, extra) {
+        if (extra === void 0) { extra = null; }
+        var controls = this._reduceControls(controlsConfig);
+        var validator = extra != null ? extra['validator'] : null;
+        var asyncValidator = extra != null ? extra['asyncValidator'] : null;
+        return new FormGroup(controls, validator, asyncValidator);
+    };
+    /**
+     * @description
+     * Construct a new `FormControl` instance.
+     *
+     * @param formState Initializes the control with an initial value,
+     * or an object that defines the initial value and disabled state.
+     *
+     * @param validator A synchronous validator function, or an array of synchronous validator
+     * functions.
+     *
+     * @param asyncValidator A single async validator or array of async validator functions
+     *
+     * @usageNotes
+     *
+     * ### Initialize a control as disabled
+     *
+     * The following example returns a control with an initial value in a disabled state.
+     *
+     * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
+     *   linenums="false" region="disabled-control">
+     * </code-example>
+     *
+     */
+    FormBuilder.prototype.control = function (formState, validator, asyncValidator) {
+        return new FormControl(formState, validator, asyncValidator);
+    };
+    /**
+     * @description
+     * Construct a new `FormArray` instance.
+     *
+     * @param controlsConfig An array of child controls. The key for each child control is its index
+     * in the array.
+     *
+     * @param validator A synchronous validator function, or an array of synchronous validator
+     * functions.
+     *
+     * @param asyncValidator A single async validator or array of async validator functions
+     */
+    FormBuilder.prototype.array = function (controlsConfig, validator, asyncValidator) {
+        var _this = this;
+        var controls = controlsConfig.map(function (c) { return _this._createControl(c); });
+        return new FormArray(controls, validator, asyncValidator);
+    };
+    /** @internal */
+    FormBuilder.prototype._reduceControls = function (controlsConfig) {
+        var _this = this;
+        var controls = {};
+        Object.keys(controlsConfig).forEach(function (controlName) {
+            controls[controlName] = _this._createControl(controlsConfig[controlName]);
+        });
+        return controls;
+    };
+    /** @internal */
+    FormBuilder.prototype._createControl = function (controlConfig) {
+        if (controlConfig instanceof FormControl || controlConfig instanceof FormGroup ||
+            controlConfig instanceof FormArray) {
+            return controlConfig;
+        }
+        else if (Array.isArray(controlConfig)) {
+            var value = controlConfig[0];
+            var validator = controlConfig.length > 1 ? controlConfig[1] : null;
+            var asyncValidator = controlConfig.length > 2 ? controlConfig[2] : null;
+            return this.control(value, validator, asyncValidator);
+        }
+        else {
+            return this.control(controlConfig);
+        }
+    };
+    FormBuilder.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] }
+    ];
+    return FormBuilder;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('6.1.4');
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @description
+ *
+ * Adds `novalidate` attribute to all forms by default.
+ *
+ * `novalidate` is used to disable browser's native form validation.
+ *
+ * If you want to use native validation with Angular forms, just add `ngNativeValidate` attribute:
+ *
+ * ```
+ * <form ngNativeValidate></form>
+ * ```
+ *
+ * @experimental
+ */
+var NgNoValidate = /** @class */ (function () {
+    function NgNoValidate() {
+    }
+    NgNoValidate.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                    selector: 'form:not([ngNoForm]):not([ngNativeValidate])',
+                    host: { 'novalidate': '' },
+                },] }
+    ];
+    return NgNoValidate;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var SHARED_FORM_DIRECTIVES = [
+    NgNoValidate,
+    NgSelectOption,
+    NgSelectMultipleOption,
+    DefaultValueAccessor,
+    NumberValueAccessor,
+    RangeValueAccessor,
+    CheckboxControlValueAccessor,
+    SelectControlValueAccessor,
+    SelectMultipleControlValueAccessor,
+    RadioControlValueAccessor,
+    NgControlStatus,
+    NgControlStatusGroup,
+    RequiredValidator,
+    MinLengthValidator,
+    MaxLengthValidator,
+    PatternValidator,
+    CheckboxRequiredValidator,
+    EmailValidator,
+];
+var TEMPLATE_DRIVEN_DIRECTIVES = [NgModel, NgModelGroup, NgForm];
+var REACTIVE_DRIVEN_DIRECTIVES = [FormControlDirective, FormGroupDirective, FormControlName, FormGroupName, FormArrayName];
+/**
+ * Internal module used for sharing directives between FormsModule and ReactiveFormsModule
+ */
+var InternalFormsSharedModule = /** @class */ (function () {
+    function InternalFormsSharedModule() {
+    }
+    InternalFormsSharedModule.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
+                    declarations: SHARED_FORM_DIRECTIVES,
+                    exports: SHARED_FORM_DIRECTIVES,
+                },] }
+    ];
+    return InternalFormsSharedModule;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * The ng module for forms.
+ *
+ */
+var FormsModule = /** @class */ (function () {
+    function FormsModule() {
+    }
+    FormsModule.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
+                    declarations: TEMPLATE_DRIVEN_DIRECTIVES,
+                    providers: [RadioControlRegistry],
+                    exports: [InternalFormsSharedModule, TEMPLATE_DRIVEN_DIRECTIVES]
+                },] }
+    ];
+    return FormsModule;
+}());
+/**
+ * The ng module for reactive forms.
+ *
+ */
+var ReactiveFormsModule = /** @class */ (function () {
+    function ReactiveFormsModule() {
+    }
+    ReactiveFormsModule.withConfig = function (opts) {
+        return {
+            ngModule: ReactiveFormsModule,
+            providers: [{
+                    provide: NG_MODEL_WITH_FORM_CONTROL_WARNING,
+                    useValue: opts.warnOnNgModelWithFormControl
+                }]
+        };
+    };
+    ReactiveFormsModule.decorators = [
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
+                    declarations: [REACTIVE_DRIVEN_DIRECTIVES],
+                    providers: [FormBuilder, RadioControlRegistry],
+                    exports: [InternalFormsSharedModule, REACTIVE_DRIVEN_DIRECTIVES]
+                },] }
+    ];
+    return ReactiveFormsModule;
+}());
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+// This file only reexports content of the `src` folder. Keep it that way.
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+//# sourceMappingURL=forms.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js":
 /*!******************************************************************************************!*\
   !*** ./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js ***!
@@ -61898,6 +67534,4607 @@ var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('6.1.4')
 
 
 //# sourceMappingURL=router.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/after/index.js":
+/*!*************************************!*\
+  !*** ./node_modules/after/index.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = after
+
+function after(count, callback, err_cb) {
+    var bail = false
+    err_cb = err_cb || noop
+    proxy.count = count
+
+    return (count === 0) ? callback() : proxy
+
+    function proxy(err, result) {
+        if (proxy.count <= 0) {
+            throw new Error('after called too many times')
+        }
+        --proxy.count
+
+        // after first error, rest are passed to err_cb
+        if (err) {
+            bail = true
+            callback(err)
+            // future error callbacks will go to error handler
+            callback = err_cb
+        } else if (proxy.count === 0 && !bail) {
+            callback(null, result)
+        }
+    }
+}
+
+function noop() {}
+
+
+/***/ }),
+
+/***/ "./node_modules/arraybuffer.slice/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/arraybuffer.slice/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * An abstraction for slicing an arraybuffer even when
+ * ArrayBuffer.prototype.slice is not supported
+ *
+ * @api public
+ */
+
+module.exports = function(arraybuffer, start, end) {
+  var bytes = arraybuffer.byteLength;
+  start = start || 0;
+  end = end || bytes;
+
+  if (arraybuffer.slice) { return arraybuffer.slice(start, end); }
+
+  if (start < 0) { start += bytes; }
+  if (end < 0) { end += bytes; }
+  if (end > bytes) { end = bytes; }
+
+  if (start >= bytes || start >= end || bytes === 0) {
+    return new ArrayBuffer(0);
+  }
+
+  var abv = new Uint8Array(arraybuffer);
+  var result = new Uint8Array(end - start);
+  for (var i = start, ii = 0; i < end; i++, ii++) {
+    result[ii] = abv[i];
+  }
+  return result.buffer;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/backo2/index.js":
+/*!**************************************!*\
+  !*** ./node_modules/backo2/index.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * Expose `Backoff`.
+ */
+
+module.exports = Backoff;
+
+/**
+ * Initialize backoff timer with `opts`.
+ *
+ * - `min` initial timeout in milliseconds [100]
+ * - `max` max timeout [10000]
+ * - `jitter` [0]
+ * - `factor` [2]
+ *
+ * @param {Object} opts
+ * @api public
+ */
+
+function Backoff(opts) {
+  opts = opts || {};
+  this.ms = opts.min || 100;
+  this.max = opts.max || 10000;
+  this.factor = opts.factor || 2;
+  this.jitter = opts.jitter > 0 && opts.jitter <= 1 ? opts.jitter : 0;
+  this.attempts = 0;
+}
+
+/**
+ * Return the backoff duration.
+ *
+ * @return {Number}
+ * @api public
+ */
+
+Backoff.prototype.duration = function(){
+  var ms = this.ms * Math.pow(this.factor, this.attempts++);
+  if (this.jitter) {
+    var rand =  Math.random();
+    var deviation = Math.floor(rand * this.jitter * ms);
+    ms = (Math.floor(rand * 10) & 1) == 0  ? ms - deviation : ms + deviation;
+  }
+  return Math.min(ms, this.max) | 0;
+};
+
+/**
+ * Reset the number of attempts.
+ *
+ * @api public
+ */
+
+Backoff.prototype.reset = function(){
+  this.attempts = 0;
+};
+
+/**
+ * Set the minimum duration
+ *
+ * @api public
+ */
+
+Backoff.prototype.setMin = function(min){
+  this.ms = min;
+};
+
+/**
+ * Set the maximum duration
+ *
+ * @api public
+ */
+
+Backoff.prototype.setMax = function(max){
+  this.max = max;
+};
+
+/**
+ * Set the jitter
+ *
+ * @api public
+ */
+
+Backoff.prototype.setJitter = function(jitter){
+  this.jitter = jitter;
+};
+
+
+
+/***/ }),
+
+/***/ "./node_modules/base64-arraybuffer/lib/base64-arraybuffer.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/base64-arraybuffer/lib/base64-arraybuffer.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+ * base64-arraybuffer
+ * https://github.com/niklasvh/base64-arraybuffer
+ *
+ * Copyright (c) 2012 Niklas von Hertzen
+ * Licensed under the MIT license.
+ */
+(function(){
+  "use strict";
+
+  var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
+  // Use a lookup table to find the index.
+  var lookup = new Uint8Array(256);
+  for (var i = 0; i < chars.length; i++) {
+    lookup[chars.charCodeAt(i)] = i;
+  }
+
+  exports.encode = function(arraybuffer) {
+    var bytes = new Uint8Array(arraybuffer),
+    i, len = bytes.length, base64 = "";
+
+    for (i = 0; i < len; i+=3) {
+      base64 += chars[bytes[i] >> 2];
+      base64 += chars[((bytes[i] & 3) << 4) | (bytes[i + 1] >> 4)];
+      base64 += chars[((bytes[i + 1] & 15) << 2) | (bytes[i + 2] >> 6)];
+      base64 += chars[bytes[i + 2] & 63];
+    }
+
+    if ((len % 3) === 2) {
+      base64 = base64.substring(0, base64.length - 1) + "=";
+    } else if (len % 3 === 1) {
+      base64 = base64.substring(0, base64.length - 2) + "==";
+    }
+
+    return base64;
+  };
+
+  exports.decode =  function(base64) {
+    var bufferLength = base64.length * 0.75,
+    len = base64.length, i, p = 0,
+    encoded1, encoded2, encoded3, encoded4;
+
+    if (base64[base64.length - 1] === "=") {
+      bufferLength--;
+      if (base64[base64.length - 2] === "=") {
+        bufferLength--;
+      }
+    }
+
+    var arraybuffer = new ArrayBuffer(bufferLength),
+    bytes = new Uint8Array(arraybuffer);
+
+    for (i = 0; i < len; i+=4) {
+      encoded1 = lookup[base64.charCodeAt(i)];
+      encoded2 = lookup[base64.charCodeAt(i+1)];
+      encoded3 = lookup[base64.charCodeAt(i+2)];
+      encoded4 = lookup[base64.charCodeAt(i+3)];
+
+      bytes[p++] = (encoded1 << 2) | (encoded2 >> 4);
+      bytes[p++] = ((encoded2 & 15) << 4) | (encoded3 >> 2);
+      bytes[p++] = ((encoded3 & 3) << 6) | (encoded4 & 63);
+    }
+
+    return arraybuffer;
+  };
+})();
+
+
+/***/ }),
+
+/***/ "./node_modules/blob/index.js":
+/*!************************************!*\
+  !*** ./node_modules/blob/index.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Create a blob builder even when vendor prefixes exist
+ */
+
+var BlobBuilder = global.BlobBuilder
+  || global.WebKitBlobBuilder
+  || global.MSBlobBuilder
+  || global.MozBlobBuilder;
+
+/**
+ * Check if Blob constructor is supported
+ */
+
+var blobSupported = (function() {
+  try {
+    var a = new Blob(['hi']);
+    return a.size === 2;
+  } catch(e) {
+    return false;
+  }
+})();
+
+/**
+ * Check if Blob constructor supports ArrayBufferViews
+ * Fails in Safari 6, so we need to map to ArrayBuffers there.
+ */
+
+var blobSupportsArrayBufferView = blobSupported && (function() {
+  try {
+    var b = new Blob([new Uint8Array([1,2])]);
+    return b.size === 2;
+  } catch(e) {
+    return false;
+  }
+})();
+
+/**
+ * Check if BlobBuilder is supported
+ */
+
+var blobBuilderSupported = BlobBuilder
+  && BlobBuilder.prototype.append
+  && BlobBuilder.prototype.getBlob;
+
+/**
+ * Helper function that maps ArrayBufferViews to ArrayBuffers
+ * Used by BlobBuilder constructor and old browsers that didn't
+ * support it in the Blob constructor.
+ */
+
+function mapArrayBufferViews(ary) {
+  for (var i = 0; i < ary.length; i++) {
+    var chunk = ary[i];
+    if (chunk.buffer instanceof ArrayBuffer) {
+      var buf = chunk.buffer;
+
+      // if this is a subarray, make a copy so we only
+      // include the subarray region from the underlying buffer
+      if (chunk.byteLength !== buf.byteLength) {
+        var copy = new Uint8Array(chunk.byteLength);
+        copy.set(new Uint8Array(buf, chunk.byteOffset, chunk.byteLength));
+        buf = copy.buffer;
+      }
+
+      ary[i] = buf;
+    }
+  }
+}
+
+function BlobBuilderConstructor(ary, options) {
+  options = options || {};
+
+  var bb = new BlobBuilder();
+  mapArrayBufferViews(ary);
+
+  for (var i = 0; i < ary.length; i++) {
+    bb.append(ary[i]);
+  }
+
+  return (options.type) ? bb.getBlob(options.type) : bb.getBlob();
+};
+
+function BlobConstructor(ary, options) {
+  mapArrayBufferViews(ary);
+  return new Blob(ary, options || {});
+};
+
+module.exports = (function() {
+  if (blobSupported) {
+    return blobSupportsArrayBufferView ? global.Blob : BlobConstructor;
+  } else if (blobBuilderSupported) {
+    return BlobBuilderConstructor;
+  } else {
+    return undefined;
+  }
+})();
+
+
+/***/ }),
+
+/***/ "./node_modules/component-bind/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/component-bind/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Slice reference.
+ */
+
+var slice = [].slice;
+
+/**
+ * Bind `obj` to `fn`.
+ *
+ * @param {Object} obj
+ * @param {Function|String} fn or string
+ * @return {Function}
+ * @api public
+ */
+
+module.exports = function(obj, fn){
+  if ('string' == typeof fn) fn = obj[fn];
+  if ('function' != typeof fn) throw new Error('bind() requires a function');
+  var args = slice.call(arguments, 2);
+  return function(){
+    return fn.apply(obj, args.concat(slice.call(arguments)));
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/component-emitter/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/component-emitter/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Expose `Emitter`.
+ */
+
+if (true) {
+  module.exports = Emitter;
+}
+
+/**
+ * Initialize a new `Emitter`.
+ *
+ * @api public
+ */
+
+function Emitter(obj) {
+  if (obj) return mixin(obj);
+};
+
+/**
+ * Mixin the emitter properties.
+ *
+ * @param {Object} obj
+ * @return {Object}
+ * @api private
+ */
+
+function mixin(obj) {
+  for (var key in Emitter.prototype) {
+    obj[key] = Emitter.prototype[key];
+  }
+  return obj;
+}
+
+/**
+ * Listen on the given `event` with `fn`.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.on =
+Emitter.prototype.addEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
+    .push(fn);
+  return this;
+};
+
+/**
+ * Adds an `event` listener that will be invoked a single
+ * time then automatically removed.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.once = function(event, fn){
+  function on() {
+    this.off(event, on);
+    fn.apply(this, arguments);
+  }
+
+  on.fn = fn;
+  this.on(event, on);
+  return this;
+};
+
+/**
+ * Remove the given callback for `event` or all
+ * registered callbacks.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.off =
+Emitter.prototype.removeListener =
+Emitter.prototype.removeAllListeners =
+Emitter.prototype.removeEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+
+  // all
+  if (0 == arguments.length) {
+    this._callbacks = {};
+    return this;
+  }
+
+  // specific event
+  var callbacks = this._callbacks['$' + event];
+  if (!callbacks) return this;
+
+  // remove all handlers
+  if (1 == arguments.length) {
+    delete this._callbacks['$' + event];
+    return this;
+  }
+
+  // remove specific handler
+  var cb;
+  for (var i = 0; i < callbacks.length; i++) {
+    cb = callbacks[i];
+    if (cb === fn || cb.fn === fn) {
+      callbacks.splice(i, 1);
+      break;
+    }
+  }
+  return this;
+};
+
+/**
+ * Emit `event` with the given args.
+ *
+ * @param {String} event
+ * @param {Mixed} ...
+ * @return {Emitter}
+ */
+
+Emitter.prototype.emit = function(event){
+  this._callbacks = this._callbacks || {};
+  var args = [].slice.call(arguments, 1)
+    , callbacks = this._callbacks['$' + event];
+
+  if (callbacks) {
+    callbacks = callbacks.slice(0);
+    for (var i = 0, len = callbacks.length; i < len; ++i) {
+      callbacks[i].apply(this, args);
+    }
+  }
+
+  return this;
+};
+
+/**
+ * Return array of callbacks for `event`.
+ *
+ * @param {String} event
+ * @return {Array}
+ * @api public
+ */
+
+Emitter.prototype.listeners = function(event){
+  this._callbacks = this._callbacks || {};
+  return this._callbacks['$' + event] || [];
+};
+
+/**
+ * Check if this emitter has `event` handlers.
+ *
+ * @param {String} event
+ * @return {Boolean}
+ * @api public
+ */
+
+Emitter.prototype.hasListeners = function(event){
+  return !! this.listeners(event).length;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/component-inherit/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/component-inherit/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+module.exports = function(a, b){
+  var fn = function(){};
+  fn.prototype = b.prototype;
+  a.prototype = new fn;
+  a.prototype.constructor = a;
+};
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+module.exports = __webpack_require__(/*! ./socket */ "./node_modules/engine.io-client/lib/socket.js");
+
+/**
+ * Exports parser
+ *
+ * @api public
+ *
+ */
+module.exports.parser = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/lib/browser.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/socket.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/socket.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Module dependencies.
+ */
+
+var transports = __webpack_require__(/*! ./transports/index */ "./node_modules/engine.io-client/lib/transports/index.js");
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/component-emitter/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/engine.io-client/node_modules/debug/src/browser.js")('engine.io-client:socket');
+var index = __webpack_require__(/*! indexof */ "./node_modules/indexof/index.js");
+var parser = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/lib/browser.js");
+var parseuri = __webpack_require__(/*! parseuri */ "./node_modules/parseuri/index.js");
+var parseqs = __webpack_require__(/*! parseqs */ "./node_modules/parseqs/index.js");
+
+/**
+ * Module exports.
+ */
+
+module.exports = Socket;
+
+/**
+ * Socket constructor.
+ *
+ * @param {String|Object} uri or options
+ * @param {Object} options
+ * @api public
+ */
+
+function Socket (uri, opts) {
+  if (!(this instanceof Socket)) return new Socket(uri, opts);
+
+  opts = opts || {};
+
+  if (uri && 'object' === typeof uri) {
+    opts = uri;
+    uri = null;
+  }
+
+  if (uri) {
+    uri = parseuri(uri);
+    opts.hostname = uri.host;
+    opts.secure = uri.protocol === 'https' || uri.protocol === 'wss';
+    opts.port = uri.port;
+    if (uri.query) opts.query = uri.query;
+  } else if (opts.host) {
+    opts.hostname = parseuri(opts.host).host;
+  }
+
+  this.secure = null != opts.secure ? opts.secure
+    : (global.location && 'https:' === location.protocol);
+
+  if (opts.hostname && !opts.port) {
+    // if no port is specified manually, use the protocol default
+    opts.port = this.secure ? '443' : '80';
+  }
+
+  this.agent = opts.agent || false;
+  this.hostname = opts.hostname ||
+    (global.location ? location.hostname : 'localhost');
+  this.port = opts.port || (global.location && location.port
+      ? location.port
+      : (this.secure ? 443 : 80));
+  this.query = opts.query || {};
+  if ('string' === typeof this.query) this.query = parseqs.decode(this.query);
+  this.upgrade = false !== opts.upgrade;
+  this.path = (opts.path || '/engine.io').replace(/\/$/, '') + '/';
+  this.forceJSONP = !!opts.forceJSONP;
+  this.jsonp = false !== opts.jsonp;
+  this.forceBase64 = !!opts.forceBase64;
+  this.enablesXDR = !!opts.enablesXDR;
+  this.timestampParam = opts.timestampParam || 't';
+  this.timestampRequests = opts.timestampRequests;
+  this.transports = opts.transports || ['polling', 'websocket'];
+  this.transportOptions = opts.transportOptions || {};
+  this.readyState = '';
+  this.writeBuffer = [];
+  this.prevBufferLen = 0;
+  this.policyPort = opts.policyPort || 843;
+  this.rememberUpgrade = opts.rememberUpgrade || false;
+  this.binaryType = null;
+  this.onlyBinaryUpgrades = opts.onlyBinaryUpgrades;
+  this.perMessageDeflate = false !== opts.perMessageDeflate ? (opts.perMessageDeflate || {}) : false;
+
+  if (true === this.perMessageDeflate) this.perMessageDeflate = {};
+  if (this.perMessageDeflate && null == this.perMessageDeflate.threshold) {
+    this.perMessageDeflate.threshold = 1024;
+  }
+
+  // SSL options for Node.js client
+  this.pfx = opts.pfx || null;
+  this.key = opts.key || null;
+  this.passphrase = opts.passphrase || null;
+  this.cert = opts.cert || null;
+  this.ca = opts.ca || null;
+  this.ciphers = opts.ciphers || null;
+  this.rejectUnauthorized = opts.rejectUnauthorized === undefined ? true : opts.rejectUnauthorized;
+  this.forceNode = !!opts.forceNode;
+
+  // other options for Node.js client
+  var freeGlobal = typeof global === 'object' && global;
+  if (freeGlobal.global === freeGlobal) {
+    if (opts.extraHeaders && Object.keys(opts.extraHeaders).length > 0) {
+      this.extraHeaders = opts.extraHeaders;
+    }
+
+    if (opts.localAddress) {
+      this.localAddress = opts.localAddress;
+    }
+  }
+
+  // set on handshake
+  this.id = null;
+  this.upgrades = null;
+  this.pingInterval = null;
+  this.pingTimeout = null;
+
+  // set on heartbeat
+  this.pingIntervalTimer = null;
+  this.pingTimeoutTimer = null;
+
+  this.open();
+}
+
+Socket.priorWebsocketSuccess = false;
+
+/**
+ * Mix in `Emitter`.
+ */
+
+Emitter(Socket.prototype);
+
+/**
+ * Protocol version.
+ *
+ * @api public
+ */
+
+Socket.protocol = parser.protocol; // this is an int
+
+/**
+ * Expose deps for legacy compatibility
+ * and standalone browser access.
+ */
+
+Socket.Socket = Socket;
+Socket.Transport = __webpack_require__(/*! ./transport */ "./node_modules/engine.io-client/lib/transport.js");
+Socket.transports = __webpack_require__(/*! ./transports/index */ "./node_modules/engine.io-client/lib/transports/index.js");
+Socket.parser = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/lib/browser.js");
+
+/**
+ * Creates transport of the given type.
+ *
+ * @param {String} transport name
+ * @return {Transport}
+ * @api private
+ */
+
+Socket.prototype.createTransport = function (name) {
+  debug('creating transport "%s"', name);
+  var query = clone(this.query);
+
+  // append engine.io protocol identifier
+  query.EIO = parser.protocol;
+
+  // transport name
+  query.transport = name;
+
+  // per-transport options
+  var options = this.transportOptions[name] || {};
+
+  // session id if we already have one
+  if (this.id) query.sid = this.id;
+
+  var transport = new transports[name]({
+    query: query,
+    socket: this,
+    agent: options.agent || this.agent,
+    hostname: options.hostname || this.hostname,
+    port: options.port || this.port,
+    secure: options.secure || this.secure,
+    path: options.path || this.path,
+    forceJSONP: options.forceJSONP || this.forceJSONP,
+    jsonp: options.jsonp || this.jsonp,
+    forceBase64: options.forceBase64 || this.forceBase64,
+    enablesXDR: options.enablesXDR || this.enablesXDR,
+    timestampRequests: options.timestampRequests || this.timestampRequests,
+    timestampParam: options.timestampParam || this.timestampParam,
+    policyPort: options.policyPort || this.policyPort,
+    pfx: options.pfx || this.pfx,
+    key: options.key || this.key,
+    passphrase: options.passphrase || this.passphrase,
+    cert: options.cert || this.cert,
+    ca: options.ca || this.ca,
+    ciphers: options.ciphers || this.ciphers,
+    rejectUnauthorized: options.rejectUnauthorized || this.rejectUnauthorized,
+    perMessageDeflate: options.perMessageDeflate || this.perMessageDeflate,
+    extraHeaders: options.extraHeaders || this.extraHeaders,
+    forceNode: options.forceNode || this.forceNode,
+    localAddress: options.localAddress || this.localAddress,
+    requestTimeout: options.requestTimeout || this.requestTimeout,
+    protocols: options.protocols || void (0)
+  });
+
+  return transport;
+};
+
+function clone (obj) {
+  var o = {};
+  for (var i in obj) {
+    if (obj.hasOwnProperty(i)) {
+      o[i] = obj[i];
+    }
+  }
+  return o;
+}
+
+/**
+ * Initializes transport to use and starts probe.
+ *
+ * @api private
+ */
+Socket.prototype.open = function () {
+  var transport;
+  if (this.rememberUpgrade && Socket.priorWebsocketSuccess && this.transports.indexOf('websocket') !== -1) {
+    transport = 'websocket';
+  } else if (0 === this.transports.length) {
+    // Emit error on next tick so it can be listened to
+    var self = this;
+    setTimeout(function () {
+      self.emit('error', 'No transports available');
+    }, 0);
+    return;
+  } else {
+    transport = this.transports[0];
+  }
+  this.readyState = 'opening';
+
+  // Retry with the next transport if the transport is disabled (jsonp: false)
+  try {
+    transport = this.createTransport(transport);
+  } catch (e) {
+    this.transports.shift();
+    this.open();
+    return;
+  }
+
+  transport.open();
+  this.setTransport(transport);
+};
+
+/**
+ * Sets the current transport. Disables the existing one (if any).
+ *
+ * @api private
+ */
+
+Socket.prototype.setTransport = function (transport) {
+  debug('setting transport %s', transport.name);
+  var self = this;
+
+  if (this.transport) {
+    debug('clearing existing transport %s', this.transport.name);
+    this.transport.removeAllListeners();
+  }
+
+  // set up transport
+  this.transport = transport;
+
+  // set up transport listeners
+  transport
+  .on('drain', function () {
+    self.onDrain();
+  })
+  .on('packet', function (packet) {
+    self.onPacket(packet);
+  })
+  .on('error', function (e) {
+    self.onError(e);
+  })
+  .on('close', function () {
+    self.onClose('transport close');
+  });
+};
+
+/**
+ * Probes a transport.
+ *
+ * @param {String} transport name
+ * @api private
+ */
+
+Socket.prototype.probe = function (name) {
+  debug('probing transport "%s"', name);
+  var transport = this.createTransport(name, { probe: 1 });
+  var failed = false;
+  var self = this;
+
+  Socket.priorWebsocketSuccess = false;
+
+  function onTransportOpen () {
+    if (self.onlyBinaryUpgrades) {
+      var upgradeLosesBinary = !this.supportsBinary && self.transport.supportsBinary;
+      failed = failed || upgradeLosesBinary;
+    }
+    if (failed) return;
+
+    debug('probe transport "%s" opened', name);
+    transport.send([{ type: 'ping', data: 'probe' }]);
+    transport.once('packet', function (msg) {
+      if (failed) return;
+      if ('pong' === msg.type && 'probe' === msg.data) {
+        debug('probe transport "%s" pong', name);
+        self.upgrading = true;
+        self.emit('upgrading', transport);
+        if (!transport) return;
+        Socket.priorWebsocketSuccess = 'websocket' === transport.name;
+
+        debug('pausing current transport "%s"', self.transport.name);
+        self.transport.pause(function () {
+          if (failed) return;
+          if ('closed' === self.readyState) return;
+          debug('changing transport and sending upgrade packet');
+
+          cleanup();
+
+          self.setTransport(transport);
+          transport.send([{ type: 'upgrade' }]);
+          self.emit('upgrade', transport);
+          transport = null;
+          self.upgrading = false;
+          self.flush();
+        });
+      } else {
+        debug('probe transport "%s" failed', name);
+        var err = new Error('probe error');
+        err.transport = transport.name;
+        self.emit('upgradeError', err);
+      }
+    });
+  }
+
+  function freezeTransport () {
+    if (failed) return;
+
+    // Any callback called by transport should be ignored since now
+    failed = true;
+
+    cleanup();
+
+    transport.close();
+    transport = null;
+  }
+
+  // Handle any error that happens while probing
+  function onerror (err) {
+    var error = new Error('probe error: ' + err);
+    error.transport = transport.name;
+
+    freezeTransport();
+
+    debug('probe transport "%s" failed because of error: %s', name, err);
+
+    self.emit('upgradeError', error);
+  }
+
+  function onTransportClose () {
+    onerror('transport closed');
+  }
+
+  // When the socket is closed while we're probing
+  function onclose () {
+    onerror('socket closed');
+  }
+
+  // When the socket is upgraded while we're probing
+  function onupgrade (to) {
+    if (transport && to.name !== transport.name) {
+      debug('"%s" works - aborting "%s"', to.name, transport.name);
+      freezeTransport();
+    }
+  }
+
+  // Remove all listeners on the transport and on self
+  function cleanup () {
+    transport.removeListener('open', onTransportOpen);
+    transport.removeListener('error', onerror);
+    transport.removeListener('close', onTransportClose);
+    self.removeListener('close', onclose);
+    self.removeListener('upgrading', onupgrade);
+  }
+
+  transport.once('open', onTransportOpen);
+  transport.once('error', onerror);
+  transport.once('close', onTransportClose);
+
+  this.once('close', onclose);
+  this.once('upgrading', onupgrade);
+
+  transport.open();
+};
+
+/**
+ * Called when connection is deemed open.
+ *
+ * @api public
+ */
+
+Socket.prototype.onOpen = function () {
+  debug('socket open');
+  this.readyState = 'open';
+  Socket.priorWebsocketSuccess = 'websocket' === this.transport.name;
+  this.emit('open');
+  this.flush();
+
+  // we check for `readyState` in case an `open`
+  // listener already closed the socket
+  if ('open' === this.readyState && this.upgrade && this.transport.pause) {
+    debug('starting upgrade probes');
+    for (var i = 0, l = this.upgrades.length; i < l; i++) {
+      this.probe(this.upgrades[i]);
+    }
+  }
+};
+
+/**
+ * Handles a packet.
+ *
+ * @api private
+ */
+
+Socket.prototype.onPacket = function (packet) {
+  if ('opening' === this.readyState || 'open' === this.readyState ||
+      'closing' === this.readyState) {
+    debug('socket receive: type "%s", data "%s"', packet.type, packet.data);
+
+    this.emit('packet', packet);
+
+    // Socket is live - any packet counts
+    this.emit('heartbeat');
+
+    switch (packet.type) {
+      case 'open':
+        this.onHandshake(JSON.parse(packet.data));
+        break;
+
+      case 'pong':
+        this.setPing();
+        this.emit('pong');
+        break;
+
+      case 'error':
+        var err = new Error('server error');
+        err.code = packet.data;
+        this.onError(err);
+        break;
+
+      case 'message':
+        this.emit('data', packet.data);
+        this.emit('message', packet.data);
+        break;
+    }
+  } else {
+    debug('packet received with socket readyState "%s"', this.readyState);
+  }
+};
+
+/**
+ * Called upon handshake completion.
+ *
+ * @param {Object} handshake obj
+ * @api private
+ */
+
+Socket.prototype.onHandshake = function (data) {
+  this.emit('handshake', data);
+  this.id = data.sid;
+  this.transport.query.sid = data.sid;
+  this.upgrades = this.filterUpgrades(data.upgrades);
+  this.pingInterval = data.pingInterval;
+  this.pingTimeout = data.pingTimeout;
+  this.onOpen();
+  // In case open handler closes socket
+  if ('closed' === this.readyState) return;
+  this.setPing();
+
+  // Prolong liveness of socket on heartbeat
+  this.removeListener('heartbeat', this.onHeartbeat);
+  this.on('heartbeat', this.onHeartbeat);
+};
+
+/**
+ * Resets ping timeout.
+ *
+ * @api private
+ */
+
+Socket.prototype.onHeartbeat = function (timeout) {
+  clearTimeout(this.pingTimeoutTimer);
+  var self = this;
+  self.pingTimeoutTimer = setTimeout(function () {
+    if ('closed' === self.readyState) return;
+    self.onClose('ping timeout');
+  }, timeout || (self.pingInterval + self.pingTimeout));
+};
+
+/**
+ * Pings server every `this.pingInterval` and expects response
+ * within `this.pingTimeout` or closes connection.
+ *
+ * @api private
+ */
+
+Socket.prototype.setPing = function () {
+  var self = this;
+  clearTimeout(self.pingIntervalTimer);
+  self.pingIntervalTimer = setTimeout(function () {
+    debug('writing ping packet - expecting pong within %sms', self.pingTimeout);
+    self.ping();
+    self.onHeartbeat(self.pingTimeout);
+  }, self.pingInterval);
+};
+
+/**
+* Sends a ping packet.
+*
+* @api private
+*/
+
+Socket.prototype.ping = function () {
+  var self = this;
+  this.sendPacket('ping', function () {
+    self.emit('ping');
+  });
+};
+
+/**
+ * Called on `drain` event
+ *
+ * @api private
+ */
+
+Socket.prototype.onDrain = function () {
+  this.writeBuffer.splice(0, this.prevBufferLen);
+
+  // setting prevBufferLen = 0 is very important
+  // for example, when upgrading, upgrade packet is sent over,
+  // and a nonzero prevBufferLen could cause problems on `drain`
+  this.prevBufferLen = 0;
+
+  if (0 === this.writeBuffer.length) {
+    this.emit('drain');
+  } else {
+    this.flush();
+  }
+};
+
+/**
+ * Flush write buffers.
+ *
+ * @api private
+ */
+
+Socket.prototype.flush = function () {
+  if ('closed' !== this.readyState && this.transport.writable &&
+    !this.upgrading && this.writeBuffer.length) {
+    debug('flushing %d packets in socket', this.writeBuffer.length);
+    this.transport.send(this.writeBuffer);
+    // keep track of current length of writeBuffer
+    // splice writeBuffer and callbackBuffer on `drain`
+    this.prevBufferLen = this.writeBuffer.length;
+    this.emit('flush');
+  }
+};
+
+/**
+ * Sends a message.
+ *
+ * @param {String} message.
+ * @param {Function} callback function.
+ * @param {Object} options.
+ * @return {Socket} for chaining.
+ * @api public
+ */
+
+Socket.prototype.write =
+Socket.prototype.send = function (msg, options, fn) {
+  this.sendPacket('message', msg, options, fn);
+  return this;
+};
+
+/**
+ * Sends a packet.
+ *
+ * @param {String} packet type.
+ * @param {String} data.
+ * @param {Object} options.
+ * @param {Function} callback function.
+ * @api private
+ */
+
+Socket.prototype.sendPacket = function (type, data, options, fn) {
+  if ('function' === typeof data) {
+    fn = data;
+    data = undefined;
+  }
+
+  if ('function' === typeof options) {
+    fn = options;
+    options = null;
+  }
+
+  if ('closing' === this.readyState || 'closed' === this.readyState) {
+    return;
+  }
+
+  options = options || {};
+  options.compress = false !== options.compress;
+
+  var packet = {
+    type: type,
+    data: data,
+    options: options
+  };
+  this.emit('packetCreate', packet);
+  this.writeBuffer.push(packet);
+  if (fn) this.once('flush', fn);
+  this.flush();
+};
+
+/**
+ * Closes the connection.
+ *
+ * @api private
+ */
+
+Socket.prototype.close = function () {
+  if ('opening' === this.readyState || 'open' === this.readyState) {
+    this.readyState = 'closing';
+
+    var self = this;
+
+    if (this.writeBuffer.length) {
+      this.once('drain', function () {
+        if (this.upgrading) {
+          waitForUpgrade();
+        } else {
+          close();
+        }
+      });
+    } else if (this.upgrading) {
+      waitForUpgrade();
+    } else {
+      close();
+    }
+  }
+
+  function close () {
+    self.onClose('forced close');
+    debug('socket closing - telling transport to close');
+    self.transport.close();
+  }
+
+  function cleanupAndClose () {
+    self.removeListener('upgrade', cleanupAndClose);
+    self.removeListener('upgradeError', cleanupAndClose);
+    close();
+  }
+
+  function waitForUpgrade () {
+    // wait for upgrade to finish since we can't send packets while pausing a transport
+    self.once('upgrade', cleanupAndClose);
+    self.once('upgradeError', cleanupAndClose);
+  }
+
+  return this;
+};
+
+/**
+ * Called upon transport error
+ *
+ * @api private
+ */
+
+Socket.prototype.onError = function (err) {
+  debug('socket error %j', err);
+  Socket.priorWebsocketSuccess = false;
+  this.emit('error', err);
+  this.onClose('transport error', err);
+};
+
+/**
+ * Called upon transport close.
+ *
+ * @api private
+ */
+
+Socket.prototype.onClose = function (reason, desc) {
+  if ('opening' === this.readyState || 'open' === this.readyState || 'closing' === this.readyState) {
+    debug('socket close with reason: "%s"', reason);
+    var self = this;
+
+    // clear timers
+    clearTimeout(this.pingIntervalTimer);
+    clearTimeout(this.pingTimeoutTimer);
+
+    // stop event from firing again for transport
+    this.transport.removeAllListeners('close');
+
+    // ensure transport won't stay open
+    this.transport.close();
+
+    // ignore further transport communication
+    this.transport.removeAllListeners();
+
+    // set ready state
+    this.readyState = 'closed';
+
+    // clear session id
+    this.id = null;
+
+    // emit close event
+    this.emit('close', reason, desc);
+
+    // clean buffers after, so users can still
+    // grab the buffers on `close` event
+    self.writeBuffer = [];
+    self.prevBufferLen = 0;
+  }
+};
+
+/**
+ * Filters upgrades, returning only those matching client transports.
+ *
+ * @param {Array} server upgrades
+ * @api private
+ *
+ */
+
+Socket.prototype.filterUpgrades = function (upgrades) {
+  var filteredUpgrades = [];
+  for (var i = 0, j = upgrades.length; i < j; i++) {
+    if (~index(this.transports, upgrades[i])) filteredUpgrades.push(upgrades[i]);
+  }
+  return filteredUpgrades;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/transport.js":
+/*!********************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/transport.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Module dependencies.
+ */
+
+var parser = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/lib/browser.js");
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/component-emitter/index.js");
+
+/**
+ * Module exports.
+ */
+
+module.exports = Transport;
+
+/**
+ * Transport abstract constructor.
+ *
+ * @param {Object} options.
+ * @api private
+ */
+
+function Transport (opts) {
+  this.path = opts.path;
+  this.hostname = opts.hostname;
+  this.port = opts.port;
+  this.secure = opts.secure;
+  this.query = opts.query;
+  this.timestampParam = opts.timestampParam;
+  this.timestampRequests = opts.timestampRequests;
+  this.readyState = '';
+  this.agent = opts.agent || false;
+  this.socket = opts.socket;
+  this.enablesXDR = opts.enablesXDR;
+
+  // SSL options for Node.js client
+  this.pfx = opts.pfx;
+  this.key = opts.key;
+  this.passphrase = opts.passphrase;
+  this.cert = opts.cert;
+  this.ca = opts.ca;
+  this.ciphers = opts.ciphers;
+  this.rejectUnauthorized = opts.rejectUnauthorized;
+  this.forceNode = opts.forceNode;
+
+  // other options for Node.js client
+  this.extraHeaders = opts.extraHeaders;
+  this.localAddress = opts.localAddress;
+}
+
+/**
+ * Mix in `Emitter`.
+ */
+
+Emitter(Transport.prototype);
+
+/**
+ * Emits an error.
+ *
+ * @param {String} str
+ * @return {Transport} for chaining
+ * @api public
+ */
+
+Transport.prototype.onError = function (msg, desc) {
+  var err = new Error(msg);
+  err.type = 'TransportError';
+  err.description = desc;
+  this.emit('error', err);
+  return this;
+};
+
+/**
+ * Opens the transport.
+ *
+ * @api public
+ */
+
+Transport.prototype.open = function () {
+  if ('closed' === this.readyState || '' === this.readyState) {
+    this.readyState = 'opening';
+    this.doOpen();
+  }
+
+  return this;
+};
+
+/**
+ * Closes the transport.
+ *
+ * @api private
+ */
+
+Transport.prototype.close = function () {
+  if ('opening' === this.readyState || 'open' === this.readyState) {
+    this.doClose();
+    this.onClose();
+  }
+
+  return this;
+};
+
+/**
+ * Sends multiple packets.
+ *
+ * @param {Array} packets
+ * @api private
+ */
+
+Transport.prototype.send = function (packets) {
+  if ('open' === this.readyState) {
+    this.write(packets);
+  } else {
+    throw new Error('Transport not open');
+  }
+};
+
+/**
+ * Called upon open
+ *
+ * @api private
+ */
+
+Transport.prototype.onOpen = function () {
+  this.readyState = 'open';
+  this.writable = true;
+  this.emit('open');
+};
+
+/**
+ * Called with data.
+ *
+ * @param {String} data
+ * @api private
+ */
+
+Transport.prototype.onData = function (data) {
+  var packet = parser.decodePacket(data, this.socket.binaryType);
+  this.onPacket(packet);
+};
+
+/**
+ * Called with a decoded packet.
+ */
+
+Transport.prototype.onPacket = function (packet) {
+  this.emit('packet', packet);
+};
+
+/**
+ * Called upon close.
+ *
+ * @api private
+ */
+
+Transport.prototype.onClose = function () {
+  this.readyState = 'closed';
+  this.emit('close');
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/transports/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/transports/index.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Module dependencies
+ */
+
+var XMLHttpRequest = __webpack_require__(/*! xmlhttprequest-ssl */ "./node_modules/engine.io-client/lib/xmlhttprequest.js");
+var XHR = __webpack_require__(/*! ./polling-xhr */ "./node_modules/engine.io-client/lib/transports/polling-xhr.js");
+var JSONP = __webpack_require__(/*! ./polling-jsonp */ "./node_modules/engine.io-client/lib/transports/polling-jsonp.js");
+var websocket = __webpack_require__(/*! ./websocket */ "./node_modules/engine.io-client/lib/transports/websocket.js");
+
+/**
+ * Export transports.
+ */
+
+exports.polling = polling;
+exports.websocket = websocket;
+
+/**
+ * Polling transport polymorphic constructor.
+ * Decides on xhr vs jsonp based on feature detection.
+ *
+ * @api private
+ */
+
+function polling (opts) {
+  var xhr;
+  var xd = false;
+  var xs = false;
+  var jsonp = false !== opts.jsonp;
+
+  if (global.location) {
+    var isSSL = 'https:' === location.protocol;
+    var port = location.port;
+
+    // some user agents have empty `location.port`
+    if (!port) {
+      port = isSSL ? 443 : 80;
+    }
+
+    xd = opts.hostname !== location.hostname || port !== opts.port;
+    xs = opts.secure !== isSSL;
+  }
+
+  opts.xdomain = xd;
+  opts.xscheme = xs;
+  xhr = new XMLHttpRequest(opts);
+
+  if ('open' in xhr && !opts.forceJSONP) {
+    return new XHR(opts);
+  } else {
+    if (!jsonp) throw new Error('JSONP disabled');
+    return new JSONP(opts);
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/transports/polling-jsonp.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/transports/polling-jsonp.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module requirements.
+ */
+
+var Polling = __webpack_require__(/*! ./polling */ "./node_modules/engine.io-client/lib/transports/polling.js");
+var inherit = __webpack_require__(/*! component-inherit */ "./node_modules/component-inherit/index.js");
+
+/**
+ * Module exports.
+ */
+
+module.exports = JSONPPolling;
+
+/**
+ * Cached regular expressions.
+ */
+
+var rNewline = /\n/g;
+var rEscapedNewline = /\\n/g;
+
+/**
+ * Global JSONP callbacks.
+ */
+
+var callbacks;
+
+/**
+ * Noop.
+ */
+
+function empty () { }
+
+/**
+ * JSONP Polling constructor.
+ *
+ * @param {Object} opts.
+ * @api public
+ */
+
+function JSONPPolling (opts) {
+  Polling.call(this, opts);
+
+  this.query = this.query || {};
+
+  // define global callbacks array if not present
+  // we do this here (lazily) to avoid unneeded global pollution
+  if (!callbacks) {
+    // we need to consider multiple engines in the same page
+    if (!global.___eio) global.___eio = [];
+    callbacks = global.___eio;
+  }
+
+  // callback identifier
+  this.index = callbacks.length;
+
+  // add callback to jsonp global
+  var self = this;
+  callbacks.push(function (msg) {
+    self.onData(msg);
+  });
+
+  // append to query string
+  this.query.j = this.index;
+
+  // prevent spurious errors from being emitted when the window is unloaded
+  if (global.document && global.addEventListener) {
+    global.addEventListener('beforeunload', function () {
+      if (self.script) self.script.onerror = empty;
+    }, false);
+  }
+}
+
+/**
+ * Inherits from Polling.
+ */
+
+inherit(JSONPPolling, Polling);
+
+/*
+ * JSONP only supports binary as base64 encoded strings
+ */
+
+JSONPPolling.prototype.supportsBinary = false;
+
+/**
+ * Closes the socket.
+ *
+ * @api private
+ */
+
+JSONPPolling.prototype.doClose = function () {
+  if (this.script) {
+    this.script.parentNode.removeChild(this.script);
+    this.script = null;
+  }
+
+  if (this.form) {
+    this.form.parentNode.removeChild(this.form);
+    this.form = null;
+    this.iframe = null;
+  }
+
+  Polling.prototype.doClose.call(this);
+};
+
+/**
+ * Starts a poll cycle.
+ *
+ * @api private
+ */
+
+JSONPPolling.prototype.doPoll = function () {
+  var self = this;
+  var script = document.createElement('script');
+
+  if (this.script) {
+    this.script.parentNode.removeChild(this.script);
+    this.script = null;
+  }
+
+  script.async = true;
+  script.src = this.uri();
+  script.onerror = function (e) {
+    self.onError('jsonp poll error', e);
+  };
+
+  var insertAt = document.getElementsByTagName('script')[0];
+  if (insertAt) {
+    insertAt.parentNode.insertBefore(script, insertAt);
+  } else {
+    (document.head || document.body).appendChild(script);
+  }
+  this.script = script;
+
+  var isUAgecko = 'undefined' !== typeof navigator && /gecko/i.test(navigator.userAgent);
+
+  if (isUAgecko) {
+    setTimeout(function () {
+      var iframe = document.createElement('iframe');
+      document.body.appendChild(iframe);
+      document.body.removeChild(iframe);
+    }, 100);
+  }
+};
+
+/**
+ * Writes with a hidden iframe.
+ *
+ * @param {String} data to send
+ * @param {Function} called upon flush.
+ * @api private
+ */
+
+JSONPPolling.prototype.doWrite = function (data, fn) {
+  var self = this;
+
+  if (!this.form) {
+    var form = document.createElement('form');
+    var area = document.createElement('textarea');
+    var id = this.iframeId = 'eio_iframe_' + this.index;
+    var iframe;
+
+    form.className = 'socketio';
+    form.style.position = 'absolute';
+    form.style.top = '-1000px';
+    form.style.left = '-1000px';
+    form.target = id;
+    form.method = 'POST';
+    form.setAttribute('accept-charset', 'utf-8');
+    area.name = 'd';
+    form.appendChild(area);
+    document.body.appendChild(form);
+
+    this.form = form;
+    this.area = area;
+  }
+
+  this.form.action = this.uri();
+
+  function complete () {
+    initIframe();
+    fn();
+  }
+
+  function initIframe () {
+    if (self.iframe) {
+      try {
+        self.form.removeChild(self.iframe);
+      } catch (e) {
+        self.onError('jsonp polling iframe removal error', e);
+      }
+    }
+
+    try {
+      // ie6 dynamic iframes with target="" support (thanks Chris Lambacher)
+      var html = '<iframe src="javascript:0" name="' + self.iframeId + '">';
+      iframe = document.createElement(html);
+    } catch (e) {
+      iframe = document.createElement('iframe');
+      iframe.name = self.iframeId;
+      iframe.src = 'javascript:0';
+    }
+
+    iframe.id = self.iframeId;
+
+    self.form.appendChild(iframe);
+    self.iframe = iframe;
+  }
+
+  initIframe();
+
+  // escape \n to prevent it from being converted into \r\n by some UAs
+  // double escaping is required for escaped new lines because unescaping of new lines can be done safely on server-side
+  data = data.replace(rEscapedNewline, '\\\n');
+  this.area.value = data.replace(rNewline, '\\n');
+
+  try {
+    this.form.submit();
+  } catch (e) {}
+
+  if (this.iframe.attachEvent) {
+    this.iframe.onreadystatechange = function () {
+      if (self.iframe.readyState === 'complete') {
+        complete();
+      }
+    };
+  } else {
+    this.iframe.onload = complete;
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/transports/polling-xhr.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/transports/polling-xhr.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Module requirements.
+ */
+
+var XMLHttpRequest = __webpack_require__(/*! xmlhttprequest-ssl */ "./node_modules/engine.io-client/lib/xmlhttprequest.js");
+var Polling = __webpack_require__(/*! ./polling */ "./node_modules/engine.io-client/lib/transports/polling.js");
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/component-emitter/index.js");
+var inherit = __webpack_require__(/*! component-inherit */ "./node_modules/component-inherit/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/engine.io-client/node_modules/debug/src/browser.js")('engine.io-client:polling-xhr');
+
+/**
+ * Module exports.
+ */
+
+module.exports = XHR;
+module.exports.Request = Request;
+
+/**
+ * Empty function
+ */
+
+function empty () {}
+
+/**
+ * XHR Polling constructor.
+ *
+ * @param {Object} opts
+ * @api public
+ */
+
+function XHR (opts) {
+  Polling.call(this, opts);
+  this.requestTimeout = opts.requestTimeout;
+  this.extraHeaders = opts.extraHeaders;
+
+  if (global.location) {
+    var isSSL = 'https:' === location.protocol;
+    var port = location.port;
+
+    // some user agents have empty `location.port`
+    if (!port) {
+      port = isSSL ? 443 : 80;
+    }
+
+    this.xd = opts.hostname !== global.location.hostname ||
+      port !== opts.port;
+    this.xs = opts.secure !== isSSL;
+  }
+}
+
+/**
+ * Inherits from Polling.
+ */
+
+inherit(XHR, Polling);
+
+/**
+ * XHR supports binary
+ */
+
+XHR.prototype.supportsBinary = true;
+
+/**
+ * Creates a request.
+ *
+ * @param {String} method
+ * @api private
+ */
+
+XHR.prototype.request = function (opts) {
+  opts = opts || {};
+  opts.uri = this.uri();
+  opts.xd = this.xd;
+  opts.xs = this.xs;
+  opts.agent = this.agent || false;
+  opts.supportsBinary = this.supportsBinary;
+  opts.enablesXDR = this.enablesXDR;
+
+  // SSL options for Node.js client
+  opts.pfx = this.pfx;
+  opts.key = this.key;
+  opts.passphrase = this.passphrase;
+  opts.cert = this.cert;
+  opts.ca = this.ca;
+  opts.ciphers = this.ciphers;
+  opts.rejectUnauthorized = this.rejectUnauthorized;
+  opts.requestTimeout = this.requestTimeout;
+
+  // other options for Node.js client
+  opts.extraHeaders = this.extraHeaders;
+
+  return new Request(opts);
+};
+
+/**
+ * Sends data.
+ *
+ * @param {String} data to send.
+ * @param {Function} called upon flush.
+ * @api private
+ */
+
+XHR.prototype.doWrite = function (data, fn) {
+  var isBinary = typeof data !== 'string' && data !== undefined;
+  var req = this.request({ method: 'POST', data: data, isBinary: isBinary });
+  var self = this;
+  req.on('success', fn);
+  req.on('error', function (err) {
+    self.onError('xhr post error', err);
+  });
+  this.sendXhr = req;
+};
+
+/**
+ * Starts a poll cycle.
+ *
+ * @api private
+ */
+
+XHR.prototype.doPoll = function () {
+  debug('xhr poll');
+  var req = this.request();
+  var self = this;
+  req.on('data', function (data) {
+    self.onData(data);
+  });
+  req.on('error', function (err) {
+    self.onError('xhr poll error', err);
+  });
+  this.pollXhr = req;
+};
+
+/**
+ * Request constructor
+ *
+ * @param {Object} options
+ * @api public
+ */
+
+function Request (opts) {
+  this.method = opts.method || 'GET';
+  this.uri = opts.uri;
+  this.xd = !!opts.xd;
+  this.xs = !!opts.xs;
+  this.async = false !== opts.async;
+  this.data = undefined !== opts.data ? opts.data : null;
+  this.agent = opts.agent;
+  this.isBinary = opts.isBinary;
+  this.supportsBinary = opts.supportsBinary;
+  this.enablesXDR = opts.enablesXDR;
+  this.requestTimeout = opts.requestTimeout;
+
+  // SSL options for Node.js client
+  this.pfx = opts.pfx;
+  this.key = opts.key;
+  this.passphrase = opts.passphrase;
+  this.cert = opts.cert;
+  this.ca = opts.ca;
+  this.ciphers = opts.ciphers;
+  this.rejectUnauthorized = opts.rejectUnauthorized;
+
+  // other options for Node.js client
+  this.extraHeaders = opts.extraHeaders;
+
+  this.create();
+}
+
+/**
+ * Mix in `Emitter`.
+ */
+
+Emitter(Request.prototype);
+
+/**
+ * Creates the XHR object and sends the request.
+ *
+ * @api private
+ */
+
+Request.prototype.create = function () {
+  var opts = { agent: this.agent, xdomain: this.xd, xscheme: this.xs, enablesXDR: this.enablesXDR };
+
+  // SSL options for Node.js client
+  opts.pfx = this.pfx;
+  opts.key = this.key;
+  opts.passphrase = this.passphrase;
+  opts.cert = this.cert;
+  opts.ca = this.ca;
+  opts.ciphers = this.ciphers;
+  opts.rejectUnauthorized = this.rejectUnauthorized;
+
+  var xhr = this.xhr = new XMLHttpRequest(opts);
+  var self = this;
+
+  try {
+    debug('xhr open %s: %s', this.method, this.uri);
+    xhr.open(this.method, this.uri, this.async);
+    try {
+      if (this.extraHeaders) {
+        xhr.setDisableHeaderCheck && xhr.setDisableHeaderCheck(true);
+        for (var i in this.extraHeaders) {
+          if (this.extraHeaders.hasOwnProperty(i)) {
+            xhr.setRequestHeader(i, this.extraHeaders[i]);
+          }
+        }
+      }
+    } catch (e) {}
+
+    if ('POST' === this.method) {
+      try {
+        if (this.isBinary) {
+          xhr.setRequestHeader('Content-type', 'application/octet-stream');
+        } else {
+          xhr.setRequestHeader('Content-type', 'text/plain;charset=UTF-8');
+        }
+      } catch (e) {}
+    }
+
+    try {
+      xhr.setRequestHeader('Accept', '*/*');
+    } catch (e) {}
+
+    // ie6 check
+    if ('withCredentials' in xhr) {
+      xhr.withCredentials = true;
+    }
+
+    if (this.requestTimeout) {
+      xhr.timeout = this.requestTimeout;
+    }
+
+    if (this.hasXDR()) {
+      xhr.onload = function () {
+        self.onLoad();
+      };
+      xhr.onerror = function () {
+        self.onError(xhr.responseText);
+      };
+    } else {
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 2) {
+          try {
+            var contentType = xhr.getResponseHeader('Content-Type');
+            if (self.supportsBinary && contentType === 'application/octet-stream') {
+              xhr.responseType = 'arraybuffer';
+            }
+          } catch (e) {}
+        }
+        if (4 !== xhr.readyState) return;
+        if (200 === xhr.status || 1223 === xhr.status) {
+          self.onLoad();
+        } else {
+          // make sure the `error` event handler that's user-set
+          // does not throw in the same tick and gets caught here
+          setTimeout(function () {
+            self.onError(xhr.status);
+          }, 0);
+        }
+      };
+    }
+
+    debug('xhr data %s', this.data);
+    xhr.send(this.data);
+  } catch (e) {
+    // Need to defer since .create() is called directly fhrom the constructor
+    // and thus the 'error' event can only be only bound *after* this exception
+    // occurs.  Therefore, also, we cannot throw here at all.
+    setTimeout(function () {
+      self.onError(e);
+    }, 0);
+    return;
+  }
+
+  if (global.document) {
+    this.index = Request.requestsCount++;
+    Request.requests[this.index] = this;
+  }
+};
+
+/**
+ * Called upon successful response.
+ *
+ * @api private
+ */
+
+Request.prototype.onSuccess = function () {
+  this.emit('success');
+  this.cleanup();
+};
+
+/**
+ * Called if we have data.
+ *
+ * @api private
+ */
+
+Request.prototype.onData = function (data) {
+  this.emit('data', data);
+  this.onSuccess();
+};
+
+/**
+ * Called upon error.
+ *
+ * @api private
+ */
+
+Request.prototype.onError = function (err) {
+  this.emit('error', err);
+  this.cleanup(true);
+};
+
+/**
+ * Cleans up house.
+ *
+ * @api private
+ */
+
+Request.prototype.cleanup = function (fromError) {
+  if ('undefined' === typeof this.xhr || null === this.xhr) {
+    return;
+  }
+  // xmlhttprequest
+  if (this.hasXDR()) {
+    this.xhr.onload = this.xhr.onerror = empty;
+  } else {
+    this.xhr.onreadystatechange = empty;
+  }
+
+  if (fromError) {
+    try {
+      this.xhr.abort();
+    } catch (e) {}
+  }
+
+  if (global.document) {
+    delete Request.requests[this.index];
+  }
+
+  this.xhr = null;
+};
+
+/**
+ * Called upon load.
+ *
+ * @api private
+ */
+
+Request.prototype.onLoad = function () {
+  var data;
+  try {
+    var contentType;
+    try {
+      contentType = this.xhr.getResponseHeader('Content-Type');
+    } catch (e) {}
+    if (contentType === 'application/octet-stream') {
+      data = this.xhr.response || this.xhr.responseText;
+    } else {
+      data = this.xhr.responseText;
+    }
+  } catch (e) {
+    this.onError(e);
+  }
+  if (null != data) {
+    this.onData(data);
+  }
+};
+
+/**
+ * Check if it has XDomainRequest.
+ *
+ * @api private
+ */
+
+Request.prototype.hasXDR = function () {
+  return 'undefined' !== typeof global.XDomainRequest && !this.xs && this.enablesXDR;
+};
+
+/**
+ * Aborts the request.
+ *
+ * @api public
+ */
+
+Request.prototype.abort = function () {
+  this.cleanup();
+};
+
+/**
+ * Aborts pending requests when unloading the window. This is needed to prevent
+ * memory leaks (e.g. when using IE) and to ensure that no spurious error is
+ * emitted.
+ */
+
+Request.requestsCount = 0;
+Request.requests = {};
+
+if (global.document) {
+  if (global.attachEvent) {
+    global.attachEvent('onunload', unloadHandler);
+  } else if (global.addEventListener) {
+    global.addEventListener('beforeunload', unloadHandler, false);
+  }
+}
+
+function unloadHandler () {
+  for (var i in Request.requests) {
+    if (Request.requests.hasOwnProperty(i)) {
+      Request.requests[i].abort();
+    }
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/transports/polling.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/transports/polling.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Module dependencies.
+ */
+
+var Transport = __webpack_require__(/*! ../transport */ "./node_modules/engine.io-client/lib/transport.js");
+var parseqs = __webpack_require__(/*! parseqs */ "./node_modules/parseqs/index.js");
+var parser = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/lib/browser.js");
+var inherit = __webpack_require__(/*! component-inherit */ "./node_modules/component-inherit/index.js");
+var yeast = __webpack_require__(/*! yeast */ "./node_modules/yeast/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/engine.io-client/node_modules/debug/src/browser.js")('engine.io-client:polling');
+
+/**
+ * Module exports.
+ */
+
+module.exports = Polling;
+
+/**
+ * Is XHR2 supported?
+ */
+
+var hasXHR2 = (function () {
+  var XMLHttpRequest = __webpack_require__(/*! xmlhttprequest-ssl */ "./node_modules/engine.io-client/lib/xmlhttprequest.js");
+  var xhr = new XMLHttpRequest({ xdomain: false });
+  return null != xhr.responseType;
+})();
+
+/**
+ * Polling interface.
+ *
+ * @param {Object} opts
+ * @api private
+ */
+
+function Polling (opts) {
+  var forceBase64 = (opts && opts.forceBase64);
+  if (!hasXHR2 || forceBase64) {
+    this.supportsBinary = false;
+  }
+  Transport.call(this, opts);
+}
+
+/**
+ * Inherits from Transport.
+ */
+
+inherit(Polling, Transport);
+
+/**
+ * Transport name.
+ */
+
+Polling.prototype.name = 'polling';
+
+/**
+ * Opens the socket (triggers polling). We write a PING message to determine
+ * when the transport is open.
+ *
+ * @api private
+ */
+
+Polling.prototype.doOpen = function () {
+  this.poll();
+};
+
+/**
+ * Pauses polling.
+ *
+ * @param {Function} callback upon buffers are flushed and transport is paused
+ * @api private
+ */
+
+Polling.prototype.pause = function (onPause) {
+  var self = this;
+
+  this.readyState = 'pausing';
+
+  function pause () {
+    debug('paused');
+    self.readyState = 'paused';
+    onPause();
+  }
+
+  if (this.polling || !this.writable) {
+    var total = 0;
+
+    if (this.polling) {
+      debug('we are currently polling - waiting to pause');
+      total++;
+      this.once('pollComplete', function () {
+        debug('pre-pause polling complete');
+        --total || pause();
+      });
+    }
+
+    if (!this.writable) {
+      debug('we are currently writing - waiting to pause');
+      total++;
+      this.once('drain', function () {
+        debug('pre-pause writing complete');
+        --total || pause();
+      });
+    }
+  } else {
+    pause();
+  }
+};
+
+/**
+ * Starts polling cycle.
+ *
+ * @api public
+ */
+
+Polling.prototype.poll = function () {
+  debug('polling');
+  this.polling = true;
+  this.doPoll();
+  this.emit('poll');
+};
+
+/**
+ * Overloads onData to detect payloads.
+ *
+ * @api private
+ */
+
+Polling.prototype.onData = function (data) {
+  var self = this;
+  debug('polling got data %s', data);
+  var callback = function (packet, index, total) {
+    // if its the first message we consider the transport open
+    if ('opening' === self.readyState) {
+      self.onOpen();
+    }
+
+    // if its a close packet, we close the ongoing requests
+    if ('close' === packet.type) {
+      self.onClose();
+      return false;
+    }
+
+    // otherwise bypass onData and handle the message
+    self.onPacket(packet);
+  };
+
+  // decode payload
+  parser.decodePayload(data, this.socket.binaryType, callback);
+
+  // if an event did not trigger closing
+  if ('closed' !== this.readyState) {
+    // if we got data we're not polling
+    this.polling = false;
+    this.emit('pollComplete');
+
+    if ('open' === this.readyState) {
+      this.poll();
+    } else {
+      debug('ignoring poll - transport state "%s"', this.readyState);
+    }
+  }
+};
+
+/**
+ * For polling, send a close packet.
+ *
+ * @api private
+ */
+
+Polling.prototype.doClose = function () {
+  var self = this;
+
+  function close () {
+    debug('writing close packet');
+    self.write([{ type: 'close' }]);
+  }
+
+  if ('open' === this.readyState) {
+    debug('transport open - closing');
+    close();
+  } else {
+    // in case we're trying to close while
+    // handshaking is in progress (GH-164)
+    debug('transport not open - deferring close');
+    this.once('open', close);
+  }
+};
+
+/**
+ * Writes a packets payload.
+ *
+ * @param {Array} data packets
+ * @param {Function} drain callback
+ * @api private
+ */
+
+Polling.prototype.write = function (packets) {
+  var self = this;
+  this.writable = false;
+  var callbackfn = function () {
+    self.writable = true;
+    self.emit('drain');
+  };
+
+  parser.encodePayload(packets, this.supportsBinary, function (data) {
+    self.doWrite(data, callbackfn);
+  });
+};
+
+/**
+ * Generates uri for connection.
+ *
+ * @api private
+ */
+
+Polling.prototype.uri = function () {
+  var query = this.query || {};
+  var schema = this.secure ? 'https' : 'http';
+  var port = '';
+
+  // cache busting is forced
+  if (false !== this.timestampRequests) {
+    query[this.timestampParam] = yeast();
+  }
+
+  if (!this.supportsBinary && !query.sid) {
+    query.b64 = 1;
+  }
+
+  query = parseqs.encode(query);
+
+  // avoid port if default for schema
+  if (this.port && (('https' === schema && Number(this.port) !== 443) ||
+     ('http' === schema && Number(this.port) !== 80))) {
+    port = ':' + this.port;
+  }
+
+  // prepend ? to query
+  if (query.length) {
+    query = '?' + query;
+  }
+
+  var ipv6 = this.hostname.indexOf(':') !== -1;
+  return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/transports/websocket.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/transports/websocket.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Module dependencies.
+ */
+
+var Transport = __webpack_require__(/*! ../transport */ "./node_modules/engine.io-client/lib/transport.js");
+var parser = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/lib/browser.js");
+var parseqs = __webpack_require__(/*! parseqs */ "./node_modules/parseqs/index.js");
+var inherit = __webpack_require__(/*! component-inherit */ "./node_modules/component-inherit/index.js");
+var yeast = __webpack_require__(/*! yeast */ "./node_modules/yeast/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/engine.io-client/node_modules/debug/src/browser.js")('engine.io-client:websocket');
+var BrowserWebSocket = global.WebSocket || global.MozWebSocket;
+var NodeWebSocket;
+if (typeof window === 'undefined') {
+  try {
+    NodeWebSocket = __webpack_require__(/*! ws */ 3);
+  } catch (e) { }
+}
+
+/**
+ * Get either the `WebSocket` or `MozWebSocket` globals
+ * in the browser or try to resolve WebSocket-compatible
+ * interface exposed by `ws` for Node-like environment.
+ */
+
+var WebSocket = BrowserWebSocket;
+if (!WebSocket && typeof window === 'undefined') {
+  WebSocket = NodeWebSocket;
+}
+
+/**
+ * Module exports.
+ */
+
+module.exports = WS;
+
+/**
+ * WebSocket transport constructor.
+ *
+ * @api {Object} connection options
+ * @api public
+ */
+
+function WS (opts) {
+  var forceBase64 = (opts && opts.forceBase64);
+  if (forceBase64) {
+    this.supportsBinary = false;
+  }
+  this.perMessageDeflate = opts.perMessageDeflate;
+  this.usingBrowserWebSocket = BrowserWebSocket && !opts.forceNode;
+  this.protocols = opts.protocols;
+  if (!this.usingBrowserWebSocket) {
+    WebSocket = NodeWebSocket;
+  }
+  Transport.call(this, opts);
+}
+
+/**
+ * Inherits from Transport.
+ */
+
+inherit(WS, Transport);
+
+/**
+ * Transport name.
+ *
+ * @api public
+ */
+
+WS.prototype.name = 'websocket';
+
+/*
+ * WebSockets support binary
+ */
+
+WS.prototype.supportsBinary = true;
+
+/**
+ * Opens socket.
+ *
+ * @api private
+ */
+
+WS.prototype.doOpen = function () {
+  if (!this.check()) {
+    // let probe timeout
+    return;
+  }
+
+  var uri = this.uri();
+  var protocols = this.protocols;
+  var opts = {
+    agent: this.agent,
+    perMessageDeflate: this.perMessageDeflate
+  };
+
+  // SSL options for Node.js client
+  opts.pfx = this.pfx;
+  opts.key = this.key;
+  opts.passphrase = this.passphrase;
+  opts.cert = this.cert;
+  opts.ca = this.ca;
+  opts.ciphers = this.ciphers;
+  opts.rejectUnauthorized = this.rejectUnauthorized;
+  if (this.extraHeaders) {
+    opts.headers = this.extraHeaders;
+  }
+  if (this.localAddress) {
+    opts.localAddress = this.localAddress;
+  }
+
+  try {
+    this.ws = this.usingBrowserWebSocket ? (protocols ? new WebSocket(uri, protocols) : new WebSocket(uri)) : new WebSocket(uri, protocols, opts);
+  } catch (err) {
+    return this.emit('error', err);
+  }
+
+  if (this.ws.binaryType === undefined) {
+    this.supportsBinary = false;
+  }
+
+  if (this.ws.supports && this.ws.supports.binary) {
+    this.supportsBinary = true;
+    this.ws.binaryType = 'nodebuffer';
+  } else {
+    this.ws.binaryType = 'arraybuffer';
+  }
+
+  this.addEventListeners();
+};
+
+/**
+ * Adds event listeners to the socket
+ *
+ * @api private
+ */
+
+WS.prototype.addEventListeners = function () {
+  var self = this;
+
+  this.ws.onopen = function () {
+    self.onOpen();
+  };
+  this.ws.onclose = function () {
+    self.onClose();
+  };
+  this.ws.onmessage = function (ev) {
+    self.onData(ev.data);
+  };
+  this.ws.onerror = function (e) {
+    self.onError('websocket error', e);
+  };
+};
+
+/**
+ * Writes data to socket.
+ *
+ * @param {Array} array of packets.
+ * @api private
+ */
+
+WS.prototype.write = function (packets) {
+  var self = this;
+  this.writable = false;
+
+  // encodePacket efficient as it uses WS framing
+  // no need for encodePayload
+  var total = packets.length;
+  for (var i = 0, l = total; i < l; i++) {
+    (function (packet) {
+      parser.encodePacket(packet, self.supportsBinary, function (data) {
+        if (!self.usingBrowserWebSocket) {
+          // always create a new object (GH-437)
+          var opts = {};
+          if (packet.options) {
+            opts.compress = packet.options.compress;
+          }
+
+          if (self.perMessageDeflate) {
+            var len = 'string' === typeof data ? global.Buffer.byteLength(data) : data.length;
+            if (len < self.perMessageDeflate.threshold) {
+              opts.compress = false;
+            }
+          }
+        }
+
+        // Sometimes the websocket has already been closed but the browser didn't
+        // have a chance of informing us about it yet, in that case send will
+        // throw an error
+        try {
+          if (self.usingBrowserWebSocket) {
+            // TypeError is thrown when passing the second argument on Safari
+            self.ws.send(data);
+          } else {
+            self.ws.send(data, opts);
+          }
+        } catch (e) {
+          debug('websocket closed before onclose event');
+        }
+
+        --total || done();
+      });
+    })(packets[i]);
+  }
+
+  function done () {
+    self.emit('flush');
+
+    // fake drain
+    // defer to next tick to allow Socket to clear writeBuffer
+    setTimeout(function () {
+      self.writable = true;
+      self.emit('drain');
+    }, 0);
+  }
+};
+
+/**
+ * Called upon close
+ *
+ * @api private
+ */
+
+WS.prototype.onClose = function () {
+  Transport.prototype.onClose.call(this);
+};
+
+/**
+ * Closes socket.
+ *
+ * @api private
+ */
+
+WS.prototype.doClose = function () {
+  if (typeof this.ws !== 'undefined') {
+    this.ws.close();
+  }
+};
+
+/**
+ * Generates uri for connection.
+ *
+ * @api private
+ */
+
+WS.prototype.uri = function () {
+  var query = this.query || {};
+  var schema = this.secure ? 'wss' : 'ws';
+  var port = '';
+
+  // avoid port if default for schema
+  if (this.port && (('wss' === schema && Number(this.port) !== 443) ||
+    ('ws' === schema && Number(this.port) !== 80))) {
+    port = ':' + this.port;
+  }
+
+  // append timestamp to URI
+  if (this.timestampRequests) {
+    query[this.timestampParam] = yeast();
+  }
+
+  // communicate binary support capabilities
+  if (!this.supportsBinary) {
+    query.b64 = 1;
+  }
+
+  query = parseqs.encode(query);
+
+  // prepend ? to query
+  if (query.length) {
+    query = '?' + query;
+  }
+
+  var ipv6 = this.hostname.indexOf(':') !== -1;
+  return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
+};
+
+/**
+ * Feature detection for WebSocket.
+ *
+ * @return {Boolean} whether this transport is available.
+ * @api public
+ */
+
+WS.prototype.check = function () {
+  return !!WebSocket && !('__initialize' in WebSocket && this.name === WS.prototype.name);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/lib/xmlhttprequest.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/engine.io-client/lib/xmlhttprequest.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// browser shim for xmlhttprequest module
+
+var hasCORS = __webpack_require__(/*! has-cors */ "./node_modules/has-cors/index.js");
+
+module.exports = function (opts) {
+  var xdomain = opts.xdomain;
+
+  // scheme must be same when usign XDomainRequest
+  // http://blogs.msdn.com/b/ieinternals/archive/2010/05/13/xdomainrequest-restrictions-limitations-and-workarounds.aspx
+  var xscheme = opts.xscheme;
+
+  // XDomainRequest has a flow of not sending cookie, therefore it should be disabled as a default.
+  // https://github.com/Automattic/engine.io-client/pull/217
+  var enablesXDR = opts.enablesXDR;
+
+  // XMLHttpRequest can be disabled on IE
+  try {
+    if ('undefined' !== typeof XMLHttpRequest && (!xdomain || hasCORS)) {
+      return new XMLHttpRequest();
+    }
+  } catch (e) { }
+
+  // Use XDomainRequest for IE8 if enablesXDR is true
+  // because loading bar keeps flashing when using jsonp-polling
+  // https://github.com/yujiosaka/socke.io-ie8-loading-example
+  try {
+    if ('undefined' !== typeof XDomainRequest && !xscheme && enablesXDR) {
+      return new XDomainRequest();
+    }
+  } catch (e) { }
+
+  if (!xdomain) {
+    try {
+      return new global[['Active'].concat('Object').join('X')]('Microsoft.XMLHTTP');
+    } catch (e) { }
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/node_modules/debug/src/browser.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/engine.io-client/node_modules/debug/src/browser.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(/*! ./debug */ "./node_modules/engine.io-client/node_modules/debug/src/debug.js");
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+  '#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC',
+  '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF',
+  '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC',
+  '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF',
+  '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC',
+  '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033',
+  '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366',
+  '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933',
+  '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC',
+  '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF',
+  '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // Internet Explorer and Edge do not support colors.
+  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+    return false;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = process.env.DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/node_modules/debug/src/debug.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/engine.io-client/node_modules/debug/src/debug.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = __webpack_require__(/*! ms */ "./node_modules/ms/index.js");
+
+/**
+ * Active `debug` instances.
+ */
+exports.instances = [];
+
+/**
+ * The currently active debug mode names, and names to skip.
+ */
+
+exports.names = [];
+exports.skips = [];
+
+/**
+ * Map of special "%n" handling functions, for the debug "format" argument.
+ *
+ * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+ */
+
+exports.formatters = {};
+
+/**
+ * Select a color.
+ * @param {String} namespace
+ * @return {Number}
+ * @api private
+ */
+
+function selectColor(namespace) {
+  var hash = 0, i;
+
+  for (i in namespace) {
+    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return exports.colors[Math.abs(hash) % exports.colors.length];
+}
+
+/**
+ * Create a debugger with the given `namespace`.
+ *
+ * @param {String} namespace
+ * @return {Function}
+ * @api public
+ */
+
+function createDebug(namespace) {
+
+  var prevTime;
+
+  function debug() {
+    // disabled?
+    if (!debug.enabled) return;
+
+    var self = debug;
+
+    // set `diff` timestamp
+    var curr = +new Date();
+    var ms = curr - (prevTime || curr);
+    self.diff = ms;
+    self.prev = prevTime;
+    self.curr = curr;
+    prevTime = curr;
+
+    // turn the `arguments` into a proper Array
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+
+    args[0] = exports.coerce(args[0]);
+
+    if ('string' !== typeof args[0]) {
+      // anything else let's inspect with %O
+      args.unshift('%O');
+    }
+
+    // apply any `formatters` transformations
+    var index = 0;
+    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
+      // if we encounter an escaped % then don't increase the array index
+      if (match === '%%') return match;
+      index++;
+      var formatter = exports.formatters[format];
+      if ('function' === typeof formatter) {
+        var val = args[index];
+        match = formatter.call(self, val);
+
+        // now we need to remove `args[index]` since it's inlined in the `format`
+        args.splice(index, 1);
+        index--;
+      }
+      return match;
+    });
+
+    // apply env-specific formatting (colors, etc.)
+    exports.formatArgs.call(self, args);
+
+    var logFn = debug.log || exports.log || console.log.bind(console);
+    logFn.apply(self, args);
+  }
+
+  debug.namespace = namespace;
+  debug.enabled = exports.enabled(namespace);
+  debug.useColors = exports.useColors();
+  debug.color = selectColor(namespace);
+  debug.destroy = destroy;
+
+  // env-specific initialization logic for debug instances
+  if ('function' === typeof exports.init) {
+    exports.init(debug);
+  }
+
+  exports.instances.push(debug);
+
+  return debug;
+}
+
+function destroy () {
+  var index = exports.instances.indexOf(this);
+  if (index !== -1) {
+    exports.instances.splice(index, 1);
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/**
+ * Enables a debug mode by namespaces. This can include modes
+ * separated by a colon and wildcards.
+ *
+ * @param {String} namespaces
+ * @api public
+ */
+
+function enable(namespaces) {
+  exports.save(namespaces);
+
+  exports.names = [];
+  exports.skips = [];
+
+  var i;
+  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+  var len = split.length;
+
+  for (i = 0; i < len; i++) {
+    if (!split[i]) continue; // ignore empty strings
+    namespaces = split[i].replace(/\*/g, '.*?');
+    if (namespaces[0] === '-') {
+      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+    } else {
+      exports.names.push(new RegExp('^' + namespaces + '$'));
+    }
+  }
+
+  for (i = 0; i < exports.instances.length; i++) {
+    var instance = exports.instances[i];
+    instance.enabled = exports.enabled(instance.namespace);
+  }
+}
+
+/**
+ * Disable debug output.
+ *
+ * @api public
+ */
+
+function disable() {
+  exports.enable('');
+}
+
+/**
+ * Returns true if the given mode name is enabled, false otherwise.
+ *
+ * @param {String} name
+ * @return {Boolean}
+ * @api public
+ */
+
+function enabled(name) {
+  if (name[name.length - 1] === '*') {
+    return true;
+  }
+  var i, len;
+  for (i = 0, len = exports.skips.length; i < len; i++) {
+    if (exports.skips[i].test(name)) {
+      return false;
+    }
+  }
+  for (i = 0, len = exports.names.length; i < len; i++) {
+    if (exports.names[i].test(name)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Coerce `val`.
+ *
+ * @param {Mixed} val
+ * @return {Mixed}
+ * @api private
+ */
+
+function coerce(val) {
+  if (val instanceof Error) return val.stack || val.message;
+  return val;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-parser/lib/browser.js":
+/*!******************************************************!*\
+  !*** ./node_modules/engine.io-parser/lib/browser.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Module dependencies.
+ */
+
+var keys = __webpack_require__(/*! ./keys */ "./node_modules/engine.io-parser/lib/keys.js");
+var hasBinary = __webpack_require__(/*! has-binary2 */ "./node_modules/has-binary2/index.js");
+var sliceBuffer = __webpack_require__(/*! arraybuffer.slice */ "./node_modules/arraybuffer.slice/index.js");
+var after = __webpack_require__(/*! after */ "./node_modules/after/index.js");
+var utf8 = __webpack_require__(/*! ./utf8 */ "./node_modules/engine.io-parser/lib/utf8.js");
+
+var base64encoder;
+if (global && global.ArrayBuffer) {
+  base64encoder = __webpack_require__(/*! base64-arraybuffer */ "./node_modules/base64-arraybuffer/lib/base64-arraybuffer.js");
+}
+
+/**
+ * Check if we are running an android browser. That requires us to use
+ * ArrayBuffer with polling transports...
+ *
+ * http://ghinda.net/jpeg-blob-ajax-android/
+ */
+
+var isAndroid = typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent);
+
+/**
+ * Check if we are running in PhantomJS.
+ * Uploading a Blob with PhantomJS does not work correctly, as reported here:
+ * https://github.com/ariya/phantomjs/issues/11395
+ * @type boolean
+ */
+var isPhantomJS = typeof navigator !== 'undefined' && /PhantomJS/i.test(navigator.userAgent);
+
+/**
+ * When true, avoids using Blobs to encode payloads.
+ * @type boolean
+ */
+var dontSendBlobs = isAndroid || isPhantomJS;
+
+/**
+ * Current protocol version.
+ */
+
+exports.protocol = 3;
+
+/**
+ * Packet types.
+ */
+
+var packets = exports.packets = {
+    open:     0    // non-ws
+  , close:    1    // non-ws
+  , ping:     2
+  , pong:     3
+  , message:  4
+  , upgrade:  5
+  , noop:     6
+};
+
+var packetslist = keys(packets);
+
+/**
+ * Premade error packet.
+ */
+
+var err = { type: 'error', data: 'parser error' };
+
+/**
+ * Create a blob api even for blob builder when vendor prefixes exist
+ */
+
+var Blob = __webpack_require__(/*! blob */ "./node_modules/blob/index.js");
+
+/**
+ * Encodes a packet.
+ *
+ *     <packet type id> [ <data> ]
+ *
+ * Example:
+ *
+ *     5hello world
+ *     3
+ *     4
+ *
+ * Binary is encoded in an identical principle
+ *
+ * @api private
+ */
+
+exports.encodePacket = function (packet, supportsBinary, utf8encode, callback) {
+  if (typeof supportsBinary === 'function') {
+    callback = supportsBinary;
+    supportsBinary = false;
+  }
+
+  if (typeof utf8encode === 'function') {
+    callback = utf8encode;
+    utf8encode = null;
+  }
+
+  var data = (packet.data === undefined)
+    ? undefined
+    : packet.data.buffer || packet.data;
+
+  if (global.ArrayBuffer && data instanceof ArrayBuffer) {
+    return encodeArrayBuffer(packet, supportsBinary, callback);
+  } else if (Blob && data instanceof global.Blob) {
+    return encodeBlob(packet, supportsBinary, callback);
+  }
+
+  // might be an object with { base64: true, data: dataAsBase64String }
+  if (data && data.base64) {
+    return encodeBase64Object(packet, callback);
+  }
+
+  // Sending data as a utf-8 string
+  var encoded = packets[packet.type];
+
+  // data fragment is optional
+  if (undefined !== packet.data) {
+    encoded += utf8encode ? utf8.encode(String(packet.data), { strict: false }) : String(packet.data);
+  }
+
+  return callback('' + encoded);
+
+};
+
+function encodeBase64Object(packet, callback) {
+  // packet data is an object { base64: true, data: dataAsBase64String }
+  var message = 'b' + exports.packets[packet.type] + packet.data.data;
+  return callback(message);
+}
+
+/**
+ * Encode packet helpers for binary types
+ */
+
+function encodeArrayBuffer(packet, supportsBinary, callback) {
+  if (!supportsBinary) {
+    return exports.encodeBase64Packet(packet, callback);
+  }
+
+  var data = packet.data;
+  var contentArray = new Uint8Array(data);
+  var resultBuffer = new Uint8Array(1 + data.byteLength);
+
+  resultBuffer[0] = packets[packet.type];
+  for (var i = 0; i < contentArray.length; i++) {
+    resultBuffer[i+1] = contentArray[i];
+  }
+
+  return callback(resultBuffer.buffer);
+}
+
+function encodeBlobAsArrayBuffer(packet, supportsBinary, callback) {
+  if (!supportsBinary) {
+    return exports.encodeBase64Packet(packet, callback);
+  }
+
+  var fr = new FileReader();
+  fr.onload = function() {
+    packet.data = fr.result;
+    exports.encodePacket(packet, supportsBinary, true, callback);
+  };
+  return fr.readAsArrayBuffer(packet.data);
+}
+
+function encodeBlob(packet, supportsBinary, callback) {
+  if (!supportsBinary) {
+    return exports.encodeBase64Packet(packet, callback);
+  }
+
+  if (dontSendBlobs) {
+    return encodeBlobAsArrayBuffer(packet, supportsBinary, callback);
+  }
+
+  var length = new Uint8Array(1);
+  length[0] = packets[packet.type];
+  var blob = new Blob([length.buffer, packet.data]);
+
+  return callback(blob);
+}
+
+/**
+ * Encodes a packet with binary data in a base64 string
+ *
+ * @param {Object} packet, has `type` and `data`
+ * @return {String} base64 encoded message
+ */
+
+exports.encodeBase64Packet = function(packet, callback) {
+  var message = 'b' + exports.packets[packet.type];
+  if (Blob && packet.data instanceof global.Blob) {
+    var fr = new FileReader();
+    fr.onload = function() {
+      var b64 = fr.result.split(',')[1];
+      callback(message + b64);
+    };
+    return fr.readAsDataURL(packet.data);
+  }
+
+  var b64data;
+  try {
+    b64data = String.fromCharCode.apply(null, new Uint8Array(packet.data));
+  } catch (e) {
+    // iPhone Safari doesn't let you apply with typed arrays
+    var typed = new Uint8Array(packet.data);
+    var basic = new Array(typed.length);
+    for (var i = 0; i < typed.length; i++) {
+      basic[i] = typed[i];
+    }
+    b64data = String.fromCharCode.apply(null, basic);
+  }
+  message += global.btoa(b64data);
+  return callback(message);
+};
+
+/**
+ * Decodes a packet. Changes format to Blob if requested.
+ *
+ * @return {Object} with `type` and `data` (if any)
+ * @api private
+ */
+
+exports.decodePacket = function (data, binaryType, utf8decode) {
+  if (data === undefined) {
+    return err;
+  }
+  // String data
+  if (typeof data === 'string') {
+    if (data.charAt(0) === 'b') {
+      return exports.decodeBase64Packet(data.substr(1), binaryType);
+    }
+
+    if (utf8decode) {
+      data = tryDecode(data);
+      if (data === false) {
+        return err;
+      }
+    }
+    var type = data.charAt(0);
+
+    if (Number(type) != type || !packetslist[type]) {
+      return err;
+    }
+
+    if (data.length > 1) {
+      return { type: packetslist[type], data: data.substring(1) };
+    } else {
+      return { type: packetslist[type] };
+    }
+  }
+
+  var asArray = new Uint8Array(data);
+  var type = asArray[0];
+  var rest = sliceBuffer(data, 1);
+  if (Blob && binaryType === 'blob') {
+    rest = new Blob([rest]);
+  }
+  return { type: packetslist[type], data: rest };
+};
+
+function tryDecode(data) {
+  try {
+    data = utf8.decode(data, { strict: false });
+  } catch (e) {
+    return false;
+  }
+  return data;
+}
+
+/**
+ * Decodes a packet encoded in a base64 string
+ *
+ * @param {String} base64 encoded message
+ * @return {Object} with `type` and `data` (if any)
+ */
+
+exports.decodeBase64Packet = function(msg, binaryType) {
+  var type = packetslist[msg.charAt(0)];
+  if (!base64encoder) {
+    return { type: type, data: { base64: true, data: msg.substr(1) } };
+  }
+
+  var data = base64encoder.decode(msg.substr(1));
+
+  if (binaryType === 'blob' && Blob) {
+    data = new Blob([data]);
+  }
+
+  return { type: type, data: data };
+};
+
+/**
+ * Encodes multiple messages (payload).
+ *
+ *     <length>:data
+ *
+ * Example:
+ *
+ *     11:hello world2:hi
+ *
+ * If any contents are binary, they will be encoded as base64 strings. Base64
+ * encoded strings are marked with a b before the length specifier
+ *
+ * @param {Array} packets
+ * @api private
+ */
+
+exports.encodePayload = function (packets, supportsBinary, callback) {
+  if (typeof supportsBinary === 'function') {
+    callback = supportsBinary;
+    supportsBinary = null;
+  }
+
+  var isBinary = hasBinary(packets);
+
+  if (supportsBinary && isBinary) {
+    if (Blob && !dontSendBlobs) {
+      return exports.encodePayloadAsBlob(packets, callback);
+    }
+
+    return exports.encodePayloadAsArrayBuffer(packets, callback);
+  }
+
+  if (!packets.length) {
+    return callback('0:');
+  }
+
+  function setLengthHeader(message) {
+    return message.length + ':' + message;
+  }
+
+  function encodeOne(packet, doneCallback) {
+    exports.encodePacket(packet, !isBinary ? false : supportsBinary, false, function(message) {
+      doneCallback(null, setLengthHeader(message));
+    });
+  }
+
+  map(packets, encodeOne, function(err, results) {
+    return callback(results.join(''));
+  });
+};
+
+/**
+ * Async array map using after
+ */
+
+function map(ary, each, done) {
+  var result = new Array(ary.length);
+  var next = after(ary.length, done);
+
+  var eachWithIndex = function(i, el, cb) {
+    each(el, function(error, msg) {
+      result[i] = msg;
+      cb(error, result);
+    });
+  };
+
+  for (var i = 0; i < ary.length; i++) {
+    eachWithIndex(i, ary[i], next);
+  }
+}
+
+/*
+ * Decodes data when a payload is maybe expected. Possible binary contents are
+ * decoded from their base64 representation
+ *
+ * @param {String} data, callback method
+ * @api public
+ */
+
+exports.decodePayload = function (data, binaryType, callback) {
+  if (typeof data !== 'string') {
+    return exports.decodePayloadAsBinary(data, binaryType, callback);
+  }
+
+  if (typeof binaryType === 'function') {
+    callback = binaryType;
+    binaryType = null;
+  }
+
+  var packet;
+  if (data === '') {
+    // parser error - ignoring payload
+    return callback(err, 0, 1);
+  }
+
+  var length = '', n, msg;
+
+  for (var i = 0, l = data.length; i < l; i++) {
+    var chr = data.charAt(i);
+
+    if (chr !== ':') {
+      length += chr;
+      continue;
+    }
+
+    if (length === '' || (length != (n = Number(length)))) {
+      // parser error - ignoring payload
+      return callback(err, 0, 1);
+    }
+
+    msg = data.substr(i + 1, n);
+
+    if (length != msg.length) {
+      // parser error - ignoring payload
+      return callback(err, 0, 1);
+    }
+
+    if (msg.length) {
+      packet = exports.decodePacket(msg, binaryType, false);
+
+      if (err.type === packet.type && err.data === packet.data) {
+        // parser error in individual packet - ignoring payload
+        return callback(err, 0, 1);
+      }
+
+      var ret = callback(packet, i + n, l);
+      if (false === ret) return;
+    }
+
+    // advance cursor
+    i += n;
+    length = '';
+  }
+
+  if (length !== '') {
+    // parser error - ignoring payload
+    return callback(err, 0, 1);
+  }
+
+};
+
+/**
+ * Encodes multiple messages (payload) as binary.
+ *
+ * <1 = binary, 0 = string><number from 0-9><number from 0-9>[...]<number
+ * 255><data>
+ *
+ * Example:
+ * 1 3 255 1 2 3, if the binary contents are interpreted as 8 bit integers
+ *
+ * @param {Array} packets
+ * @return {ArrayBuffer} encoded payload
+ * @api private
+ */
+
+exports.encodePayloadAsArrayBuffer = function(packets, callback) {
+  if (!packets.length) {
+    return callback(new ArrayBuffer(0));
+  }
+
+  function encodeOne(packet, doneCallback) {
+    exports.encodePacket(packet, true, true, function(data) {
+      return doneCallback(null, data);
+    });
+  }
+
+  map(packets, encodeOne, function(err, encodedPackets) {
+    var totalLength = encodedPackets.reduce(function(acc, p) {
+      var len;
+      if (typeof p === 'string'){
+        len = p.length;
+      } else {
+        len = p.byteLength;
+      }
+      return acc + len.toString().length + len + 2; // string/binary identifier + separator = 2
+    }, 0);
+
+    var resultArray = new Uint8Array(totalLength);
+
+    var bufferIndex = 0;
+    encodedPackets.forEach(function(p) {
+      var isString = typeof p === 'string';
+      var ab = p;
+      if (isString) {
+        var view = new Uint8Array(p.length);
+        for (var i = 0; i < p.length; i++) {
+          view[i] = p.charCodeAt(i);
+        }
+        ab = view.buffer;
+      }
+
+      if (isString) { // not true binary
+        resultArray[bufferIndex++] = 0;
+      } else { // true binary
+        resultArray[bufferIndex++] = 1;
+      }
+
+      var lenStr = ab.byteLength.toString();
+      for (var i = 0; i < lenStr.length; i++) {
+        resultArray[bufferIndex++] = parseInt(lenStr[i]);
+      }
+      resultArray[bufferIndex++] = 255;
+
+      var view = new Uint8Array(ab);
+      for (var i = 0; i < view.length; i++) {
+        resultArray[bufferIndex++] = view[i];
+      }
+    });
+
+    return callback(resultArray.buffer);
+  });
+};
+
+/**
+ * Encode as Blob
+ */
+
+exports.encodePayloadAsBlob = function(packets, callback) {
+  function encodeOne(packet, doneCallback) {
+    exports.encodePacket(packet, true, true, function(encoded) {
+      var binaryIdentifier = new Uint8Array(1);
+      binaryIdentifier[0] = 1;
+      if (typeof encoded === 'string') {
+        var view = new Uint8Array(encoded.length);
+        for (var i = 0; i < encoded.length; i++) {
+          view[i] = encoded.charCodeAt(i);
+        }
+        encoded = view.buffer;
+        binaryIdentifier[0] = 0;
+      }
+
+      var len = (encoded instanceof ArrayBuffer)
+        ? encoded.byteLength
+        : encoded.size;
+
+      var lenStr = len.toString();
+      var lengthAry = new Uint8Array(lenStr.length + 1);
+      for (var i = 0; i < lenStr.length; i++) {
+        lengthAry[i] = parseInt(lenStr[i]);
+      }
+      lengthAry[lenStr.length] = 255;
+
+      if (Blob) {
+        var blob = new Blob([binaryIdentifier.buffer, lengthAry.buffer, encoded]);
+        doneCallback(null, blob);
+      }
+    });
+  }
+
+  map(packets, encodeOne, function(err, results) {
+    return callback(new Blob(results));
+  });
+};
+
+/*
+ * Decodes data when a payload is maybe expected. Strings are decoded by
+ * interpreting each byte as a key code for entries marked to start with 0. See
+ * description of encodePayloadAsBinary
+ *
+ * @param {ArrayBuffer} data, callback method
+ * @api public
+ */
+
+exports.decodePayloadAsBinary = function (data, binaryType, callback) {
+  if (typeof binaryType === 'function') {
+    callback = binaryType;
+    binaryType = null;
+  }
+
+  var bufferTail = data;
+  var buffers = [];
+
+  while (bufferTail.byteLength > 0) {
+    var tailArray = new Uint8Array(bufferTail);
+    var isString = tailArray[0] === 0;
+    var msgLength = '';
+
+    for (var i = 1; ; i++) {
+      if (tailArray[i] === 255) break;
+
+      // 310 = char length of Number.MAX_VALUE
+      if (msgLength.length > 310) {
+        return callback(err, 0, 1);
+      }
+
+      msgLength += tailArray[i];
+    }
+
+    bufferTail = sliceBuffer(bufferTail, 2 + msgLength.length);
+    msgLength = parseInt(msgLength);
+
+    var msg = sliceBuffer(bufferTail, 0, msgLength);
+    if (isString) {
+      try {
+        msg = String.fromCharCode.apply(null, new Uint8Array(msg));
+      } catch (e) {
+        // iPhone Safari doesn't let you apply to typed arrays
+        var typed = new Uint8Array(msg);
+        msg = '';
+        for (var i = 0; i < typed.length; i++) {
+          msg += String.fromCharCode(typed[i]);
+        }
+      }
+    }
+
+    buffers.push(msg);
+    bufferTail = sliceBuffer(bufferTail, msgLength);
+  }
+
+  var total = buffers.length;
+  buffers.forEach(function(buffer, i) {
+    callback(exports.decodePacket(buffer, binaryType, true), i, total);
+  });
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-parser/lib/keys.js":
+/*!***************************************************!*\
+  !*** ./node_modules/engine.io-parser/lib/keys.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * Gets the keys for an object.
+ *
+ * @return {Array} keys
+ * @api private
+ */
+
+module.exports = Object.keys || function keys (obj){
+  var arr = [];
+  var has = Object.prototype.hasOwnProperty;
+
+  for (var i in obj) {
+    if (has.call(obj, i)) {
+      arr.push(i);
+    }
+  }
+  return arr;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-parser/lib/utf8.js":
+/*!***************************************************!*\
+  !*** ./node_modules/engine.io-parser/lib/utf8.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/utf8js v2.1.2 by @mathias */
+;(function(root) {
+
+	// Detect free variables `exports`
+	var freeExports = typeof exports == 'object' && exports;
+
+	// Detect free variable `module`
+	var freeModule = typeof module == 'object' && module &&
+		module.exports == freeExports && module;
+
+	// Detect free variable `global`, from Node.js or Browserified code,
+	// and use it as `root`
+	var freeGlobal = typeof global == 'object' && global;
+	if (freeGlobal.global === freeGlobal || freeGlobal.window === freeGlobal) {
+		root = freeGlobal;
+	}
+
+	/*--------------------------------------------------------------------------*/
+
+	var stringFromCharCode = String.fromCharCode;
+
+	// Taken from https://mths.be/punycode
+	function ucs2decode(string) {
+		var output = [];
+		var counter = 0;
+		var length = string.length;
+		var value;
+		var extra;
+		while (counter < length) {
+			value = string.charCodeAt(counter++);
+			if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
+				// high surrogate, and there is a next character
+				extra = string.charCodeAt(counter++);
+				if ((extra & 0xFC00) == 0xDC00) { // low surrogate
+					output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
+				} else {
+					// unmatched surrogate; only append this code unit, in case the next
+					// code unit is the high surrogate of a surrogate pair
+					output.push(value);
+					counter--;
+				}
+			} else {
+				output.push(value);
+			}
+		}
+		return output;
+	}
+
+	// Taken from https://mths.be/punycode
+	function ucs2encode(array) {
+		var length = array.length;
+		var index = -1;
+		var value;
+		var output = '';
+		while (++index < length) {
+			value = array[index];
+			if (value > 0xFFFF) {
+				value -= 0x10000;
+				output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
+				value = 0xDC00 | value & 0x3FF;
+			}
+			output += stringFromCharCode(value);
+		}
+		return output;
+	}
+
+	function checkScalarValue(codePoint, strict) {
+		if (codePoint >= 0xD800 && codePoint <= 0xDFFF) {
+			if (strict) {
+				throw Error(
+					'Lone surrogate U+' + codePoint.toString(16).toUpperCase() +
+					' is not a scalar value'
+				);
+			}
+			return false;
+		}
+		return true;
+	}
+	/*--------------------------------------------------------------------------*/
+
+	function createByte(codePoint, shift) {
+		return stringFromCharCode(((codePoint >> shift) & 0x3F) | 0x80);
+	}
+
+	function encodeCodePoint(codePoint, strict) {
+		if ((codePoint & 0xFFFFFF80) == 0) { // 1-byte sequence
+			return stringFromCharCode(codePoint);
+		}
+		var symbol = '';
+		if ((codePoint & 0xFFFFF800) == 0) { // 2-byte sequence
+			symbol = stringFromCharCode(((codePoint >> 6) & 0x1F) | 0xC0);
+		}
+		else if ((codePoint & 0xFFFF0000) == 0) { // 3-byte sequence
+			if (!checkScalarValue(codePoint, strict)) {
+				codePoint = 0xFFFD;
+			}
+			symbol = stringFromCharCode(((codePoint >> 12) & 0x0F) | 0xE0);
+			symbol += createByte(codePoint, 6);
+		}
+		else if ((codePoint & 0xFFE00000) == 0) { // 4-byte sequence
+			symbol = stringFromCharCode(((codePoint >> 18) & 0x07) | 0xF0);
+			symbol += createByte(codePoint, 12);
+			symbol += createByte(codePoint, 6);
+		}
+		symbol += stringFromCharCode((codePoint & 0x3F) | 0x80);
+		return symbol;
+	}
+
+	function utf8encode(string, opts) {
+		opts = opts || {};
+		var strict = false !== opts.strict;
+
+		var codePoints = ucs2decode(string);
+		var length = codePoints.length;
+		var index = -1;
+		var codePoint;
+		var byteString = '';
+		while (++index < length) {
+			codePoint = codePoints[index];
+			byteString += encodeCodePoint(codePoint, strict);
+		}
+		return byteString;
+	}
+
+	/*--------------------------------------------------------------------------*/
+
+	function readContinuationByte() {
+		if (byteIndex >= byteCount) {
+			throw Error('Invalid byte index');
+		}
+
+		var continuationByte = byteArray[byteIndex] & 0xFF;
+		byteIndex++;
+
+		if ((continuationByte & 0xC0) == 0x80) {
+			return continuationByte & 0x3F;
+		}
+
+		// If we end up here, it’s not a continuation byte
+		throw Error('Invalid continuation byte');
+	}
+
+	function decodeSymbol(strict) {
+		var byte1;
+		var byte2;
+		var byte3;
+		var byte4;
+		var codePoint;
+
+		if (byteIndex > byteCount) {
+			throw Error('Invalid byte index');
+		}
+
+		if (byteIndex == byteCount) {
+			return false;
+		}
+
+		// Read first byte
+		byte1 = byteArray[byteIndex] & 0xFF;
+		byteIndex++;
+
+		// 1-byte sequence (no continuation bytes)
+		if ((byte1 & 0x80) == 0) {
+			return byte1;
+		}
+
+		// 2-byte sequence
+		if ((byte1 & 0xE0) == 0xC0) {
+			byte2 = readContinuationByte();
+			codePoint = ((byte1 & 0x1F) << 6) | byte2;
+			if (codePoint >= 0x80) {
+				return codePoint;
+			} else {
+				throw Error('Invalid continuation byte');
+			}
+		}
+
+		// 3-byte sequence (may include unpaired surrogates)
+		if ((byte1 & 0xF0) == 0xE0) {
+			byte2 = readContinuationByte();
+			byte3 = readContinuationByte();
+			codePoint = ((byte1 & 0x0F) << 12) | (byte2 << 6) | byte3;
+			if (codePoint >= 0x0800) {
+				return checkScalarValue(codePoint, strict) ? codePoint : 0xFFFD;
+			} else {
+				throw Error('Invalid continuation byte');
+			}
+		}
+
+		// 4-byte sequence
+		if ((byte1 & 0xF8) == 0xF0) {
+			byte2 = readContinuationByte();
+			byte3 = readContinuationByte();
+			byte4 = readContinuationByte();
+			codePoint = ((byte1 & 0x07) << 0x12) | (byte2 << 0x0C) |
+				(byte3 << 0x06) | byte4;
+			if (codePoint >= 0x010000 && codePoint <= 0x10FFFF) {
+				return codePoint;
+			}
+		}
+
+		throw Error('Invalid UTF-8 detected');
+	}
+
+	var byteArray;
+	var byteCount;
+	var byteIndex;
+	function utf8decode(byteString, opts) {
+		opts = opts || {};
+		var strict = false !== opts.strict;
+
+		byteArray = ucs2decode(byteString);
+		byteCount = byteArray.length;
+		byteIndex = 0;
+		var codePoints = [];
+		var tmp;
+		while ((tmp = decodeSymbol(strict)) !== false) {
+			codePoints.push(tmp);
+		}
+		return ucs2encode(codePoints);
+	}
+
+	/*--------------------------------------------------------------------------*/
+
+	var utf8 = {
+		'version': '2.1.2',
+		'encode': utf8encode,
+		'decode': utf8decode
+	};
+
+	// Some AMD build optimizers, like r.js, check for specific condition patterns
+	// like the following:
+	if (
+		true
+	) {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+			return utf8;
+		}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	}	else { var key, hasOwnProperty, object; }
+
+}(this));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
+
+/***/ }),
+
+/***/ "./node_modules/has-binary2/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/has-binary2/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* global Blob File */
+
+/*
+ * Module requirements.
+ */
+
+var isArray = __webpack_require__(/*! isarray */ "./node_modules/has-binary2/node_modules/isarray/index.js");
+
+var toString = Object.prototype.toString;
+var withNativeBlob = typeof Blob === 'function' ||
+                        typeof Blob !== 'undefined' && toString.call(Blob) === '[object BlobConstructor]';
+var withNativeFile = typeof File === 'function' ||
+                        typeof File !== 'undefined' && toString.call(File) === '[object FileConstructor]';
+
+/**
+ * Module exports.
+ */
+
+module.exports = hasBinary;
+
+/**
+ * Checks for binary data.
+ *
+ * Supports Buffer, ArrayBuffer, Blob and File.
+ *
+ * @param {Object} anything
+ * @api public
+ */
+
+function hasBinary (obj) {
+  if (!obj || typeof obj !== 'object') {
+    return false;
+  }
+
+  if (isArray(obj)) {
+    for (var i = 0, l = obj.length; i < l; i++) {
+      if (hasBinary(obj[i])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  if ((typeof Buffer === 'function' && Buffer.isBuffer && Buffer.isBuffer(obj)) ||
+    (typeof ArrayBuffer === 'function' && obj instanceof ArrayBuffer) ||
+    (withNativeBlob && obj instanceof Blob) ||
+    (withNativeFile && obj instanceof File)
+  ) {
+    return true;
+  }
+
+  // see: https://github.com/Automattic/has-binary/pull/4
+  if (obj.toJSON && typeof obj.toJSON === 'function' && arguments.length === 1) {
+    return hasBinary(obj.toJSON(), true);
+  }
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key) && hasBinary(obj[key])) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/has-binary2/node_modules/isarray/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/has-binary2/node_modules/isarray/index.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/has-cors/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/has-cors/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * Module exports.
+ *
+ * Logic borrowed from Modernizr:
+ *
+ *   - https://github.com/Modernizr/Modernizr/blob/master/feature-detects/cors.js
+ */
+
+try {
+  module.exports = typeof XMLHttpRequest !== 'undefined' &&
+    'withCredentials' in new XMLHttpRequest();
+} catch (err) {
+  // if XMLHttp support is disabled in IE then it will throw
+  // when trying to create
+  module.exports = false;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/indexof/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/indexof/index.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+var indexOf = [].indexOf;
+
+module.exports = function(arr, obj){
+  if (indexOf) return arr.indexOf(obj);
+  for (var i = 0; i < arr.length; ++i) {
+    if (arr[i] === obj) return i;
+  }
+  return -1;
+};
+
+/***/ }),
+
+/***/ "./node_modules/ms/index.js":
+/*!**********************************!*\
+  !*** ./node_modules/ms/index.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  if (ms >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (ms >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (ms >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (ms >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  return plural(ms, d, 'day') ||
+    plural(ms, h, 'hour') ||
+    plural(ms, m, 'minute') ||
+    plural(ms, s, 'second') ||
+    ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, n, name) {
+  if (ms < n) {
+    return;
+  }
+  if (ms < n * 1.5) {
+    return Math.floor(ms / n) + ' ' + name;
+  }
+  return Math.ceil(ms / n) + ' ' + name + 's';
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/parseqs/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/parseqs/index.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Compiles a querystring
+ * Returns string representation of the object
+ *
+ * @param {Object}
+ * @api private
+ */
+
+exports.encode = function (obj) {
+  var str = '';
+
+  for (var i in obj) {
+    if (obj.hasOwnProperty(i)) {
+      if (str.length) str += '&';
+      str += encodeURIComponent(i) + '=' + encodeURIComponent(obj[i]);
+    }
+  }
+
+  return str;
+};
+
+/**
+ * Parses a simple querystring into an object
+ *
+ * @param {String} qs
+ * @api private
+ */
+
+exports.decode = function(qs){
+  var qry = {};
+  var pairs = qs.split('&');
+  for (var i = 0, l = pairs.length; i < l; i++) {
+    var pair = pairs[i].split('=');
+    qry[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+  }
+  return qry;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/parseuri/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/parseuri/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Parses an URI
+ *
+ * @author Steven Levithan <stevenlevithan.com> (MIT license)
+ * @api private
+ */
+
+var re = /^(?:(?![^:@]+:[^:@\/]*@)(http|https|ws|wss):\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?((?:[a-f0-9]{0,4}:){2,7}[a-f0-9]{0,4}|[^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/;
+
+var parts = [
+    'source', 'protocol', 'authority', 'userInfo', 'user', 'password', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'anchor'
+];
+
+module.exports = function parseuri(str) {
+    var src = str,
+        b = str.indexOf('['),
+        e = str.indexOf(']');
+
+    if (b != -1 && e != -1) {
+        str = str.substring(0, b) + str.substring(b, e).replace(/:/g, ';') + str.substring(e, str.length);
+    }
+
+    var m = re.exec(str || ''),
+        uri = {},
+        i = 14;
+
+    while (i--) {
+        uri[parts[i]] = m[i] || '';
+    }
+
+    if (b != -1 && e != -1) {
+        uri.source = src;
+        uri.host = uri.host.substring(1, uri.host.length - 1).replace(/;/g, ':');
+        uri.authority = uri.authority.replace('[', '').replace(']', '').replace(/;/g, ':');
+        uri.ipv6uri = true;
+    }
+
+    return uri;
+};
 
 
 /***/ }),
@@ -74257,6 +84494,2804 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/socket.io-client/lib/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var url = __webpack_require__(/*! ./url */ "./node_modules/socket.io-client/lib/url.js");
+var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-parser/index.js");
+var Manager = __webpack_require__(/*! ./manager */ "./node_modules/socket.io-client/lib/manager.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client');
+
+/**
+ * Module exports.
+ */
+
+module.exports = exports = lookup;
+
+/**
+ * Managers cache.
+ */
+
+var cache = exports.managers = {};
+
+/**
+ * Looks up an existing `Manager` for multiplexing.
+ * If the user summons:
+ *
+ *   `io('http://localhost/a');`
+ *   `io('http://localhost/b');`
+ *
+ * We reuse the existing instance based on same scheme/port/host,
+ * and we initialize sockets for each namespace.
+ *
+ * @api public
+ */
+
+function lookup (uri, opts) {
+  if (typeof uri === 'object') {
+    opts = uri;
+    uri = undefined;
+  }
+
+  opts = opts || {};
+
+  var parsed = url(uri);
+  var source = parsed.source;
+  var id = parsed.id;
+  var path = parsed.path;
+  var sameNamespace = cache[id] && path in cache[id].nsps;
+  var newConnection = opts.forceNew || opts['force new connection'] ||
+                      false === opts.multiplex || sameNamespace;
+
+  var io;
+
+  if (newConnection) {
+    debug('ignoring socket cache for %s', source);
+    io = Manager(source, opts);
+  } else {
+    if (!cache[id]) {
+      debug('new io instance for %s', source);
+      cache[id] = Manager(source, opts);
+    }
+    io = cache[id];
+  }
+  if (parsed.query && !opts.query) {
+    opts.query = parsed.query;
+  }
+  return io.socket(parsed.path, opts);
+}
+
+/**
+ * Protocol version.
+ *
+ * @api public
+ */
+
+exports.protocol = parser.protocol;
+
+/**
+ * `connect`.
+ *
+ * @param {String} uri
+ * @api public
+ */
+
+exports.connect = lookup;
+
+/**
+ * Expose constructors for standalone build.
+ *
+ * @api public
+ */
+
+exports.Manager = __webpack_require__(/*! ./manager */ "./node_modules/socket.io-client/lib/manager.js");
+exports.Socket = __webpack_require__(/*! ./socket */ "./node_modules/socket.io-client/lib/socket.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/manager.js":
+/*!******************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/manager.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var eio = __webpack_require__(/*! engine.io-client */ "./node_modules/engine.io-client/lib/index.js");
+var Socket = __webpack_require__(/*! ./socket */ "./node_modules/socket.io-client/lib/socket.js");
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/component-emitter/index.js");
+var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-parser/index.js");
+var on = __webpack_require__(/*! ./on */ "./node_modules/socket.io-client/lib/on.js");
+var bind = __webpack_require__(/*! component-bind */ "./node_modules/component-bind/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:manager');
+var indexOf = __webpack_require__(/*! indexof */ "./node_modules/indexof/index.js");
+var Backoff = __webpack_require__(/*! backo2 */ "./node_modules/backo2/index.js");
+
+/**
+ * IE6+ hasOwnProperty
+ */
+
+var has = Object.prototype.hasOwnProperty;
+
+/**
+ * Module exports
+ */
+
+module.exports = Manager;
+
+/**
+ * `Manager` constructor.
+ *
+ * @param {String} engine instance or engine uri/opts
+ * @param {Object} options
+ * @api public
+ */
+
+function Manager (uri, opts) {
+  if (!(this instanceof Manager)) return new Manager(uri, opts);
+  if (uri && ('object' === typeof uri)) {
+    opts = uri;
+    uri = undefined;
+  }
+  opts = opts || {};
+
+  opts.path = opts.path || '/socket.io';
+  this.nsps = {};
+  this.subs = [];
+  this.opts = opts;
+  this.reconnection(opts.reconnection !== false);
+  this.reconnectionAttempts(opts.reconnectionAttempts || Infinity);
+  this.reconnectionDelay(opts.reconnectionDelay || 1000);
+  this.reconnectionDelayMax(opts.reconnectionDelayMax || 5000);
+  this.randomizationFactor(opts.randomizationFactor || 0.5);
+  this.backoff = new Backoff({
+    min: this.reconnectionDelay(),
+    max: this.reconnectionDelayMax(),
+    jitter: this.randomizationFactor()
+  });
+  this.timeout(null == opts.timeout ? 20000 : opts.timeout);
+  this.readyState = 'closed';
+  this.uri = uri;
+  this.connecting = [];
+  this.lastPing = null;
+  this.encoding = false;
+  this.packetBuffer = [];
+  var _parser = opts.parser || parser;
+  this.encoder = new _parser.Encoder();
+  this.decoder = new _parser.Decoder();
+  this.autoConnect = opts.autoConnect !== false;
+  if (this.autoConnect) this.open();
+}
+
+/**
+ * Propagate given event to sockets and emit on `this`
+ *
+ * @api private
+ */
+
+Manager.prototype.emitAll = function () {
+  this.emit.apply(this, arguments);
+  for (var nsp in this.nsps) {
+    if (has.call(this.nsps, nsp)) {
+      this.nsps[nsp].emit.apply(this.nsps[nsp], arguments);
+    }
+  }
+};
+
+/**
+ * Update `socket.id` of all sockets
+ *
+ * @api private
+ */
+
+Manager.prototype.updateSocketIds = function () {
+  for (var nsp in this.nsps) {
+    if (has.call(this.nsps, nsp)) {
+      this.nsps[nsp].id = this.generateId(nsp);
+    }
+  }
+};
+
+/**
+ * generate `socket.id` for the given `nsp`
+ *
+ * @param {String} nsp
+ * @return {String}
+ * @api private
+ */
+
+Manager.prototype.generateId = function (nsp) {
+  return (nsp === '/' ? '' : (nsp + '#')) + this.engine.id;
+};
+
+/**
+ * Mix in `Emitter`.
+ */
+
+Emitter(Manager.prototype);
+
+/**
+ * Sets the `reconnection` config.
+ *
+ * @param {Boolean} true/false if it should automatically reconnect
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.reconnection = function (v) {
+  if (!arguments.length) return this._reconnection;
+  this._reconnection = !!v;
+  return this;
+};
+
+/**
+ * Sets the reconnection attempts config.
+ *
+ * @param {Number} max reconnection attempts before giving up
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.reconnectionAttempts = function (v) {
+  if (!arguments.length) return this._reconnectionAttempts;
+  this._reconnectionAttempts = v;
+  return this;
+};
+
+/**
+ * Sets the delay between reconnections.
+ *
+ * @param {Number} delay
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.reconnectionDelay = function (v) {
+  if (!arguments.length) return this._reconnectionDelay;
+  this._reconnectionDelay = v;
+  this.backoff && this.backoff.setMin(v);
+  return this;
+};
+
+Manager.prototype.randomizationFactor = function (v) {
+  if (!arguments.length) return this._randomizationFactor;
+  this._randomizationFactor = v;
+  this.backoff && this.backoff.setJitter(v);
+  return this;
+};
+
+/**
+ * Sets the maximum delay between reconnections.
+ *
+ * @param {Number} delay
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.reconnectionDelayMax = function (v) {
+  if (!arguments.length) return this._reconnectionDelayMax;
+  this._reconnectionDelayMax = v;
+  this.backoff && this.backoff.setMax(v);
+  return this;
+};
+
+/**
+ * Sets the connection timeout. `false` to disable
+ *
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.timeout = function (v) {
+  if (!arguments.length) return this._timeout;
+  this._timeout = v;
+  return this;
+};
+
+/**
+ * Starts trying to reconnect if reconnection is enabled and we have not
+ * started reconnecting yet
+ *
+ * @api private
+ */
+
+Manager.prototype.maybeReconnectOnOpen = function () {
+  // Only try to reconnect if it's the first time we're connecting
+  if (!this.reconnecting && this._reconnection && this.backoff.attempts === 0) {
+    // keeps reconnection from firing twice for the same reconnection loop
+    this.reconnect();
+  }
+};
+
+/**
+ * Sets the current transport `socket`.
+ *
+ * @param {Function} optional, callback
+ * @return {Manager} self
+ * @api public
+ */
+
+Manager.prototype.open =
+Manager.prototype.connect = function (fn, opts) {
+  debug('readyState %s', this.readyState);
+  if (~this.readyState.indexOf('open')) return this;
+
+  debug('opening %s', this.uri);
+  this.engine = eio(this.uri, this.opts);
+  var socket = this.engine;
+  var self = this;
+  this.readyState = 'opening';
+  this.skipReconnect = false;
+
+  // emit `open`
+  var openSub = on(socket, 'open', function () {
+    self.onopen();
+    fn && fn();
+  });
+
+  // emit `connect_error`
+  var errorSub = on(socket, 'error', function (data) {
+    debug('connect_error');
+    self.cleanup();
+    self.readyState = 'closed';
+    self.emitAll('connect_error', data);
+    if (fn) {
+      var err = new Error('Connection error');
+      err.data = data;
+      fn(err);
+    } else {
+      // Only do this if there is no fn to handle the error
+      self.maybeReconnectOnOpen();
+    }
+  });
+
+  // emit `connect_timeout`
+  if (false !== this._timeout) {
+    var timeout = this._timeout;
+    debug('connect attempt will timeout after %d', timeout);
+
+    // set timer
+    var timer = setTimeout(function () {
+      debug('connect attempt timed out after %d', timeout);
+      openSub.destroy();
+      socket.close();
+      socket.emit('error', 'timeout');
+      self.emitAll('connect_timeout', timeout);
+    }, timeout);
+
+    this.subs.push({
+      destroy: function () {
+        clearTimeout(timer);
+      }
+    });
+  }
+
+  this.subs.push(openSub);
+  this.subs.push(errorSub);
+
+  return this;
+};
+
+/**
+ * Called upon transport open.
+ *
+ * @api private
+ */
+
+Manager.prototype.onopen = function () {
+  debug('open');
+
+  // clear old subs
+  this.cleanup();
+
+  // mark as open
+  this.readyState = 'open';
+  this.emit('open');
+
+  // add new subs
+  var socket = this.engine;
+  this.subs.push(on(socket, 'data', bind(this, 'ondata')));
+  this.subs.push(on(socket, 'ping', bind(this, 'onping')));
+  this.subs.push(on(socket, 'pong', bind(this, 'onpong')));
+  this.subs.push(on(socket, 'error', bind(this, 'onerror')));
+  this.subs.push(on(socket, 'close', bind(this, 'onclose')));
+  this.subs.push(on(this.decoder, 'decoded', bind(this, 'ondecoded')));
+};
+
+/**
+ * Called upon a ping.
+ *
+ * @api private
+ */
+
+Manager.prototype.onping = function () {
+  this.lastPing = new Date();
+  this.emitAll('ping');
+};
+
+/**
+ * Called upon a packet.
+ *
+ * @api private
+ */
+
+Manager.prototype.onpong = function () {
+  this.emitAll('pong', new Date() - this.lastPing);
+};
+
+/**
+ * Called with data.
+ *
+ * @api private
+ */
+
+Manager.prototype.ondata = function (data) {
+  this.decoder.add(data);
+};
+
+/**
+ * Called when parser fully decodes a packet.
+ *
+ * @api private
+ */
+
+Manager.prototype.ondecoded = function (packet) {
+  this.emit('packet', packet);
+};
+
+/**
+ * Called upon socket error.
+ *
+ * @api private
+ */
+
+Manager.prototype.onerror = function (err) {
+  debug('error', err);
+  this.emitAll('error', err);
+};
+
+/**
+ * Creates a new socket for the given `nsp`.
+ *
+ * @return {Socket}
+ * @api public
+ */
+
+Manager.prototype.socket = function (nsp, opts) {
+  var socket = this.nsps[nsp];
+  if (!socket) {
+    socket = new Socket(this, nsp, opts);
+    this.nsps[nsp] = socket;
+    var self = this;
+    socket.on('connecting', onConnecting);
+    socket.on('connect', function () {
+      socket.id = self.generateId(nsp);
+    });
+
+    if (this.autoConnect) {
+      // manually call here since connecting event is fired before listening
+      onConnecting();
+    }
+  }
+
+  function onConnecting () {
+    if (!~indexOf(self.connecting, socket)) {
+      self.connecting.push(socket);
+    }
+  }
+
+  return socket;
+};
+
+/**
+ * Called upon a socket close.
+ *
+ * @param {Socket} socket
+ */
+
+Manager.prototype.destroy = function (socket) {
+  var index = indexOf(this.connecting, socket);
+  if (~index) this.connecting.splice(index, 1);
+  if (this.connecting.length) return;
+
+  this.close();
+};
+
+/**
+ * Writes a packet.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Manager.prototype.packet = function (packet) {
+  debug('writing packet %j', packet);
+  var self = this;
+  if (packet.query && packet.type === 0) packet.nsp += '?' + packet.query;
+
+  if (!self.encoding) {
+    // encode, then write to engine with result
+    self.encoding = true;
+    this.encoder.encode(packet, function (encodedPackets) {
+      for (var i = 0; i < encodedPackets.length; i++) {
+        self.engine.write(encodedPackets[i], packet.options);
+      }
+      self.encoding = false;
+      self.processPacketQueue();
+    });
+  } else { // add packet to the queue
+    self.packetBuffer.push(packet);
+  }
+};
+
+/**
+ * If packet buffer is non-empty, begins encoding the
+ * next packet in line.
+ *
+ * @api private
+ */
+
+Manager.prototype.processPacketQueue = function () {
+  if (this.packetBuffer.length > 0 && !this.encoding) {
+    var pack = this.packetBuffer.shift();
+    this.packet(pack);
+  }
+};
+
+/**
+ * Clean up transport subscriptions and packet buffer.
+ *
+ * @api private
+ */
+
+Manager.prototype.cleanup = function () {
+  debug('cleanup');
+
+  var subsLength = this.subs.length;
+  for (var i = 0; i < subsLength; i++) {
+    var sub = this.subs.shift();
+    sub.destroy();
+  }
+
+  this.packetBuffer = [];
+  this.encoding = false;
+  this.lastPing = null;
+
+  this.decoder.destroy();
+};
+
+/**
+ * Close the current socket.
+ *
+ * @api private
+ */
+
+Manager.prototype.close =
+Manager.prototype.disconnect = function () {
+  debug('disconnect');
+  this.skipReconnect = true;
+  this.reconnecting = false;
+  if ('opening' === this.readyState) {
+    // `onclose` will not fire because
+    // an open event never happened
+    this.cleanup();
+  }
+  this.backoff.reset();
+  this.readyState = 'closed';
+  if (this.engine) this.engine.close();
+};
+
+/**
+ * Called upon engine close.
+ *
+ * @api private
+ */
+
+Manager.prototype.onclose = function (reason) {
+  debug('onclose');
+
+  this.cleanup();
+  this.backoff.reset();
+  this.readyState = 'closed';
+  this.emit('close', reason);
+
+  if (this._reconnection && !this.skipReconnect) {
+    this.reconnect();
+  }
+};
+
+/**
+ * Attempt a reconnection.
+ *
+ * @api private
+ */
+
+Manager.prototype.reconnect = function () {
+  if (this.reconnecting || this.skipReconnect) return this;
+
+  var self = this;
+
+  if (this.backoff.attempts >= this._reconnectionAttempts) {
+    debug('reconnect failed');
+    this.backoff.reset();
+    this.emitAll('reconnect_failed');
+    this.reconnecting = false;
+  } else {
+    var delay = this.backoff.duration();
+    debug('will wait %dms before reconnect attempt', delay);
+
+    this.reconnecting = true;
+    var timer = setTimeout(function () {
+      if (self.skipReconnect) return;
+
+      debug('attempting reconnect');
+      self.emitAll('reconnect_attempt', self.backoff.attempts);
+      self.emitAll('reconnecting', self.backoff.attempts);
+
+      // check again for the case socket closed in above events
+      if (self.skipReconnect) return;
+
+      self.open(function (err) {
+        if (err) {
+          debug('reconnect attempt error');
+          self.reconnecting = false;
+          self.reconnect();
+          self.emitAll('reconnect_error', err.data);
+        } else {
+          debug('reconnect success');
+          self.onreconnect();
+        }
+      });
+    }, delay);
+
+    this.subs.push({
+      destroy: function () {
+        clearTimeout(timer);
+      }
+    });
+  }
+};
+
+/**
+ * Called upon successful reconnect.
+ *
+ * @api private
+ */
+
+Manager.prototype.onreconnect = function () {
+  var attempt = this.backoff.attempts;
+  this.reconnecting = false;
+  this.backoff.reset();
+  this.updateSocketIds();
+  this.emitAll('reconnect', attempt);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/on.js":
+/*!*************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/on.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * Module exports.
+ */
+
+module.exports = on;
+
+/**
+ * Helper for subscriptions.
+ *
+ * @param {Object|EventEmitter} obj with `Emitter` mixin or `EventEmitter`
+ * @param {String} event name
+ * @param {Function} callback
+ * @api public
+ */
+
+function on (obj, ev, fn) {
+  obj.on(ev, fn);
+  return {
+    destroy: function () {
+      obj.removeListener(ev, fn);
+    }
+  };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/socket.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/socket.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-parser/index.js");
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/component-emitter/index.js");
+var toArray = __webpack_require__(/*! to-array */ "./node_modules/to-array/index.js");
+var on = __webpack_require__(/*! ./on */ "./node_modules/socket.io-client/lib/on.js");
+var bind = __webpack_require__(/*! component-bind */ "./node_modules/component-bind/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:socket');
+var parseqs = __webpack_require__(/*! parseqs */ "./node_modules/parseqs/index.js");
+var hasBin = __webpack_require__(/*! has-binary2 */ "./node_modules/has-binary2/index.js");
+
+/**
+ * Module exports.
+ */
+
+module.exports = exports = Socket;
+
+/**
+ * Internal events (blacklisted).
+ * These events can't be emitted by the user.
+ *
+ * @api private
+ */
+
+var events = {
+  connect: 1,
+  connect_error: 1,
+  connect_timeout: 1,
+  connecting: 1,
+  disconnect: 1,
+  error: 1,
+  reconnect: 1,
+  reconnect_attempt: 1,
+  reconnect_failed: 1,
+  reconnect_error: 1,
+  reconnecting: 1,
+  ping: 1,
+  pong: 1
+};
+
+/**
+ * Shortcut to `Emitter#emit`.
+ */
+
+var emit = Emitter.prototype.emit;
+
+/**
+ * `Socket` constructor.
+ *
+ * @api public
+ */
+
+function Socket (io, nsp, opts) {
+  this.io = io;
+  this.nsp = nsp;
+  this.json = this; // compat
+  this.ids = 0;
+  this.acks = {};
+  this.receiveBuffer = [];
+  this.sendBuffer = [];
+  this.connected = false;
+  this.disconnected = true;
+  this.flags = {};
+  if (opts && opts.query) {
+    this.query = opts.query;
+  }
+  if (this.io.autoConnect) this.open();
+}
+
+/**
+ * Mix in `Emitter`.
+ */
+
+Emitter(Socket.prototype);
+
+/**
+ * Subscribe to open, close and packet events
+ *
+ * @api private
+ */
+
+Socket.prototype.subEvents = function () {
+  if (this.subs) return;
+
+  var io = this.io;
+  this.subs = [
+    on(io, 'open', bind(this, 'onopen')),
+    on(io, 'packet', bind(this, 'onpacket')),
+    on(io, 'close', bind(this, 'onclose'))
+  ];
+};
+
+/**
+ * "Opens" the socket.
+ *
+ * @api public
+ */
+
+Socket.prototype.open =
+Socket.prototype.connect = function () {
+  if (this.connected) return this;
+
+  this.subEvents();
+  this.io.open(); // ensure open
+  if ('open' === this.io.readyState) this.onopen();
+  this.emit('connecting');
+  return this;
+};
+
+/**
+ * Sends a `message` event.
+ *
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.send = function () {
+  var args = toArray(arguments);
+  args.unshift('message');
+  this.emit.apply(this, args);
+  return this;
+};
+
+/**
+ * Override `emit`.
+ * If the event is in `events`, it's emitted normally.
+ *
+ * @param {String} event name
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.emit = function (ev) {
+  if (events.hasOwnProperty(ev)) {
+    emit.apply(this, arguments);
+    return this;
+  }
+
+  var args = toArray(arguments);
+  var packet = {
+    type: (this.flags.binary !== undefined ? this.flags.binary : hasBin(args)) ? parser.BINARY_EVENT : parser.EVENT,
+    data: args
+  };
+
+  packet.options = {};
+  packet.options.compress = !this.flags || false !== this.flags.compress;
+
+  // event ack callback
+  if ('function' === typeof args[args.length - 1]) {
+    debug('emitting packet with ack id %d', this.ids);
+    this.acks[this.ids] = args.pop();
+    packet.id = this.ids++;
+  }
+
+  if (this.connected) {
+    this.packet(packet);
+  } else {
+    this.sendBuffer.push(packet);
+  }
+
+  this.flags = {};
+
+  return this;
+};
+
+/**
+ * Sends a packet.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Socket.prototype.packet = function (packet) {
+  packet.nsp = this.nsp;
+  this.io.packet(packet);
+};
+
+/**
+ * Called upon engine `open`.
+ *
+ * @api private
+ */
+
+Socket.prototype.onopen = function () {
+  debug('transport is open - connecting');
+
+  // write connect packet if necessary
+  if ('/' !== this.nsp) {
+    if (this.query) {
+      var query = typeof this.query === 'object' ? parseqs.encode(this.query) : this.query;
+      debug('sending connect packet with query %s', query);
+      this.packet({type: parser.CONNECT, query: query});
+    } else {
+      this.packet({type: parser.CONNECT});
+    }
+  }
+};
+
+/**
+ * Called upon engine `close`.
+ *
+ * @param {String} reason
+ * @api private
+ */
+
+Socket.prototype.onclose = function (reason) {
+  debug('close (%s)', reason);
+  this.connected = false;
+  this.disconnected = true;
+  delete this.id;
+  this.emit('disconnect', reason);
+};
+
+/**
+ * Called with socket packet.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Socket.prototype.onpacket = function (packet) {
+  var sameNamespace = packet.nsp === this.nsp;
+  var rootNamespaceError = packet.type === parser.ERROR && packet.nsp === '/';
+
+  if (!sameNamespace && !rootNamespaceError) return;
+
+  switch (packet.type) {
+    case parser.CONNECT:
+      this.onconnect();
+      break;
+
+    case parser.EVENT:
+      this.onevent(packet);
+      break;
+
+    case parser.BINARY_EVENT:
+      this.onevent(packet);
+      break;
+
+    case parser.ACK:
+      this.onack(packet);
+      break;
+
+    case parser.BINARY_ACK:
+      this.onack(packet);
+      break;
+
+    case parser.DISCONNECT:
+      this.ondisconnect();
+      break;
+
+    case parser.ERROR:
+      this.emit('error', packet.data);
+      break;
+  }
+};
+
+/**
+ * Called upon a server event.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Socket.prototype.onevent = function (packet) {
+  var args = packet.data || [];
+  debug('emitting event %j', args);
+
+  if (null != packet.id) {
+    debug('attaching ack callback to event');
+    args.push(this.ack(packet.id));
+  }
+
+  if (this.connected) {
+    emit.apply(this, args);
+  } else {
+    this.receiveBuffer.push(args);
+  }
+};
+
+/**
+ * Produces an ack callback to emit with an event.
+ *
+ * @api private
+ */
+
+Socket.prototype.ack = function (id) {
+  var self = this;
+  var sent = false;
+  return function () {
+    // prevent double callbacks
+    if (sent) return;
+    sent = true;
+    var args = toArray(arguments);
+    debug('sending ack %j', args);
+
+    self.packet({
+      type: hasBin(args) ? parser.BINARY_ACK : parser.ACK,
+      id: id,
+      data: args
+    });
+  };
+};
+
+/**
+ * Called upon a server acknowlegement.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Socket.prototype.onack = function (packet) {
+  var ack = this.acks[packet.id];
+  if ('function' === typeof ack) {
+    debug('calling ack %s with %j', packet.id, packet.data);
+    ack.apply(this, packet.data);
+    delete this.acks[packet.id];
+  } else {
+    debug('bad ack %s', packet.id);
+  }
+};
+
+/**
+ * Called upon server connect.
+ *
+ * @api private
+ */
+
+Socket.prototype.onconnect = function () {
+  this.connected = true;
+  this.disconnected = false;
+  this.emit('connect');
+  this.emitBuffered();
+};
+
+/**
+ * Emit buffered events (received and emitted).
+ *
+ * @api private
+ */
+
+Socket.prototype.emitBuffered = function () {
+  var i;
+  for (i = 0; i < this.receiveBuffer.length; i++) {
+    emit.apply(this, this.receiveBuffer[i]);
+  }
+  this.receiveBuffer = [];
+
+  for (i = 0; i < this.sendBuffer.length; i++) {
+    this.packet(this.sendBuffer[i]);
+  }
+  this.sendBuffer = [];
+};
+
+/**
+ * Called upon server disconnect.
+ *
+ * @api private
+ */
+
+Socket.prototype.ondisconnect = function () {
+  debug('server disconnect (%s)', this.nsp);
+  this.destroy();
+  this.onclose('io server disconnect');
+};
+
+/**
+ * Called upon forced client/server side disconnections,
+ * this method ensures the manager stops tracking us and
+ * that reconnections don't get triggered for this.
+ *
+ * @api private.
+ */
+
+Socket.prototype.destroy = function () {
+  if (this.subs) {
+    // clean subscriptions to avoid reconnections
+    for (var i = 0; i < this.subs.length; i++) {
+      this.subs[i].destroy();
+    }
+    this.subs = null;
+  }
+
+  this.io.destroy(this);
+};
+
+/**
+ * Disconnects the socket manually.
+ *
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.close =
+Socket.prototype.disconnect = function () {
+  if (this.connected) {
+    debug('performing disconnect (%s)', this.nsp);
+    this.packet({ type: parser.DISCONNECT });
+  }
+
+  // remove socket from pool
+  this.destroy();
+
+  if (this.connected) {
+    // fire events
+    this.onclose('io client disconnect');
+  }
+  return this;
+};
+
+/**
+ * Sets the compress flag.
+ *
+ * @param {Boolean} if `true`, compresses the sending data
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.compress = function (compress) {
+  this.flags.compress = compress;
+  return this;
+};
+
+/**
+ * Sets the binary flag
+ *
+ * @param {Boolean} whether the emitted data contains binary
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.binary = function (binary) {
+  this.flags.binary = binary;
+  return this;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/url.js":
+/*!**************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/url.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var parseuri = __webpack_require__(/*! parseuri */ "./node_modules/parseuri/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:url');
+
+/**
+ * Module exports.
+ */
+
+module.exports = url;
+
+/**
+ * URL parser.
+ *
+ * @param {String} url
+ * @param {Object} An object meant to mimic window.location.
+ *                 Defaults to window.location.
+ * @api public
+ */
+
+function url (uri, loc) {
+  var obj = uri;
+
+  // default to window.location
+  loc = loc || global.location;
+  if (null == uri) uri = loc.protocol + '//' + loc.host;
+
+  // relative path support
+  if ('string' === typeof uri) {
+    if ('/' === uri.charAt(0)) {
+      if ('/' === uri.charAt(1)) {
+        uri = loc.protocol + uri;
+      } else {
+        uri = loc.host + uri;
+      }
+    }
+
+    if (!/^(https?|wss?):\/\//.test(uri)) {
+      debug('protocol-less url %s', uri);
+      if ('undefined' !== typeof loc) {
+        uri = loc.protocol + '//' + uri;
+      } else {
+        uri = 'https://' + uri;
+      }
+    }
+
+    // parse
+    debug('parse %s', uri);
+    obj = parseuri(uri);
+  }
+
+  // make sure we treat `localhost:80` and `localhost` equally
+  if (!obj.port) {
+    if (/^(http|ws)$/.test(obj.protocol)) {
+      obj.port = '80';
+    } else if (/^(http|ws)s$/.test(obj.protocol)) {
+      obj.port = '443';
+    }
+  }
+
+  obj.path = obj.path || '/';
+
+  var ipv6 = obj.host.indexOf(':') !== -1;
+  var host = ipv6 ? '[' + obj.host + ']' : obj.host;
+
+  // define unique id
+  obj.id = obj.protocol + '://' + host + ':' + obj.port;
+  // define href
+  obj.href = obj.protocol + '://' + host + (loc && loc.port === obj.port ? '' : (':' + obj.port));
+
+  return obj;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/debug/src/browser.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/debug/src/browser.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(/*! ./debug */ "./node_modules/socket.io-client/node_modules/debug/src/debug.js");
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+  '#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC',
+  '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF',
+  '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC',
+  '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF',
+  '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC',
+  '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033',
+  '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366',
+  '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933',
+  '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC',
+  '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF',
+  '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // Internet Explorer and Edge do not support colors.
+  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+    return false;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = process.env.DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/debug/src/debug.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/debug/src/debug.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = __webpack_require__(/*! ms */ "./node_modules/ms/index.js");
+
+/**
+ * Active `debug` instances.
+ */
+exports.instances = [];
+
+/**
+ * The currently active debug mode names, and names to skip.
+ */
+
+exports.names = [];
+exports.skips = [];
+
+/**
+ * Map of special "%n" handling functions, for the debug "format" argument.
+ *
+ * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+ */
+
+exports.formatters = {};
+
+/**
+ * Select a color.
+ * @param {String} namespace
+ * @return {Number}
+ * @api private
+ */
+
+function selectColor(namespace) {
+  var hash = 0, i;
+
+  for (i in namespace) {
+    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return exports.colors[Math.abs(hash) % exports.colors.length];
+}
+
+/**
+ * Create a debugger with the given `namespace`.
+ *
+ * @param {String} namespace
+ * @return {Function}
+ * @api public
+ */
+
+function createDebug(namespace) {
+
+  var prevTime;
+
+  function debug() {
+    // disabled?
+    if (!debug.enabled) return;
+
+    var self = debug;
+
+    // set `diff` timestamp
+    var curr = +new Date();
+    var ms = curr - (prevTime || curr);
+    self.diff = ms;
+    self.prev = prevTime;
+    self.curr = curr;
+    prevTime = curr;
+
+    // turn the `arguments` into a proper Array
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+
+    args[0] = exports.coerce(args[0]);
+
+    if ('string' !== typeof args[0]) {
+      // anything else let's inspect with %O
+      args.unshift('%O');
+    }
+
+    // apply any `formatters` transformations
+    var index = 0;
+    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
+      // if we encounter an escaped % then don't increase the array index
+      if (match === '%%') return match;
+      index++;
+      var formatter = exports.formatters[format];
+      if ('function' === typeof formatter) {
+        var val = args[index];
+        match = formatter.call(self, val);
+
+        // now we need to remove `args[index]` since it's inlined in the `format`
+        args.splice(index, 1);
+        index--;
+      }
+      return match;
+    });
+
+    // apply env-specific formatting (colors, etc.)
+    exports.formatArgs.call(self, args);
+
+    var logFn = debug.log || exports.log || console.log.bind(console);
+    logFn.apply(self, args);
+  }
+
+  debug.namespace = namespace;
+  debug.enabled = exports.enabled(namespace);
+  debug.useColors = exports.useColors();
+  debug.color = selectColor(namespace);
+  debug.destroy = destroy;
+
+  // env-specific initialization logic for debug instances
+  if ('function' === typeof exports.init) {
+    exports.init(debug);
+  }
+
+  exports.instances.push(debug);
+
+  return debug;
+}
+
+function destroy () {
+  var index = exports.instances.indexOf(this);
+  if (index !== -1) {
+    exports.instances.splice(index, 1);
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/**
+ * Enables a debug mode by namespaces. This can include modes
+ * separated by a colon and wildcards.
+ *
+ * @param {String} namespaces
+ * @api public
+ */
+
+function enable(namespaces) {
+  exports.save(namespaces);
+
+  exports.names = [];
+  exports.skips = [];
+
+  var i;
+  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+  var len = split.length;
+
+  for (i = 0; i < len; i++) {
+    if (!split[i]) continue; // ignore empty strings
+    namespaces = split[i].replace(/\*/g, '.*?');
+    if (namespaces[0] === '-') {
+      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+    } else {
+      exports.names.push(new RegExp('^' + namespaces + '$'));
+    }
+  }
+
+  for (i = 0; i < exports.instances.length; i++) {
+    var instance = exports.instances[i];
+    instance.enabled = exports.enabled(instance.namespace);
+  }
+}
+
+/**
+ * Disable debug output.
+ *
+ * @api public
+ */
+
+function disable() {
+  exports.enable('');
+}
+
+/**
+ * Returns true if the given mode name is enabled, false otherwise.
+ *
+ * @param {String} name
+ * @return {Boolean}
+ * @api public
+ */
+
+function enabled(name) {
+  if (name[name.length - 1] === '*') {
+    return true;
+  }
+  var i, len;
+  for (i = 0, len = exports.skips.length; i < len; i++) {
+    if (exports.skips[i].test(name)) {
+      return false;
+    }
+  }
+  for (i = 0, len = exports.names.length; i < len; i++) {
+    if (exports.names[i].test(name)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Coerce `val`.
+ *
+ * @param {Mixed} val
+ * @return {Mixed}
+ * @api private
+ */
+
+function coerce(val) {
+  if (val instanceof Error) return val.stack || val.message;
+  return val;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/binary.js":
+/*!*************************************************!*\
+  !*** ./node_modules/socket.io-parser/binary.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*global Blob,File*/
+
+/**
+ * Module requirements
+ */
+
+var isArray = __webpack_require__(/*! isarray */ "./node_modules/socket.io-parser/node_modules/isarray/index.js");
+var isBuf = __webpack_require__(/*! ./is-buffer */ "./node_modules/socket.io-parser/is-buffer.js");
+var toString = Object.prototype.toString;
+var withNativeBlob = typeof global.Blob === 'function' || toString.call(global.Blob) === '[object BlobConstructor]';
+var withNativeFile = typeof global.File === 'function' || toString.call(global.File) === '[object FileConstructor]';
+
+/**
+ * Replaces every Buffer | ArrayBuffer in packet with a numbered placeholder.
+ * Anything with blobs or files should be fed through removeBlobs before coming
+ * here.
+ *
+ * @param {Object} packet - socket.io event packet
+ * @return {Object} with deconstructed packet and list of buffers
+ * @api public
+ */
+
+exports.deconstructPacket = function(packet) {
+  var buffers = [];
+  var packetData = packet.data;
+  var pack = packet;
+  pack.data = _deconstructPacket(packetData, buffers);
+  pack.attachments = buffers.length; // number of binary 'attachments'
+  return {packet: pack, buffers: buffers};
+};
+
+function _deconstructPacket(data, buffers) {
+  if (!data) return data;
+
+  if (isBuf(data)) {
+    var placeholder = { _placeholder: true, num: buffers.length };
+    buffers.push(data);
+    return placeholder;
+  } else if (isArray(data)) {
+    var newData = new Array(data.length);
+    for (var i = 0; i < data.length; i++) {
+      newData[i] = _deconstructPacket(data[i], buffers);
+    }
+    return newData;
+  } else if (typeof data === 'object' && !(data instanceof Date)) {
+    var newData = {};
+    for (var key in data) {
+      newData[key] = _deconstructPacket(data[key], buffers);
+    }
+    return newData;
+  }
+  return data;
+}
+
+/**
+ * Reconstructs a binary packet from its placeholder packet and buffers
+ *
+ * @param {Object} packet - event packet with placeholders
+ * @param {Array} buffers - binary buffers to put in placeholder positions
+ * @return {Object} reconstructed packet
+ * @api public
+ */
+
+exports.reconstructPacket = function(packet, buffers) {
+  packet.data = _reconstructPacket(packet.data, buffers);
+  packet.attachments = undefined; // no longer useful
+  return packet;
+};
+
+function _reconstructPacket(data, buffers) {
+  if (!data) return data;
+
+  if (data && data._placeholder) {
+    return buffers[data.num]; // appropriate buffer (should be natural order anyway)
+  } else if (isArray(data)) {
+    for (var i = 0; i < data.length; i++) {
+      data[i] = _reconstructPacket(data[i], buffers);
+    }
+  } else if (typeof data === 'object') {
+    for (var key in data) {
+      data[key] = _reconstructPacket(data[key], buffers);
+    }
+  }
+
+  return data;
+}
+
+/**
+ * Asynchronously removes Blobs or Files from data via
+ * FileReader's readAsArrayBuffer method. Used before encoding
+ * data as msgpack. Calls callback with the blobless data.
+ *
+ * @param {Object} data
+ * @param {Function} callback
+ * @api private
+ */
+
+exports.removeBlobs = function(data, callback) {
+  function _removeBlobs(obj, curKey, containingObject) {
+    if (!obj) return obj;
+
+    // convert any blob
+    if ((withNativeBlob && obj instanceof Blob) ||
+        (withNativeFile && obj instanceof File)) {
+      pendingBlobs++;
+
+      // async filereader
+      var fileReader = new FileReader();
+      fileReader.onload = function() { // this.result == arraybuffer
+        if (containingObject) {
+          containingObject[curKey] = this.result;
+        }
+        else {
+          bloblessData = this.result;
+        }
+
+        // if nothing pending its callback time
+        if(! --pendingBlobs) {
+          callback(bloblessData);
+        }
+      };
+
+      fileReader.readAsArrayBuffer(obj); // blob -> arraybuffer
+    } else if (isArray(obj)) { // handle array
+      for (var i = 0; i < obj.length; i++) {
+        _removeBlobs(obj[i], i, obj);
+      }
+    } else if (typeof obj === 'object' && !isBuf(obj)) { // and object
+      for (var key in obj) {
+        _removeBlobs(obj[key], key, obj);
+      }
+    }
+  }
+
+  var pendingBlobs = 0;
+  var bloblessData = data;
+  _removeBlobs(bloblessData);
+  if (!pendingBlobs) {
+    callback(bloblessData);
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/socket.io-parser/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-parser/node_modules/debug/src/browser.js")('socket.io-parser');
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/component-emitter/index.js");
+var binary = __webpack_require__(/*! ./binary */ "./node_modules/socket.io-parser/binary.js");
+var isArray = __webpack_require__(/*! isarray */ "./node_modules/socket.io-parser/node_modules/isarray/index.js");
+var isBuf = __webpack_require__(/*! ./is-buffer */ "./node_modules/socket.io-parser/is-buffer.js");
+
+/**
+ * Protocol version.
+ *
+ * @api public
+ */
+
+exports.protocol = 4;
+
+/**
+ * Packet types.
+ *
+ * @api public
+ */
+
+exports.types = [
+  'CONNECT',
+  'DISCONNECT',
+  'EVENT',
+  'ACK',
+  'ERROR',
+  'BINARY_EVENT',
+  'BINARY_ACK'
+];
+
+/**
+ * Packet type `connect`.
+ *
+ * @api public
+ */
+
+exports.CONNECT = 0;
+
+/**
+ * Packet type `disconnect`.
+ *
+ * @api public
+ */
+
+exports.DISCONNECT = 1;
+
+/**
+ * Packet type `event`.
+ *
+ * @api public
+ */
+
+exports.EVENT = 2;
+
+/**
+ * Packet type `ack`.
+ *
+ * @api public
+ */
+
+exports.ACK = 3;
+
+/**
+ * Packet type `error`.
+ *
+ * @api public
+ */
+
+exports.ERROR = 4;
+
+/**
+ * Packet type 'binary event'
+ *
+ * @api public
+ */
+
+exports.BINARY_EVENT = 5;
+
+/**
+ * Packet type `binary ack`. For acks with binary arguments.
+ *
+ * @api public
+ */
+
+exports.BINARY_ACK = 6;
+
+/**
+ * Encoder constructor.
+ *
+ * @api public
+ */
+
+exports.Encoder = Encoder;
+
+/**
+ * Decoder constructor.
+ *
+ * @api public
+ */
+
+exports.Decoder = Decoder;
+
+/**
+ * A socket.io Encoder instance
+ *
+ * @api public
+ */
+
+function Encoder() {}
+
+var ERROR_PACKET = exports.ERROR + '"encode error"';
+
+/**
+ * Encode a packet as a single string if non-binary, or as a
+ * buffer sequence, depending on packet type.
+ *
+ * @param {Object} obj - packet object
+ * @param {Function} callback - function to handle encodings (likely engine.write)
+ * @return Calls callback with Array of encodings
+ * @api public
+ */
+
+Encoder.prototype.encode = function(obj, callback){
+  debug('encoding packet %j', obj);
+
+  if (exports.BINARY_EVENT === obj.type || exports.BINARY_ACK === obj.type) {
+    encodeAsBinary(obj, callback);
+  } else {
+    var encoding = encodeAsString(obj);
+    callback([encoding]);
+  }
+};
+
+/**
+ * Encode packet as string.
+ *
+ * @param {Object} packet
+ * @return {String} encoded
+ * @api private
+ */
+
+function encodeAsString(obj) {
+
+  // first is type
+  var str = '' + obj.type;
+
+  // attachments if we have them
+  if (exports.BINARY_EVENT === obj.type || exports.BINARY_ACK === obj.type) {
+    str += obj.attachments + '-';
+  }
+
+  // if we have a namespace other than `/`
+  // we append it followed by a comma `,`
+  if (obj.nsp && '/' !== obj.nsp) {
+    str += obj.nsp + ',';
+  }
+
+  // immediately followed by the id
+  if (null != obj.id) {
+    str += obj.id;
+  }
+
+  // json data
+  if (null != obj.data) {
+    var payload = tryStringify(obj.data);
+    if (payload !== false) {
+      str += payload;
+    } else {
+      return ERROR_PACKET;
+    }
+  }
+
+  debug('encoded %j as %s', obj, str);
+  return str;
+}
+
+function tryStringify(str) {
+  try {
+    return JSON.stringify(str);
+  } catch(e){
+    return false;
+  }
+}
+
+/**
+ * Encode packet as 'buffer sequence' by removing blobs, and
+ * deconstructing packet into object with placeholders and
+ * a list of buffers.
+ *
+ * @param {Object} packet
+ * @return {Buffer} encoded
+ * @api private
+ */
+
+function encodeAsBinary(obj, callback) {
+
+  function writeEncoding(bloblessData) {
+    var deconstruction = binary.deconstructPacket(bloblessData);
+    var pack = encodeAsString(deconstruction.packet);
+    var buffers = deconstruction.buffers;
+
+    buffers.unshift(pack); // add packet info to beginning of data list
+    callback(buffers); // write all the buffers
+  }
+
+  binary.removeBlobs(obj, writeEncoding);
+}
+
+/**
+ * A socket.io Decoder instance
+ *
+ * @return {Object} decoder
+ * @api public
+ */
+
+function Decoder() {
+  this.reconstructor = null;
+}
+
+/**
+ * Mix in `Emitter` with Decoder.
+ */
+
+Emitter(Decoder.prototype);
+
+/**
+ * Decodes an ecoded packet string into packet JSON.
+ *
+ * @param {String} obj - encoded packet
+ * @return {Object} packet
+ * @api public
+ */
+
+Decoder.prototype.add = function(obj) {
+  var packet;
+  if (typeof obj === 'string') {
+    packet = decodeString(obj);
+    if (exports.BINARY_EVENT === packet.type || exports.BINARY_ACK === packet.type) { // binary packet's json
+      this.reconstructor = new BinaryReconstructor(packet);
+
+      // no attachments, labeled binary but no binary data to follow
+      if (this.reconstructor.reconPack.attachments === 0) {
+        this.emit('decoded', packet);
+      }
+    } else { // non-binary full packet
+      this.emit('decoded', packet);
+    }
+  }
+  else if (isBuf(obj) || obj.base64) { // raw binary data
+    if (!this.reconstructor) {
+      throw new Error('got binary data when not reconstructing a packet');
+    } else {
+      packet = this.reconstructor.takeBinaryData(obj);
+      if (packet) { // received final buffer
+        this.reconstructor = null;
+        this.emit('decoded', packet);
+      }
+    }
+  }
+  else {
+    throw new Error('Unknown type: ' + obj);
+  }
+};
+
+/**
+ * Decode a packet String (JSON data)
+ *
+ * @param {String} str
+ * @return {Object} packet
+ * @api private
+ */
+
+function decodeString(str) {
+  var i = 0;
+  // look up type
+  var p = {
+    type: Number(str.charAt(0))
+  };
+
+  if (null == exports.types[p.type]) {
+    return error('unknown packet type ' + p.type);
+  }
+
+  // look up attachments if type binary
+  if (exports.BINARY_EVENT === p.type || exports.BINARY_ACK === p.type) {
+    var buf = '';
+    while (str.charAt(++i) !== '-') {
+      buf += str.charAt(i);
+      if (i == str.length) break;
+    }
+    if (buf != Number(buf) || str.charAt(i) !== '-') {
+      throw new Error('Illegal attachments');
+    }
+    p.attachments = Number(buf);
+  }
+
+  // look up namespace (if any)
+  if ('/' === str.charAt(i + 1)) {
+    p.nsp = '';
+    while (++i) {
+      var c = str.charAt(i);
+      if (',' === c) break;
+      p.nsp += c;
+      if (i === str.length) break;
+    }
+  } else {
+    p.nsp = '/';
+  }
+
+  // look up id
+  var next = str.charAt(i + 1);
+  if ('' !== next && Number(next) == next) {
+    p.id = '';
+    while (++i) {
+      var c = str.charAt(i);
+      if (null == c || Number(c) != c) {
+        --i;
+        break;
+      }
+      p.id += str.charAt(i);
+      if (i === str.length) break;
+    }
+    p.id = Number(p.id);
+  }
+
+  // look up json data
+  if (str.charAt(++i)) {
+    var payload = tryParse(str.substr(i));
+    var isPayloadValid = payload !== false && (p.type === exports.ERROR || isArray(payload));
+    if (isPayloadValid) {
+      p.data = payload;
+    } else {
+      return error('invalid payload');
+    }
+  }
+
+  debug('decoded %s as %j', str, p);
+  return p;
+}
+
+function tryParse(str) {
+  try {
+    return JSON.parse(str);
+  } catch(e){
+    return false;
+  }
+}
+
+/**
+ * Deallocates a parser's resources
+ *
+ * @api public
+ */
+
+Decoder.prototype.destroy = function() {
+  if (this.reconstructor) {
+    this.reconstructor.finishedReconstruction();
+  }
+};
+
+/**
+ * A manager of a binary event's 'buffer sequence'. Should
+ * be constructed whenever a packet of type BINARY_EVENT is
+ * decoded.
+ *
+ * @param {Object} packet
+ * @return {BinaryReconstructor} initialized reconstructor
+ * @api private
+ */
+
+function BinaryReconstructor(packet) {
+  this.reconPack = packet;
+  this.buffers = [];
+}
+
+/**
+ * Method to be called when binary data received from connection
+ * after a BINARY_EVENT packet.
+ *
+ * @param {Buffer | ArrayBuffer} binData - the raw binary data received
+ * @return {null | Object} returns null if more binary data is expected or
+ *   a reconstructed packet object if all buffers have been received.
+ * @api private
+ */
+
+BinaryReconstructor.prototype.takeBinaryData = function(binData) {
+  this.buffers.push(binData);
+  if (this.buffers.length === this.reconPack.attachments) { // done with buffer list
+    var packet = binary.reconstructPacket(this.reconPack, this.buffers);
+    this.finishedReconstruction();
+    return packet;
+  }
+  return null;
+};
+
+/**
+ * Cleans up binary packet reconstruction variables.
+ *
+ * @api private
+ */
+
+BinaryReconstructor.prototype.finishedReconstruction = function() {
+  this.reconPack = null;
+  this.buffers = [];
+};
+
+function error(msg) {
+  return {
+    type: exports.ERROR,
+    data: 'parser error: ' + msg
+  };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/is-buffer.js":
+/*!****************************************************!*\
+  !*** ./node_modules/socket.io-parser/is-buffer.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+module.exports = isBuf;
+
+var withNativeBuffer = typeof global.Buffer === 'function' && typeof global.Buffer.isBuffer === 'function';
+var withNativeArrayBuffer = typeof global.ArrayBuffer === 'function';
+
+var isView = (function () {
+  if (withNativeArrayBuffer && typeof global.ArrayBuffer.isView === 'function') {
+    return global.ArrayBuffer.isView;
+  } else {
+    return function (obj) { return obj.buffer instanceof global.ArrayBuffer; };
+  }
+})();
+
+/**
+ * Returns true if obj is a buffer or an arraybuffer.
+ *
+ * @api private
+ */
+
+function isBuf(obj) {
+  return (withNativeBuffer && global.Buffer.isBuffer(obj)) ||
+          (withNativeArrayBuffer && (obj instanceof global.ArrayBuffer || isView(obj)));
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/node_modules/debug/src/browser.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/socket.io-parser/node_modules/debug/src/browser.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(/*! ./debug */ "./node_modules/socket.io-parser/node_modules/debug/src/debug.js");
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+  '#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC',
+  '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF',
+  '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC',
+  '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF',
+  '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC',
+  '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033',
+  '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366',
+  '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933',
+  '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC',
+  '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF',
+  '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // Internet Explorer and Edge do not support colors.
+  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+    return false;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = process.env.DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/node_modules/debug/src/debug.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/socket.io-parser/node_modules/debug/src/debug.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = __webpack_require__(/*! ms */ "./node_modules/ms/index.js");
+
+/**
+ * Active `debug` instances.
+ */
+exports.instances = [];
+
+/**
+ * The currently active debug mode names, and names to skip.
+ */
+
+exports.names = [];
+exports.skips = [];
+
+/**
+ * Map of special "%n" handling functions, for the debug "format" argument.
+ *
+ * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+ */
+
+exports.formatters = {};
+
+/**
+ * Select a color.
+ * @param {String} namespace
+ * @return {Number}
+ * @api private
+ */
+
+function selectColor(namespace) {
+  var hash = 0, i;
+
+  for (i in namespace) {
+    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return exports.colors[Math.abs(hash) % exports.colors.length];
+}
+
+/**
+ * Create a debugger with the given `namespace`.
+ *
+ * @param {String} namespace
+ * @return {Function}
+ * @api public
+ */
+
+function createDebug(namespace) {
+
+  var prevTime;
+
+  function debug() {
+    // disabled?
+    if (!debug.enabled) return;
+
+    var self = debug;
+
+    // set `diff` timestamp
+    var curr = +new Date();
+    var ms = curr - (prevTime || curr);
+    self.diff = ms;
+    self.prev = prevTime;
+    self.curr = curr;
+    prevTime = curr;
+
+    // turn the `arguments` into a proper Array
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+
+    args[0] = exports.coerce(args[0]);
+
+    if ('string' !== typeof args[0]) {
+      // anything else let's inspect with %O
+      args.unshift('%O');
+    }
+
+    // apply any `formatters` transformations
+    var index = 0;
+    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
+      // if we encounter an escaped % then don't increase the array index
+      if (match === '%%') return match;
+      index++;
+      var formatter = exports.formatters[format];
+      if ('function' === typeof formatter) {
+        var val = args[index];
+        match = formatter.call(self, val);
+
+        // now we need to remove `args[index]` since it's inlined in the `format`
+        args.splice(index, 1);
+        index--;
+      }
+      return match;
+    });
+
+    // apply env-specific formatting (colors, etc.)
+    exports.formatArgs.call(self, args);
+
+    var logFn = debug.log || exports.log || console.log.bind(console);
+    logFn.apply(self, args);
+  }
+
+  debug.namespace = namespace;
+  debug.enabled = exports.enabled(namespace);
+  debug.useColors = exports.useColors();
+  debug.color = selectColor(namespace);
+  debug.destroy = destroy;
+
+  // env-specific initialization logic for debug instances
+  if ('function' === typeof exports.init) {
+    exports.init(debug);
+  }
+
+  exports.instances.push(debug);
+
+  return debug;
+}
+
+function destroy () {
+  var index = exports.instances.indexOf(this);
+  if (index !== -1) {
+    exports.instances.splice(index, 1);
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/**
+ * Enables a debug mode by namespaces. This can include modes
+ * separated by a colon and wildcards.
+ *
+ * @param {String} namespaces
+ * @api public
+ */
+
+function enable(namespaces) {
+  exports.save(namespaces);
+
+  exports.names = [];
+  exports.skips = [];
+
+  var i;
+  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+  var len = split.length;
+
+  for (i = 0; i < len; i++) {
+    if (!split[i]) continue; // ignore empty strings
+    namespaces = split[i].replace(/\*/g, '.*?');
+    if (namespaces[0] === '-') {
+      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+    } else {
+      exports.names.push(new RegExp('^' + namespaces + '$'));
+    }
+  }
+
+  for (i = 0; i < exports.instances.length; i++) {
+    var instance = exports.instances[i];
+    instance.enabled = exports.enabled(instance.namespace);
+  }
+}
+
+/**
+ * Disable debug output.
+ *
+ * @api public
+ */
+
+function disable() {
+  exports.enable('');
+}
+
+/**
+ * Returns true if the given mode name is enabled, false otherwise.
+ *
+ * @param {String} name
+ * @return {Boolean}
+ * @api public
+ */
+
+function enabled(name) {
+  if (name[name.length - 1] === '*') {
+    return true;
+  }
+  var i, len;
+  for (i = 0, len = exports.skips.length; i < len; i++) {
+    if (exports.skips[i].test(name)) {
+      return false;
+    }
+  }
+  for (i = 0, len = exports.names.length; i < len; i++) {
+    if (exports.names[i].test(name)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Coerce `val`.
+ *
+ * @param {Mixed} val
+ * @return {Mixed}
+ * @api private
+ */
+
+function coerce(val) {
+  if (val instanceof Error) return val.stack || val.message;
+  return val;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/node_modules/isarray/index.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/socket.io-parser/node_modules/isarray/index.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/to-array/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/to-array/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = toArray
+
+function toArray(list, index) {
+    var array = []
+
+    index = index || 0
+
+    for (var i = index || 0; i < list.length; i++) {
+        array[i - index] = list[i]
+    }
+
+    return array
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/tslib/tslib.es6.js":
 /*!*****************************************!*\
   !*** ./node_modules/tslib/tslib.es6.js ***!
@@ -74471,6 +87506,119 @@ function __importStar(mod) {
 function __importDefault(mod) {
     return (mod && mod.__esModule) ? mod : { default: mod };
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/module.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/module.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function(module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/yeast/index.js":
+/*!*************************************!*\
+  !*** ./node_modules/yeast/index.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split('')
+  , length = 64
+  , map = {}
+  , seed = 0
+  , i = 0
+  , prev;
+
+/**
+ * Return a string representing the specified number.
+ *
+ * @param {Number} num The number to convert.
+ * @returns {String} The string representation of the number.
+ * @api public
+ */
+function encode(num) {
+  var encoded = '';
+
+  do {
+    encoded = alphabet[num % length] + encoded;
+    num = Math.floor(num / length);
+  } while (num > 0);
+
+  return encoded;
+}
+
+/**
+ * Return the integer value specified by the given string.
+ *
+ * @param {String} str The string to convert.
+ * @returns {Number} The integer value represented by the string.
+ * @api public
+ */
+function decode(str) {
+  var decoded = 0;
+
+  for (i = 0; i < str.length; i++) {
+    decoded = decoded * length + map[str.charAt(i)];
+  }
+
+  return decoded;
+}
+
+/**
+ * Yeast: A tiny growing id generator.
+ *
+ * @returns {String} A unique id.
+ * @api public
+ */
+function yeast() {
+  var now = encode(+new Date());
+
+  if (now !== prev) return seed = 0, prev = now;
+  return now +'.'+ encode(seed++);
+}
+
+//
+// Map each character to its index.
+//
+for (; i < length; i++) map[alphabet[i]] = i;
+
+//
+// Expose the `yeast`, `encode` and `decode` functions.
+//
+yeast.encode = encode;
+yeast.decode = decode;
+module.exports = yeast;
 
 
 /***/ })

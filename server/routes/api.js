@@ -3,6 +3,8 @@ const router = express.Router();
 const User = require("../../database/schema");
 const request = require('request');
 
+
+
 //This handles the signup form from the signup page
 router.post('/addLocationAndCareer', function(req,res){
   var body = req.body;
@@ -22,7 +24,7 @@ router.post('/addLocationAndCareer', function(req,res){
 
 router.get('/getUsersNearby', function(req,res){
   //coordinates are in the form [long, lat] in mongodb
-  //This query gets all the users within 500 meters
+  //This query gets all the users within 3 km
   User.aggregate(
     [
         { "$geoNear": {
@@ -32,7 +34,7 @@ router.get('/getUsersNearby', function(req,res){
             },
             "distanceField": "distance",
             "spherical": true,
-            "maxDistance": 500
+            "maxDistance": 3000
         }}
     ],
       function(err,results) {
@@ -48,6 +50,10 @@ router.get('/getUsersNearby', function(req,res){
   
 });
 
+router.get('/getMyUserName', function(req,res){
+  res.send(req.user);
+  res.end;
+});
 //Fetch public user
 router.get('/fetchPublicUser', function(req,res){
   var username = req.query.username;

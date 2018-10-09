@@ -21,5 +21,14 @@ router.get('/github/callback',
     //res.redirect('/');
   });
 
+  router.get('/logout',  function(req, res) {
+    console.log('logging out');
+    req.logout();
+    res.redirect('/');
+    //res.send(req.user);
+    
+    //res.redirect('/');
+  });
+
 
 module.exports = router;

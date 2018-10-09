@@ -15,12 +15,10 @@ export class CareerProspectFormComponent implements OnInit {
 
   handlFormSubmission(empForm: any, event: Event){
     event.preventDefault();
-    alert('gettit')
   }
 
   onSubmit(e) {
     debugger;
-    alert('e');
     var self = this;
     var position = document.forms["position"]["fname"].value;
     var linkedinProfileName = document.forms["position"]["linkedinName"].value;

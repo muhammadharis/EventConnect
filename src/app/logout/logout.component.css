@@ -1,0 +1,25 @@
+button {
+  border: none;
+  display: inline-block;
+  color: white;
+  background-color: #000;
+  text-align: right;
+  width: 100%;
+  font-size: 0px;
+  outline: none !important;
+   box-shadow: none;
+}
+button p{
+  cursor: pointer;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 18px;
+  float:right;
+  transition: ease background-color 0.5s;
+
+}
+button p:hover{
+  background-color: #232222;
+}

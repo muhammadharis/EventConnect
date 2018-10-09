@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { LinkedinPageComponent } from './linkedin-page/linkedin-page.component';
@@ -14,6 +16,8 @@ import { LinkedinCardComponent } from './linkedin-card/linkedin-card.component';
 import { CareerProspectFormComponent } from './career-prospect-form/career-prospect-form.component';
 import { GithubCardComponent } from './github-card/github-card.component';
 import { EventsPageComponent } from './events-page/events-page.component';
+import { LogoutComponent } from './logout/logout.component';
+import { ChatboxComponent } from './chatbox/chatbox.component';
 
 
 @NgModule({
@@ -25,12 +29,15 @@ import { EventsPageComponent } from './events-page/events-page.component';
     LinkedinCardComponent,
     CareerProspectFormComponent,
     GithubCardComponent,
-    EventsPageComponent
+    EventsPageComponent,
+    LogoutComponent,
+    ChatboxComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCDIcRRXY6G6-5Mh-bWt66U3NzH_Vx5GIw'
     })

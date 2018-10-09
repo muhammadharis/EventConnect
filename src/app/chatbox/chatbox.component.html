@@ -1,0 +1,13 @@
+<strong>Chat with {{targetUsername}}</strong>
+<form action="/action_page.php">
+  Message: <input [(ngModel)]="formMessage" name="chatMessageForm">
+  <br>
+  <input (click)="send()" type="submit" value="Submit">
+</form>
+{{formMessage}}
+
+<ul>
+  <li *ngFor="let message of messages">
+    {{message.fromUsername}} : {{message.msg}}
+  </li>
+</ul>

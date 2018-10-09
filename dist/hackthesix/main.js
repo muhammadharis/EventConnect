@@ -40,6 +40,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./sign-up/sign-up.component */ "./src/app/sign-up/sign-up.component.ts");
 /* harmony import */ var _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./linkedin-card/linkedin-card.component */ "./src/app/linkedin-card/linkedin-card.component.ts");
 /* harmony import */ var _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./github-card/github-card.component */ "./src/app/github-card/github-card.component.ts");
+/* harmony import */ var _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./chatbox/chatbox.component */ "./src/app/chatbox/chatbox.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -53,13 +54,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
     { path: '', component: _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_2__["LinkedinPageComponent"] },
     { path: 'selection', component: _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_3__["UserSelectionComponent"] },
     { path: 'messaging', component: _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_3__["UserSelectionComponent"] },
     { path: 'signup', component: _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_4__["SignUpComponent"] },
     { path: 'linkedin', component: _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_5__["LinkedinCardComponent"] },
-    { path: 'github', component: _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_6__["GithubCardComponent"] }
+    { path: 'github', component: _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_6__["GithubCardComponent"] },
+    { path: 'chat', component: _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_7__["ChatboxComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -147,16 +150,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./linkedin-page/linkedin-page.component */ "./src/app/linkedin-page/linkedin-page.component.ts");
-/* harmony import */ var _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user-selection/user-selection.component */ "./src/app/user-selection/user-selection.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! .//app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sign-up/sign-up.component */ "./src/app/sign-up/sign-up.component.ts");
-/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
-/* harmony import */ var _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./linkedin-card/linkedin-card.component */ "./src/app/linkedin-card/linkedin-card.component.ts");
-/* harmony import */ var _career_prospect_form_career_prospect_form_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./career-prospect-form/career-prospect-form.component */ "./src/app/career-prospect-form/career-prospect-form.component.ts");
-/* harmony import */ var _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./github-card/github-card.component */ "./src/app/github-card/github-card.component.ts");
-/* harmony import */ var _events_page_events_page_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./events-page/events-page.component */ "./src/app/events-page/events-page.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./linkedin-page/linkedin-page.component */ "./src/app/linkedin-page/linkedin-page.component.ts");
+/* harmony import */ var _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./user-selection/user-selection.component */ "./src/app/user-selection/user-selection.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! .//app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sign-up/sign-up.component */ "./src/app/sign-up/sign-up.component.ts");
+/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
+/* harmony import */ var _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./linkedin-card/linkedin-card.component */ "./src/app/linkedin-card/linkedin-card.component.ts");
+/* harmony import */ var _career_prospect_form_career_prospect_form_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./career-prospect-form/career-prospect-form.component */ "./src/app/career-prospect-form/career-prospect-form.component.ts");
+/* harmony import */ var _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./github-card/github-card.component */ "./src/app/github-card/github-card.component.ts");
+/* harmony import */ var _events_page_events_page_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./events-page/events-page.component */ "./src/app/events-page/events-page.component.ts");
+/* harmony import */ var _logout_logout_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./logout/logout.component */ "./src/app/logout/logout.component.ts");
+/* harmony import */ var _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./chatbox/chatbox.component */ "./src/app/chatbox/chatbox.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -175,30 +181,36 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_3__["LinkedinPageComponent"],
-                _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_4__["UserSelectionComponent"],
-                _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_6__["SignUpComponent"],
-                _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_8__["LinkedinCardComponent"],
-                _career_prospect_form_career_prospect_form_component__WEBPACK_IMPORTED_MODULE_9__["CareerProspectFormComponent"],
-                _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_10__["GithubCardComponent"],
-                _events_page_events_page_component__WEBPACK_IMPORTED_MODULE_11__["EventsPageComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_4__["LinkedinPageComponent"],
+                _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_5__["UserSelectionComponent"],
+                _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_7__["SignUpComponent"],
+                _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_9__["LinkedinCardComponent"],
+                _career_prospect_form_career_prospect_form_component__WEBPACK_IMPORTED_MODULE_10__["CareerProspectFormComponent"],
+                _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_11__["GithubCardComponent"],
+                _events_page_events_page_component__WEBPACK_IMPORTED_MODULE_12__["EventsPageComponent"],
+                _logout_logout_component__WEBPACK_IMPORTED_MODULE_13__["LogoutComponent"],
+                _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_14__["ChatboxComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
-                _agm_core__WEBPACK_IMPORTED_MODULE_7__["AgmCoreModule"].forRoot({
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
+                _agm_core__WEBPACK_IMPORTED_MODULE_8__["AgmCoreModule"].forRoot({
                     apiKey: 'AIzaSyCDIcRRXY6G6-5Mh-bWt66U3NzH_Vx5GIw'
                 })
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -226,7 +238,7 @@ module.exports = "#submit{\r\n    padding-left: 40px;\r\n    padding-right: 40px
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n<div style=\"font-family: 'Lato'\">\r\n  <form name=\"position\" (submit)=\"onSubmit(event)\" required>\r\n    What is your career prospect?\r\n    <br/>\r\n    <div class=\"form-group\">\r\n      <input id=\"textField\" class=\"form-control\" type=\"text\" name=\"fname\" style=\"width:50%;display: inline-block;\">\r\n      <br/> What is your LinkedIn Profile Name?\r\n      <br/>\r\n\r\n      <input id=\"textField\" class=\"form-control\" type=\"text\" name=\"linkedinName\" style=\"width:50%;display: inline-block;\">\r\n      <br/>\r\n      <input id=\"submit\" class=\"form-control\" type=\"submit\" value=\"Submit\" style=\"width:50%; text-align:center;display: inline-block;\" />\r\n    </div>\r\n  </form>\r\n</div>\r\n"
+module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n\r\n<div style=\"font-family: 'Lato'\">\r\n  <form name=\"position\" (submit)=\"onSubmit(event)\" required>\r\n    What is your career prospect?\r\n    <br/>\r\n    <div class=\"form-group\">\r\n      <input id=\"textField\" class=\"form-control\" type=\"text\" name=\"fname\" style=\"width:50%;display: inline-block;\">\r\n      <br/> What is your LinkedIn Profile Name?\r\n      <br/>\r\n\r\n      <input id=\"textField\" class=\"form-control\" type=\"text\" name=\"linkedinName\" style=\"width:50%;display: inline-block;\">\r\n      <br/>\r\n      <input id=\"submit\" class=\"form-control\" type=\"submit\" value=\"Submit\" style=\"width:50%; text-align:center;display: inline-block;\" />\r\n    </div>\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -259,11 +271,9 @@ var CareerProspectFormComponent = /** @class */ (function () {
     }
     CareerProspectFormComponent.prototype.handlFormSubmission = function (empForm, event) {
         event.preventDefault();
-        alert('gettit');
     };
     CareerProspectFormComponent.prototype.onSubmit = function (e) {
         debugger;
-        alert('e');
         var self = this;
         var position = document.forms["position"]["fname"].value;
         var linkedinProfileName = document.forms["position"]["linkedinName"].value;
@@ -310,6 +320,112 @@ var CareerProspectFormComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], CareerProspectFormComponent);
     return CareerProspectFormComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/chatbox/chatbox.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/chatbox/chatbox.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/chatbox/chatbox.component.html":
+/*!************************************************!*\
+  !*** ./src/app/chatbox/chatbox.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<strong>Chat with {{targetUsername}}</strong>\n<form action=\"/action_page.php\">\n  Message: <input [(ngModel)]=\"formMessage\" name=\"chatMessageForm\">\n  <br>\n  <input (click)=\"send()\" type=\"submit\" value=\"Submit\">\n</form>\n{{formMessage}}\n\n<ul>\n  <li *ngFor=\"let message of messages\">\n    {{message.fromUsername}} : {{message.msg}}\n  </li>\n</ul>"
+
+/***/ }),
+
+/***/ "./src/app/chatbox/chatbox.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/chatbox/chatbox.component.ts ***!
+  \**********************************************/
+/*! exports provided: ChatboxComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatboxComponent", function() { return ChatboxComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! socket.io-client */ "./node_modules/socket.io-client/lib/index.js");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_1__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ChatboxComponent = /** @class */ (function () {
+    function ChatboxComponent() {
+        //target's username and user's username are passed in from user-selection.component
+        this.targetUsername = '';
+        this.myUserName = '';
+        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_1__["connect"]();
+    }
+    ChatboxComponent.prototype.send = function () {
+        var self = this;
+        console.log(self.formMessage);
+        var message = {
+            fromUsername: self.myUserName,
+            toUsername: self.targetUsername,
+            msg: self.formMessage
+        };
+        //Sends the chat to the server with the event name 'message-to-server' (see server.js)
+        this.socket.emit('message-to-server', message);
+    };
+    ChatboxComponent.prototype.ngOnChanges = function () {
+        var _this = this;
+        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_1__["connect"](); //Reconnects to room - fixes bug when you chat with many different people on a short interval
+        var self = this;
+        this.messages = new Array();
+        //listens for a socket connection, then makes the socket join a "room". The room contains only 2 people, the current socket, and the target socket, and thus is named myUsername:targetUsername as well as targetUsername:myUsername for 2-way assurance
+        this.socket.on('connect', function () {
+            self.socket.emit('joinRoom', {
+                name: self.myUserName + ":" + self.targetUsername
+            });
+            self.socket.emit('joinRoom', {
+                name: self.targetUsername + ":" + self.myUserName
+            });
+        });
+        this.socket.on('message-to-clients', function (msg) {
+            _this.messages.push(msg);
+            console.log(msg);
+        });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], ChatboxComponent.prototype, "targetUsername", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], ChatboxComponent.prototype, "myUserName", void 0);
+    ChatboxComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-chatbox',
+            template: __webpack_require__(/*! ./chatbox.component.html */ "./src/app/chatbox/chatbox.component.html"),
+            styles: [__webpack_require__(/*! ./chatbox.component.css */ "./src/app/chatbox/chatbox.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ChatboxComponent);
+    return ChatboxComponent;
 }());
 
 
@@ -427,50 +543,6 @@ var GithubCardComponent = /** @class */ (function () {
         this.username = '';
         this.repos = {};
         this.gitJson = {};
-        //   "login": "craigericlewis",
-        //   "id": 22064715,
-        //   "node_id": "MDQ6VXNlcjIyMDY0NzE1",
-        //   "avatar_url": "https://avatars1.githubusercontent.com/u/22064715?v=4",
-        //   "gravatar_id": "",
-        //   "url": "https://api.github.com/users/craigericlewis",
-        //   "html_url": "https://github.com/craigericlewis",
-        //   "followers_url": "https://api.github.com/users/craigericlewis/followers",
-        //   "following_url": "https://api.github.com/users/craigericlewis/following{/other_user}",
-        //   "gists_url": "https://api.github.com/users/craigericlewis/gists{/gist_id}",
-        //   "starred_url": "https://api.github.com/users/craigericlewis/starred{/owner}{/repo}",
-        //   "subscriptions_url": "https://api.github.com/users/craigericlewis/subscriptions",
-        //   "organizations_url": "https://api.github.com/users/craigericlewis/orgs",
-        //   "repos_url": "https://api.github.com/users/craigericlewis/repos",
-        //   "events_url": "https://api.github.com/users/craigericlewis/events{/privacy}",
-        //   "received_events_url": "https://api.github.com/users/craigericlewis/received_events",
-        //   "type": "User",
-        //   "site_admin": false,
-        //   "name": "Craig Lewis",
-        //   "company": null,
-        //   "blog": "",
-        //   "location": null,
-        //   "email": "craigericlewis@gmail.com",
-        //   "hireable": null,
-        //   "bio": null,
-        //   "public_repos": 12,
-        //   "public_gists": 0,
-        //   "followers": 0,
-        //   "following": 0,
-        //   "created_at": "2016-09-08T00:36:59Z",
-        //   "updated_at": "2018-08-25T01:35:29Z",
-        //   "private_gists": 1,
-        //   "total_private_repos": 0,
-        //   "owned_private_repos": 0,
-        //   "disk_usage": 128616,
-        //   "collaborators": 0,
-        //   "two_factor_authentication": false,
-        //   "plan": {
-        //     "name": "developer",
-        //     "space": 976562499,
-        //     "collaborators": 0,
-        //     "private_repos": 9999
-        //   }
-        // };
         this.messageEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
     }
     GithubCardComponent.prototype.ngOnInit = function () {
@@ -726,6 +798,80 @@ var LinkedinPageComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/logout/logout.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/logout/logout.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "button {\r\n  border: none;\r\n  display: inline-block;\r\n  color: white;\r\n  background-color: #000;\r\n  text-align: right;\r\n  width: 100%;\r\n  font-size: 0px;\r\n  outline: none !important;\r\n   box-shadow: none;\r\n}\r\nbutton p{\r\n  cursor: pointer;\r\n  padding-top: 10px;\r\n  padding-right: 20px;\r\n  padding-bottom: 10px;\r\n  padding-left: 20px;\r\n  font-size: 18px;\r\n  float:right;\r\n  transition: ease background-color 0.5s;\r\n\r\n}\r\nbutton p:hover{\r\n  background-color: #232222;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/logout/logout.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/logout/logout.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<button><p (click)=\"logout()\">Logout</p> </button>\n"
+
+/***/ }),
+
+/***/ "./src/app/logout/logout.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/logout/logout.component.ts ***!
+  \********************************************/
+/*! exports provided: LogoutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LogoutComponent", function() { return LogoutComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LogoutComponent = /** @class */ (function () {
+    function LogoutComponent() {
+    }
+    //makes a backend request to logout and redirects to the home page
+    LogoutComponent.prototype.logout = function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/auth/logout', true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                window.location.replace('/');
+            }
+        };
+        xhr.send();
+    };
+    LogoutComponent.prototype.ngOnInit = function () {
+    };
+    LogoutComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-logout',
+            template: __webpack_require__(/*! ./logout.component.html */ "./src/app/logout/logout.component.html"),
+            styles: [__webpack_require__(/*! ./logout.component.css */ "./src/app/logout/logout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LogoutComponent);
+    return LogoutComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/sign-up/sign-up.component.css":
 /*!***********************************************!*\
   !*** ./src/app/sign-up/sign-up.component.css ***!
@@ -744,7 +890,7 @@ module.exports = "agm-map {\r\n    height: 300px;\r\n  }"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"text-align: center\">\r\n<h1>Check-in</h1>\r\n<agm-map [latitude]=\"lat\" [longitude]=\"lng\">\r\n    <agm-marker [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\r\n</agm-map>\r\n\r\n  <br/>\r\n  <br/>\r\n  \r\n  <!-- passing location data to the form that asks for career and linkedin-->\r\n  <app-career-prospect-form [latitude]=\"lat\" [longitude]=\"lng\"></app-career-prospect-form>\r\n \r\n</div>\r\n\r\n"
+module.exports = "<app-logout></app-logout>\r\n<div style=\"text-align: center\">\r\n<h1>Check-in</h1>\r\n<agm-map [latitude]=\"lat\" [longitude]=\"lng\">\r\n    <agm-marker [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\r\n</agm-map>\r\n\r\n  <br/>\r\n  <br/>\r\n  \r\n  <!-- passing location data to the form that asks for career and linkedin-->\r\n  <app-career-prospect-form [latitude]=\"lat\" [longitude]=\"lng\"></app-career-prospect-form>\r\n \r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -821,7 +967,7 @@ module.exports = ".btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-a
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" integrity=\"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ\" crossorigin=\"anonymous\">\r\n\r\n<span *ngIf=\"!hide\">\r\n  <li class=\"list-group-item\" style=\"text-align:center; \">\r\n    <strong><font size=\"100\" style=\"padding-left: 1%; vertical-align:middle;\">EventConnect</font></strong>\r\n  </li>\r\n  <ul class=\"list-group\" *ngFor=\"let user of userList; let i = index\" style=\"text-align:center; \">\r\n    <li class=\"list-group-item\" style=\"text-align:center; \">\r\n      <div style=\"font-family: Lato; \">\r\n\r\n        <img src=\"{{user.avatar_url}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\r\n        <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{user.name}} </font>\r\n      </div>\r\n      <!-- </td> -->\r\n      <!-- <td style=\"text-align: center; \" width=\"100%\"> -->\r\n      <br>\r\n      <div style=\"margin-top: 8px\">\r\n        <table align = \"center\">\r\n          <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"linkedinClick(i)\"><i class=\"fab fa-linkedin-in\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"githubClick(i)\"><i class=\"fab fa-github\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"like(i)\"><i class=\"far fa-heart\"></i></button>\r\n        </td>\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"dislike(i)\"><i class=\"fas fa-times\"></i></button>\r\n        </td>\r\n\r\n        </table>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n</span>\r\n\r\n<span *ngIf=\"hide\">\r\n  <app-github-card [username]=\"username\" (messageEvent)=\"receiveMessage($event)\"></app-github-card>\r\n</span>\r\n"
+module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" integrity=\"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ\" crossorigin=\"anonymous\">\r\n<app-logout></app-logout>\r\n<span *ngIf=\"!hide\">\r\n  <li class=\"list-group-item\" style=\"text-align:center; \">\r\n    <strong><font size=\"100\" style=\"padding-left: 1%; vertical-align:middle;\">EventConnect</font></strong>\r\n  </li>\r\n  <ul class=\"list-group\" *ngFor=\"let user of userList; let i = index\" style=\"text-align:center; \">\r\n    <li class=\"list-group-item\" style=\"text-align:center; \">\r\n      <div style=\"font-family: Lato; \">\r\n\r\n        <img src=\"{{user.avatar_url}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\r\n        <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{user.name}} </font>\r\n      </div>\r\n      <!-- </td> -->\r\n      <!-- <td style=\"text-align: center; \" width=\"100%\"> -->\r\n      \r\n      <br>\r\n      <div style=\"margin-top: 8px\">\r\n        <table align = \"center\">\r\n          <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"linkedinClick(i)\"><i class=\"fab fa-linkedin-in\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"githubClick(i)\"><i class=\"fab fa-github\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"like(i)\"><i class=\"far fa-heart\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"dislike(i)\"><i class=\"fas fa-times\"></i></button>\r\n        </td>\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"message(i)\"><i class=\"far fa-comment\"></i></button>\r\n        </td>\r\n\r\n        </table>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n</span>\r\n\r\n<span *ngIf=\"hide\">\r\n  <app-github-card [username]=\"username\" (messageEvent)=\"receiveMessage($event)\"></app-github-card>\r\n</span>\r\n\r\n<span *ngIf=\"showChat\">\r\n    <app-chatbox [myUserName]=\"myUserName\" [targetUsername]=\"username\" ></app-chatbox>\r\n</span>"
 
 /***/ }),
 
@@ -850,48 +996,41 @@ var UserSelectionComponent = /** @class */ (function () {
     function UserSelectionComponent() {
         this.hide = false;
         this.userList = [];
-        // [{
-        //   'name': 'Anish',
-        //   'img': 'randomurl',
-        //   'title': 'Full Snack Developer',
-        //   'linkedinProfileUrl' : '',
-        //   'username' : ''
-        // },
-        // {
-        //   'name': 'Craig',
-        //   'img': 'randomurl',
-        //   'title': 'Full Stack Developer',
-        //   'linkedinProfileUrl' : '',
-        //   'username' : ''
-        // },
-        // {
-        //   'name': 'Navraj',
-        //   'img': 'randomurl',
-        //   'title': 'Dev Ops btw',
-        //   'linkedinProfileUrl' : '',
-        //   'username' : ''
-        // }
-        // ];
+        this.myUserName = "";
         this.oauthToken = "";
         this.username = "";
+        this.showChat = false;
     }
     UserSelectionComponent.prototype.ngOnInit = function () {
-        debugger;
         var xhr = new XMLHttpRequest();
         var self = this;
-        xhr.open('GET', '/api/getUsersNearby', true);
+        xhr.open('GET', '/api/getMyUserName', true);
         xhr.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                self.userList = JSON.parse(xhr.responseText);
-                console.log(self.userList);
+                self.myUserName = JSON.parse(xhr.responseText).username;
             }
         };
         xhr.send();
+        debugger;
+        var xhr2 = new XMLHttpRequest();
+        var self = this;
+        xhr2.open('GET', '/api/getUsersNearby', true);
+        xhr2.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                self.userList = JSON.parse(xhr2.responseText);
+                console.log(self.userList);
+            }
+        };
+        xhr2.send();
+    };
+    UserSelectionComponent.prototype.message = function (index) {
+        this.username = this.userList[index].username;
+        this.showChat = false; //this may seem stupid, but it refreshes component so that socket connection is established again
+        this.showChat = true;
     };
     UserSelectionComponent.prototype.githubClick = function (index) {
         debugger;
         this.username = this.userList[index].username;
-        alert(this.userList[index].username);
         console.log("github");
         debugger;
         // window.location.replace("http://localhost:4200/linke/");
@@ -1011,6 +1150,17 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 
 module.exports = __webpack_require__(/*! C:\Users\John\desktop\EventConnect\src\main.ts */"./src/main.ts");
 
+
+/***/ }),
+
+/***/ 3:
+/*!********************!*\
+  !*** ws (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ })
 
