@@ -5468,17 +5468,17 @@ window.global = window;
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!********************************!*\
   !*** multi ./src/polyfills.ts ***!
   \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\John\desktop\EventConnect\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\Users\John\Desktop\EventConnect\src\polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })
 
-},[[1,"runtime"]]]);
+},[[2,"runtime"]]]);
 //# sourceMappingURL=polyfills.js.map

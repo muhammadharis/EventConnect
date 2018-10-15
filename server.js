@@ -10,6 +10,7 @@ const io = require('socket.io')(http);
 const cookieSession = require('cookie-session');
 const passportSetup = require('./passportConfig/passport-setup');
 const keys = require('./keys');
+const Chat = require('./database/chatSchema');
 
 
 // Get our API routes
@@ -33,16 +34,49 @@ app.use(passport.session());
 //Start up socket
 io.on("connection", (socket) => {
   console.log("Socket is connected...")
-  //Receives a message from the client chatbox component, packages it up with the github username, and sends it to all clients
-  socket.on('joinRoom', function(msg){
-    socket.join(msg.name);
+  
+  socket.on('joinRooms', function(msg){
+    socket.join([msg.self, msg.name]); //joins the self room, and the chat room
   })
+  //Receives a message from the client chatbox component, packages it up with the github username, and sends it to all clients
   socket.on('message-to-server', function(msg){
     
-    io.to(msg.toUsername+":"+msg.fromUsername).emit('message-to-clients', msg);
+    var roomName;
+    //Room name is the concatenation of both usernames in lexicographical order
+    if(msg.toUsername<msg.fromUsername){
+      roomName = msg.toUsername+":"+msg.fromUsername;
+    }
+    else{
+      roomName = msg.fromUsername+":"+msg.toUsername;
+    }
+    //We message to everyone in the room (which is only two people anyways);
+    io.to(roomName).emit('message-to-clients', msg);
 
-    //we also want to send the message to ourself, so it shows up in the chat
+    //We also save the chat to the database
+    var chat = new Chat({
+      roomName: roomName,
+      fromUsername: msg.fromUsername,
+      toUsername: msg.toUsername,
+      fromAvatar: msg.fromAvatar,
+      msg: msg.msg
+    });
+    chat.save().catch((err)=>{console.log('cannot save chat');});
   });
+
+  //deletes a user from another user's notification list, re-emits it to chat notification component
+  socket.on('deleteFromNotificationList', function(user){
+    socket.emit('deleteFromNotificationList', user);
+  });
+
+  socket.on('joinMyOwnRoom', function(user){
+    socket.join(user.name);
+  });
+  //adds a user to another user's notification list, re-emits it to chat notification component
+  socket.on('addToNotificationList', function(user){
+    console.log("REQUEST TO ADD");
+    console.log(user.toUsername);
+    socket.to(user.toUsername).emit('addToNotificationList',user);
+  })
 })
 
 // Parsers for POST data

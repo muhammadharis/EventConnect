@@ -163,12 +163,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _events_page_events_page_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./events-page/events-page.component */ "./src/app/events-page/events-page.component.ts");
 /* harmony import */ var _logout_logout_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./logout/logout.component */ "./src/app/logout/logout.component.ts");
 /* harmony import */ var _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./chatbox/chatbox.component */ "./src/app/chatbox/chatbox.component.ts");
+/* harmony import */ var _chat_nofification_chat_nofification_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./chat-nofification/chat-nofification.component */ "./src/app/chat-nofification/chat-nofification.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -199,7 +201,8 @@ var AppModule = /** @class */ (function () {
                 _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_11__["GithubCardComponent"],
                 _events_page_events_page_component__WEBPACK_IMPORTED_MODULE_12__["EventsPageComponent"],
                 _logout_logout_component__WEBPACK_IMPORTED_MODULE_13__["LogoutComponent"],
-                _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_14__["ChatboxComponent"]
+                _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_14__["ChatboxComponent"],
+                _chat_nofification_chat_nofification_component__WEBPACK_IMPORTED_MODULE_15__["ChatNofificationComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -326,38 +329,16 @@ var CareerProspectFormComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/chatbox/chatbox.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/chatbox/chatbox.component.css ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/chatbox/chatbox.component.html":
-/*!************************************************!*\
-  !*** ./src/app/chatbox/chatbox.component.html ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<strong>Chat with {{targetUsername}}</strong>\n<form action=\"/action_page.php\">\n  Message: <input [(ngModel)]=\"formMessage\" name=\"chatMessageForm\">\n  <br>\n  <input (click)=\"send()\" type=\"submit\" value=\"Submit\">\n</form>\n{{formMessage}}\n\n<ul>\n  <li *ngFor=\"let message of messages\">\n    {{message.fromUsername}} : {{message.msg}}\n  </li>\n</ul>"
-
-/***/ }),
-
-/***/ "./src/app/chatbox/chatbox.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/chatbox/chatbox.component.ts ***!
-  \**********************************************/
-/*! exports provided: ChatboxComponent */
+/***/ "./src/app/central-socket.service.ts":
+/*!*******************************************!*\
+  !*** ./src/app/central-socket.service.ts ***!
+  \*******************************************/
+/*! exports provided: CentralSocketService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatboxComponent", function() { return ChatboxComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CentralSocketService", function() { return CentralSocketService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! socket.io-client */ "./node_modules/socket.io-client/lib/index.js");
 /* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_1__);
@@ -372,39 +353,290 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+var CentralSocketService = /** @class */ (function () {
+    function CentralSocketService() {
+        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_1__["connect"]();
+    }
+    CentralSocketService.prototype.reconnect = function () {
+        this.socket.disconnect();
+        this.socket.connect();
+    };
+    CentralSocketService.prototype.getSocket = function () {
+        return this.socket;
+    };
+    CentralSocketService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], CentralSocketService);
+    return CentralSocketService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/chat-nofification/chat-nofification.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/chat-nofification/chat-nofification.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".nav{\r\n  background-color: black;\r\n  width: 100%;\r\n  position: relative;\r\n}\r\n.logout{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  margin-left: 78%;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.logout:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n/* Dropdown Button */\r\n.dropbtn {\r\n  outline: 0;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n/* The container <div> - needed to position the dropdown content */\r\n.dropdown {\r\n  position: relative;\r\n  display: inline-block;\r\n}\r\n/* Dropdown Content (Hidden by Default) */\r\n.dropdown-content {\r\n  display: none;\r\n  position: absolute;\r\n  background-color: #2b2d2d;\r\n  min-width: 160px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  z-index: 1;\r\n}\r\n/* Links inside the dropdown */\r\n.dropdown-content a {\r\n  cursor: pointer;\r\n  color: white;\r\n  font-size: 16px;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  display: block;\r\n}\r\n/* Change color of dropdown links on hover */\r\n.dropdown-content a:hover {background-color: black;}\r\n/* Show the dropdown menu on hover */\r\n.dropdown:hover .dropdown-content {display: block;}\r\n/* Change the background color of the dropdown button when the dropdown content is shown */\r\n.dropdown:hover .dropbtn {background-color: #1d1e1e;}"
+
+/***/ }),
+
+/***/ "./src/app/chat-nofification/chat-nofification.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/chat-nofification/chat-nofification.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<div class = \"nav\">\n  <div class=\"dropdown\">\n      <button class=\"dropbtn\">{{myUserName}} {{notificationList.length}}</button>\n      <div class=\"dropdown-content\">\n        <a *ngFor=\"let notif of notificationList\" (click)=\"openChat(notif)\">{{notif}}</a>\n      </div>\n  </div>\n  <button class=\"logout\" (click)=\"logout()\">Logout </button>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/chat-nofification/chat-nofification.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/chat-nofification/chat-nofification.component.ts ***!
+  \******************************************************************/
+/*! exports provided: ChatNofificationComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatNofificationComponent", function() { return ChatNofificationComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _central_socket_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../central-socket.service */ "./src/app/central-socket.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ChatNofificationComponent = /** @class */ (function () {
+    function ChatNofificationComponent(centralSocket) {
+        this.centralSocket = centralSocket;
+        this.notificationList = [];
+        this.myUserName = '';
+        this.openChatFromNav = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    //Creates a room with only the current user
+    ChatNofificationComponent.prototype.joinMyOwnRoom = function () {
+        this.centralSocket.getSocket().emit('joinMyOwnRoom', { name: this.myUserName });
+    };
+    ChatNofificationComponent.prototype.getUnseenChatNames = function () {
+        var self = this;
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/api/getUnseenChatNames?username=' + this.myUserName, true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                self.notificationList = JSON.parse(xhr.responseText);
+            }
+        };
+        xhr.send();
+    };
+    ChatNofificationComponent.prototype.logout = function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/auth/logout', true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                window.location.replace('/');
+            }
+        };
+        xhr.send();
+    };
+    ChatNofificationComponent.prototype.openChat = function (username) {
+        // window.location.replace("http://localhost:4200/selection/");
+        this.openChatFromNav.emit(username);
+    };
+    ChatNofificationComponent.prototype.ngOnChanges = function (changes) {
+        console.log(changes);
+        this.socket = this.centralSocket.getSocket();
+        var self = this;
+        console.log(self.myUserName);
+        this.joinMyOwnRoom(); //Joins a room named <myUsername>
+        if (self.myUserName != undefined && self.myUserName != '') {
+            self.getUnseenChatNames();
+            //Receives the delete message from the server and reduces the notification count by removing that user from the current user's notifications
+            this.centralSocket.getSocket().on('deleteFromNotificationList', function (user) {
+                self.notificationList.splice(self.notificationList.indexOf(user.name), 1);
+            });
+            this.centralSocket.getSocket().on('addToNotificationList', function (user) {
+                console.log(user);
+                console.log('received a notification');
+                if (self.notificationList.indexOf(user.name) < 0) {
+                    self.notificationList.push(user.name);
+                }
+            });
+        }
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], ChatNofificationComponent.prototype, "myUserName", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], ChatNofificationComponent.prototype, "openChatFromNav", void 0);
+    ChatNofificationComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-chat-nofification',
+            template: __webpack_require__(/*! ./chat-nofification.component.html */ "./src/app/chat-nofification/chat-nofification.component.html"),
+            styles: [__webpack_require__(/*! ./chat-nofification.component.css */ "./src/app/chat-nofification/chat-nofification.component.css")]
+        }),
+        __metadata("design:paramtypes", [_central_socket_service__WEBPACK_IMPORTED_MODULE_1__["CentralSocketService"]])
+    ], ChatNofificationComponent);
+    return ChatNofificationComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/chatbox/chatbox.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/chatbox/chatbox.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".chatbox{\r\n  text-align: center;\r\n  width: 100%;\r\n}\r\n.fa-times{\r\n  font-size: 13px;\r\n}\r\n.stylishbutton{\r\n  margin-top: 5px;\r\n  cursor: pointer;\r\n  outline: 0;\r\n  background-color: black;\r\n  color: white;\r\n  padding-left: 14px;\r\n  padding-right: 14px;\r\n  padding-top: 6px;\r\n  padding-bottom: 6px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.stylishbutton:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n.chatMessageInput{\r\n  padding: 5px;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/chatbox/chatbox.component.html":
+/*!************************************************!*\
+  !*** ./src/app/chatbox/chatbox.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<div class=\"chatbox\">\n    <strong>Chat with {{targetUsername}}</strong>\n    <div style=\"display: inline-block;text-align: right; margin-left:5%;\">\n        <a (click)=\"closeChat()\">  <i class=\"fas fa-times close\" ></i></a>\n        </div>\n\n<form action=\"/action_page.php\">\n  \n  <br/>\n  <input class=\"chatMessageInput\"[(ngModel)]=\"formMessage\" name=\"chatMessageForm\">\n  \n  <input class=\"stylishbutton\" (click)=\"send()\" type=\"submit\" value=\"Submit\">\n</form>\n\n  <a *ngFor=\"let message of messages\">\n    <img style=\"vertical-align:middle\" src=\"{{message.fromAvatar}}\" height=\"2%\" width=\"2%\"> &nbsp;\n    <b>{{message.fromUsername}}</b> : {{message.msg}}\n    <br/>\n  </a>\n  \n</div>"
+
+/***/ }),
+
+/***/ "./src/app/chatbox/chatbox.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/chatbox/chatbox.component.ts ***!
+  \**********************************************/
+/*! exports provided: ChatboxComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatboxComponent", function() { return ChatboxComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _central_socket_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../central-socket.service */ "./src/app/central-socket.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 var ChatboxComponent = /** @class */ (function () {
-    function ChatboxComponent() {
+    function ChatboxComponent(centralSocket) {
+        this.centralSocket = centralSocket;
         //target's username and user's username are passed in from user-selection.component
         this.targetUsername = '';
         this.myUserName = '';
-        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_1__["connect"]();
+        this.myAvatarURL = '';
+        this.closeChatbox = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.socket = centralSocket.getSocket();
     }
+    ChatboxComponent.prototype.markAllAsSeen = function () {
+        var self = this;
+        var roomName;
+        if (self.myUserName < self.targetUsername) {
+            roomName = self.myUserName + ":" + self.targetUsername;
+        }
+        else {
+            roomName = self.targetUsername + ":" + self.myUserName;
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api/markAllAsSeen?roomName=' + roomName + "&targetName=" + self.myUserName, true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                self.centralSocket.getSocket().emit("deleteFromNotificationList", { name: self.targetUsername });
+            }
+        };
+        xhr.send();
+    };
+    ChatboxComponent.prototype.onClick = function (event) {
+        this.markAllAsSeen();
+    };
     ChatboxComponent.prototype.send = function () {
         var self = this;
         console.log(self.formMessage);
         var message = {
             fromUsername: self.myUserName,
             toUsername: self.targetUsername,
+            fromAvatar: self.myAvatarURL,
             msg: self.formMessage
         };
         //Sends the chat to the server with the event name 'message-to-server' (see server.js)
-        this.socket.emit('message-to-server', message);
+        this.centralSocket.getSocket().emit('message-to-server', message);
+        //Sends a notification to the recipient of a new unread message
+        this.centralSocket.getSocket().emit('addToNotificationList', { toUsername: this.targetUsername, name: this.myUserName });
+    };
+    ChatboxComponent.prototype.getAllChats = function () {
+        var self = this;
+        var roomName;
+        if (self.myUserName < self.targetUsername) {
+            roomName = self.myUserName + ":" + self.targetUsername;
+        }
+        else {
+            roomName = self.targetUsername + ":" + self.myUserName;
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/api/getAllChats?roomName=' + roomName, true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                self.messages = JSON.parse(xhr.responseText);
+            }
+        };
+        xhr.send();
+    };
+    ChatboxComponent.prototype.closeChat = function () {
+        // window.location.replace("http://localhost:4200/selection/");
+        this.closeChatbox.emit(false);
+        debugger;
     };
     ChatboxComponent.prototype.ngOnChanges = function () {
         var _this = this;
-        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_1__["connect"](); //Reconnects to room - fixes bug when you chat with many different people on a short interval
+        this.getAllChats(); //Get all previous chats on changes
+        this.centralSocket.reconnect(); //Reconnects to room - fixes bug when you chat with many different people on a short interval
         var self = this;
         this.messages = new Array();
         //listens for a socket connection, then makes the socket join a "room". The room contains only 2 people, the current socket, and the target socket, and thus is named myUsername:targetUsername as well as targetUsername:myUsername for 2-way assurance
-        this.socket.on('connect', function () {
-            self.socket.emit('joinRoom', {
-                name: self.myUserName + ":" + self.targetUsername
-            });
-            self.socket.emit('joinRoom', {
-                name: self.targetUsername + ":" + self.myUserName
+        this.centralSocket.getSocket().on('connect', function () {
+            var roomName;
+            //Room name is the concatenation of both usernames in lexicographical order
+            if (self.myUserName < self.targetUsername) {
+                roomName = self.myUserName + ":" + self.targetUsername;
+            }
+            else {
+                roomName = self.targetUsername + ":" + self.myUserName;
+            }
+            self.centralSocket.getSocket().emit('joinRooms', {
+                name: roomName,
+                self: _this.myUserName
             });
         });
-        this.socket.on('message-to-clients', function (msg) {
+        this.centralSocket.getSocket().on('message-to-clients', function (msg) {
             _this.messages.push(msg);
             console.log(msg);
         });
@@ -417,13 +649,24 @@ var ChatboxComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
         __metadata("design:type", Object)
     ], ChatboxComponent.prototype, "myUserName", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], ChatboxComponent.prototype, "myAvatarURL", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], ChatboxComponent.prototype, "closeChatbox", void 0);
     ChatboxComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-chatbox',
             template: __webpack_require__(/*! ./chatbox.component.html */ "./src/app/chatbox/chatbox.component.html"),
-            styles: [__webpack_require__(/*! ./chatbox.component.css */ "./src/app/chatbox/chatbox.component.css")]
+            styles: [__webpack_require__(/*! ./chatbox.component.css */ "./src/app/chatbox/chatbox.component.css")],
+            host: {
+                '(document:click)': 'onClick($event)',
+            }
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_central_socket_service__WEBPACK_IMPORTED_MODULE_1__["CentralSocketService"]])
     ], ChatboxComponent);
     return ChatboxComponent;
 }());
@@ -967,7 +1210,7 @@ module.exports = ".btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-a
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" integrity=\"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ\" crossorigin=\"anonymous\">\r\n<app-logout></app-logout>\r\n<span *ngIf=\"!hide\">\r\n  <li class=\"list-group-item\" style=\"text-align:center; \">\r\n    <strong><font size=\"100\" style=\"padding-left: 1%; vertical-align:middle;\">EventConnect</font></strong>\r\n  </li>\r\n  <ul class=\"list-group\" *ngFor=\"let user of userList; let i = index\" style=\"text-align:center; \">\r\n    <li class=\"list-group-item\" style=\"text-align:center; \">\r\n      <div style=\"font-family: Lato; \">\r\n\r\n        <img src=\"{{user.avatar_url}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\r\n        <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{user.name}} </font>\r\n      </div>\r\n      <!-- </td> -->\r\n      <!-- <td style=\"text-align: center; \" width=\"100%\"> -->\r\n      \r\n      <br>\r\n      <div style=\"margin-top: 8px\">\r\n        <table align = \"center\">\r\n          <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"linkedinClick(i)\"><i class=\"fab fa-linkedin-in\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"githubClick(i)\"><i class=\"fab fa-github\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"like(i)\"><i class=\"far fa-heart\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"dislike(i)\"><i class=\"fas fa-times\"></i></button>\r\n        </td>\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"message(i)\"><i class=\"far fa-comment\"></i></button>\r\n        </td>\r\n\r\n        </table>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n</span>\r\n\r\n<span *ngIf=\"hide\">\r\n  <app-github-card [username]=\"username\" (messageEvent)=\"receiveMessage($event)\"></app-github-card>\r\n</span>\r\n\r\n<span *ngIf=\"showChat\">\r\n    <app-chatbox [myUserName]=\"myUserName\" [targetUsername]=\"username\" ></app-chatbox>\r\n</span>"
+module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" integrity=\"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ\" crossorigin=\"anonymous\">\r\n<app-chat-nofification [myUserName]=\"myUserName\" (openChatFromNav)=\"openChatFromNav($event)\"></app-chat-nofification>\r\n<span *ngIf=\"listSelections\">\r\n  <li class=\"list-group-item\" style=\"text-align:center; \">\r\n    <strong><font size=\"100\" style=\"padding-left: 1%; vertical-align:middle;\">EventConnect</font></strong>\r\n  </li>\r\n  <ul class=\"list-group\" *ngFor=\"let user of userList; let i = index\" style=\"text-align:center; \">\r\n\r\n\r\n    <li *ngIf=\"user.name != myName\" class=\"list-group-item\" style=\"text-align:center; \">\r\n      <div style=\"font-family: Lato; \">\r\n\r\n        <img src=\"{{user.avatar_url}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\r\n        <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{user.name}} </font>\r\n      </div>\r\n      <!-- </td> -->\r\n      <!-- <td style=\"text-align: center; \" width=\"100%\"> -->\r\n      \r\n      <br>\r\n      <div style=\"margin-top: 8px\">\r\n        <table align = \"center\">\r\n          <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"linkedinClick(i)\"><i class=\"fab fa-linkedin-in\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"githubClick(i)\"><i class=\"fab fa-github\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"like(i)\"><i class=\"far fa-heart\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"dislike(i)\"><i class=\"fas fa-times\"></i></button>\r\n        </td>\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"message(i)\"><i class=\"far fa-comment\"></i></button>\r\n        </td>\r\n\r\n        </table>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n</span>\r\n\r\n<span *ngIf=\"githubcard\">\r\n  <app-github-card [username]=\"username\" (messageEvent)=\"receiveMessage($event)\" ></app-github-card>\r\n</span>\r\n\r\n<span *ngIf=\"chatbox\">\r\n    <app-chatbox [myAvatarURL]=\"myAvatarURL\" [myUserName]=\"myUserName\" [targetUsername]=\"username\" (closeChatbox) = \"closeChatbox($event)\"></app-chatbox> \r\n</span>"
 
 /***/ }),
 
@@ -994,11 +1237,15 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var UserSelectionComponent = /** @class */ (function () {
     function UserSelectionComponent() {
-        this.hide = false;
+        this.listSelections = true;
+        this.githubcard = false;
+        this.chatbox = false;
         this.userList = [];
         this.myUserName = "";
+        this.myAvatarURL = "";
         this.oauthToken = "";
         this.username = "";
+        this.myName = "";
         this.showChat = false;
     }
     UserSelectionComponent.prototype.ngOnInit = function () {
@@ -1007,7 +1254,10 @@ var UserSelectionComponent = /** @class */ (function () {
         xhr.open('GET', '/api/getMyUserName', true);
         xhr.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                self.myUserName = JSON.parse(xhr.responseText).username;
+                var resp = JSON.parse(xhr.responseText);
+                self.myUserName = resp.username;
+                self.myAvatarURL = resp.avatar_url;
+                self.myName = resp.name;
             }
         };
         xhr.send();
@@ -1025,8 +1275,9 @@ var UserSelectionComponent = /** @class */ (function () {
     };
     UserSelectionComponent.prototype.message = function (index) {
         this.username = this.userList[index].username;
-        this.showChat = false; //this may seem stupid, but it refreshes component so that socket connection is established again
-        this.showChat = true;
+        this.chatbox = true; //this may seem stupid, but it refreshes component so that socket connection is established again
+        this.listSelections = false;
+        this.githubcard = false;
     };
     UserSelectionComponent.prototype.githubClick = function (index) {
         debugger;
@@ -1035,7 +1286,9 @@ var UserSelectionComponent = /** @class */ (function () {
         debugger;
         // window.location.replace("http://localhost:4200/linke/");
         var self = this;
-        self.hide = true;
+        self.githubcard = true;
+        self.chatbox = false;
+        self.listSelections = false;
     };
     UserSelectionComponent.prototype.like = function (index) {
         var xhr = new XMLHttpRequest();
@@ -1070,8 +1323,20 @@ var UserSelectionComponent = /** @class */ (function () {
         window.open("https://www.linkedin.com/in/" + this.userList[index].linkedinProfileName);
     };
     UserSelectionComponent.prototype.receiveMessage = function ($event) {
-        debugger;
-        this.hide = $event;
+        this.githubcard = $event;
+        this.listSelections = true;
+        this.chatbox = false;
+    };
+    UserSelectionComponent.prototype.openChatFromNav = function ($event) {
+        this.username = $event;
+        this.chatbox = true;
+        this.listSelections = false;
+        this.githubcard = false;
+    };
+    UserSelectionComponent.prototype.closeChatbox = function ($event) {
+        this.chatbox = $event;
+        this.listSelections = true;
+        this.githubcard = false;
     };
     UserSelectionComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1148,12 +1413,12 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\John\desktop\EventConnect\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\John\Desktop\EventConnect\src\main.ts */"./src/main.ts");
 
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!********************!*\
   !*** ws (ignored) ***!
   \********************/

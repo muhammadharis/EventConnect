@@ -1,0 +1,28 @@
+.chatbox{
+  text-align: center;
+  width: 100%;
+}
+.fa-times{
+  font-size: 13px;
+}
+.stylishbutton{
+  margin-top: 5px;
+  cursor: pointer;
+  outline: 0;
+  background-color: black;
+  color: white;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 18px;
+  border: none;
+}
+
+.stylishbutton:hover{
+  background-color: #1d1e1e;
+}
+
+.chatMessageInput{
+  padding: 5px;
+}

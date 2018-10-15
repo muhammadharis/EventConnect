@@ -70072,7 +70072,7 @@ var BrowserWebSocket = global.WebSocket || global.MozWebSocket;
 var NodeWebSocket;
 if (typeof window === 'undefined') {
   try {
-    NodeWebSocket = __webpack_require__(/*! ws */ 3);
+    NodeWebSocket = __webpack_require__(/*! ws */ 1);
   } catch (e) { }
 }
 

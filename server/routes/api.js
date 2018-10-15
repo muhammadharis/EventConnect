@@ -1,10 +1,56 @@
 const express = require('express');
 const router = express.Router();
 const User = require("../../database/schema");
+const Chat = require("../../database/chatSchema");
 const request = require('request');
 
 
+//Gets the usernames of chats that the user hasn't seen yet
+router.get('/getUnseenChatNames', function(req,res){
+  var username = req.query.username;
+  //Gets only distinct vavlues of the "fromUsername", since there are many records with the same fromUsername
+  Chat.find({toUsername: username, seen: false}).distinct('fromUsername').then(function(chats){
+    console.log(chats);
+    res.status(200).send(chats);
+    res.end();
+  }).catch(function(err){
+    console.log(err);
+    res.status(200).send([]); //still send the empty response
+    res.end();
+  });
+});
 
+//Marks all chats in a room as seen for a specific person
+router.post('/markAllAsSeen', function(req,res){
+  console.log("marking as seen");
+  var roomName = req.query.roomName;
+  var targetName = req.query.targetName;
+  console.log(roomName);
+  console.log(targetName);
+  Chat.updateMany({roomName: roomName, toUsername: targetName}, {seen: true}).then(function(chats){
+    console.log(chats);
+    res.status(200).send({message: "Done"});
+    res.end();
+  }).catch(function(err){
+    console.log(err);
+    res.status(500).send({message: "Error"});
+    res.end();
+  });
+});
+
+//Returns all chats between two users in a database
+router.get('/getAllChats', function(req,res){
+  var roomName = req.query.roomName;
+  Chat.find({roomName: roomName}, '-_id -__v').then(function(chats){
+    console.log(chats);
+    res.status(200).send(chats);
+    res.end();
+  }).catch(function(err){
+    console.log(err);
+    res.status(500).send({message: "Error"});
+    res.end();
+  });
+});
 //This handles the signup form from the signup page
 router.post('/addLocationAndCareer', function(req,res){
   var body = req.body;
@@ -38,6 +84,7 @@ router.get('/getUsersNearby', function(req,res){
         }}
     ],
       function(err,results) {
+        console.log(results);
         //If successful, return the results
         if(err){
           res.status(500).send({message: "Error"});

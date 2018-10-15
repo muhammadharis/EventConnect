@@ -1,13 +1,22 @@
-<strong>Chat with {{targetUsername}}</strong>
-<form action="/action_page.php">
-  Message: <input [(ngModel)]="formMessage" name="chatMessageForm">
-  <br>
-  <input (click)="send()" type="submit" value="Submit">
-</form>
-{{formMessage}}
 
-<ul>
-  <li *ngFor="let message of messages">
-    {{message.fromUsername}} : {{message.msg}}
-  </li>
-</ul>
+<div class="chatbox">
+    <strong>Chat with {{targetUsername}}</strong>
+    <div style="display: inline-block;text-align: right; margin-left:5%;">
+        <a (click)="closeChat()">  <i class="fas fa-times close" ></i></a>
+        </div>
+
+<form action="/action_page.php">
+  
+  <br/>
+  <input class="chatMessageInput"[(ngModel)]="formMessage" name="chatMessageForm">
+  
+  <input class="stylishbutton" (click)="send()" type="submit" value="Submit">
+</form>
+
+  <a *ngFor="let message of messages">
+    <img style="vertical-align:middle" src="{{message.fromAvatar}}" height="2%" width="2%"> &nbsp;
+    <b>{{message.fromUsername}}</b> : {{message.msg}}
+    <br/>
+  </a>
+  
+</div>

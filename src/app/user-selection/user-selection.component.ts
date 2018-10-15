@@ -7,11 +7,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./user-selection.component.css']
 })
 export class UserSelectionComponent implements OnInit {
-  hide = false;
+  listSelections = true;
+  githubcard = false;
+  chatbox = false;
   userList = [];
   myUserName = "";
+  myAvatarURL = "";
   oauthToken = "";
   username = "";
+  myName = "";
   showChat = false;
 
   constructor() {
@@ -22,7 +26,10 @@ export class UserSelectionComponent implements OnInit {
     xhr.open('GET','/api/getMyUserName', true);
     xhr.onreadystatechange = function(){
       if(this.readyState==4 && this.status==200){
-        self.myUserName = JSON.parse(xhr.responseText).username;
+        var resp = JSON.parse(xhr.responseText);
+        self.myUserName = resp.username;
+        self.myAvatarURL = resp.avatar_url;
+        self.myName = resp.name;
       }
     }
     
@@ -42,8 +49,9 @@ export class UserSelectionComponent implements OnInit {
   }
   message(index){
     this.username = this.userList[index].username;
-    this.showChat=false; //this may seem stupid, but it refreshes component so that socket connection is established again
-    this.showChat=true;
+    this.chatbox=true; //this may seem stupid, but it refreshes component so that socket connection is established again
+    this.listSelections=false;
+    this.githubcard = false;
   }
   githubClick(index) {
     debugger;
@@ -52,7 +60,9 @@ export class UserSelectionComponent implements OnInit {
     debugger;
       // window.location.replace("http://localhost:4200/linke/");
       var self = this;
-      self.hide = true;
+      self.githubcard = true;
+      self.chatbox = false;
+      self.listSelections = false;
   }
   like(index){
     var xhr = new XMLHttpRequest();
@@ -91,8 +101,22 @@ export class UserSelectionComponent implements OnInit {
   }
 
   receiveMessage($event) {
-    debugger;
-    this.hide = $event
+    this.githubcard = $event;
+    this.listSelections = true;
+    this.chatbox = false;
+  }
+
+  openChatFromNav($event) {
+    this.username = $event;
+    this.chatbox = true;
+    this.listSelections = false;
+    this.githubcard = false;
+  }
+
+  closeChatbox($event){
+    this.chatbox = $event;
+    this.listSelections = true;
+    this.githubcard = false;
   }
 
 }

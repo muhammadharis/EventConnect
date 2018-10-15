@@ -18,6 +18,7 @@ import { GithubCardComponent } from './github-card/github-card.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
+import { ChatNofificationComponent } from './chat-nofification/chat-nofification.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ChatboxComponent } from './chatbox/chatbox.component';
     GithubCardComponent,
     EventsPageComponent,
     LogoutComponent,
-    ChatboxComponent
+    ChatboxComponent,
+    ChatNofificationComponent
 
   ],
   imports: [
