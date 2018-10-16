@@ -1,17 +1,15 @@
-#submit{
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+#submit {
     border: none;
-    font-family: 'Alef', serif;
-    font-size: 15px;
-    background-color: #009cdb;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
     color: white;
-    border-radius: 25px;
+    background-color: #000;
+    text-align: center;
     cursor: pointer;
-}
+    width: 20%;
+    font-size: 18px;
+  }
 
 #textField{
     margin-top: 8px;
@@ -20,3 +18,8 @@
     padding-left: 8px;
     padding-right: 8px;
 }
+
+#submit:hover {
+    opacity: 0.7;
+}
+  

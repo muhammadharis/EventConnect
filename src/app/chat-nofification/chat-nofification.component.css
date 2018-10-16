@@ -2,12 +2,37 @@
   background-color: black;
   width: 100%;
   position: relative;
+  list-style-type: none;
+}
+li{
+  margin-right: 20px;
 }
 .logout{
   cursor: pointer;
   outline: 0;
   float:right;
-  margin-left: 78%;
+  margin-left: 28%;
+  background-color: black;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+}
+.pin{
+  cursor: pointer;
+  outline: 0;
+  float:right;
+  background-color: black;
+  color: white;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 18px;
+  border: none;
+}
+.navbtn{
+  cursor: pointer;
+  outline: 0;
+  float:right;
   background-color: black;
   color: white;
   padding: 14px;
@@ -15,6 +40,10 @@
   border: none;
 }
 .logout:hover{
+  background-color: #1d1e1e;
+}
+
+.navbtn:hover{
   background-color: #1d1e1e;
 }
 /* Dropdown Button */
@@ -51,6 +80,29 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+.button__badge {
+  background-color: #fa3e3e;
+  border-radius: 2px;
+  color: white;
+ 
+  padding: 1px 3px;
+  font-size: 10px;
+  
+  position: absolute; /* Position the badge within the relatively positioned button */
+  right: 0;
+}
+
+.neutral_button__badge {
+  background-color: #585859;
+  border-radius: 2px;
+  color: white;
+ 
+  padding: 1px 3px;
+  font-size: 10px;
+  
+  position: absolute; /* Position the badge within the relatively positioned button */
+  right: 0;
 }
 
 /* Change color of dropdown links on hover */

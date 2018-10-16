@@ -35,12 +35,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./linkedin-page/linkedin-page.component */ "./src/app/linkedin-page/linkedin-page.component.ts");
+/* harmony import */ var _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home-page/home-page.component */ "./src/app/home-page/home-page.component.ts");
 /* harmony import */ var _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user-selection/user-selection.component */ "./src/app/user-selection/user-selection.component.ts");
 /* harmony import */ var _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./sign-up/sign-up.component */ "./src/app/sign-up/sign-up.component.ts");
 /* harmony import */ var _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./linkedin-card/linkedin-card.component */ "./src/app/linkedin-card/linkedin-card.component.ts");
 /* harmony import */ var _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./github-card/github-card.component */ "./src/app/github-card/github-card.component.ts");
 /* harmony import */ var _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./chatbox/chatbox.component */ "./src/app/chatbox/chatbox.component.ts");
+/* harmony import */ var _update_profile_update_profile_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./update-profile/update-profile.component */ "./src/app/update-profile/update-profile.component.ts");
+/* harmony import */ var _check_in_check_in_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./check-in/check-in.component */ "./src/app/check-in/check-in.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -55,14 +57,18 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
 var routes = [
-    { path: '', component: _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_2__["LinkedinPageComponent"] },
+    { path: '', component: _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_2__["HomePageComponent"] },
     { path: 'selection', component: _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_3__["UserSelectionComponent"] },
     { path: 'messaging', component: _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_3__["UserSelectionComponent"] },
     { path: 'signup', component: _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_4__["SignUpComponent"] },
     { path: 'linkedin', component: _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_5__["LinkedinCardComponent"] },
     { path: 'github', component: _github_card_github_card_component__WEBPACK_IMPORTED_MODULE_6__["GithubCardComponent"] },
-    { path: 'chat', component: _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_7__["ChatboxComponent"] }
+    { path: 'chat', component: _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_7__["ChatboxComponent"] },
+    { path: 'updateProfile', component: _update_profile_update_profile_component__WEBPACK_IMPORTED_MODULE_8__["UpdateProfileComponent"] },
+    { path: 'checkin', component: _check_in_check_in_component__WEBPACK_IMPORTED_MODULE_9__["CheckInComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -152,7 +158,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./linkedin-page/linkedin-page.component */ "./src/app/linkedin-page/linkedin-page.component.ts");
+/* harmony import */ var _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home-page/home-page.component */ "./src/app/home-page/home-page.component.ts");
 /* harmony import */ var _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./user-selection/user-selection.component */ "./src/app/user-selection/user-selection.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! .//app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sign-up/sign-up.component */ "./src/app/sign-up/sign-up.component.ts");
@@ -164,12 +170,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logout_logout_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./logout/logout.component */ "./src/app/logout/logout.component.ts");
 /* harmony import */ var _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./chatbox/chatbox.component */ "./src/app/chatbox/chatbox.component.ts");
 /* harmony import */ var _chat_nofification_chat_nofification_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./chat-nofification/chat-nofification.component */ "./src/app/chat-nofification/chat-nofification.component.ts");
+/* harmony import */ var _update_profile_update_profile_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./update-profile/update-profile.component */ "./src/app/update-profile/update-profile.component.ts");
+/* harmony import */ var _check_in_check_in_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./check-in/check-in.component */ "./src/app/check-in/check-in.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -193,7 +203,7 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _linkedin_page_linkedin_page_component__WEBPACK_IMPORTED_MODULE_4__["LinkedinPageComponent"],
+                _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_4__["HomePageComponent"],
                 _user_selection_user_selection_component__WEBPACK_IMPORTED_MODULE_5__["UserSelectionComponent"],
                 _sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_7__["SignUpComponent"],
                 _linkedin_card_linkedin_card_component__WEBPACK_IMPORTED_MODULE_9__["LinkedinCardComponent"],
@@ -202,7 +212,9 @@ var AppModule = /** @class */ (function () {
                 _events_page_events_page_component__WEBPACK_IMPORTED_MODULE_12__["EventsPageComponent"],
                 _logout_logout_component__WEBPACK_IMPORTED_MODULE_13__["LogoutComponent"],
                 _chatbox_chatbox_component__WEBPACK_IMPORTED_MODULE_14__["ChatboxComponent"],
-                _chat_nofification_chat_nofification_component__WEBPACK_IMPORTED_MODULE_15__["ChatNofificationComponent"]
+                _chat_nofification_chat_nofification_component__WEBPACK_IMPORTED_MODULE_15__["ChatNofificationComponent"],
+                _update_profile_update_profile_component__WEBPACK_IMPORTED_MODULE_16__["UpdateProfileComponent"],
+                _check_in_check_in_component__WEBPACK_IMPORTED_MODULE_17__["CheckInComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -230,7 +242,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#submit{\r\n    padding-left: 40px;\r\n    padding-right: 40px;\r\n    margin-bottom: 10px;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    border: none;\r\n    font-family: 'Alef', serif;\r\n    font-size: 15px;\r\n    background-color: #009cdb;\r\n    color: white;\r\n    border-radius: 25px;\r\n    cursor: pointer;\r\n}\r\n\r\n#textField{\r\n    margin-top: 8px;\r\n    margin-bottom: 10px;\r\n    padding: 3px;\r\n    padding-left: 8px;\r\n    padding-right: 8px;\r\n}"
+module.exports = "#submit {\r\n    border: none;\r\n    outline: 0;\r\n    display: inline-block;\r\n    padding: 8px;\r\n    color: white;\r\n    background-color: #000;\r\n    text-align: center;\r\n    cursor: pointer;\r\n    width: 20%;\r\n    font-size: 18px;\r\n  }\r\n\r\n#textField{\r\n    margin-top: 8px;\r\n    margin-bottom: 10px;\r\n    padding: 3px;\r\n    padding-left: 8px;\r\n    padding-right: 8px;\r\n}\r\n\r\n#submit:hover {\r\n    opacity: 0.7;\r\n}\r\n  "
 
 /***/ }),
 
@@ -241,7 +253,7 @@ module.exports = "#submit{\r\n    padding-left: 40px;\r\n    padding-right: 40px
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n\r\n<div style=\"font-family: 'Lato'\">\r\n  <form name=\"position\" (submit)=\"onSubmit(event)\" required>\r\n    What is your career prospect?\r\n    <br/>\r\n    <div class=\"form-group\">\r\n      <input id=\"textField\" class=\"form-control\" type=\"text\" name=\"fname\" style=\"width:50%;display: inline-block;\">\r\n      <br/> What is your LinkedIn Profile Name?\r\n      <br/>\r\n\r\n      <input id=\"textField\" class=\"form-control\" type=\"text\" name=\"linkedinName\" style=\"width:50%;display: inline-block;\">\r\n      <br/>\r\n      <input id=\"submit\" class=\"form-control\" type=\"submit\" value=\"Submit\" style=\"width:50%; text-align:center;display: inline-block;\" />\r\n    </div>\r\n  </form>\r\n</div>\r\n"
+module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n\r\n<div style=\"font-family: 'Lato'\">\r\n  <form ngNativeValidate name=\"position\" (submit)=\"onSubmit(event)\" required>\r\n    What is your career prospect?\r\n    <br/>\r\n    <div class=\"form-group\">\r\n      <input id=\"text\" class=\"form-control\" type=\"text\" name=\"fname\" style=\"width:50%;display: inline-block;\" required>\r\n      <br/> What is your LinkedIn Profile username?\r\n      <br/>\r\n\r\n      <input id=\"text\" class=\"form-control\" type=\"text\" name=\"linkedinName\" style=\"width:50%;display: inline-block;\" required>\r\n      <br/>\r\n      <input id=\"submit\" class=\"form-control\" type=\"submit\" value=\"Submit\" style=\"width:50%; text-align:center;display: inline-block;\" />\r\n    </div>\r\n  </form>\r\n  <br/>\r\n  <br/>\r\n  <br/>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -384,7 +396,7 @@ var CentralSocketService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".nav{\r\n  background-color: black;\r\n  width: 100%;\r\n  position: relative;\r\n}\r\n.logout{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  margin-left: 78%;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.logout:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n/* Dropdown Button */\r\n.dropbtn {\r\n  outline: 0;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n/* The container <div> - needed to position the dropdown content */\r\n.dropdown {\r\n  position: relative;\r\n  display: inline-block;\r\n}\r\n/* Dropdown Content (Hidden by Default) */\r\n.dropdown-content {\r\n  display: none;\r\n  position: absolute;\r\n  background-color: #2b2d2d;\r\n  min-width: 160px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  z-index: 1;\r\n}\r\n/* Links inside the dropdown */\r\n.dropdown-content a {\r\n  cursor: pointer;\r\n  color: white;\r\n  font-size: 16px;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  display: block;\r\n}\r\n/* Change color of dropdown links on hover */\r\n.dropdown-content a:hover {background-color: black;}\r\n/* Show the dropdown menu on hover */\r\n.dropdown:hover .dropdown-content {display: block;}\r\n/* Change the background color of the dropdown button when the dropdown content is shown */\r\n.dropdown:hover .dropbtn {background-color: #1d1e1e;}"
+module.exports = ".nav{\r\n  background-color: black;\r\n  width: 100%;\r\n  position: relative;\r\n  list-style-type: none;\r\n}\r\nli{\r\n  margin-right: 20px;\r\n}\r\n.logout{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  margin-left: 28%;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.pin{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  background-color: black;\r\n  color: white;\r\n  padding-left: 5px;\r\n  padding-top: 5px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.navbtn{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.logout:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n.navbtn:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n/* Dropdown Button */\r\n.dropbtn {\r\n  outline: 0;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n/* The container <div> - needed to position the dropdown content */\r\n.dropdown {\r\n  position: relative;\r\n  display: inline-block;\r\n}\r\n/* Dropdown Content (Hidden by Default) */\r\n.dropdown-content {\r\n  display: none;\r\n  position: absolute;\r\n  background-color: #2b2d2d;\r\n  min-width: 160px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  z-index: 1;\r\n}\r\n/* Links inside the dropdown */\r\n.dropdown-content a {\r\n  cursor: pointer;\r\n  color: white;\r\n  font-size: 16px;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  display: block;\r\n}\r\n.button__badge {\r\n  background-color: #fa3e3e;\r\n  border-radius: 2px;\r\n  color: white;\r\n \r\n  padding: 1px 3px;\r\n  font-size: 10px;\r\n  \r\n  position: absolute; /* Position the badge within the relatively positioned button */\r\n  right: 0;\r\n}\r\n.neutral_button__badge {\r\n  background-color: #585859;\r\n  border-radius: 2px;\r\n  color: white;\r\n \r\n  padding: 1px 3px;\r\n  font-size: 10px;\r\n  \r\n  position: absolute; /* Position the badge within the relatively positioned button */\r\n  right: 0;\r\n}\r\n/* Change color of dropdown links on hover */\r\n.dropdown-content a:hover {background-color: black;}\r\n/* Show the dropdown menu on hover */\r\n.dropdown:hover .dropdown-content {display: block;}\r\n/* Change the background color of the dropdown button when the dropdown content is shown */\r\n.dropdown:hover .dropbtn {background-color: #1d1e1e;}"
 
 /***/ }),
 
@@ -395,7 +407,7 @@ module.exports = ".nav{\r\n  background-color: black;\r\n  width: 100%;\r\n  pos
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class = \"nav\">\n  <div class=\"dropdown\">\n      <button class=\"dropbtn\">{{myUserName}} {{notificationList.length}}</button>\n      <div class=\"dropdown-content\">\n        <a *ngFor=\"let notif of notificationList\" (click)=\"openChat(notif)\">{{notif}}</a>\n      </div>\n  </div>\n  <button class=\"logout\" (click)=\"logout()\">Logout </button>\n</div>"
+module.exports = "\n<ul class = \"nav\">\n  <li>\n    <div class=\"dropdown\">\n      <div class=\"dropbtn\">\n          {{myUserName}}&nbsp;\n          <i class=\"fa fa-globe\"></i>\n            <span *ngIf = \"notificationList.length == 0\" class=\"neutral_button__badge\">{{notificationList.length}}</span>\n            <span *ngIf = \"notificationList.length != 0\"class=\"button__badge\">{{notificationList.length}}</span>\n      <div class=\"dropdown-content\">\n        <a *ngFor=\"let notif of notificationList\" (click)=\"openChat(notif)\">{{notif}}</a>\n      </div>  \n    </div>\n  </div>\n  </li>\n  <li>\n  <button class = \"navbtn\" (click)=\"goHome()\" > Home\n      <i style=\"color:white\" class=\"pin fa fa-home\"></i>\n    </button>\n  </li>\n  <li>\n\n  <button class = \"navbtn\" (click)=\"updateProfile()\" > Update Profile\n    <i style=\"color:white\" class=\"pin fa fa-edit\"></i>\n  </button>\n\n</li>\n<li>\n    <button class = \"navbtn\" (click)=\"checkIn()\" > Check-in\n      <i style=\"color:white\" class=\"pin fa fa-map-pin\"></i>\n    </button>\n</li>\n<li>\n  <button  class=\"logout\" (click)=\"logout()\">Logout </button>\n</li>\n  \n\n</ul>\n"
 
 /***/ }),
 
@@ -443,6 +455,15 @@ var ChatNofificationComponent = /** @class */ (function () {
             }
         };
         xhr.send();
+    };
+    ChatNofificationComponent.prototype.goHome = function () {
+        window.location.replace('/selection');
+    };
+    ChatNofificationComponent.prototype.updateProfile = function () {
+        window.location.replace('/updateProfile');
+    };
+    ChatNofificationComponent.prototype.checkIn = function () {
+        window.location.replace('/checkin');
     };
     ChatNofificationComponent.prototype.logout = function () {
         var xhr = new XMLHttpRequest();
@@ -520,7 +541,7 @@ module.exports = ".chatbox{\r\n  text-align: center;\r\n  width: 100%;\r\n}\r\n.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"chatbox\">\n    <strong>Chat with {{targetUsername}}</strong>\n    <div style=\"display: inline-block;text-align: right; margin-left:5%;\">\n        <a (click)=\"closeChat()\">  <i class=\"fas fa-times close\" ></i></a>\n        </div>\n\n<form action=\"/action_page.php\">\n  \n  <br/>\n  <input class=\"chatMessageInput\"[(ngModel)]=\"formMessage\" name=\"chatMessageForm\">\n  \n  <input class=\"stylishbutton\" (click)=\"send()\" type=\"submit\" value=\"Submit\">\n</form>\n\n  <a *ngFor=\"let message of messages\">\n    <img style=\"vertical-align:middle\" src=\"{{message.fromAvatar}}\" height=\"2%\" width=\"2%\"> &nbsp;\n    <b>{{message.fromUsername}}</b> : {{message.msg}}\n    <br/>\n  </a>\n  \n</div>"
+module.exports = "\n<div class=\"chatbox\">\n    <strong>Chat with {{targetUsername}}</strong>\n    <div style=\"display: inline-block;text-align: right; margin-left:5%;\">\n        <a (click)=\"closeChat()\">  <i class=\"fas fa-times close\" ></i></a>\n        </div>\n\n<form ngNativeValidate action=\"/action_page.php\">\n  \n  <br/>\n  <input class=\"chatMessageInput\"[(ngModel)]=\"formMessage\" name=\"chatMessageForm\" required>\n  \n  <input class=\"stylishbutton\" (click)=\"send()\" type=\"submit\" value=\"Submit\">\n</form>\n\n  <a *ngFor=\"let message of messages\">\n    <img style=\"vertical-align:middle\" src=\"{{message.fromAvatar}}\" height=\"2%\" width=\"2%\"> &nbsp;\n    <b>{{message.fromUsername}}</b> : {{message.msg}}\n    <br/>\n  </a>\n  \n</div>"
 
 /***/ }),
 
@@ -669,6 +690,122 @@ var ChatboxComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_central_socket_service__WEBPACK_IMPORTED_MODULE_1__["CentralSocketService"]])
     ], ChatboxComponent);
     return ChatboxComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/check-in/check-in.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/check-in/check-in.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "h1{\r\n  text-align: center;\r\n  font-family: \"Lato\", serif;\r\n}\r\nagm-map {\r\n  height: 300px;\r\n}\r\n#submit {\r\n  border: none;\r\n  outline: 0;\r\n  display: inline-block;\r\n  padding: 8px;\r\n  color: white;\r\n  background-color: #000;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  width: 20%;\r\n  font-size: 18px;\r\n}\r\n#submit:hover {\r\n  opacity: 0.7;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/check-in/check-in.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/check-in/check-in.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-chat-nofification [myUserName]=\"myUserName\" (openChatFromNav)=\"openChatFromNav($event)\"></app-chat-nofification>\n<div *ngIf=\"checkin\">\n  <h1>Check-in</h1>\n  <agm-map [latitude]=\"lat\" [longitude]=\"lng\">\n      <agm-marker [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\n  </agm-map>\n  <div style=\"text-align: center;\">\n  <br/>\n  <br/>\n  <button id=\"submit\" class=\"form-control\" type=\"submit\" value=\"Submit\" (click) = \"checkInClick()\" > Check in!</button>\n  </div>\n</div>\n<span *ngIf=\"chatbox\">\n    <app-chatbox [myAvatarURL]=\"myAvatarURL\" [myUserName]=\"myUserName\" [targetUsername]=\"username\" (closeChatbox) = \"closeChatbox($event)\"></app-chatbox> \n</span>"
+
+/***/ }),
+
+/***/ "./src/app/check-in/check-in.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/check-in/check-in.component.ts ***!
+  \************************************************/
+/*! exports provided: CheckInComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckInComponent", function() { return CheckInComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CheckInComponent = /** @class */ (function () {
+    function CheckInComponent() {
+        this.myUserName = "";
+        this.myAvatarURL = "";
+        this.myName = "";
+        this.lat = 51.678418;
+        this.lng = 7.809007;
+        this.username = "";
+        this.chatbox = false;
+        this.checkin = true;
+    }
+    CheckInComponent.prototype.checkInClick = function () {
+        var xhr = new XMLHttpRequest();
+        var self = this;
+        xhr.open('PUT', '/api/updateLatAndLong?lat=' + this.lat + '&long=' + this.lng, true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                alert("Successfully checked in!");
+            }
+            else if (this.readyState == 4 && this.status != 200) {
+                alert("There was a problem checking in. Please try again later.");
+            }
+        };
+        xhr.send();
+    };
+    CheckInComponent.prototype.openChatFromNav = function ($event) {
+        this.username = $event;
+        this.chatbox = true;
+        this.checkin = false;
+    };
+    CheckInComponent.prototype.closeChatbox = function (e) {
+        this.chatbox = false;
+        this.checkin = true;
+    };
+    CheckInComponent.prototype.ngOnInit = function () {
+        var xhr = new XMLHttpRequest();
+        var self = this;
+        xhr.open('GET', '/api/getMyUserName', true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var resp = JSON.parse(xhr.responseText);
+                self.myUserName = resp.username;
+                self.myAvatarURL = resp.avatar_url;
+                self.myName = resp.name;
+            }
+        };
+        xhr.send();
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                self.lat = position.coords.latitude;
+                self.lng = position.coords.longitude;
+                console.log(position);
+            });
+        }
+        else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    };
+    CheckInComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-check-in',
+            template: __webpack_require__(/*! ./check-in.component.html */ "./src/app/check-in/check-in.component.html"),
+            styles: [__webpack_require__(/*! ./check-in.component.css */ "./src/app/check-in/check-in.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CheckInComponent);
+    return CheckInComponent;
 }());
 
 
@@ -842,6 +979,87 @@ var GithubCardComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/home-page/home-page.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/home-page/home-page.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "button {\r\n  border: none;\r\n  outline: 0;\r\n  display: inline-block;\r\n  padding: 8px;\r\n  color: white;\r\n  background-color: #000;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  width: 20%;\r\n  font-size: 18px;\r\n}\r\n\r\nbody{\r\n  height: 100%;\r\n  background-image: url(\"footer_lodyas.jpg\");\r\n  background-color: #cccccc;;\r\n}\r\n\r\nbutton:hover, a:hover {\r\n  background-color: #232222;\r\n}\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/home-page/home-page.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/home-page/home-page.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div [ngStyle]=\"{'background-color':''}\" *ngIf=\"notLoggedIn\">\r\n\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<div style =\"text-align: center\">\r\n    <h1>Welcome to EventConnect</h1>\r\n<!--<button (click)=\"linkedin()\">Linkedin Login</button>\r\n<br/>-->\r\n<button (click)=\"github()\">Login with Github</button>\r\n\r\n</div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/home-page/home-page.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/home-page/home-page.component.ts ***!
+  \**************************************************/
+/*! exports provided: HomePageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageComponent", function() { return HomePageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomePageComponent = /** @class */ (function () {
+    function HomePageComponent() {
+        this.notLoggedIn = false;
+        var self = this;
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/api/isLoggedIn', false);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                window.location.replace('/signup');
+            }
+            else if (this.readyState == 4 && this.status != 200) {
+                self.notLoggedIn = true;
+            }
+        };
+        xhr.send();
+    }
+    HomePageComponent.prototype.github = function () {
+        window.location.replace("/auth/github");
+    };
+    HomePageComponent.prototype.event = function () {
+    };
+    HomePageComponent.prototype.ngOnInit = function () {
+    };
+    HomePageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-home-page',
+            template: __webpack_require__(/*! ./home-page.component.html */ "./src/app/home-page/home-page.component.html"),
+            styles: [__webpack_require__(/*! ./home-page.component.css */ "./src/app/home-page/home-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HomePageComponent);
+    return HomePageComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/linkedin-card/linkedin-card.component.css":
 /*!***********************************************************!*\
   !*** ./src/app/linkedin-card/linkedin-card.component.css ***!
@@ -967,74 +1185,6 @@ var LinkedinCardComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], LinkedinCardComponent);
     return LinkedinCardComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/linkedin-page/linkedin-page.component.css":
-/*!***********************************************************!*\
-  !*** ./src/app/linkedin-page/linkedin-page.component.css ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "button{\r\n    padding-left: 117px;\r\n    padding-right: 117px;\r\n    margin-top: 10px;\r\n    padding-top: 10px;\r\n    padding-bottom: 10px;\r\n    border: none;\r\n    font-family: 'Alef', serif;\r\n    font-size: 15px;\r\n    background-color: #009cdb;\r\n    color: white;\r\n    border-radius: 25px;\r\n    cursor: pointer;\r\n},\r\nbody{\r\n  height: 100%;\r\n  background-image: url(\"footer_lodyas.jpg\");\r\n  background-color: #cccccc;;\r\n}\r\n"
-
-/***/ }),
-
-/***/ "./src/app/linkedin-page/linkedin-page.component.html":
-/*!************************************************************!*\
-  !*** ./src/app/linkedin-page/linkedin-page.component.html ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div [ngStyle]=\"{'background-color':''}\">\r\n\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<div style =\"text-align: center\">\r\n    <h1>Welcome to EventConnect</h1>\r\n<!--<button (click)=\"linkedin()\">Linkedin Login</button>\r\n<br/>-->\r\n<button (click)=\"github()\">Login with Github</button>\r\n\r\n</div>\r\n</div>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/linkedin-page/linkedin-page.component.ts":
-/*!**********************************************************!*\
-  !*** ./src/app/linkedin-page/linkedin-page.component.ts ***!
-  \**********************************************************/
-/*! exports provided: LinkedinPageComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkedinPageComponent", function() { return LinkedinPageComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var LinkedinPageComponent = /** @class */ (function () {
-    function LinkedinPageComponent() {
-    }
-    LinkedinPageComponent.prototype.github = function () {
-        window.location.replace("/auth/github");
-    };
-    LinkedinPageComponent.prototype.event = function () {
-    };
-    LinkedinPageComponent.prototype.ngOnInit = function () {
-    };
-    LinkedinPageComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-linkedin-page',
-            template: __webpack_require__(/*! ./linkedin-page.component.html */ "./src/app/linkedin-page/linkedin-page.component.html"),
-            styles: [__webpack_require__(/*! ./linkedin-page.component.css */ "./src/app/linkedin-page/linkedin-page.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], LinkedinPageComponent);
-    return LinkedinPageComponent;
 }());
 
 
@@ -1192,6 +1342,132 @@ var SignUpComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/update-profile/update-profile.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/update-profile/update-profile.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "button{\r\n  transition: all .5 ease-in-out;\r\n  -webkit-transition: all .5 ease-in-out;\r\n  -moz-transition: all .5 ease-in-out;\r\n}\r\nbutton:hover{\r\n  -webkit-transform: scale(1.1);\r\n          transform: scale(1.1);\r\n  opacity: 0.9;\r\n  background-color: rgba(0, 0, 0, 0.2)\r\n}\r\n.btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-align: center;\r\n  padding: 6px 0;\r\n  font-size: 12px;\r\n  line-height: 1.42;\r\n  border-radius: 15px;\r\n}\r\n.row-center {\r\n  position:absolute;\r\nleft:0;\r\nright:0;\r\nmargin-left:auto;\r\nmargin-right:auto;\r\n}\r\n.separation-between-buttons{\r\n  padding-right: 5px;\r\n}\r\n.submit {\r\n  margin-left: 5px;\r\n  border: none;\r\n  outline: 0;\r\n  display: inline-block;\r\n  padding: 8px;\r\n  color: white;\r\n  background-color: #000;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  width: 10%;\r\n  font-size: 18px;\r\n  padding-bottom: 35px;\r\n  \r\n}\r\n.top-wrapper{\r\n  margin-top: 15vh;\r\n}\r\n.submit:hover {\r\n  opacity: 0.7;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/update-profile/update-profile.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/update-profile/update-profile.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-chat-nofification [myUserName]=\"myUserName\" (openChatFromNav)=\"openChatFromNav($event)\"></app-chat-nofification>\n\n<div class=\"top-wrapper\" *ngIf=\"editProfile\">\n  <div style=\"font-family: Lato; text-align:center \">\n    \n    <img src=\"{{myAvatarURL}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\n    <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{myName}}</font>\n  </div>\n  \n  <br>\n  <div style=\"margin-top: 8px\">\n    <table align = \"center\">\n      <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"fab fa-linkedin-in\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"fab fa-github\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"far fa-heart\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"fas fa-times\"></i></button>\n    </td>\n    <td>\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"far fa-comment\"></i></button>\n    </td>\n  </table>\n  <br/>\n    <p style=\"text-align:center;\"><b>How you appear to others</b></p>\n    <form name=\"screen-name\" (ngSubmit)=\"updateScreenName()\" style=\"text-align: center\">\n        <div class=\"form-group\">\n          Preferred Screen name:\n          <input [(ngModel)] = \"updatedName\" id=\"text\" class=\"form-control\" type=\"text\" name=\"fname\" style=\"width:20%;display: inline-block;\">\n          <input class=\"submit form-control\" type=\"submit\" value=\"Update\" />\n        </div>\n    </form>\n    <form name=\"linkedin-url\" (submit)=\"updateLinkedinURL()\" style=\"text-align: center\">\n        <div class=\"form-group\">\n          Linkedin Profile URL:&nbsp;&nbsp;&nbsp;&nbsp;\n          <input [(ngModel)] = \"linkedinURL\" id=\"text\" class=\"form-control\" type=\"text\" name=\"url\" style=\"width:20%;display: inline-block;\">\n          <input class=\"submit form-control\" type=\"submit\" value=\"Update\" />\n        </div>\n    </form>\n\n  </div>\n</div>\n\n  <span *ngIf=\"chatbox\">\n      <app-chatbox [myAvatarURL]=\"myAvatarURL\" [myUserName]=\"myUserName\" [targetUsername]=\"username\" (closeChatbox) = \"closeChatbox($event)\"></app-chatbox> \n  </span>"
+
+/***/ }),
+
+/***/ "./src/app/update-profile/update-profile.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/update-profile/update-profile.component.ts ***!
+  \************************************************************/
+/*! exports provided: UpdateProfileComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UpdateProfileComponent", function() { return UpdateProfileComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var UpdateProfileComponent = /** @class */ (function () {
+    function UpdateProfileComponent() {
+        this.myUserName = "";
+        this.myAvatarURL = "";
+        this.myName = "";
+        this.linkedinURL = "";
+        this.updatedName = "";
+        this.editProfile = true;
+        this.chatbox = false;
+        this.username = "";
+    }
+    UpdateProfileComponent.prototype.alertInfo = function () {
+        alert(this.myUserName + this.myAvatarURL + this.myName);
+    };
+    UpdateProfileComponent.prototype.openChatFromNav = function ($event) {
+        this.username = $event;
+        this.chatbox = true;
+        this.editProfile = false;
+    };
+    UpdateProfileComponent.prototype.updateScreenName = function () {
+        this.myName = this.updatedName;
+        if (!this.updatedName || this.updatedName == "") {
+            alert("Your chosen name cannot be empty");
+            return;
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open('PUT', '/api/updateName?name=' + this.updatedName, true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                alert("Done updating");
+            }
+        };
+        xhr.send();
+        this.updatedName = "";
+    };
+    UpdateProfileComponent.prototype.updateLinkedinURL = function () {
+        if (!this.linkedinURL.includes("linkedin.com/")) {
+            alert("Invalid entry. Please enter URL in the form linkedin.com/<USERNAME>");
+            return;
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open('PUT', '/api/updateLinkedinURL?url=' + this.linkedinURL, true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                alert("Done updating");
+            }
+        };
+        xhr.send();
+        this.linkedinURL = "";
+    };
+    UpdateProfileComponent.prototype.closeChatbox = function ($event) {
+        this.chatbox = false;
+        this.editProfile = true;
+    };
+    UpdateProfileComponent.prototype.ngOnInit = function () {
+        var xhr = new XMLHttpRequest();
+        var self = this;
+        xhr.open('GET', '/api/getMyUserName', true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var resp = JSON.parse(xhr.responseText);
+                self.myUserName = resp.username;
+                self.myAvatarURL = resp.avatar_url;
+                self.myName = resp.name;
+            }
+        };
+        xhr.send();
+    };
+    UpdateProfileComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-update-profile',
+            template: __webpack_require__(/*! ./update-profile.component.html */ "./src/app/update-profile/update-profile.component.html"),
+            styles: [__webpack_require__(/*! ./update-profile.component.css */ "./src/app/update-profile/update-profile.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], UpdateProfileComponent);
+    return UpdateProfileComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/user-selection/user-selection.component.css":
 /*!*************************************************************!*\
   !*** ./src/app/user-selection/user-selection.component.css ***!
@@ -1199,7 +1475,7 @@ var SignUpComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-align: center;\r\n  padding: 6px 0;\r\n  font-size: 12px;\r\n  line-height: 1.42;\r\n  border-radius: 15px;\r\n}\r\n.row-center {\r\n  position:absolute;\r\nleft:0;\r\nright:0;\r\nmargin-left:auto;\r\nmargin-right:auto;\r\n}\r\n.separation-between-buttons{\r\n  padding-right: 5px;\r\n}"
+module.exports = "button{\r\n  transition: all .5 ease-in-out;\r\n  -webkit-transition: all .5 ease-in-out;\r\n  -moz-transition: all .5 ease-in-out;\r\n}\r\nbutton:hover{\r\n  -webkit-transform: scale(1.1);\r\n          transform: scale(1.1);\r\n  opacity: 0.9;\r\n  background-color: rgba(0, 0, 0, 0.2)\r\n}\r\n.btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-align: center;\r\n  padding: 6px 0;\r\n  font-size: 12px;\r\n  line-height: 1.42;\r\n  border-radius: 15px;\r\n}\r\n.row-center {\r\n  position:absolute;\r\nleft:0;\r\nright:0;\r\nmargin-left:auto;\r\nmargin-right:auto;\r\n}\r\n.separation-between-buttons{\r\n  padding-right: 5px;\r\n}"
 
 /***/ }),
 
@@ -1210,7 +1486,7 @@ module.exports = ".btn-circle {\r\n  width: 30px;\r\n  height: 30px;\r\n  text-a
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" integrity=\"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ\" crossorigin=\"anonymous\">\r\n<app-chat-nofification [myUserName]=\"myUserName\" (openChatFromNav)=\"openChatFromNav($event)\"></app-chat-nofification>\r\n<span *ngIf=\"listSelections\">\r\n  <li class=\"list-group-item\" style=\"text-align:center; \">\r\n    <strong><font size=\"100\" style=\"padding-left: 1%; vertical-align:middle;\">EventConnect</font></strong>\r\n  </li>\r\n  <ul class=\"list-group\" *ngFor=\"let user of userList; let i = index\" style=\"text-align:center; \">\r\n\r\n\r\n    <li *ngIf=\"user.name != myName\" class=\"list-group-item\" style=\"text-align:center; \">\r\n      <div style=\"font-family: Lato; \">\r\n\r\n        <img src=\"{{user.avatar_url}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\r\n        <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{user.name}} </font>\r\n      </div>\r\n      <!-- </td> -->\r\n      <!-- <td style=\"text-align: center; \" width=\"100%\"> -->\r\n      \r\n      <br>\r\n      <div style=\"margin-top: 8px\">\r\n        <table align = \"center\">\r\n          <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"linkedinClick(i)\"><i class=\"fab fa-linkedin-in\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"githubClick(i)\"><i class=\"fab fa-github\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"like(i)\"><i class=\"far fa-heart\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"dislike(i)\"><i class=\"fas fa-times\"></i></button>\r\n        </td>\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"message(i)\"><i class=\"far fa-comment\"></i></button>\r\n        </td>\r\n\r\n        </table>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n</span>\r\n\r\n<span *ngIf=\"githubcard\">\r\n  <app-github-card [username]=\"username\" (messageEvent)=\"receiveMessage($event)\" ></app-github-card>\r\n</span>\r\n\r\n<span *ngIf=\"chatbox\">\r\n    <app-chatbox [myAvatarURL]=\"myAvatarURL\" [myUserName]=\"myUserName\" [targetUsername]=\"username\" (closeChatbox) = \"closeChatbox($event)\"></app-chatbox> \r\n</span>"
+module.exports = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n\r\n<app-chat-nofification [myUserName]=\"myUserName\" (openChatFromNav)=\"openChatFromNav($event)\"></app-chat-nofification>\r\n<span *ngIf=\"listSelections\">\r\n  <li class=\"list-group-item\" style=\"text-align:center; \">\r\n    <strong><font size=\"100\" style=\"padding-left: 1%; vertical-align:middle;\">EventConnect</font></strong>\r\n  </li>\r\n  <ul class=\"list-group\" *ngFor=\"let user of userList; let i = index\" style=\"text-align:center; \">\r\n\r\n\r\n    <li *ngIf=\"user.name != myName\" class=\"list-group-item\" style=\"text-align:center; \">\r\n      <div style=\"font-family: Lato; \">\r\n\r\n        <img src=\"{{user.avatar_url}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\r\n        <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{user.name}} </font>\r\n      </div>\r\n      <!-- </td> -->\r\n      <!-- <td style=\"text-align: center; \" width=\"100%\"> -->\r\n      \r\n      <br>\r\n      <div style=\"margin-top: 8px\">\r\n        <table align = \"center\">\r\n          <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"linkedinClick(i)\"><i class=\"fab fa-linkedin-in\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"githubClick(i)\"><i class=\"fab fa-github\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"like(i)\"><i class=\"far fa-heart\"></i></button>\r\n        </td>\r\n        <td class = \"separation-between-buttons\">\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"dislike(i)\"><i class=\"fas fa-times\"></i></button>\r\n        </td>\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"message(i)\"><i class=\"far fa-comment\"></i></button>\r\n        </td>\r\n\r\n        </table>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n</span>\r\n\r\n<span *ngIf=\"githubcard\">\r\n  <app-github-card [username]=\"username\" (messageEvent)=\"receiveMessage($event)\" ></app-github-card>\r\n</span>\r\n\r\n<span *ngIf=\"chatbox\">\r\n    <app-chatbox [myAvatarURL]=\"myAvatarURL\" [myUserName]=\"myUserName\" [targetUsername]=\"username\" (closeChatbox) = \"closeChatbox($event)\"></app-chatbox> \r\n</span>"
 
 /***/ }),
 
@@ -1261,7 +1537,6 @@ var UserSelectionComponent = /** @class */ (function () {
             }
         };
         xhr.send();
-        debugger;
         var xhr2 = new XMLHttpRequest();
         var self = this;
         xhr2.open('GET', '/api/getUsersNearby', true);
@@ -1320,7 +1595,7 @@ var UserSelectionComponent = /** @class */ (function () {
         xhr.send();
     };
     UserSelectionComponent.prototype.linkedinClick = function (index) {
-        window.open("https://www.linkedin.com/in/" + this.userList[index].linkedinProfileName);
+        window.open(this.userList[index].linkedinProfileName);
     };
     UserSelectionComponent.prototype.receiveMessage = function ($event) {
         this.githubcard = $event;

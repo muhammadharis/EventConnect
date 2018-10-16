@@ -38,6 +38,43 @@ router.post('/markAllAsSeen', function(req,res){
   });
 });
 
+//Updates a user's name in the database
+router.put('/updateName', function(req, res){
+  var newName = req.query.name;
+  User.findByIdAndUpdate(req.user.id, {name: newName}).then(function(user){
+    res.status(200).send({message: 'Updated'});
+    res.end();
+  }).catch(function(error){
+    res.status(500).send({message: 'Error'});
+    res.end();
+  });
+});
+
+///Updates user's latitude and longitude in the database
+router.put('/updateLatAndLong', function(req, res){
+  var lat = req.query.lat;
+  var long = req.query.long;
+  User.findByIdAndUpdate(req.user.id, {loc: {type: "Point", coordinates: [long, lat]}}).then(function(user){
+    console.log(user);
+    res.status(200).send({message: 'Updated'});
+    res.end();
+  }).catch(function(error){
+    res.status(500).send({message: 'Error'});
+    res.end();
+  });
+});
+//Updates user's linkedin url in the database
+router.put('/updateLinkedinURL', function(req, res){
+  var newURL = req.query.url;
+  User.findByIdAndUpdate(req.user.id, {linkedinProfileName: newURL}).then(function(user){
+    res.status(200).send({message: 'Updated'});
+    res.end();
+  }).catch(function(error){
+    res.status(500).send({message: 'Error'});
+    res.end();
+  });
+});
+
 //Returns all chats between two users in a database
 router.get('/getAllChats', function(req,res){
   var roomName = req.query.roomName;
@@ -70,7 +107,7 @@ router.post('/addLocationAndCareer', function(req,res){
 
 router.get('/getUsersNearby', function(req,res){
   //coordinates are in the form [long, lat] in mongodb
-  //This query gets all the users within 3 km
+  //This query gets all the users within 5 km
   User.aggregate(
     [
         { "$geoNear": {
@@ -80,7 +117,7 @@ router.get('/getUsersNearby', function(req,res){
             },
             "distanceField": "distance",
             "spherical": true,
-            "maxDistance": 3000
+            "maxDistance":5000
         }}
     ],
       function(err,results) {
@@ -97,9 +134,19 @@ router.get('/getUsersNearby', function(req,res){
   
 });
 
+router.get('/isLoggedIn', function(req,res){
+  console.log('CHECKING LOGGED STATUS');
+  if(req.user){
+    res.status(200).send()
+  }
+  else{
+    res.status(401).send()
+  }
+});
+
 router.get('/getMyUserName', function(req,res){
   res.send(req.user);
-  res.end;
+  res.end();
 });
 //Fetch public user
 router.get('/fetchPublicUser', function(req,res){

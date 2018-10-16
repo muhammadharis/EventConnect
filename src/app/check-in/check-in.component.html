@@ -1,0 +1,15 @@
+<app-chat-nofification [myUserName]="myUserName" (openChatFromNav)="openChatFromNav($event)"></app-chat-nofification>
+<div *ngIf="checkin">
+  <h1>Check-in</h1>
+  <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+  <div style="text-align: center;">
+  <br/>
+  <br/>
+  <button id="submit" class="form-control" type="submit" value="Submit" (click) = "checkInClick()" > Check in!</button>
+  </div>
+</div>
+<span *ngIf="chatbox">
+    <app-chatbox [myAvatarURL]="myAvatarURL" [myUserName]="myUserName" [targetUsername]="username" (closeChatbox) = "closeChatbox($event)"></app-chatbox> 
+</span>

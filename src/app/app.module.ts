@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { LinkedinPageComponent } from './linkedin-page/linkedin-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 import { UserSelectionComponent } from './user-selection/user-selection.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -19,12 +19,14 @@ import { EventsPageComponent } from './events-page/events-page.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
 import { ChatNofificationComponent } from './chat-nofification/chat-nofification.component';
+import { UpdateProfileComponent } from './update-profile/update-profile.component';
+import { CheckInComponent } from './check-in/check-in.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LinkedinPageComponent,
+    HomePageComponent,
     UserSelectionComponent,
     SignUpComponent,
     LinkedinCardComponent,
@@ -33,7 +35,9 @@ import { ChatNofificationComponent } from './chat-nofification/chat-nofification
     EventsPageComponent,
     LogoutComponent,
     ChatboxComponent,
-    ChatNofificationComponent
+    ChatNofificationComponent,
+    UpdateProfileComponent,
+    CheckInComponent
 
   ],
   imports: [

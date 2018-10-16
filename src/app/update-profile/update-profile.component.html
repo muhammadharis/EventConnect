@@ -1,0 +1,51 @@
+<app-chat-nofification [myUserName]="myUserName" (openChatFromNav)="openChatFromNav($event)"></app-chat-nofification>
+
+<div class="top-wrapper" *ngIf="editProfile">
+  <div style="font-family: Lato; text-align:center ">
+    
+    <img src="{{myAvatarURL}}" alt="Avatar" style="border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;" />
+    <font size="36" style="padding-left: 1%; vertical-align:middle;">{{myName}}</font>
+  </div>
+  
+  <br>
+  <div style="margin-top: 8px">
+    <table align = "center">
+      <td class = "separation-between-buttons">
+      <button type="button" class="btn btn-default btn-circle"><i class="fab fa-linkedin-in"></i></button>
+    </td>
+    <td class = "separation-between-buttons">
+      <button type="button" class="btn btn-default btn-circle"><i class="fab fa-github"></i></button>
+    </td>
+    <td class = "separation-between-buttons">
+      <button type="button" class="btn btn-default btn-circle"><i class="far fa-heart"></i></button>
+    </td>
+    <td class = "separation-between-buttons">
+      <button type="button" class="btn btn-default btn-circle"><i class="fas fa-times"></i></button>
+    </td>
+    <td>
+      <button type="button" class="btn btn-default btn-circle"><i class="far fa-comment"></i></button>
+    </td>
+  </table>
+  <br/>
+    <p style="text-align:center;"><b>How you appear to others</b></p>
+    <form name="screen-name" (ngSubmit)="updateScreenName()" style="text-align: center">
+        <div class="form-group">
+          Preferred Screen name:
+          <input [(ngModel)] = "updatedName" id="text" class="form-control" type="text" name="fname" style="width:20%;display: inline-block;">
+          <input class="submit form-control" type="submit" value="Update" />
+        </div>
+    </form>
+    <form name="linkedin-url" (submit)="updateLinkedinURL()" style="text-align: center">
+        <div class="form-group">
+          Linkedin Profile URL:&nbsp;&nbsp;&nbsp;&nbsp;
+          <input [(ngModel)] = "linkedinURL" id="text" class="form-control" type="text" name="url" style="width:20%;display: inline-block;">
+          <input class="submit form-control" type="submit" value="Update" />
+        </div>
+    </form>
+
+  </div>
+</div>
+
+  <span *ngIf="chatbox">
+      <app-chatbox [myAvatarURL]="myAvatarURL" [myUserName]="myUserName" [targetUsername]="username" (closeChatbox) = "closeChatbox($event)"></app-chatbox> 
+  </span>

@@ -33,6 +33,18 @@ export class ChatNofificationComponent implements OnChanges {
     xhr.send();
   }
 
+  goHome(){
+    window.location.replace('/selection');
+  }
+
+  updateProfile(){
+    window.location.replace('/updateProfile');
+  }
+
+  checkIn(){
+    window.location.replace('/checkin');
+  }
+
   logout(){
     var xhr = new XMLHttpRequest();
     xhr.open('GET','/auth/logout', true);

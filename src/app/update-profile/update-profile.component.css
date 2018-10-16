@@ -27,3 +27,26 @@ margin-right:auto;
 .separation-between-buttons{
   padding-right: 5px;
 }
+.submit {
+  margin-left: 5px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 10%;
+  font-size: 18px;
+  padding-bottom: 35px;
+  
+}
+
+.top-wrapper{
+  margin-top: 15vh;
+}
+
+.submit:hover {
+  opacity: 0.7;
+}

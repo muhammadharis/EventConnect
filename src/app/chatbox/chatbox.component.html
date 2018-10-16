@@ -5,10 +5,10 @@
         <a (click)="closeChat()">  <i class="fas fa-times close" ></i></a>
         </div>
 
-<form action="/action_page.php">
+<form ngNativeValidate action="/action_page.php">
   
   <br/>
-  <input class="chatMessageInput"[(ngModel)]="formMessage" name="chatMessageForm">
+  <input class="chatMessageInput"[(ngModel)]="formMessage" name="chatMessageForm" required>
   
   <input class="stylishbutton" (click)="send()" type="submit" value="Submit">
 </form>

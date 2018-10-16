@@ -1,10 +1,38 @@
 
-<div class = "nav">
-  <div class="dropdown">
-      <button class="dropbtn">{{myUserName}} {{notificationList.length}}</button>
+<ul class = "nav">
+  <li>
+    <div class="dropdown">
+      <div class="dropbtn">
+          {{myUserName}}&nbsp;
+          <i class="fa fa-globe"></i>
+            <span *ngIf = "notificationList.length == 0" class="neutral_button__badge">{{notificationList.length}}</span>
+            <span *ngIf = "notificationList.length != 0"class="button__badge">{{notificationList.length}}</span>
       <div class="dropdown-content">
         <a *ngFor="let notif of notificationList" (click)="openChat(notif)">{{notif}}</a>
-      </div>
+      </div>  
+    </div>
   </div>
-  <button class="logout" (click)="logout()">Logout </button>
-</div>
+  </li>
+  <li>
+  <button class = "navbtn" (click)="goHome()" > Home
+      <i style="color:white" class="pin fa fa-home"></i>
+    </button>
+  </li>
+  <li>
+
+  <button class = "navbtn" (click)="updateProfile()" > Update Profile
+    <i style="color:white" class="pin fa fa-edit"></i>
+  </button>
+
+</li>
+<li>
+    <button class = "navbtn" (click)="checkIn()" > Check-in
+      <i style="color:white" class="pin fa fa-map-pin"></i>
+    </button>
+</li>
+<li>
+  <button  class="logout" (click)="logout()">Logout </button>
+</li>
+  
+
+</ul>

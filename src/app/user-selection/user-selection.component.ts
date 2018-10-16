@@ -32,10 +32,9 @@ export class UserSelectionComponent implements OnInit {
         self.myName = resp.name;
       }
     }
-    
-
     xhr.send();
-    debugger;
+
+
     var xhr2 = new XMLHttpRequest();
     var self = this;
     xhr2.open('GET','/api/getUsersNearby', true);
@@ -97,7 +96,7 @@ export class UserSelectionComponent implements OnInit {
   }
 
   linkedinClick(index) {
-    window.open("https://www.linkedin.com/in/" + this.userList[index].linkedinProfileName);
+    window.open(this.userList[index].linkedinProfileName);
   }
 
   receiveMessage($event) {
