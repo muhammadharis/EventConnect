@@ -1,11 +1,10 @@
 const passport = require('passport');
 const GitHubStrategy = require('passport-github').Strategy;
 const User = require('../database/schema');
-const keys = require('../keys');
 
 passport.serializeUser(function(user, done){
   console.log('serializing user');
-  done(null, user.id); //serializes the mongoDB id into a packet for a cookie
+  done(null, user._id); //serializes the mongoDB id into a packet for a cookie
 })
 
 passport.deserializeUser(function(id, done){
@@ -18,8 +17,8 @@ passport.deserializeUser(function(id, done){
 })
 
 passport.use(new GitHubStrategy({
-    clientID: keys.github.clientId,
-    clientSecret: keys.github.clientSecret,
+    clientID: process.env.GITHUB_CLIENT_ID,
+    clientSecret: process.env.GITHUB_CLIENT_SECRET,
     callbackURL: "/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, done) {
@@ -44,13 +43,15 @@ passport.use(new GitHubStrategy({
       //Create user if it doesn't exist
       if(!user){
         User.create(data, function(err, user){
-          console.log('created '+ user);
-          done(null, user);
+          var leanObject = user.toObject(); //A JS object that can be edited
+          leanObject.isNew = true;
+          done(null, leanObject);
         });
       }
       else{
         User.findOneAndUpdate({ githubId: profile.id }, data, {$upsert: true}).then(function(user){
-          done(null, user);
+          var leanObject = user.toObject(); //A JS object that can be edited
+          done(null, leanObject);
         }).catch(function(err){
           done(error, user);
         });

@@ -45,7 +45,7 @@ import { CheckInComponent } from './check-in/check-in.component';
     AppRoutingModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCDIcRRXY6G6-5Mh-bWt66U3NzH_Vx5GIw'
+      apiKey: 'AIzaSyAwQAvz3_TfK9cIZ3Lzz6Gl6r2AwsXDsgU'
     })
   ],
   providers: [],

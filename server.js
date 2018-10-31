@@ -9,7 +9,6 @@ const bodyParser = require('body-parser');
 const io = require('socket.io')(http);
 const cookieSession = require('cookie-session');
 const passportSetup = require('./passportConfig/passport-setup');
-const keys = require('./keys');
 const Chat = require('./database/chatSchema');
 
 
@@ -17,13 +16,13 @@ const Chat = require('./database/chatSchema');
 const github = require('./server/routes/githubAuth');
 const api = require('./server/routes/api');
 
-mongoose.connect('mongodb://muhammad:helloworld123@ds131932.mlab.com:31932/eventconnect', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 
 //Cookie middleware + expiry time (24 hours)
 app.use(cookieSession({
   maxAge: 24*3600000,
-  keys: [keys.cookie.key]
+  keys: [process.env.COOKIE_KEY]
 }));
 
 //Initialize passport

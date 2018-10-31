@@ -10,6 +10,7 @@ export class UpdateProfileComponent implements OnInit {
   myAvatarURL = "";
   myName = "";
   linkedinURL = "";
+  currLinkedinURL = "";
   updatedName = "";
   editProfile = true;
   chatbox = false;
@@ -54,7 +55,17 @@ export class UpdateProfileComponent implements OnInit {
       }
     }
     xhr.send();
+    this.currLinkedinURL = this.linkedinURL;
     this.linkedinURL="";
+  }
+
+  openLinkedinProfile(){
+    if(!(this.currLinkedinURL.includes('https://'))){
+      window.open('https://'+this.currLinkedinURL);
+    }
+    else{
+      window.open(this.currLinkedinURL);
+    }
   }
 
   closeChatbox($event){
@@ -71,6 +82,7 @@ export class UpdateProfileComponent implements OnInit {
         self.myUserName = resp.username;
         self.myAvatarURL = resp.avatar_url;
         self.myName = resp.name;
+        self.currLinkedinURL = resp.linkedinProfileName;
       }
     }
     xhr.send();

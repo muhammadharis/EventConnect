@@ -1,18 +1,15 @@
-<div [ngStyle]="{'background-color':''}" *ngIf="notLoggedIn">
+<div class = "background">
+    <div [ngStyle]="{'background-color':''}" *ngIf="notLoggedIn">
+        &nbsp;
+        <div style ="text-align: center; margin-top: 30vh;">
+            <h1>Welcome to EventConnect</h1>
+            <p>A place to chat, meet up, and make memories with other developers</p>
+            <p>Happy networking!</p>
+        <!--<button (click)="linkedin()">Linkedin Login</button>
+        <br/>-->
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<div style ="text-align: center">
-    <h1>Welcome to EventConnect</h1>
-<!--<button (click)="linkedin()">Linkedin Login</button>
-<br/>-->
-<button (click)="github()">Login with Github</button>
+        <button (click)="github()">Login with Github <i style="color:white;" class="fab fa-github"></i></button>
 
-</div>
+        </div>
+    </div>
 </div>

@@ -96,7 +96,13 @@ export class UserSelectionComponent implements OnInit {
   }
 
   linkedinClick(index) {
-    window.open(this.userList[index].linkedinProfileName);
+    if(!(this.userList[index].linkedinProfileName).includes('https://')){
+      window.open('https://'+this.userList[index].linkedinProfileName);
+    }
+    else{
+      window.open(this.userList[index].linkedinProfileName);
+    }
+    
   }
 
   receiveMessage($event) {

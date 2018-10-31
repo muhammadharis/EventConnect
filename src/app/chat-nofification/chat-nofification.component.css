@@ -8,10 +8,10 @@ li{
   margin-right: 20px;
 }
 .logout{
+  margin-left: 40vw;
   cursor: pointer;
   outline: 0;
   float:right;
-  margin-left: 28%;
   background-color: black;
   color: white;
   padding: 14px;

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   notLoggedIn = false;
+
   constructor() { 
     var self = this;
     var xhr = new XMLHttpRequest();
@@ -31,7 +32,6 @@ export class HomePageComponent implements OnInit {
   }
 
   ngOnInit() {
-    
 
   }
 

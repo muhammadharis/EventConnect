@@ -396,7 +396,7 @@ var CentralSocketService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".nav{\r\n  background-color: black;\r\n  width: 100%;\r\n  position: relative;\r\n  list-style-type: none;\r\n}\r\nli{\r\n  margin-right: 20px;\r\n}\r\n.logout{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  margin-left: 28%;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.pin{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  background-color: black;\r\n  color: white;\r\n  padding-left: 5px;\r\n  padding-top: 5px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.navbtn{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.logout:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n.navbtn:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n/* Dropdown Button */\r\n.dropbtn {\r\n  outline: 0;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n/* The container <div> - needed to position the dropdown content */\r\n.dropdown {\r\n  position: relative;\r\n  display: inline-block;\r\n}\r\n/* Dropdown Content (Hidden by Default) */\r\n.dropdown-content {\r\n  display: none;\r\n  position: absolute;\r\n  background-color: #2b2d2d;\r\n  min-width: 160px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  z-index: 1;\r\n}\r\n/* Links inside the dropdown */\r\n.dropdown-content a {\r\n  cursor: pointer;\r\n  color: white;\r\n  font-size: 16px;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  display: block;\r\n}\r\n.button__badge {\r\n  background-color: #fa3e3e;\r\n  border-radius: 2px;\r\n  color: white;\r\n \r\n  padding: 1px 3px;\r\n  font-size: 10px;\r\n  \r\n  position: absolute; /* Position the badge within the relatively positioned button */\r\n  right: 0;\r\n}\r\n.neutral_button__badge {\r\n  background-color: #585859;\r\n  border-radius: 2px;\r\n  color: white;\r\n \r\n  padding: 1px 3px;\r\n  font-size: 10px;\r\n  \r\n  position: absolute; /* Position the badge within the relatively positioned button */\r\n  right: 0;\r\n}\r\n/* Change color of dropdown links on hover */\r\n.dropdown-content a:hover {background-color: black;}\r\n/* Show the dropdown menu on hover */\r\n.dropdown:hover .dropdown-content {display: block;}\r\n/* Change the background color of the dropdown button when the dropdown content is shown */\r\n.dropdown:hover .dropbtn {background-color: #1d1e1e;}"
+module.exports = ".nav{\r\n  background-color: black;\r\n  width: 100%;\r\n  position: relative;\r\n  list-style-type: none;\r\n}\r\nli{\r\n  margin-right: 20px;\r\n}\r\n.logout{\r\n  margin-left: 40vw;\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.pin{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  background-color: black;\r\n  color: white;\r\n  padding-left: 5px;\r\n  padding-top: 5px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.navbtn{\r\n  cursor: pointer;\r\n  outline: 0;\r\n  float:right;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n.logout:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n.navbtn:hover{\r\n  background-color: #1d1e1e;\r\n}\r\n/* Dropdown Button */\r\n.dropbtn {\r\n  outline: 0;\r\n  background-color: black;\r\n  color: white;\r\n  padding: 14px;\r\n  font-size: 18px;\r\n  border: none;\r\n}\r\n/* The container <div> - needed to position the dropdown content */\r\n.dropdown {\r\n  position: relative;\r\n  display: inline-block;\r\n}\r\n/* Dropdown Content (Hidden by Default) */\r\n.dropdown-content {\r\n  display: none;\r\n  position: absolute;\r\n  background-color: #2b2d2d;\r\n  min-width: 160px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  z-index: 1;\r\n}\r\n/* Links inside the dropdown */\r\n.dropdown-content a {\r\n  cursor: pointer;\r\n  color: white;\r\n  font-size: 16px;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  display: block;\r\n}\r\n.button__badge {\r\n  background-color: #fa3e3e;\r\n  border-radius: 2px;\r\n  color: white;\r\n \r\n  padding: 1px 3px;\r\n  font-size: 10px;\r\n  \r\n  position: absolute; /* Position the badge within the relatively positioned button */\r\n  right: 0;\r\n}\r\n.neutral_button__badge {\r\n  background-color: #585859;\r\n  border-radius: 2px;\r\n  color: white;\r\n \r\n  padding: 1px 3px;\r\n  font-size: 10px;\r\n  \r\n  position: absolute; /* Position the badge within the relatively positioned button */\r\n  right: 0;\r\n}\r\n/* Change color of dropdown links on hover */\r\n.dropdown-content a:hover {background-color: black;}\r\n/* Show the dropdown menu on hover */\r\n.dropdown:hover .dropdown-content {display: block;}\r\n/* Change the background color of the dropdown button when the dropdown content is shown */\r\n.dropdown:hover .dropbtn {background-color: #1d1e1e;}"
 
 /***/ }),
 
@@ -986,7 +986,7 @@ var GithubCardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "button {\r\n  border: none;\r\n  outline: 0;\r\n  display: inline-block;\r\n  padding: 8px;\r\n  color: white;\r\n  background-color: #000;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  width: 20%;\r\n  font-size: 18px;\r\n}\r\n\r\nbody{\r\n  height: 100%;\r\n  background-image: url(\"footer_lodyas.jpg\");\r\n  background-color: #cccccc;;\r\n}\r\n\r\nbutton:hover, a:hover {\r\n  background-color: #232222;\r\n}\r\n\r\n"
+module.exports = ".background{\r\n  height: 100vh;\r\n  width: 100vw;\r\n  background-image: url('/assets/background.jpg');\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover; \r\n}\r\n\r\nh1{\r\n  font-family: \"Lato\", serif;\r\n}\r\n\r\np{\r\n  font-family: \"Lato\", serif;\r\n}\r\n\r\nbutton {\r\n  border: none;\r\n  font-family: \"Lato\", serif;\r\n  outline: 0;\r\n  display: inline-block;\r\n  padding: 8px;\r\n  color: white;\r\n  background-color: #000;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  width: 200px;\r\n  font-size: 18px;\r\n}\r\n\r\nbutton:hover, a:hover {\r\n  opacity: 0.7;\r\n}\r\n\r\n"
 
 /***/ }),
 
@@ -997,7 +997,7 @@ module.exports = "button {\r\n  border: none;\r\n  outline: 0;\r\n  display: inl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngStyle]=\"{'background-color':''}\" *ngIf=\"notLoggedIn\">\r\n\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<div style =\"text-align: center\">\r\n    <h1>Welcome to EventConnect</h1>\r\n<!--<button (click)=\"linkedin()\">Linkedin Login</button>\r\n<br/>-->\r\n<button (click)=\"github()\">Login with Github</button>\r\n\r\n</div>\r\n</div>\r\n"
+module.exports = "<div class = \"background\">\r\n    <div [ngStyle]=\"{'background-color':''}\" *ngIf=\"notLoggedIn\">\r\n        &nbsp;\r\n        <div style =\"text-align: center; margin-top: 30vh;\">\r\n            <h1>Welcome to EventConnect</h1>\r\n            <p>A place to chat, meet up, and make memories with other developers</p>\r\n            <p>Happy networking!</p>\r\n        <!--<button (click)=\"linkedin()\">Linkedin Login</button>\r\n        <br/>-->\r\n\r\n        <button (click)=\"github()\">Login with Github <i style=\"color:white;\" class=\"fab fa-github\"></i></button>\r\n\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -1360,7 +1360,7 @@ module.exports = "button{\r\n  transition: all .5 ease-in-out;\r\n  -webkit-tran
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-chat-nofification [myUserName]=\"myUserName\" (openChatFromNav)=\"openChatFromNav($event)\"></app-chat-nofification>\n\n<div class=\"top-wrapper\" *ngIf=\"editProfile\">\n  <div style=\"font-family: Lato; text-align:center \">\n    \n    <img src=\"{{myAvatarURL}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\n    <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{myName}}</font>\n  </div>\n  \n  <br>\n  <div style=\"margin-top: 8px\">\n    <table align = \"center\">\n      <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"fab fa-linkedin-in\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"fab fa-github\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"far fa-heart\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"fas fa-times\"></i></button>\n    </td>\n    <td>\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"far fa-comment\"></i></button>\n    </td>\n  </table>\n  <br/>\n    <p style=\"text-align:center;\"><b>How you appear to others</b></p>\n    <form name=\"screen-name\" (ngSubmit)=\"updateScreenName()\" style=\"text-align: center\">\n        <div class=\"form-group\">\n          Preferred Screen name:\n          <input [(ngModel)] = \"updatedName\" id=\"text\" class=\"form-control\" type=\"text\" name=\"fname\" style=\"width:20%;display: inline-block;\">\n          <input class=\"submit form-control\" type=\"submit\" value=\"Update\" />\n        </div>\n    </form>\n    <form name=\"linkedin-url\" (submit)=\"updateLinkedinURL()\" style=\"text-align: center\">\n        <div class=\"form-group\">\n          Linkedin Profile URL:&nbsp;&nbsp;&nbsp;&nbsp;\n          <input [(ngModel)] = \"linkedinURL\" id=\"text\" class=\"form-control\" type=\"text\" name=\"url\" style=\"width:20%;display: inline-block;\">\n          <input class=\"submit form-control\" type=\"submit\" value=\"Update\" />\n        </div>\n    </form>\n\n  </div>\n</div>\n\n  <span *ngIf=\"chatbox\">\n      <app-chatbox [myAvatarURL]=\"myAvatarURL\" [myUserName]=\"myUserName\" [targetUsername]=\"username\" (closeChatbox) = \"closeChatbox($event)\"></app-chatbox> \n  </span>"
+module.exports = "<app-chat-nofification [myUserName]=\"myUserName\" (openChatFromNav)=\"openChatFromNav($event)\"></app-chat-nofification>\n\n<div class=\"top-wrapper\" *ngIf=\"editProfile\">\n  <div style=\"font-family: Lato; text-align:center \">\n    \n    <img src=\"{{myAvatarURL}}\" alt=\"Avatar\" style=\"border-radius: 50%; width : 6%; height : 6%;border-width: 2px;border-style: solid;\" />\n    <font size=\"36\" style=\"padding-left: 1%; vertical-align:middle;\">{{myName}}</font>\n  </div>\n  \n  <br>\n  <div style=\"margin-top: 8px\">\n    <table align = \"center\">\n      <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\" (click)=\"openLinkedinProfile()\"><i class=\"fab fa-linkedin-in\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"fab fa-github\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"far fa-heart\"></i></button>\n    </td>\n    <td class = \"separation-between-buttons\">\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"fas fa-times\"></i></button>\n    </td>\n    <td>\n      <button type=\"button\" class=\"btn btn-default btn-circle\"><i class=\"far fa-comment\"></i></button>\n    </td>\n  </table>\n  <br/>\n    <p style=\"text-align:center;\"><b>How you appear to others</b></p>\n    <form name=\"screen-name\" (ngSubmit)=\"updateScreenName()\" style=\"text-align: center\">\n        <div class=\"form-group\">\n          Preferred Screen name:\n          <input [(ngModel)] = \"updatedName\" id=\"text\" class=\"form-control\" type=\"text\" name=\"fname\" style=\"width:20%;display: inline-block;\">\n          <input class=\"submit form-control\" type=\"submit\" value=\"Update\" />\n        </div>\n    </form>\n    <form name=\"linkedin-url\" (submit)=\"updateLinkedinURL()\" style=\"text-align: center\">\n        <div class=\"form-group\">\n          Linkedin Profile URL:&nbsp;&nbsp;&nbsp;&nbsp;\n          <input [(ngModel)] = \"linkedinURL\" id=\"text\" class=\"form-control\" type=\"text\" name=\"url\" style=\"width:20%;display: inline-block;\">\n          <input class=\"submit form-control\" type=\"submit\" value=\"Update\" />\n        </div>\n    </form>\n\n  </div>\n</div>\n\n  <span *ngIf=\"chatbox\">\n      <app-chatbox [myAvatarURL]=\"myAvatarURL\" [myUserName]=\"myUserName\" [targetUsername]=\"username\" (closeChatbox) = \"closeChatbox($event)\"></app-chatbox> \n  </span>"
 
 /***/ }),
 
@@ -1391,6 +1391,7 @@ var UpdateProfileComponent = /** @class */ (function () {
         this.myAvatarURL = "";
         this.myName = "";
         this.linkedinURL = "";
+        this.currLinkedinURL = "";
         this.updatedName = "";
         this.editProfile = true;
         this.chatbox = false;
@@ -1433,7 +1434,16 @@ var UpdateProfileComponent = /** @class */ (function () {
             }
         };
         xhr.send();
+        this.currLinkedinURL = this.linkedinURL;
         this.linkedinURL = "";
+    };
+    UpdateProfileComponent.prototype.openLinkedinProfile = function () {
+        if (!(this.currLinkedinURL.includes('https://'))) {
+            window.open('https://' + this.currLinkedinURL);
+        }
+        else {
+            window.open(this.currLinkedinURL);
+        }
     };
     UpdateProfileComponent.prototype.closeChatbox = function ($event) {
         this.chatbox = false;
@@ -1449,6 +1459,7 @@ var UpdateProfileComponent = /** @class */ (function () {
                 self.myUserName = resp.username;
                 self.myAvatarURL = resp.avatar_url;
                 self.myName = resp.name;
+                self.currLinkedinURL = resp.linkedinProfileName;
             }
         };
         xhr.send();
@@ -1595,7 +1606,12 @@ var UserSelectionComponent = /** @class */ (function () {
         xhr.send();
     };
     UserSelectionComponent.prototype.linkedinClick = function (index) {
-        window.open(this.userList[index].linkedinProfileName);
+        if (!(this.userList[index].linkedinProfileName).includes('https://')) {
+            window.open('https://' + this.userList[index].linkedinProfileName);
+        }
+        else {
+            window.open(this.userList[index].linkedinProfileName);
+        }
     };
     UserSelectionComponent.prototype.receiveMessage = function ($event) {
         this.githubcard = $event;
