@@ -221,7 +221,7 @@ var AppModule = /** @class */ (function () {
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
                 _agm_core__WEBPACK_IMPORTED_MODULE_8__["AgmCoreModule"].forRoot({
-                    apiKey: 'AIzaSyCDIcRRXY6G6-5Mh-bWt66U3NzH_Vx5GIw'
+                    apiKey: 'AIzaSyAwQAvz3_TfK9cIZ3Lzz6Gl6r2AwsXDsgU'
                 })
             ],
             providers: [],
