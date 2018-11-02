@@ -17,7 +17,7 @@ passport.deserializeUser(function(id, done){
 })
 
 passport.use(new GitHubStrategy({
-    clientID: process.env.GITHUB_CLIENT_ID,
+    clientID: process.env.GITHUB_CLIENT,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
     callbackURL: "/auth/github/callback"
   },
